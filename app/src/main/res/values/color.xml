@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="touming">#00000000</color>
+    <color name="baise">#ffffff</color>
+    <color name="heise">#000000</color>
+    <color name="red">#ff0000</color>
+    <color name="version">#324658</color>
+    <!-- 195.207.223 -->
+    <color name="btnSheZhi">#c3cfdf</color>
+    <!-- 171.204.237 -->
+    <color name="tvSheZhi_lan">#abcced</color>
+    <!-- 59.126.134 -->
+    <color name="tvJiaoXue_neirong">#3b7e86</color>
+
+
+    <!-- 按钮字体颜色 -->
+    <color name="btn_text">#254278</color>
+    <!-- 登录页面输入内容字体颜色 -->
+    <color name="denglu">#56bbe0</color>
+    <!-- 登录按钮字体颜色 -->
+    <color name="btnLogin_text">#b4d0e6</color>
+
+</resources>

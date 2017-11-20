@@ -1,0 +1,25 @@
+<resources>
+
+
+    <dimen name="divider_height">19dp</dimen>
+    <dimen name="search_bta_item_btn_height">50dp</dimen>
+    <dimen name="padding5">5dp</dimen>
+    <dimen name="padding10">10dp</dimen>
+    <dimen name="padding12">12dp</dimen>
+    <dimen name="padding15">15dp</dimen>
+    <dimen name="padding20">20dp</dimen>
+    <dimen name="text_size12">12sp</dimen>
+    <dimen name="text_size14">14sp</dimen>
+    <dimen name="text_size16">16sp</dimen>
+    <dimen name="text_size18">18sp</dimen>
+    <dimen name="text_size20">20sp</dimen>
+    <dimen name="text_size22">22sp</dimen>
+    <dimen name="text_size24">24sp</dimen>
+    <dimen name="text_size26">26sp</dimen>
+    <dimen name="text_size35">35sp</dimen>
+    <dimen name="text_size48">48sp</dimen>
+    <dimen name="text_size50">50sp</dimen>
+    <dimen name="text_size72">72sp</dimen>
+    <dimen name="text_size120">120sp</dimen>
+
+</resources>
