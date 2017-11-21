@@ -12,16 +12,48 @@ import cn.jucheng.jclibs.tools.MyLog;
 public class MyMessage {
 	private static final String TAG = "MyMessage";
 	// TODO 常量
+	/** 1、系统标识 */
 	public static final String D_XITONGBIAOSHI = "4F";
+	/** 2-1设备标识 */
 	public static final String D_BANBENHAO = "0100";
-	/** 本程序 */
-	public static final String D_SHEBEI_RUANJIAN = "6830";
-	/** 对方，和我们通信的那一方 */
+	/** 2-2对方，和我们通信的那一方 */
 	public static final String D_SHEBEI_DUIFANG = "6831";
-	/** 命令字-心跳检测 */
-	public static final int MLZ_XINTIAOJIANCE = 0x00A5;
-	/** 命令字-备案 */
+	/** 3、本程序 */
+	public static final String D_SHEBEI_RUANJIAN = "6830";
+	/** 4-1命令字-备案 */
 	public static final int MLZ_BEIAN = 0x00A6;
+	/** 4-2命令字-心跳检测 */
+	public static final int MLZ_XINTIAOJIANCE = 0x00A5;
+	/** 4-3命令字-设备时间 */
+	public static final int MLZ_SBSJ = 0x01A0;
+	/** 4-4、命令字-病例名 */
+	public static final int MLZ_BLM = 0x0E10;
+	/** 5、命令字-状态改变命令 */
+	public static final int MLZ_ZTGB = 0x0E11;
+	/** 6、命令字-学会操作信息命令 */
+	public static final int MLZ_XSCZ = 0x0E12;
+	/** 7、命令字-评价学生*/
+	public static final int MLZ_PJXS = 0X0E13;
+	/** 8、命令字-学生通知教师病情变化 */
+	public static final int MLZ_XSTZJS = 0x0E14;
+	/** 9、命令字-教师确认病情变化 */
+	public static final int MLZ_JZQRBQ = 0x0E15;
+	/** 10、命令字-快进 */
+	public static final int MLZ_KJ = 0x0E16;
+	/** 11、命令字-训练状态接受 */
+	public static final int MLZ_XLJS = 0x0E17;
+	/** 12、命令字-转抄医嘱 */
+	public static final int MLZ_ZCYZ = 0x0E18;
+	/** 13、命令字-校正训练总时间 */
+	public static final int MLZ_JZZSJ = 0x0E1C;
+	/** 14、命令字-教师提示 */
+	public static final int MLZ_JSTS = 0x0E1E;
+	/** 15、命令字- 学生填写的各种表单 */
+	public static final int MLZ_GZBD = 0x0E1F;
+	/** 16、命令字-设备状态以及电量 */
+	public static final int MLZ_DIANLIANG = 0x00A0;
+	/** 17、收应答设备状态命令字 */
+	public static final int MLZ_SHOUYINGDASB = 0xAD;
 
 	// TODO 发送的数据
 	/** 心跳检测 */
@@ -30,7 +62,7 @@ public class MyMessage {
 	private static final String MSG_BEIAN = "4F6830 0100 016831 0000000000000000000000000000 00A6 0000 00";
 	/** 发送病例名称 */
 	private static final String MSG_BINGLIMINGCHENG = "4F6830 0100 016831 0000000000000000000000000000 0E10 %04x %02x%02x%04x %04x";
-	/** 显示评价 */
+	/** 7显示评价 */
 	private static final String MSG_XIANSHIPINGJIA = "4F6830 0100 016831 0000000000000000000000000000 0E13 %04x %02x %04x";
 	/** 不显示评价 */
 	private static final String MSG_XIANSHIPINGJIA_BUXIANSHI = "4F6830 0100 016831 0000000000000000000000000000 0E13 %02x %02x 00";
@@ -46,7 +78,8 @@ public class MyMessage {
 	private static final String MSG_SUOYAOXUESHENGJIZHUANGTAI = "4F6830 0100 016831 0000000000000000000000000000 0E20 0000  00";
 	/** 主动发送当前教师机的训练状态 */
 	private static final String MSG_JIAOSHIJIXUNLIANZHUANGTAI = "4F6830 0100 016831 0000000000000000000000000000 0E21 %04x %02x%02x%02x%04x %04x";
-
+	/**设备状态以及电量*/
+	private static final String MSG_SHEBEIDIANLIANG = "4F6830 0100 016831 0000000000000000000000000000 0E22 ";
 	// TODO 用于测试的接收的数据
 	/** 校正设备时间 */
 	private static final String MSG_TEST_JIAOZHENGSHEBEISHIJIAN = "4F6831 0100 016830 0000000000000000000000000000 01A0 0007 %04x%02x%02x%02x%02x%02x 00";

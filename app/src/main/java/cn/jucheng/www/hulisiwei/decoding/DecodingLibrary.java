@@ -64,7 +64,7 @@ public class DecodingLibrary {
 					// // .parseInt(SubStringUtils.substring(sbMsg,
 					// // i + 56, i + 58), 16) == 0;
 					// // MyLog.d(TAG, "tancexinfei 按压shendu：" + shendu);
-					// // sendAnYaValue();
+					 // sendAnYaValue();
 					// break;
 					// }
 					 default:// 其他未在定义中的指令
