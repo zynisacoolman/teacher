@@ -54,7 +54,10 @@ public class MyMessage {
 	public static final int MLZ_DIANLIANG = 0x00A0;
 	/** 17、收应答设备状态命令字 */
 	public static final int MLZ_SHOUYINGDASB = 0xAD;
-
+	/** 19、索要学生机状态*/
+	public static final int MLZ_SYXSJZT = 0x0E20;
+	/** 20、主动发送当前教师机的训练状态*/
+	public static final int MLZ_FSSLZT = 0x0E21;
 	// TODO 发送的数据
 	/** 心跳检测 */
 	private static final String MSG_XINTIAOJIANCE = "4F6830 0100 016831 0000000000000000000000000000 00A5 0000 00";
