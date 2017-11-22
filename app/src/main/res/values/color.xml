@@ -5,9 +5,16 @@
     <color name="baise">#ffffff</color>
     <color name="heise">#000000</color>
     <color name="red">#ff0000</color>
+    <color name="bg_white">#f4fbfe</color>
+    <color name="bg_txt_color">#377ecf</color>
+    <color name="bg_txtbtn_go">#f2984c</color>
+    <color name="bg_txtbtn_cut">#377ecf</color>
+    <color name="banner_bg_color">#bdd8f4</color>
+    <color name="banner_txt_color">#386eb6</color>
     <color name="version">#324658</color>
     <!-- 195.207.223 -->
     <color name="btnSheZhi">#c3cfdf</color>
+    <color name="vfrontc">#468be7</color>
     <!-- 171.204.237 -->
     <color name="tvSheZhi_lan">#abcced</color>
     <!-- 59.126.134 -->

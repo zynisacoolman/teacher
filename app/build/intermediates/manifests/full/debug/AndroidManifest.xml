@@ -3,8 +3,8 @@
     package="cn.jucheng.www.hulisiwei"
     android:installLocation="auto"
     android:sharedUserId="cn.jucheng.www"
-    android:versionCode="1"
-    android:versionName="V1.0.0" >
+    android:versionCode="2"
+    android:versionName="V1.1.0" >
 
     <uses-sdk
         android:minSdkVersion="14"

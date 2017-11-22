@@ -43,5 +43,8 @@
     <string name="btnCloseText">关闭</string>
     
     <string name="_denglu">登  录</string>
+    <string name="blcpy_string1">当前病例</string>
+    <string name="blcpy_string2">营养代谢以及体液失衡</string>
+    <string name="blcpy_string3">正在运行</string>
 
 </resources>

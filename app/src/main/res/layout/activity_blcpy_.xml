@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ts_bg"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="600dp"
+        android:layout_height="300dp"
+        android:background="@color/bg_white"
+        >
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blcpy_string1"
+            android:textSize="@dimen/text_size18"
+            android:textColor="@color/bg_txt_color"
+            android:layout_marginTop="55dp"/>
+        <TextView
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/txt2"
+            android:layout_below="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="@color/bg_txt_color"
+            android:text="@string/blcpy_string2"/>
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/txt3"
+            android:textSize="@dimen/text_size18"
+            android:layout_below="@+id/txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/bg_txt_color"
+            android:text="@string/blcpy_string3"/>
+
+        <TextView
+            android:id="@+id/txt4"
+            android:layout_width="120dp"
+            android:layout_height="38dp"
+            android:layout_below="@+id/txt3"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="150dp"
+
+            android:gravity="center"
+
+            android:background="@color/bg_txtbtn_go"
+            android:textSize="@dimen/text_size16"
+            android:textStyle="bold"
+            android:text="继续"
+            android:textColor="@color/bg_white"
+            />
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="120dp"
+            android:layout_height="38dp"
+            android:layout_alignTop="@+id/txt4"
+            android:layout_toRightOf="@+id/txt3"
+
+            android:background="@color/bg_txtbtn_cut"
+
+            android:textSize="@dimen/text_size16"
+            android:text="终止"
+            android:textStyle="bold"
+            android:textColor="@color/bg_white"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
