@@ -1,6 +1,72 @@
 {
     "logs": [
         {
+            "outputFile": "C:\\Users\\jc\\StudioProjects\\teacher\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-1920x1080\\values-1920x1080.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\jc\\StudioProjects\\teacher\\app\\src\\main\\res\\values-1920x1080\\dimens.xml",
+                    "from": {
+                        "startLines": "3,4,16,5,6,7,8,9,10,11,12,13,14,15",
+                        "startColumns": "5,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "38,85,613,129,173,217,261,305,349,393,437,481,525,569",
+                        "endColumns": "44,42,44,42,42,42,42,42,42,42,42,42,42,42",
+                        "endOffsets": "78,123,653,167,211,255,299,343,387,431,475,519,563,607"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,101,144,189,232,275,318,361,404,447,490,533,576,619",
+                        "endColumns": "45,42,44,42,42,42,42,42,42,42,42,42,42,42",
+                        "endOffsets": "96,139,184,227,270,313,356,399,442,485,528,571,614,657"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "D:\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-1920x1080\\values-1920x1080.xml",
+            "map": [
+                {
+                    "source": "D:\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\src\\main\\res\\values-1920x1080\\dimens.xml",
+                    "from": {
+                        "startLines": "3,4,16,5,6,7,8,9,10,11,12,13,14,15",
+                        "startColumns": "5,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "38,85,613,129,173,217,261,305,349,393,437,481,525,569",
+                        "endColumns": "44,42,44,42,42,42,42,42,42,42,42,42,42,42",
+                        "endOffsets": "78,123,653,167,211,255,299,343,387,431,475,519,563,607"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,101,144,189,232,275,318,361,404,447,490,533,576,619",
+                        "endColumns": "45,42,44,42,42,42,42,42,42,42,42,42,42,42",
+                        "endOffsets": "96,139,184,227,270,313,356,399,442,485,528,571,614,657"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "D:\\jc2100\\code\\version1.0\\androidcode\\hulisiweiZYNAS\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-1920x1080\\values-1920x1080.xml",
+            "map": [
+                {
+                    "source": "D:\\jc2100\\code\\version1.0\\androidcode\\hulisiweiZYNAS\\app\\src\\main\\res\\values-1920x1080\\dimens.xml",
+                    "from": {
+                        "startLines": "3,4,16,5,6,7,8,9,10,11,12,13,14,15",
+                        "startColumns": "5,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "38,85,613,129,173,217,261,305,349,393,437,481,525,569",
+                        "endColumns": "44,42,44,42,42,42,42,42,42,42,42,42,42,42",
+                        "endOffsets": "78,123,653,167,211,255,299,343,387,431,475,519,563,607"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,101,144,189,232,275,318,361,404,447,490,533,576,619",
+                        "endColumns": "45,42,44,42,42,42,42,42,42,42,42,42,42,42",
+                        "endOffsets": "96,139,184,227,270,313,356,399,442,485,528,571,614,657"
+                    }
+                }
+            ]
+        },
+        {
             "outputFile": "D:\\wsadt\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-1920x1080\\values-1920x1080.xml",
             "map": [
                 {
