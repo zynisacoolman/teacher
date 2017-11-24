@@ -19,42 +19,47 @@
             android:layout_weight="804"
             android:gravity="center_vertical"
             android:text="@string/str_bllb"
-            android:textSize="@dimen/text_size24"
+            android:textSize="@dimen/text_size18"
             android:textColor="@color/banner_txt_color"/>
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="239"/>
+
         <ImageView
             android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="40"
             android:src="@drawable/btn_lj_p"
-            android:layout_height="match_parent"
-            android:layout_weight="30"
-            android:textSize="@dimen/text_size18"/>
+            android:textSize="@dimen/text_size18" />
+
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="40"/>
+            android:layout_weight="30" />
+
         <ImageView
             android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="40"
             android:src="@drawable/btn_sz_n"
-            android:layout_height="match_parent"
-            android:layout_weight="30"
-            android:textSize="@dimen/text_size18"/>
+            android:textSize="@dimen/text_size18" />
+
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="40"/>
+            android:layout_weight="30" />
+
         <ImageView
             android:layout_width="0dp"
-            android:src="@drawable/btn_gb_n"
             android:layout_height="match_parent"
-            android:layout_weight="30"
-            android:textSize="@dimen/text_size18"/>
+            android:layout_weight="40"
+            android:src="@drawable/btn_gb_n" />
+
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="40"/>
+            android:layout_weight="30" />
 
     </LinearLayout>
     <LinearLayout
@@ -75,26 +80,28 @@
             android:gravity="center_vertical"
             android:background="@color/bg_bgcolor1"
             android:text="病例选择"
-            android:textSize="@dimen/text_size18"
+            android:textSize="@dimen/text_size16"
             android:textColor="@color/banner_txt_color"/>
+
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="149"
-            android:background="@color/bg_bgcolor1"/>
+            android:layout_weight="164"
+            android:background="@color/bg_bgcolor1" />
+
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="15"
-            android:background="@color/bg_bgcolor2"/>
+            android:background="@color/bg_bgcolor2" />
         <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1001"
+            android:layout_weight="986"
             android:gravity="center_vertical"
             android:background="@color/bg_bgcolor2"
             android:text="病例详情"
-            android:textSize="@dimen/text_size18"
+            android:textSize="@dimen/text_size16"
             android:textColor="@color/banner_txt_color"/>
     </LinearLayout>
 
@@ -102,11 +109,11 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="632">
-        <ListView
+        <ExpandableListView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="279"
-            android:background="@color/bg_bgcolor2"></ListView>
+            android:background="@color/bg_bgcolor2"/>
         <fragment
             android:layout_width="0dp"
             android:layout_height="match_parent"

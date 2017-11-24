@@ -6,7 +6,8 @@ import android.graphics.Paint;
 import android.text.TextPaint;
 import android.util.AttributeSet;
 import android.view.Gravity;
-import android.widget.Button;
+import android.widget.CompoundButton;
+
 import cn.jucheng.www.hulisiwei.R;
 
 /**
@@ -17,7 +18,7 @@ import cn.jucheng.www.hulisiwei.R;
  * @email 960576866@qq.com
  */
 
-public class FitHeightButton extends Button {
+public class FitHeightButton extends CompoundButton {
 	private Paint mTextPaint;
 	private float mMaxTextSize; // 获取当前所设置文字大小作为最大文字大小
 	private float mMinTextSize = 8; // 最小的字体大小

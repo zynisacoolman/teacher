@@ -1,27 +1,27 @@
 [
     {
-        "merged": "D:\\wsadt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_loading_white_08.png.flat",
-        "source": "D:\\wsadt\\app\\src\\main\\res\\drawable-mdpi\\ic_loading_white_08.png"
-    },
-    {
         "merged": "D:\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_loading_white_04.png.flat",
         "source": "D:\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\src\\main\\res\\drawable-mdpi\\ic_loading_white_04.png"
     },
     {
-        "merged": "C:\\Users\\jc\\StudioProjects\\teacher\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_btn_gb_p.png.flat",
-        "source": "C:\\Users\\jc\\StudioProjects\\teacher\\app\\src\\main\\res\\drawable-mdpi\\btn_gb_p.png"
+        "merged": "D:\\wsadt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_loading_white_08.png.flat",
+        "source": "D:\\wsadt\\app\\src\\main\\res\\drawable-mdpi\\ic_loading_white_08.png"
     },
     {
-        "merged": "D:\\wsadt\\app\\build\\intermediates\\res\\merged\\debug\\drawable_progress_xunlian.xml.flat",
-        "source": "D:\\wsadt\\app\\src\\main\\res\\drawable\\progress_xunlian.xml"
+        "merged": "D:\\jc2100\\code\\version1.0\\androidcode\\hulisiweiZYNAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable_s_ssbljlysb_btn_ss.xml.flat",
+        "source": "D:\\jc2100\\code\\version1.0\\androidcode\\hulisiweiZYNAS\\app\\src\\main\\res\\drawable\\s_ssbljlysb_btn_ss.xml"
     },
     {
         "merged": "D:\\jc2100\\code\\version1.0\\androidcode\\hulisiweiZYNAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher.png.flat",
         "source": "D:\\jc2100\\code\\version1.0\\androidcode\\hulisiweiZYNAS\\app\\src\\main\\res\\drawable-xhdpi\\ic_launcher.png"
     },
     {
-        "merged": "D:\\jc2100\\code\\version1.0\\androidcode\\hulisiweiZYNAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable_s_ssbljlysb_btn_ss.xml.flat",
-        "source": "D:\\jc2100\\code\\version1.0\\androidcode\\hulisiweiZYNAS\\app\\src\\main\\res\\drawable\\s_ssbljlysb_btn_ss.xml"
+        "merged": "D:\\wsadt\\app\\build\\intermediates\\res\\merged\\debug\\drawable_progress_xunlian.xml.flat",
+        "source": "D:\\wsadt\\app\\src\\main\\res\\drawable\\progress_xunlian.xml"
+    },
+    {
+        "merged": "C:\\Users\\jc\\StudioProjects\\teacher\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_btn_gb_p.png.flat",
+        "source": "C:\\Users\\jc\\StudioProjects\\teacher\\app\\src\\main\\res\\drawable-mdpi\\btn_gb_p.png"
     },
     {
         "merged": "D:\\jc2100\\code\\version1.0\\androidcode\\hulisiweiZYNAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable_s_banner_btnsz.xml.flat",
@@ -66,6 +66,10 @@
     {
         "merged": "D:\\jc2100\\code\\version1.0\\androidcode\\hulisiweiZYNAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_an_n.png.flat",
         "source": "D:\\jc2100\\code\\version1.0\\androidcode\\hulisiweiZYNAS\\app\\src\\main\\res\\drawable-mdpi\\an_n.png"
+    },
+    {
+        "merged": "D:\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable_s_btn_btnbg.xml.flat",
+        "source": "D:\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\src\\main\\res\\drawable\\s_btn_btnbg.xml"
     },
     {
         "merged": "D:\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable_gray_thumb.xml.flat",
@@ -306,6 +310,10 @@
     {
         "merged": "C:\\Users\\jc\\StudioProjects\\teacher\\app\\build\\intermediates\\res\\merged\\debug\\drawable_s_chk.xml.flat",
         "source": "C:\\Users\\jc\\StudioProjects\\teacher\\app\\src\\main\\res\\drawable\\s_chk.xml"
+    },
+    {
+        "merged": "D:\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\build\\intermediates\\res\\merged\\debug\\color_s_btn_btntxt.xml.flat",
+        "source": "D:\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\src\\main\\res\\color\\s_btn_btntxt.xml"
     },
     {
         "merged": "D:\\wsadt\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_blcpy_.xml.flat",
@@ -796,6 +804,10 @@
         "source": "D:\\jc2100\\code\\version1.0\\androidcode\\hulisiweiZYNAS\\app\\src\\main\\res\\layout\\activity_banner_.xml"
     },
     {
+        "merged": "D:\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_blxq_.xml.flat",
+        "source": "D:\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\src\\main\\res\\layout\\activity_blxq_.xml"
+    },
+    {
         "merged": "D:\\wsadt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_btn_sz_p.png.flat",
         "source": "D:\\wsadt\\app\\src\\main\\res\\drawable-mdpi\\btn_sz_p.png"
     },
@@ -1018,6 +1030,10 @@
     {
         "merged": "D:\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main_.xml.flat",
         "source": "D:\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\src\\main\\res\\layout\\activity_main_.xml"
+    },
+    {
+        "merged": "D:\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_bllb_item.xml.flat",
+        "source": "D:\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\src\\main\\res\\layout\\activity_bllb_item.xml"
     },
     {
         "merged": "D:\\wsadt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ts_bg.png.flat",
