@@ -153,7 +153,8 @@ public final class R {
     public static final int thumb=0x7f040045;
     public static final int track=0x7f040046;
     public static final int ts_bg=0x7f040047;
-    public static final int ys=0x7f040048;
+    public static final int twd_=0x7f040048;
+    public static final int ys=0x7f040049;
   }
   public static final class font {
     public static final int msyh=0x7f050000;
@@ -240,9 +241,10 @@ public final class R {
     public static final int activity_shezhi=0x7f07000c;
     public static final int dialog=0x7f07000d;
     public static final int dialog2=0x7f07000e;
-    public static final int fragment_blxq=0x7f07000f;
-    public static final int list_item_bdevice_name=0x7f070010;
-    public static final int list_item_printernameandmac=0x7f070011;
+    public static final int fragment_bl_twd=0x7f07000f;
+    public static final int fragment_blxq=0x7f070010;
+    public static final int list_item_bdevice_name=0x7f070011;
+    public static final int list_item_printernameandmac=0x7f070012;
   }
   public static final class string {
     public static final int _chkLanYa=0x7f080000;

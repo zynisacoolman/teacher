@@ -800,6 +800,10 @@
         "source": "C:\\Users\\jc\\StudioProjects\\teacher\\app\\src\\main\\res\\drawable\\s_banner_btntc.xml"
     },
     {
+        "merged": "D:\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_twd_.png.flat",
+        "source": "D:\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\src\\main\\res\\drawable-mdpi\\twd_.png"
+    },
+    {
         "merged": "D:\\jc2100\\code\\version1.0\\androidcode\\hulisiweiZYNAS\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_searchbt.xml.flat",
         "source": "D:\\jc2100\\code\\version1.0\\androidcode\\hulisiweiZYNAS\\app\\src\\main\\res\\layout\\activity_searchbt.xml"
     },
@@ -1094,6 +1098,10 @@
     {
         "merged": "D:\\jc2100\\code\\version1.0\\androidcode\\hulisiweiZYNAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_guanbi_n.png.flat",
         "source": "D:\\jc2100\\code\\version1.0\\androidcode\\hulisiweiZYNAS\\app\\src\\main\\res\\drawable-mdpi\\guanbi_n.png"
+    },
+    {
+        "merged": "D:\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_bl_twd.xml.flat",
+        "source": "D:\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\src\\main\\res\\layout\\fragment_bl_twd.xml"
     },
     {
         "merged": "D:\\jc2100\\code\\version1.0\\androidcode\\hulisiweiZYNAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_fh_p.png.flat",
