@@ -21,6 +21,7 @@
             android:layout_height="match_parent"
             android:layout_weight="388"
             android:gravity="center_vertical"
+            android:fontFamily="@font/msyh"
             android:text="病例名称"
             android:textColor="@color/banner_txt_color"
             android:textSize="@dimen/text_size18" />
@@ -33,6 +34,7 @@
             android:layout_height="match_parent"
             android:layout_weight="284"
             android:gravity="center_vertical"
+            android:fontFamily="@font/msyh"
             android:text="病例运行时间:00:00:00"
             android:textColor="@color/banner_txt_color"
             android:textSize="@dimen/text_size16" />
@@ -46,6 +48,7 @@
             android:layout_weight="284"
             android:gravity="center_vertical"
             android:text="状态运行时间:00:00:00"
+            android:fontFamily="@font/msyh"
             android:textColor="@color/banner_txt_color"
             android:textSize="@dimen/text_size16" />
         <TextView
@@ -123,6 +126,7 @@
             android:gravity="center"
             android:text="病历内容"
             android:textColor="@color/s_btn_btntxt"
+            android:fontFamily="@font/msyh"
             android:textSize="@dimen/text_size14" />
             <!--android:background="@drawable/s_btn_btnbg"-->
 
@@ -135,6 +139,7 @@
             android:background="@drawable/s_btn_btnbg"
             android:gravity="center"
             android:text="学生操作记录"
+            android:fontFamily="@font/msyh"
             android:textColor="@color/s_btn_btntxt"
             android:textSize="@dimen/text_size14" />
         <TextView
@@ -181,6 +186,7 @@
                         android:layout_height="0dp"
                         android:layout_weight="19"
                         android:gravity="center"
+                        android:fontFamily="@font/msyh"
                         android:text="1/2"
                         android:textSize="10sp"
                         android:background="@color/bg_bgcolor1"
@@ -378,6 +384,7 @@
                 android:text="提醒"
                 android:textSize="@dimen/text_size14"
                 android:textColor="@color/baise"
+                android:fontFamily="@font/msyh"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="80"/>
@@ -391,6 +398,7 @@
                 android:text="评价训练"
                 android:textSize="@dimen/text_size14"
                 android:textColor="@color/baise"
+                android:fontFamily="@font/msyh"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="120"/>
@@ -404,6 +412,7 @@
                 android:text="评价训练"
                 android:textSize="@dimen/text_size14"
                 android:textColor="@color/baise"
+                android:fontFamily="@font/msyh"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="120"/>

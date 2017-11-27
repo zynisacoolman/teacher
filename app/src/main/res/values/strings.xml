@@ -50,5 +50,6 @@
     <string name="str_bllb">病例列表</string>
     <string name="text_xm">姓名：王小二</string>
     <string name="str_blzg">病例转归</string>
+    <string name="str_xunlian">训练</string>
 
 </resources>

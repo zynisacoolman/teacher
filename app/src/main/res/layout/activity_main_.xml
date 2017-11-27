@@ -25,6 +25,7 @@
             android:layout_width="0dp"
             android:textSize="@dimen/text_size18"
             android:textColor="@color/vfrontc"
+            android:fontFamily="@font/msyh"
             android:gravity="right"
             android:text="@string/v1_1_0"/>
         <TextView

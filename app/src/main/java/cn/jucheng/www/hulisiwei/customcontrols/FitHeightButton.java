@@ -1,12 +1,16 @@
 package cn.jucheng.www.hulisiwei.customcontrols;
 
 import android.content.Context;
+import android.content.res.AssetManager;
 import android.content.res.TypedArray;
 import android.graphics.Paint;
+import android.graphics.Typeface;
 import android.text.TextPaint;
 import android.util.AttributeSet;
 import android.view.Gravity;
 import android.widget.CompoundButton;
+
+import java.lang.reflect.Type;
 
 import cn.jucheng.www.hulisiwei.R;
 
@@ -41,6 +45,7 @@ public class FitHeightButton extends CompoundButton {
 		mTextPaint.set(this.getPaint());
 		// 默认的大小是设置的大小，如果撑不下了 就改变
 		mMaxTextSize = this.getTextSize();
+
 	}
 
 	// @Override
