@@ -1,27 +1,27 @@
 [
     {
-        "merged": "D:\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_loading_white_04.png.flat",
-        "source": "D:\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\src\\main\\res\\drawable-mdpi\\ic_loading_white_04.png"
-    },
-    {
         "merged": "D:\\wsadt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_loading_white_08.png.flat",
         "source": "D:\\wsadt\\app\\src\\main\\res\\drawable-mdpi\\ic_loading_white_08.png"
     },
     {
-        "merged": "D:\\jc2100\\code\\version1.0\\androidcode\\hulisiweiZYNAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable_s_ssbljlysb_btn_ss.xml.flat",
-        "source": "D:\\jc2100\\code\\version1.0\\androidcode\\hulisiweiZYNAS\\app\\src\\main\\res\\drawable\\s_ssbljlysb_btn_ss.xml"
+        "merged": "D:\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_loading_white_04.png.flat",
+        "source": "D:\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\src\\main\\res\\drawable-mdpi\\ic_loading_white_04.png"
     },
     {
-        "merged": "D:\\jc2100\\code\\version1.0\\androidcode\\hulisiweiZYNAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher.png.flat",
-        "source": "D:\\jc2100\\code\\version1.0\\androidcode\\hulisiweiZYNAS\\app\\src\\main\\res\\drawable-xhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\jc\\StudioProjects\\teacher\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_btn_gb_p.png.flat",
+        "source": "C:\\Users\\jc\\StudioProjects\\teacher\\app\\src\\main\\res\\drawable-mdpi\\btn_gb_p.png"
     },
     {
         "merged": "D:\\wsadt\\app\\build\\intermediates\\res\\merged\\debug\\drawable_progress_xunlian.xml.flat",
         "source": "D:\\wsadt\\app\\src\\main\\res\\drawable\\progress_xunlian.xml"
     },
     {
-        "merged": "C:\\Users\\jc\\StudioProjects\\teacher\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_btn_gb_p.png.flat",
-        "source": "C:\\Users\\jc\\StudioProjects\\teacher\\app\\src\\main\\res\\drawable-mdpi\\btn_gb_p.png"
+        "merged": "D:\\jc2100\\code\\version1.0\\androidcode\\hulisiweiZYNAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher.png.flat",
+        "source": "D:\\jc2100\\code\\version1.0\\androidcode\\hulisiweiZYNAS\\app\\src\\main\\res\\drawable-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\jc2100\\code\\version1.0\\androidcode\\hulisiweiZYNAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable_s_ssbljlysb_btn_ss.xml.flat",
+        "source": "D:\\jc2100\\code\\version1.0\\androidcode\\hulisiweiZYNAS\\app\\src\\main\\res\\drawable\\s_ssbljlysb_btn_ss.xml"
     },
     {
         "merged": "D:\\jc2100\\code\\version1.0\\androidcode\\hulisiweiZYNAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable_s_banner_btnsz.xml.flat",
@@ -146,6 +146,10 @@
     {
         "merged": "D:\\jc2100\\code\\version1.0\\androidcode\\hulisiweiZYNAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_loading_white_06.png.flat",
         "source": "D:\\jc2100\\code\\version1.0\\androidcode\\hulisiweiZYNAS\\app\\src\\main\\res\\drawable-mdpi\\ic_loading_white_06.png"
+    },
+    {
+        "merged": "D:\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\build\\intermediates\\res\\merged\\debug\\font_msyh.ttf.flat",
+        "source": "D:\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\src\\main\\res\\font\\msyh.ttf"
     },
     {
         "merged": "D:\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_logo.png.flat",
@@ -318,6 +322,10 @@
     {
         "merged": "D:\\wsadt\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_blcpy_.xml.flat",
         "source": "D:\\wsadt\\app\\src\\main\\res\\layout\\activity_blcpy_.xml"
+    },
+    {
+        "merged": "D:\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\build\\intermediates\\res\\merged\\debug\\font_msyhbd.ttf.flat",
+        "source": "D:\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\src\\main\\res\\font\\msyhbd.ttf"
     },
     {
         "merged": "D:\\wsadt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_guanbi_p.png.flat",
