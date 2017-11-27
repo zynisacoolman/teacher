@@ -720,6 +720,10 @@
         "source": "C:\\Users\\jc\\StudioProjects\\teacher\\app\\src\\main\\res\\drawable-mdpi\\sz_bg.png"
     },
     {
+        "merged": "D:\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ys.png.flat",
+        "source": "D:\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\src\\main\\res\\drawable-mdpi\\ys.png"
+    },
+    {
         "merged": "D:\\wsadt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_sz_n.png.flat",
         "source": "D:\\wsadt\\app\\src\\main\\res\\drawable-mdpi\\sz_n.png"
     },

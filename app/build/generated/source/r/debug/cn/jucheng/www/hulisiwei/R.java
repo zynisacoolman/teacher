@@ -35,15 +35,15 @@ public final class R {
     public static final int banner_txt_color=0x7f020002;
     public static final int bg_bgcolor1=0x7f020003;
     public static final int bg_bgcolor2=0x7f020004;
-    public static final int bg_txt_color=0x7f020005;
-    public static final int bg_txtbtn_cut=0x7f020006;
-    public static final int bg_txtbtn_go=0x7f020007;
-    public static final int bg_white=0x7f020008;
-    public static final int btnLogin_text=0x7f020009;
-    public static final int btnSheZhi=0x7f02000a;
-    public static final int btn_text=0x7f02000b;
-    public static final int denglu=0x7f02000c;
-    public static final int divid_line=0x7f02000d;
+    public static final int bg_bgcolor3=0x7f020005;
+    public static final int bg_txt_color=0x7f020006;
+    public static final int bg_txtbtn_cut=0x7f020007;
+    public static final int bg_txtbtn_go=0x7f020008;
+    public static final int bg_white=0x7f020009;
+    public static final int btnLogin_text=0x7f02000a;
+    public static final int btnSheZhi=0x7f02000b;
+    public static final int btn_text=0x7f02000c;
+    public static final int denglu=0x7f02000d;
     public static final int heise=0x7f02000e;
     public static final int red=0x7f02000f;
     public static final int s_btn_btntxt=0x7f020010;
@@ -151,6 +151,7 @@ public final class R {
     public static final int thumb=0x7f040045;
     public static final int track=0x7f040046;
     public static final int ts_bg=0x7f040047;
+    public static final int ys=0x7f040048;
   }
   public static final class id {
     public static final int btConnectIP=0x7f050000;

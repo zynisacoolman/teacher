@@ -12,9 +12,10 @@
     <color name="bg_bgcolor1">#e4f0f9</color>
     <color name="bg_bgcolor2">#f4fbfe</color>
     <color name="bg_bgcolor3">#d2dfea</color>
-
+    <color name="divid_color">#93bee6</color>
     <color name="banner_bg_color">#bdd8f4</color>
     <color name="banner_txt_color">#386eb6</color>
+    <color name="divid_line">#91bee6</color>
     <color name="version">#324658</color>
     <!-- 195.207.223 -->
     <color name="btnSheZhi">#c3cfdf</color>
