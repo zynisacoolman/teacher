@@ -1,12 +1,17 @@
 package cn.jucheng.www.hulisiwei.customcontrols;
 
 import android.content.Context;
+import android.content.res.AssetManager;
 import android.content.res.TypedArray;
 import android.graphics.Paint;
+import android.graphics.Typeface;
 import android.text.TextPaint;
 import android.util.AttributeSet;
 import android.view.Gravity;
-import android.widget.Button;
+import android.widget.CompoundButton;
+
+import java.lang.reflect.Type;
+
 import cn.jucheng.www.hulisiwei.R;
 
 /**
@@ -17,7 +22,7 @@ import cn.jucheng.www.hulisiwei.R;
  * @email 960576866@qq.com
  */
 
-public class FitHeightButton extends Button {
+public class FitHeightButton extends CompoundButton {
 	private Paint mTextPaint;
 	private float mMaxTextSize; // 获取当前所设置文字大小作为最大文字大小
 	private float mMinTextSize = 8; // 最小的字体大小
@@ -40,6 +45,7 @@ public class FitHeightButton extends Button {
 		mTextPaint.set(this.getPaint());
 		// 默认的大小是设置的大小，如果撑不下了 就改变
 		mMaxTextSize = this.getTextSize();
+
 	}
 
 	// @Override

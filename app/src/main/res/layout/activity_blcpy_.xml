@@ -43,6 +43,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="56"
                     android:text="提示:"
+                    android:fontFamily="@font/msyh"
                     android:textSize="@dimen/text_size18"
                     android:textColor="@color/bg_txt_color"/>
                 <TextView
@@ -68,6 +69,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="76"
                     android:text="当前病例"
+                    android:fontFamily="@font/msyh"
                     android:gravity="center"
                     android:textSize="@dimen/text_size18"
                     android:textColor="@color/bg_txt_color"/>
@@ -95,6 +97,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="150"
                     android:text="营养代谢及体液失衡"
+                    android:fontFamily="@font/msyh"
                     android:gravity="center"
                     android:textSize="@dimen/text_size18"
                     android:textColor="@color/bg_txt_color"/>
@@ -122,6 +125,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="76"
+                    android:fontFamily="@font/msyh"
                     android:text="正在运行"
                     android:gravity="center"
                     android:textSize="@dimen/text_size18"
@@ -149,6 +153,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="120"
+                    android:fontFamily="@font/msyh"
                     android:text="继续"
                     android:gravity="center"
                     android:background="@color/bg_txtbtn_go"
@@ -162,6 +167,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="120"
+                    android:fontFamily="@font/msyh"
                     android:text="终止"
                     android:gravity="center"
                     android:background="@color/bg_txtbtn_cut"

@@ -29,7 +29,7 @@ public class ConnectIPActivity extends MyBaseActivity implements
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
-		setContentView(R.layout.activity_connectip);
+		setContentView(R.layout.activity_connectip2);
 
 		findViewById(R.id.buttonConnectIP).setOnClickListener(this);
 		inputIp = (EditText) findViewById(R.id.editTextInputIp);

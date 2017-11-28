@@ -23,4 +23,7 @@ dependencies {
     compile files('libs/CH34xUARTDriver.jar')
     compile files('libs/iText-2.0.8.jar')
     compile files('libs/jclibs.jar')
+
+    compile 'com.jakewharton:butterknife:8.2.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.2.1'
 }
