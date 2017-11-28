@@ -323,11 +323,15 @@
                         android:layout_weight="25"
                         android:background="@color/bg_bgcolor3"/>
 
-                    <TextView
+
+                    <FrameLayout
+                        android:id="@+id/main_tab_fragmentlayout"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="870"
-                        android:textAllCaps="false" />
+                        android:background="@color/baise"
+                        android:layout_weight="870">
+
+                    </FrameLayout>
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"

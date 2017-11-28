@@ -44,6 +44,7 @@
                     android:layout_weight="52" />
 
                 <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/back_already_bluetooth"
                     android:layout_width="0dp"
                     android:layout_height="fill_parent"
                     android:layout_weight="788"

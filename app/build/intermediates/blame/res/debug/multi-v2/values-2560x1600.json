@@ -23,10 +23,10 @@
             ]
         },
         {
-            "outputFile": "/Users/admin/StudioProjects/teacher/D:\\wsadt\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-2560x1600\\values-2560x1600.xml",
+            "outputFile": "/Users/admin/StudioProjects/teacher/D:\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-2560x1600\\values-2560x1600.xml",
             "map": [
                 {
-                    "source": "/Users/admin/StudioProjects/teacher/D:\\wsadt\\app\\src\\main\\res\\values-2560x1600\\dimens.xml",
+                    "source": "/Users/admin/StudioProjects/teacher/D:\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\src\\main\\res\\values-2560x1600\\dimens.xml",
                     "from": {
                         "startLines": "3,4,16,5,6,7,8,9,10,11,12,13,14,15",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -45,10 +45,10 @@
             ]
         },
         {
-            "outputFile": "/Users/admin/StudioProjects/teacher/D:\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-2560x1600\\values-2560x1600.xml",
+            "outputFile": "/Users/admin/StudioProjects/teacher/C:\\Users\\jc\\StudioProjects\\teacher\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-2560x1600\\values-2560x1600.xml",
             "map": [
                 {
-                    "source": "/Users/admin/StudioProjects/teacher/D:\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\src\\main\\res\\values-2560x1600\\dimens.xml",
+                    "source": "/Users/admin/StudioProjects/teacher/C:\\Users\\jc\\StudioProjects\\teacher\\app\\src\\main\\res\\values-2560x1600\\dimens.xml",
                     "from": {
                         "startLines": "3,4,16,5,6,7,8,9,10,11,12,13,14,15",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -89,10 +89,10 @@
             ]
         },
         {
-            "outputFile": "/Users/admin/StudioProjects/teacher/C:\\Users\\jc\\StudioProjects\\teacher\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-2560x1600\\values-2560x1600.xml",
+            "outputFile": "/Users/admin/StudioProjects/teacher/D:\\wsadt\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-2560x1600\\values-2560x1600.xml",
             "map": [
                 {
-                    "source": "/Users/admin/StudioProjects/teacher/C:\\Users\\jc\\StudioProjects\\teacher\\app\\src\\main\\res\\values-2560x1600\\dimens.xml",
+                    "source": "/Users/admin/StudioProjects/teacher/D:\\wsadt\\app\\src\\main\\res\\values-2560x1600\\dimens.xml",
                     "from": {
                         "startLines": "3,4,16,5,6,7,8,9,10,11,12,13,14,15",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",

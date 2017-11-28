@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Fri Nov 24 16:07:40 CST 2017
+#Tue Nov 28 11:21:43 CST 2017
 0.baseType=DIRECTORY
 0.base=D\:\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\19
 0.path=classes.dex
