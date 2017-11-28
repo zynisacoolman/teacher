@@ -44,6 +44,10 @@
         "source": "D:\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\src\\main\\res\\drawable\\s_close.xml"
     },
     {
+        "merged": "D:\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_contenttype.xml.flat",
+        "source": "D:\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\src\\main\\res\\layout\\activity_contenttype.xml"
+    },
+    {
         "merged": "D:\\jc2100\\code\\version1.0\\androidcode\\hulisiweiZYNAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable_green_thumb.xml.flat",
         "source": "D:\\jc2100\\code\\version1.0\\androidcode\\hulisiweiZYNAS\\app\\src\\main\\res\\drawable\\green_thumb.xml"
     },
@@ -194,6 +198,10 @@
     {
         "merged": "D:\\jc2100\\code\\version1.0\\androidcode\\hulisiweiZYNAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_dl_bg.png.flat",
         "source": "D:\\jc2100\\code\\version1.0\\androidcode\\hulisiweiZYNAS\\app\\src\\main\\res\\drawable-mdpi\\dl_bg.png"
+    },
+    {
+        "merged": "D:\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bg_edittext_normal.xml.flat",
+        "source": "D:\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\src\\main\\res\\drawable\\bg_edittext_normal.xml"
     },
     {
         "merged": "D:\\jc2100\\code\\version1.0\\androidcode\\hulisiweiZYNAS\\app\\build\\intermediates\\res\\merged\\debug\\layout_list_item_printernameandmac.xml.flat",
@@ -420,6 +428,10 @@
         "source": "D:\\jc2100\\code\\version1.0\\androidcode\\hulisiweiZYNAS\\app\\src\\main\\res\\drawable\\s_ssjg_bg.xml"
     },
     {
+        "merged": "D:\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_setting.xml.flat",
+        "source": "D:\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\src\\main\\res\\layout\\activity_setting.xml"
+    },
+    {
         "merged": "C:\\Users\\jc\\StudioProjects\\teacher\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\jc\\StudioProjects\\teacher\\app\\src\\main\\res\\drawable-xxhdpi\\ic_launcher.png"
     },
@@ -636,6 +648,10 @@
         "source": "D:\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\src\\main\\res\\layout\\fragment_blxq.xml"
     },
     {
+        "merged": "D:\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_connectip2.xml.flat",
+        "source": "D:\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\src\\main\\res\\layout\\activity_connectip2.xml"
+    },
+    {
         "merged": "D:\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_sz_an_n.png.flat",
         "source": "D:\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\src\\main\\res\\drawable-mdpi\\sz_an_n.png"
     },
@@ -834,6 +850,10 @@
     {
         "merged": "C:\\Users\\jc\\StudioProjects\\teacher\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_loading_white_05.png.flat",
         "source": "C:\\Users\\jc\\StudioProjects\\teacher\\app\\src\\main\\res\\drawable-mdpi\\ic_loading_white_05.png"
+    },
+    {
+        "merged": "D:\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_about.xml.flat",
+        "source": "D:\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\src\\main\\res\\layout\\activity_about.xml"
     },
     {
         "merged": "C:\\Users\\jc\\StudioProjects\\teacher\\app\\build\\intermediates\\res\\merged\\debug\\drawable_progress_xunlian.xml.flat",
@@ -1280,6 +1300,10 @@
         "source": "D:\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\src\\main\\res\\drawable-mdpi\\ljypdlysb_bg.png"
     },
     {
+        "merged": "D:\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_sz.png.flat",
+        "source": "D:\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\src\\main\\res\\drawable-mdpi\\sz.png"
+    },
+    {
         "merged": "C:\\Users\\jc\\StudioProjects\\teacher\\app\\build\\intermediates\\res\\merged\\debug\\color_s_btncolor.xml.flat",
         "source": "C:\\Users\\jc\\StudioProjects\\teacher\\app\\src\\main\\res\\color\\s_btncolor.xml"
     },
@@ -1308,6 +1332,10 @@
         "source": "C:\\Users\\jc\\StudioProjects\\teacher\\app\\src\\main\\res\\drawable\\shape_biankuang.xml"
     },
     {
+        "merged": "D:\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_bluetooh.xml.flat",
+        "source": "D:\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\src\\main\\res\\layout\\activity_bluetooh.xml"
+    },
+    {
         "merged": "D:\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable_s_banner_btnsz.xml.flat",
         "source": "D:\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\src\\main\\res\\drawable\\s_banner_btnsz.xml"
     },
@@ -1318,6 +1346,10 @@
     {
         "merged": "D:\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable_shape_divider.xml.flat",
         "source": "D:\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\src\\main\\res\\drawable\\shape_divider.xml"
+    },
+    {
+        "merged": "D:\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_connectbtpaired2.xml.flat",
+        "source": "D:\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\src\\main\\res\\layout\\activity_connectbtpaired2.xml"
     },
     {
         "merged": "D:\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_btn_lj_p.png.flat",

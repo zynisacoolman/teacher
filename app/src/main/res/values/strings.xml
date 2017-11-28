@@ -51,5 +51,46 @@
     <string name="text_xm">姓名：王小二</string>
     <string name="str_blzg">病例转归</string>
     <string name="str_xunlian">训练</string>
+    <!--主页-->
+    <string name="nurse_name">护士姓名：</string>
+    <string name="sick_messge">核对病人信息</string>
+    <string name="drug_messge">核对药物信息</string>
+    <string name="name">姓名：</string>
+    <string name="sex">性别：</string>
+    <string name="age">年龄：</string>
+    <string name="hospitalNumber">住院号：</string>
+    <string name="bedNumber">床号：</string>
+    <string name="office">科室：</string>
+    <string name="allergies">过敏史：</string>
+    <string name="diagnose">诊断：</string>
+    <string name="yesconnect">已连接</string>
+    <string name="injectionlist_text">注射单</string>
+    <string name="curelist_text">治疗单</string>
+    <string name="takemedicinelist_text">服药单</string>
+    <string name="transfusionlist_text">输液单</string>
+    <string name="medicalordersexecutive_text">医嘱执行单</string>
+    <string name="bloodrecordlist_text">输血观察记录单</string>
+    <string name="transfusionrecord_text">输液记录单</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="about">关于</string>
+
+
+    <!--注射单-->
+    <string name="injection_toast">此页已满</string>
+
+
+    <!-- DeviceListActivity -->
+
+    <!-- shezhi.xml -->
+    <string name="set_connent">设置>设置连接方式</string>
+    <string name="set_bluetooth">设置>设置连接方式>搜索并连接蓝牙设备</string>
+    <string name="set_alredy_bluetooth">设置>设置连接方式>连接已配对蓝牙设备</string>
+    <string name="set_network">设置>设置连接方式>连接网络设备</string>
+    <string name="set_about">设置>关于</string>
+
+
+    <!-- 设置 -->
+
 
 </resources>
