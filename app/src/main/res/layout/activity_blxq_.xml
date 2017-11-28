@@ -376,7 +376,6 @@
             <cn.jucheng.www.hulisiwei.customcontrols.FitHeightEditText
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:singleline="true"
                 android:layout_weight="879"/>
             <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
                 android:gravity="center"
