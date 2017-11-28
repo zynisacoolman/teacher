@@ -33,23 +33,26 @@ public final class R {
     public static final int baise=0x7f020000;
     public static final int banner_bg_color=0x7f020001;
     public static final int banner_txt_color=0x7f020002;
-    public static final int bg_txt_color=0x7f020003;
-    public static final int bg_txtbtn_cut=0x7f020004;
-    public static final int bg_txtbtn_go=0x7f020005;
-    public static final int bg_white=0x7f020006;
-    public static final int btnLogin_text=0x7f020007;
-    public static final int btnSheZhi=0x7f020008;
-    public static final int btn_text=0x7f020009;
-    public static final int denglu=0x7f02000a;
-    public static final int heise=0x7f02000b;
-    public static final int red=0x7f02000c;
-    public static final int s_btncolor=0x7f02000d;
-    public static final int s_btncolor2=0x7f02000e;
-    public static final int touming=0x7f02000f;
-    public static final int tvJiaoXue_neirong=0x7f020010;
-    public static final int tvSheZhi_lan=0x7f020011;
-    public static final int version=0x7f020012;
-    public static final int vfrontc=0x7f020013;
+    public static final int bg_bgcolor1=0x7f020003;
+    public static final int bg_bgcolor2=0x7f020004;
+    public static final int bg_txt_color=0x7f020005;
+    public static final int bg_txtbtn_cut=0x7f020006;
+    public static final int bg_txtbtn_go=0x7f020007;
+    public static final int bg_white=0x7f020008;
+    public static final int btnLogin_text=0x7f020009;
+    public static final int btnSheZhi=0x7f02000a;
+    public static final int btn_text=0x7f02000b;
+    public static final int denglu=0x7f02000c;
+    public static final int divid_line=0x7f02000d;
+    public static final int heise=0x7f02000e;
+    public static final int red=0x7f02000f;
+    public static final int s_btncolor=0x7f020010;
+    public static final int s_btncolor2=0x7f020011;
+    public static final int touming=0x7f020012;
+    public static final int tvJiaoXue_neirong=0x7f020013;
+    public static final int tvSheZhi_lan=0x7f020014;
+    public static final int version=0x7f020015;
+    public static final int vfrontc=0x7f020016;
   }
   public static final class dimen {
     public static final int divider_height=0x7f030000;
@@ -206,29 +209,27 @@ public final class R {
     public static final int touming=0x7f050037;
     public static final int tvListItemPrinterName=0x7f050038;
     public static final int tvSavedDeviceAddress=0x7f050039;
-    public static final int txt1=0x7f05003a;
-    public static final int txt2=0x7f05003b;
-    public static final int txt3=0x7f05003c;
-    public static final int txt4=0x7f05003d;
-    public static final int txt5=0x7f05003e;
-    public static final int txt6=0x7f05003f;
-    public static final int txtVersion=0x7f050040;
+    public static final int txt5=0x7f05003a;
+    public static final int txt6=0x7f05003b;
+    public static final int txtVersion=0x7f05003c;
   }
   public static final class layout {
     public static final int activity_banner_=0x7f060000;
     public static final int activity_blcpy_=0x7f060001;
-    public static final int activity_connectbtpaired=0x7f060002;
-    public static final int activity_connectip=0x7f060003;
-    public static final int activity_login=0x7f060004;
-    public static final int activity_main=0x7f060005;
-    public static final int activity_main_=0x7f060006;
-    public static final int activity_searchbt=0x7f060007;
-    public static final int activity_settings=0x7f060008;
-    public static final int activity_shezhi=0x7f060009;
-    public static final int dialog=0x7f06000a;
-    public static final int dialog2=0x7f06000b;
-    public static final int list_item_bdevice_name=0x7f06000c;
-    public static final int list_item_printernameandmac=0x7f06000d;
+    public static final int activity_bllb_=0x7f060002;
+    public static final int activity_connectbtpaired=0x7f060003;
+    public static final int activity_connectip=0x7f060004;
+    public static final int activity_login=0x7f060005;
+    public static final int activity_main=0x7f060006;
+    public static final int activity_main_=0x7f060007;
+    public static final int activity_searchbt=0x7f060008;
+    public static final int activity_settings=0x7f060009;
+    public static final int activity_shezhi=0x7f06000a;
+    public static final int dialog=0x7f06000b;
+    public static final int dialog2=0x7f06000c;
+    public static final int fragment_blxq=0x7f06000d;
+    public static final int list_item_bdevice_name=0x7f06000e;
+    public static final int list_item_printernameandmac=0x7f06000f;
   }
   public static final class string {
     public static final int _chkLanYa=0x7f070000;
@@ -262,13 +263,16 @@ public final class R {
     public static final int scanning=0x7f07001c;
     public static final int search=0x7f07001d;
     public static final int select_device=0x7f07001e;
-    public static final int title_other_devices=0x7f07001f;
-    public static final int title_paired_devices=0x7f070020;
-    public static final int tvDeviceText=0x7f070021;
-    public static final int tvLanYaZhuangTaiText=0x7f070022;
-    public static final int tvSavedDeviceAddressText=0x7f070023;
-    public static final int tvSavedDeviceAddressText1=0x7f070024;
-    public static final int txtLanYaZhuangTaiText=0x7f070025;
+    public static final int str_bllb=0x7f07001f;
+    public static final int text_xm=0x7f070020;
+    public static final int title_other_devices=0x7f070021;
+    public static final int title_paired_devices=0x7f070022;
+    public static final int tvDeviceText=0x7f070023;
+    public static final int tvLanYaZhuangTaiText=0x7f070024;
+    public static final int tvSavedDeviceAddressText=0x7f070025;
+    public static final int tvSavedDeviceAddressText1=0x7f070026;
+    public static final int txtLanYaZhuangTaiText=0x7f070027;
+    public static final int v1_1_0=0x7f070028;
   }
   public static final class style {
     public static final int AppBaseTheme=0x7f080000;

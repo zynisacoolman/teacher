@@ -9,6 +9,10 @@
     <color name="bg_txt_color">#377ecf</color>
     <color name="bg_txtbtn_go">#f2984c</color>
     <color name="bg_txtbtn_cut">#377ecf</color>
+    <color name="bg_bgcolor1">#e4f0f9</color>
+    <color name="bg_bgcolor2">#f4fbfe</color>
+    <color name="divid_line">#93bee6</color>
+
     <color name="banner_bg_color">#bdd8f4</color>
     <color name="banner_txt_color">#386eb6</color>
     <color name="version">#324658</color>
