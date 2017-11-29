@@ -11,6 +11,7 @@ import java.util.ArrayList;
 
 import butterknife.BindView;
 import cn.jucheng.jclibs.tools.MyToast;
+import cn.jucheng.www.hulisiwei.adapter.explistBLLBAdapter;
 
 import static cn.jucheng.jclibs.tools.MyLog.init;
 
@@ -27,8 +28,12 @@ public class BllbActivity extends MyBaseActivity implements View.OnClickListener
             "hulisiwei"+File.separator+
             "case"+File.separator+
             "automode";
-    ArrayList filename;
-    String[] firstCFilename;
+    String[][] strson={{"唐三藏", "孙悟空", "猪八戒", "沙和尚"},
+                    {"宋江", "林冲", "李逵", "鲁智深"},
+                    {"曹操", "刘备", "孙权", "诸葛亮", "周瑜"},
+                    {"贾宝玉", "林黛玉", "薛宝钗", "王熙凤"}};
+
+    String[] strfa={"西游记", "水浒传", "三国演义", "红楼梦"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,12 +63,14 @@ public class BllbActivity extends MyBaseActivity implements View.OnClickListener
             for(int s=0;s<fName.length;s++){
                 File file2=new File(filepath+File.separator+fName[s]);
                 ffName[s] =file2.list();
+                strfa=fName;
+                strson=ffName;
             }
         }
     }
 
     private void viewInit() {
-
+        expandableListView.setAdapter(new explistBLLBAdapter(this,strfa,strson));
     }
 
     @Override

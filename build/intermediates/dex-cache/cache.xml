@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/admin/work/code/version1.0/AndroidCode/hulisiweiZYNAS/app/libs/iText-2.0.8.jar"
+        jumboMode="false"
+        min-sdk-version="14"
+        optimize="true"
+        revision="27.0.1"
+        sha1="3734dd08e513c321d2121f2b3a7498300c596fe3">
+        <dex dex="/Users/admin/work/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/transforms/preDex/release/2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/work/code/version1.0/AndroidCode/hulisiweiZYNAS/app/libs/jclibs.jar"
+        jumboMode="false"
+        min-sdk-version="14"
+        optimize="true"
+        revision="27.0.1"
+        sha1="54d92a7e4bf17622d4b7fe38a1ff20bf5ec1bbc6">
+        <dex dex="/Users/admin/work/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/transforms/preDex/release/3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/work/code/version1.0/AndroidCode/hulisiweiZYNAS/app/libs/CH34xUARTDriver.jar"
+        jumboMode="false"
+        min-sdk-version="14"
+        optimize="true"
+        revision="27.0.1"
+        sha1="63caf7b5df37037a568ce80c3d03a5b4fb22ccf9">
+        <dex dex="/Users/admin/work/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/transforms/preDex/release/1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.0.0/support-annotations-24.0.0.jar"
+        jumboMode="false"
+        min-sdk-version="14"
+        optimize="true"
+        revision="27.0.1"
+        sha1="2943c74db6d4346ab8c6531adac91fa05c137c40">
+        <dex dex="/Users/admin/work/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/transforms/preDex/release/7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/Library/Android/sdk/extras/android/m2repository/com/android/support/support-v4/19.1.0/support-v4-19.1.0.jar"
+        jumboMode="false"
+        min-sdk-version="14"
+        optimize="true"
+        revision="27.0.1"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="/Users/admin/work/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/transforms/preDex/release/4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife-annotations/8.2.1/d6f54d76edfbe779a50a8636b10fd3f555d8f780/butterknife-annotations-8.2.1.jar"
+        jumboMode="false"
+        min-sdk-version="14"
+        optimize="true"
+        revision="27.0.1"
+        sha1="d6f54d76edfbe779a50a8636b10fd3f555d8f780">
+        <dex dex="/Users/admin/work/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/transforms/preDex/release/6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/admin/.gradle/caches/transforms-1/files-1.1/butterknife-8.2.1.aar/99d2790eed00b4b2f9cd2eb9e67d860e/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="14"
+        optimize="true"
+        revision="27.0.1"
+        sha1="ca5e58104f56f918f0fb3a5b1b371ab599ae56b2">
+        <dex dex="/Users/admin/work/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/transforms/preDex/release/5.jar" />
+    </item>
+
+</items>
