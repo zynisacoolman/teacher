@@ -152,7 +152,7 @@ public class explistBLLBAdapter extends BaseExpandableListAdapter {
         @Override
         public void onClick(View v) {
             selectedItem = new int[]{groupPosition, childPosition}; //将被选中的条目记录到adapter中
-            notifyDataSetChanged();  //刷新显示
+            notifyDataSetChanged();  //刷新adapter 内部变量，从而使界面改变
         }
     }
 }
