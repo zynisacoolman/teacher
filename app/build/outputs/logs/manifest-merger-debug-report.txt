@@ -4,7 +4,9 @@ ADDED from /Users/admin/work/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/
 INJECTED from /Users/admin/work/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/AndroidManifest.xml:2:1-107:12
 INJECTED from /Users/admin/work/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/AndroidManifest.xml:2:1-107:12
 INJECTED from /Users/admin/work/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/AndroidManifest.xml:2:1-107:12
-MERGED from [com.jakewharton:butterknife:8.2.1] /Users/admin/.gradle/caches/transforms-1/files-1.1/butterknife-8.2.1.aar/99d2790eed00b4b2f9cd2eb9e67d860e/AndroidManifest.xml:2:1-7:12
+MERGED from [com.android.support:multidex:1.0.2] /Users/admin/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/bcf5ac465da0ac528cc6e6727c7d26fa/AndroidManifest.xml:17:1-22:12
+MERGED from [com.jakewharton:butterknife:8.8.1] /Users/admin/.gradle/caches/transforms-1/files-1.1/butterknife-8.8.1.aar/b21613b7bf8a74037e67db3b3c080acb/AndroidManifest.xml:2:1-7:12
+MERGED from [com.android.support:support-compat:25.3.0] /Users/admin/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.0.aar/f007dd3b4de4439a05abf1f0d64ce25d/AndroidManifest.xml:17:1-31:12
 INJECTED from /Users/admin/work/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/AndroidManifest.xml:2:1-107:12
 INJECTED from /Users/admin/work/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/AndroidManifest.xml:2:1-107:12
 INJECTED from /Users/admin/work/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/AndroidManifest.xml:2:1-107:12
@@ -30,10 +32,16 @@ uses-sdk
 ADDED from /Users/admin/work/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/AndroidManifest.xml:9:5-11:41
 INJECTED from /Users/admin/work/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/AndroidManifest.xml:9:5-11:41
 INJECTED from /Users/admin/work/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/AndroidManifest.xml:9:5-11:41
-MERGED from [com.jakewharton:butterknife:8.2.1] /Users/admin/.gradle/caches/transforms-1/files-1.1/butterknife-8.2.1.aar/99d2790eed00b4b2f9cd2eb9e67d860e/AndroidManifest.xml:5:5-43
-MERGED from [com.jakewharton:butterknife:8.2.1] /Users/admin/.gradle/caches/transforms-1/files-1.1/butterknife-8.2.1.aar/99d2790eed00b4b2f9cd2eb9e67d860e/AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:multidex:1.0.2] /Users/admin/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/bcf5ac465da0ac528cc6e6727c7d26fa/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:multidex:1.0.2] /Users/admin/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/bcf5ac465da0ac528cc6e6727c7d26fa/AndroidManifest.xml:20:5-43
+MERGED from [com.jakewharton:butterknife:8.8.1] /Users/admin/.gradle/caches/transforms-1/files-1.1/butterknife-8.8.1.aar/b21613b7bf8a74037e67db3b3c080acb/AndroidManifest.xml:5:5-43
+MERGED from [com.jakewharton:butterknife:8.8.1] /Users/admin/.gradle/caches/transforms-1/files-1.1/butterknife-8.8.1.aar/b21613b7bf8a74037e67db3b3c080acb/AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-compat:25.3.0] /Users/admin/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.0.aar/f007dd3b4de4439a05abf1f0d64ce25d/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.3.0] /Users/admin/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.0.aar/f007dd3b4de4439a05abf1f0d64ce25d/AndroidManifest.xml:21:5-23:58
 INJECTED from /Users/admin/work/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/AndroidManifest.xml:9:5-11:41
 INJECTED from /Users/admin/work/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/AndroidManifest.xml:9:5-11:41
+	tools:overrideLibrary
+		ADDED from [com.android.support:support-compat:25.3.0] /Users/admin/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.0.aar/f007dd3b4de4439a05abf1f0d64ce25d/AndroidManifest.xml:23:9-55
 	android:targetSdkVersion
 		ADDED from /Users/admin/work/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/AndroidManifest.xml:11:9-38
 		INJECTED from /Users/admin/work/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/AndroidManifest.xml
@@ -86,6 +94,8 @@ ADDED from /Users/admin/work/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/
 		ADDED from /Users/admin/work/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/AndroidManifest.xml:24:9-49
 application
 ADDED from /Users/admin/work/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/AndroidManifest.xml:27:5-105:19
+MERGED from [com.android.support:support-compat:25.3.0] /Users/admin/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.0.aar/f007dd3b4de4439a05abf1f0d64ce25d/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.0] /Users/admin/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.0.aar/f007dd3b4de4439a05abf1f0d64ce25d/AndroidManifest.xml:29:5-20
 	android:screenOrientation
 		ADDED from /Users/admin/work/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/AndroidManifest.xml:32:9-46
 	android:label
@@ -210,3 +220,9 @@ ADDED from /Users/admin/work/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/
 		ADDED from /Users/admin/work/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/AndroidManifest.xml:103:17-54
 	android:name
 		ADDED from /Users/admin/work/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/AndroidManifest.xml:102:17-79
+meta-data#android.support.VERSION
+ADDED from [com.android.support:support-compat:25.3.0] /Users/admin/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.0.aar/f007dd3b4de4439a05abf1f0d64ce25d/AndroidManifest.xml:25:5-27:34
+	android:value
+		ADDED from [com.android.support:support-compat:25.3.0] /Users/admin/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.0.aar/f007dd3b4de4439a05abf1f0d64ce25d/AndroidManifest.xml:27:9-31
+	android:name
+		ADDED from [com.android.support:support-compat:25.3.0] /Users/admin/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.0.aar/f007dd3b4de4439a05abf1f0d64ce25d/AndroidManifest.xml:26:9-47

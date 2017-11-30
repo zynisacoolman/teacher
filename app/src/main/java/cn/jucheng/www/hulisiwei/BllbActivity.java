@@ -3,10 +3,12 @@ package cn.jucheng.www.hulisiwei;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.Message;
+import android.util.Log;
 import android.view.View;
 import android.widget.ExpandableListView;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 
 import butterknife.BindView;
@@ -27,11 +29,11 @@ public class BllbActivity extends MyBaseActivity implements View.OnClickListener
             "jucheng" + File.separator +
             "hulisiwei"+File.separator+
             "case"+File.separator+
-            "automode";
+            "automode"+File.separator;
     String[][] strson={{"唐三藏", "孙悟空", "猪八戒", "沙和尚"},
                     {"宋江", "林冲", "李逵", "鲁智深"},
                     {"曹操", "刘备", "孙权", "诸葛亮", "周瑜"},
-                    {"贾宝玉", "林黛玉", "薛宝钗", "王熙凤"}};
+                    {"贾宝玉", "林黛玉", "薛宝钗"}};
 
     String[] strfa={"西游记", "水浒传", "三国演义", "红楼梦"};
     @Override
@@ -41,7 +43,8 @@ public class BllbActivity extends MyBaseActivity implements View.OnClickListener
         if(Environment.getExternalStorageState().
                 equals(Environment.MEDIA_MOUNTED)){
             //判断是否存在病例目录
-            if(new File(BLPath).exists()){
+            File file =new File(BLPath);
+            if(file.exists()){
                 //调用jclib中的init生成log目录
                 init();
                 //获取文件名数组
@@ -49,11 +52,17 @@ public class BllbActivity extends MyBaseActivity implements View.OnClickListener
                 //初始化控件
                 viewInit();
             }else{
-                MyToast.showTestToast(this,"没有病例！");
-                onExit();
+                try {
+                    file.createNewFile();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+                viewInit();
+//                MyToast.showTestToast(this,"没有病例！");
+//                onExit();
             }
         }
-    }
 
     private void getDate(String filepath) {
         File file =new File(filepath);
@@ -70,7 +79,24 @@ public class BllbActivity extends MyBaseActivity implements View.OnClickListener
     }
 
     private void viewInit() {
+        //设置二级列表
         expandableListView.setAdapter(new explistBLLBAdapter(this,strfa,strson));
+        //去掉箭头
+        expandableListView.setGroupIndicator(null);
+        expandableListView.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
+            @Override
+            public boolean onChildClick(ExpandableListView parent, View v, int groupPosition, int childPosition, long id) {
+                v.setBackgroundResource(R.drawable.bllb_xz_bg);
+                Log.d("11",""+v.getId()+"被选中");
+                return false;
+            }
+        });
+        expandableListView.setOnGroupClickListener(new ExpandableListView.OnGroupClickListener() {
+            @Override
+            public boolean onGroupClick(ExpandableListView parent, View v, int groupPosition, long id) {
+                return false;
+            }
+        });
     }
 
     @Override

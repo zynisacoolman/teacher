@@ -66,7 +66,8 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"/>
+        android:layout_weight="1"
+        android:background="@color/divid_color"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -95,28 +96,33 @@
             android:layout_weight="164"
             android:background="@color/bg_bgcolor1" />
 
-
-
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/divid_color"/>
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1001"
+            android:layout_weight="1000"
             android:orientation="horizontal">
+
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="15"
                 android:background="@color/bg_bgcolor2" />
+
             <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="986"
+                android:layout_weight="985"
+                android:background="@color/bg_bgcolor2"
                 android:fontFamily="@font/msyh"
                 android:gravity="center_vertical"
-                android:background="@color/bg_bgcolor2"
                 android:text="病例详情"
-                android:textSize="@dimen/text_size16"
-                android:textColor="@color/banner_txt_color"/>
+                android:textColor="@color/banner_txt_color"
+                android:textSize="@dimen/text_size16" />
         </LinearLayout>
     </LinearLayout>
 
@@ -129,6 +135,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="279"
+            android:divider="@null"
             android:background="@color/bg_bgcolor2"/>
         <TextView
             android:layout_width="0dp"

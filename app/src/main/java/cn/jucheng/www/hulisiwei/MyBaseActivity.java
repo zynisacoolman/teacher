@@ -1,9 +1,5 @@
 package cn.jucheng.www.hulisiwei;
 
-import java.lang.ref.WeakReference;
-import java.util.Timer;
-import java.util.TimerTask;
-
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -20,6 +16,12 @@ import android.os.PowerManager;
 import android.os.PowerManager.WakeLock;
 import android.view.KeyEvent;
 import android.view.View;
+
+import java.lang.ref.WeakReference;
+import java.util.Timer;
+import java.util.TimerTask;
+
+import butterknife.ButterKnife;
 import cn.jucheng.callback.RecvCallBack;
 import cn.jucheng.jclibs.socket.MyGlobal;
 import cn.jucheng.jclibs.socket.WorkService;
@@ -31,7 +33,6 @@ import cn.jucheng.www.hulisiwei.global.AppManager;
 import cn.jucheng.www.hulisiwei.widget.MyGlobal1;
 import cn.jucheng.www.hulisiwei.widget.MyMessage;
 import cn.jucheng.www.hulisiwei.widget.MyShareUtils;
-
 /** 封装Activity 基类 所有继承BaseActivity基类; Activity创建时将MyApplication 加入指针方便 销毁退出 */
 public abstract class MyBaseActivity extends Activity {
 	private static final String TAG = "BaseActivity";
@@ -83,12 +84,19 @@ public abstract class MyBaseActivity extends Activity {
 			WorkService.SetOnRecvCallBack(callback);
 		}
 		super.onCreate(savedInstanceState);
+
 		MyLog.d(this.getClass().getSimpleName().toString(), "--onCreate()");
 		// 在当前的activity中注册广播
 		IntentFilter filter = new IntentFilter();
 		filter.addAction(Intent.ACTION_CLOSE_SYSTEM_DIALOGS);
 		this.registerReceiver(this.broadcastReceiver, filter);
 		changLiang();
+
+	}
+	@Override
+	public void setContentView(int id){
+		super.setContentView(id);
+		ButterKnife.bind(this);
 	}
 
 	// /** 模拟人复位是否成功false-未收到应答，true-复位成功已应答 */

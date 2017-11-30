@@ -1,0 +1,50 @@
+-injars /Users/admin/work/code/version1.0/AndroidCode/hulisiweiZYNAS/app/libs/CH34xUARTDriver.jar(**.class)
+-injars /Users/admin/work/code/version1.0/AndroidCode/hulisiweiZYNAS/app/libs/iText-2.0.8.jar(**.class)
+-injars /Users/admin/work/code/version1.0/AndroidCode/hulisiweiZYNAS/app/libs/jclibs.jar(**.class)
+-injars /Users/admin/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/bcf5ac465da0ac528cc6e6727c7d26fa/jars/classes.jar(**.class)
+-injars /Users/admin/.gradle/caches/transforms-1/files-1.1/butterknife-8.8.1.aar/b21613b7bf8a74037e67db3b3c080acb/jars/classes.jar(**.class)
+-injars /Users/admin/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife-annotations/8.8.1/bc373fb6bc7bca3035041b924f158fd2b946ee8d/butterknife-annotations-8.8.1.jar(**.class)
+-injars /Users/admin/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.0.aar/f007dd3b4de4439a05abf1f0d64ce25d/jars/classes.jar(**.class)
+-injars /Users/admin/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.0/support-annotations-25.3.0.jar(**.class)
+-injars /Users/admin/work/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/classes/debug(**.class)
+-outjars /Users/admin/work/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/multi-dex/debug/componentClasses.jar
+
+-libraryjars /Users/admin/Library/Android/sdk/build-tools/27.0.1/lib/shrinkedAndroid.jar
+
+-forceprocessing
+-dontoptimize
+-dontobfuscate
+-dontusemixedcaseclassnames
+-dontpreverify
+-dontnote **
+-dontwarn **
+-printconfiguration /Users/admin/work/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/multi-dex/debug/components.flags
+
+
+# Referenced at /Users/admin/work/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:31
+-keep class android.support.multidex.MultiDexApplication {
+    <init>(...);
+}
+
+-keep public class * extends android.app.Instrumentation {
+    <init>();
+}
+
+-keep public class * extends android.app.Application {
+    <init>();
+    void attachBaseContext(android.content.Context);
+}
+
+-keep public class * extends android.app.backup.BackupAgent {
+    <init>();
+}
+
+-keep public class * extends java.lang.annotation.Annotation {
+    <fields>;
+    <methods>;
+}
+
+-keep class com.android.tools.ir.** {
+    <fields>;
+    <methods>;
+}

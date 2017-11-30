@@ -1,4 +1,0 @@
-#Wed Nov 29 16:14:22 CST 2017
-base.0=/Users/admin/work/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/transforms/dex/release/0
-path.0=classes.dex
-renamed.0=classes.dex

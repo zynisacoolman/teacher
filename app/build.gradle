@@ -8,6 +8,7 @@ android {
         applicationId "cn.jucheng.www.hulisiwei"
         minSdkVersion 14
         targetSdkVersion 14
+        multiDexEnabled true
     }
 
     buildTypes {
@@ -23,10 +24,10 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:support-v4:19.1.0'
+    compile 'com.android.support:multidex:1.0.0'
     compile files('libs/CH34xUARTDriver.jar')
     compile files('libs/iText-2.0.8.jar')
     compile files('libs/jclibs.jar')
-    compile 'com.jakewharton:butterknife:8.2.1'
-    annotationProcessor 'com.jakewharton:butterknife-compiler:8.2.1'
+    compile 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
 }

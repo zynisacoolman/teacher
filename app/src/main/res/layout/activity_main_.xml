@@ -24,6 +24,7 @@
             android:layout_height="fill_parent"
             android:layout_width="0dp"
             android:textSize="@dimen/text_size18"
+            android:id="@+id/txtVersion"
             android:textColor="@color/vfrontc"
             android:fontFamily="@font/msyh"
             android:gravity="right"
