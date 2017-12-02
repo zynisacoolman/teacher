@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\wsadt\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/D:\\wsadt\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
-                    "source": "D:\\wsadt\\app\\src\\main\\res\\values\\attrs.xml",
+                    "source": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/D:\\wsadt\\app\\src\\main\\res\\values\\attrs.xml",
                     "from": {
                         "startLines": "-1",
                         "startColumns": "-1",
@@ -19,7 +19,7 @@
                     }
                 },
                 {
-                    "source": "D:\\wsadt\\app\\src\\main\\res\\values\\styles.xml",
+                    "source": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/D:\\wsadt\\app\\src\\main\\res\\values\\styles.xml",
                     "from": {
                         "startLines": "-1,-1,-1",
                         "startColumns": "-1,-1,-1",
@@ -35,7 +35,7 @@
                     }
                 },
                 {
-                    "source": "D:\\wsadt\\app\\src\\main\\res\\values\\strings.xml",
+                    "source": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/D:\\wsadt\\app\\src\\main\\res\\values\\strings.xml",
                     "from": {
                         "startLines": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
                         "startColumns": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
@@ -50,7 +50,7 @@
                     }
                 },
                 {
-                    "source": "D:\\wsadt\\app\\src\\main\\res\\values\\dimens.xml",
+                    "source": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/D:\\wsadt\\app\\src\\main\\res\\values\\dimens.xml",
                     "from": {
                         "startLines": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
                         "startColumns": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
@@ -65,7 +65,7 @@
                     }
                 },
                 {
-                    "source": "D:\\wsadt\\app\\src\\main\\res\\values\\color.xml",
+                    "source": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/D:\\wsadt\\app\\src\\main\\res\\values\\color.xml",
                     "from": {
                         "startLines": "-1,11,12,-1,10,9,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
                         "startColumns": "-1,4,4,-1,4,4,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
@@ -79,6 +79,98 @@
                         "startOffsets": "116,156,206,257,304,352,399,442,490,534,577,618,658,696,740,792,839,881",
                         "endColumns": "39,49,50,46,47,46,42,47,43,42,40,39,37,43,51,46,41,41",
                         "endOffsets": "151,201,252,299,347,394,437,485,529,572,613,653,691,735,787,834,876,918"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "map": [
+                {
+                    "source": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/res/values/styles.xml",
+                    "from": {
+                        "startLines": "2,5,9",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "76,178,339",
+                        "endLines": "2,7,17",
+                        "endColumns": "68,12,12",
+                        "endOffsets": "140,333,822"
+                    },
+                    "to": {
+                        "startLines": "81,82,85",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "3912,3974,4134",
+                        "endLines": "81,84,93",
+                        "endColumns": "61,12,12",
+                        "endOffsets": "3969,4129,4617"
+                    }
+                },
+                {
+                    "source": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/res/values/color.xml",
+                    "from": {
+                        "startLines": "4,11,12,8,10,9,7,28,15,24,26,5,6,3,20,18,13,16",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "100,403,453,261,355,308,218,959,571,827,896,140,180,56,753,682,504,615",
+                        "endColumns": "39,49,50,46,47,46,42,47,43,42,40,39,37,43,51,46,41,41",
+                        "endOffsets": "135,448,499,303,398,350,256,1002,610,865,932,175,213,95,800,724,541,652"
+                    },
+                    "to": {
+                        "startLines": "3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "116,156,206,257,304,352,399,442,490,534,577,618,658,696,740,792,839,881",
+                        "endColumns": "39,49,50,46,47,46,42,47,43,42,40,39,37,43,51,46,41,41",
+                        "endOffsets": "151,201,252,299,347,394,437,485,529,572,613,653,691,735,787,834,876,918"
+                    }
+                },
+                {
+                    "source": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "23,25,24,44,37,40,41,39,38,4,3,45,46,47,42,22,26,19,18,17,13,35,32,31,33,10,9,34,7,36,8,12,11,16,30,20,21,27",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "916,1005,961,1855,1498,1682,1738,1623,1564,101,56,1896,1943,1996,1806,861,1049,699,656,601,482,1421,1291,1219,1349,330,281,1383,181,1460,230,429,375,552,1164,744,805,1093",
+                        "endColumns": "44,43,43,40,65,55,67,58,58,46,44,46,52,46,43,54,43,44,42,54,44,38,57,71,33,44,48,37,48,37,50,52,53,48,54,60,55,53",
+                        "endOffsets": "956,1044,1000,1891,1559,1733,1801,1677,1618,143,96,1938,1991,2038,1845,911,1088,739,694,651,522,1455,1344,1286,1378,370,325,1416,225,1493,276,477,424,596,1214,800,856,1142"
+                    },
+                    "to": {
+                        "startLines": "43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "2011,2056,2100,2144,2185,2251,2307,2375,2434,2493,2540,2585,2632,2685,2732,2776,2831,2875,2920,2963,3018,3063,3102,3160,3232,3266,3311,3360,3398,3441,3479,3530,3583,3637,3686,3741,3802,3858",
+                        "endColumns": "44,43,43,40,65,55,67,58,58,46,44,46,52,46,43,54,43,44,42,54,44,38,57,71,33,44,48,37,42,37,50,52,53,48,54,60,55,53",
+                        "endOffsets": "2051,2095,2139,2180,2246,2302,2370,2429,2488,2535,2580,2627,2680,2727,2771,2826,2870,2915,2958,3013,3058,3097,3155,3227,3261,3306,3355,3393,3436,3474,3525,3578,3632,3681,3736,3797,3853,3907"
+                    }
+                },
+                {
+                    "source": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/res/values/attrs.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "1",
+                        "startOffsets": "101",
+                        "endColumns": "58",
+                        "endOffsets": "158"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "60",
+                        "endOffsets": "111"
+                    }
+                },
+                {
+                    "source": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/res/values/dimens.xml",
+                    "from": {
+                        "startLines": "3,6,7,8,9,5,4,10,22,11,12,13,14,15,16,17,18,19,20,21",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "18,161,202,243,284,122,64,325,841,368,411,454,497,540,583,626,669,712,755,798",
+                        "endColumns": "45,40,40,40,40,38,57,42,44,42,42,42,42,42,42,42,42,42,42,42",
+                        "endOffsets": "59,197,238,279,320,156,117,363,881,406,449,492,535,578,621,664,707,750,793,836"
+                    },
+                    "to": {
+                        "startLines": "23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "1143,1189,1230,1271,1312,1353,1392,1450,1493,1538,1581,1624,1667,1710,1753,1796,1839,1882,1925,1968",
+                        "endColumns": "45,40,40,40,40,38,57,42,44,42,42,42,42,42,42,42,42,42,42,42",
+                        "endOffsets": "1184,1225,1266,1307,1348,1387,1445,1488,1533,1576,1619,1662,1705,1748,1791,1834,1877,1920,1963,2006"
                     }
                 }
             ]
