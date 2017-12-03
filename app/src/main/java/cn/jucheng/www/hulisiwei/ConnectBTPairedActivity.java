@@ -42,7 +42,7 @@ public class ConnectBTPairedActivity extends MyBaseActivity implements
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
-		setContentView(R.layout.activity_connectbtpaired);
+		setContentView(R.layout.activity_connectbtpaired2);
 
 		dialog = new ProgressDialog(this);
 		boundedPrinters = getBoundedPrinters();

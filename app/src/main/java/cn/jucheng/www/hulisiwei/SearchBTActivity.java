@@ -2,6 +2,7 @@ package cn.jucheng.www.hulisiwei;
 
 import java.lang.ref.WeakReference;
 
+import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
@@ -100,6 +101,7 @@ public class SearchBTActivity extends MyBaseActivity implements OnClickListener 
 	private void initBroadcast() {
 		broadcastReceiver = new BroadcastReceiver() {
 
+			@SuppressLint("ResourceType")
 			@Override
 			public void onReceive(Context context, Intent intent) {
 				// TODO Auto-generated method stub

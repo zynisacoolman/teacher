@@ -1,7 +1,11 @@
 #Internal package file, do not edit.
-#Wed Nov 22 11:49:24 CST 2017
+#Sun Dec 03 01:03:19 CST 2017
+1.base=/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/transforms/dexMerger/debug/0
 0.baseType=DIRECTORY
-0.base=D\:\\wsadt\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\19
-0.path=classes.dex
+1.baseType=DIRECTORY
+count=2
+1.set=DEX
+0.path=classes2.dex
 0.set=DEX
-count=1
+0.base=/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/transforms/dexMerger/debug/0
+1.path=classes.dex

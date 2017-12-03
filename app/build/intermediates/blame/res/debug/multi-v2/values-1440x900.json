@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/D:\\wsadt\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-1440x900\\values-1440x900.xml",
+            "outputFile": "/Users/admin/work/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-1440x900/values-1440x900.xml",
             "map": [
                 {
-                    "source": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/D:\\wsadt\\app\\src\\main\\res\\values-1440x900\\dimens.xml",
+                    "source": "/Users/admin/work/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/res/values-1440x900/dimens.xml",
                     "from": {
                         "startLines": "4,16,5,6,7,8,9,10,11,12,13,14,15",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -30,9 +30,9 @@
                     "from": {
                         "startLines": "4,16,5,6,7,8,9,10,11,12,13,14,15",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "74,590,117,160,203,246,289,332,375,418,461,504,547",
+                        "startOffsets": "78,606,122,166,210,254,298,342,386,430,474,518,562",
                         "endColumns": "42,44,42,42,42,42,42,42,42,42,42,42,42",
-                        "endOffsets": "112,630,155,198,241,284,327,370,413,456,499,542,585"
+                        "endOffsets": "116,646,160,204,248,292,336,380,424,468,512,556,600"
                     },
                     "to": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14",

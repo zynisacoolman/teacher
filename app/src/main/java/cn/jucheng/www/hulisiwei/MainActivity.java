@@ -25,7 +25,7 @@ public class MainActivity extends MyBaseActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
+		setContentView(R.layout.activity_main_);
 		// 显示版本号
 		TextView tvVersion = (TextView) findViewById(R.id.txtVersion);
 		tvVersion.setText(getVersion(this));
@@ -53,7 +53,8 @@ public class MainActivity extends MyBaseActivity {
 
 	/** 进入系统 */
 	private void onIn() {
-		Intent intent = new Intent(this, LoginActivity.class);
+//		Intent intent = new Intent(this, LoginActivity.class);
+		Intent intent = new Intent(this, BllbActivity.class);
 		intent.putExtra("isUsbLianJie", false);
 		startActivity(intent);
 		this.finish();
