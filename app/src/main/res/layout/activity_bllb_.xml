@@ -125,7 +125,6 @@
                 android:textSize="@dimen/text_size16" />
         </LinearLayout>
     </LinearLayout>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -192,6 +191,7 @@
                         android:layout_height="match_parent"
                         android:layout_width="0dp"
                         android:layout_weight="285"
+                        android:id="@+id/tv_blxq_xm"
                         android:background="@color/bg_bgcolor2"
                         android:text="@string/text_xm"
                         android:gravity="center_vertical"
@@ -205,6 +205,7 @@
                     <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
                         android:layout_height="match_parent"
                         android:layout_width="0dp"
+                        android:id="@+id/tv_blxq_xb"
                         android:layout_weight="285"
                         android:background="@color/bg_bgcolor2"
                         android:textSize="@dimen/text_size18"
@@ -220,6 +221,7 @@
                         android:layout_height="match_parent"
                         android:layout_width="0dp"
                         android:layout_weight="285"
+                        android:id="@+id/tv_blxq_nld"
                         android:background="@color/bg_bgcolor2"
                         android:gravity="center_vertical"
                         android:textSize="@dimen/text_size18"
@@ -249,6 +251,7 @@
                         android:layout_height="match_parent"
                         android:layout_width="0dp"
                         android:layout_weight="285"
+                        android:id="@+id/tv_blxq_hyzk"
                         android:background="@color/bg_bgcolor2"
                         android:gravity="center_vertical"
                         android:textSize="@dimen/text_size18"
@@ -263,6 +266,7 @@
                         android:layout_height="match_parent"
                         android:layout_width="0dp"
                         android:layout_weight="285"
+                        android:id="@+id/tv_blxq_xs"
                         android:background="@color/bg_bgcolor2"
                         android:gravity="center_vertical"
                         android:textSize="@dimen/text_size18"
@@ -279,6 +283,7 @@
                         android:layout_weight="285"
                         android:background="@color/bg_bgcolor2"
                         android:gravity="center_vertical"
+                        android:id="@+id/tv_blxq_dh"
                         android:textSize="@dimen/text_size18"
                         android:text="@string/text_xm"
                         android:textColor="@color/banner_txt_color"/>
@@ -306,6 +311,7 @@
                         android:layout_height="match_parent"
                         android:layout_width="0dp"
                         android:layout_weight="285"
+                        android:id="@+id/tv_blxq_zz"
                         android:background="@color/bg_bgcolor2"
                         android:gravity="center_vertical"
                         android:textSize="@dimen/text_size18"
@@ -361,6 +367,7 @@
                     <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
                         android:layout_height="match_parent"
                         android:layout_width="0dp"
+                        android:id="@+id/tv_blxq_zs"
                         android:layout_weight="904"
                         android:background="@color/bg_bgcolor2"
                         android:text="@string/text_xm"
@@ -407,6 +414,7 @@
                         android:layout_weight="47"
                         android:background="@color/bg_bgcolor2"/>
                     <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                        android:id="@+id/tv_blxq_xbs"
                         android:layout_height="match_parent"
                         android:layout_width="0dp"
                         android:layout_weight="904"
@@ -420,10 +428,11 @@
                         android:layout_weight="50"
                         android:background="@color/bg_bgcolor2"/>
                 </LinearLayout>
+
                 <TextView
                     android:layout_width="fill_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="2"
+                    android:layout_weight="1"
                     android:background="@color/divid_color"
 
                     />
@@ -434,13 +443,6 @@
                 android:layout_weight="1"
                 android:background="@color/divid_color"/>
 
-            <TextView
-                android:layout_width="fill_parent"
-                android:layout_height="0dp"
-                android:layout_weight="2"
-                android:background="@color/divid_color"
-
-                />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
@@ -461,7 +463,8 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="390"/>
-                    <TextView
+                    <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                        android:id="@+id/tv_btn_xl"
                         android:layout_width="0dp"
                         android:gravity="center"
                         android:layout_height="match_parent"
@@ -485,5 +488,4 @@
         </LinearLayout>
 
     </LinearLayout>
-
 </LinearLayout>

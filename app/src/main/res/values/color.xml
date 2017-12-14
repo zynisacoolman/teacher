@@ -24,9 +24,9 @@
     <color name="tvSheZhi_lan">#abcced</color>
     <!-- 59.126.134 -->
     <color name="tvJiaoXue_neirong">#3b7e86</color>
+    <!-- 195.207.223 -->
 
-    <!--半透明-->
-    <color name="bantouming">#50000000</color>
+    <color name="black_333">#333333</color>
     <!-- 背景颜色 -->
     <color name="form_bac">#d1deea</color>
     <!-- 按钮字体颜色 -->
@@ -41,6 +41,10 @@
     <color name="page_text">#386eb6</color>
     <!-- 病人信息按钮颜色 -->
     <color name="sick_bton">#f3974b</color>
+
+    <!--半透明-->
+    <color name="bantouming">#50000000</color>
+
     <!-- 药物信息按钮颜色 -->
     <color name="drug_bton">#468be7</color>
     <!-- 文字背景颜色 -->

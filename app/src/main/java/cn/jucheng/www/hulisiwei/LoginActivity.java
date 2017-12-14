@@ -1,11 +1,13 @@
 package cn.jucheng.www.hulisiwei;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Message;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
+
 import cn.jucheng.jclibs.tools.MyToast;
 import cn.jucheng.www.hulisiwei.global.AppManager;
 import cn.jucheng.www.hulisiwei.widget.MyMessage;
@@ -33,6 +35,7 @@ public class LoginActivity extends MyBaseActivity {
 
 	public void onTest(View v) {
 		switch (v.getId()) {
+
 		case R.id.btnFSBingLiMingCheng:
 			String etLeiXing = ((EditText) findViewById(R.id.etBingLiLeiXing))
 					.getText().toString();
@@ -152,11 +155,17 @@ public class LoginActivity extends MyBaseActivity {
 				MyToast.showToast(this, "请检查输入内容");
 			}
 			break;
-		// case R.id.btnJSBiaoDan:
-		// testReciveMsg(MyMessage.getMsgTestBiaodan(15, 1, 1, 1, "内容"));
-		// etXianShi.setText(MyMessage.getMsgTestBiaodan(15, 1, 1, 1, "内容"));
-		// // testReciveMsg(MyMessage.getMsgTestBiaodan(15, 1, 1, 1, "1"));
-		// break;
+
+		case R.id.twdJS:
+
+				break;
+		 case R.id.btnJSBiaoDan:
+		 	MyMessage.sendMessage(MyMessage.getMsgTestBiaodan(1,"are you ok mifan"));
+		 	break;
+//		 testReciveMsg(MyMessage.getMsgTestBiaodan(15, 1, 1, 1, "内容"));
+//		 etXianShi.setText(MyMessage.getMsgTestBiaodan(15, 1, 1, 1, "内容"));
+//		 // testReciveMsg(MyMessage.getMsgTestBiaodan(15, 1, 1, 1, "1"));
+//		 break;
 		// case R.id.btnJSBingRenWanDaiXinXi:
 		// testReciveMsg(MyMessage.getMsgTestBingrenwandaixinxi("姓名", "性别",
 		// "13", "12345", "23", "科室", "无过敏史", "诊断"));
@@ -185,6 +194,9 @@ public class LoginActivity extends MyBaseActivity {
 		// testReciveMsg(MyMessage.getMsgTestShebeizhuangtaiAd(1, 1));
 		// etXianShi.setText(MyMessage.getMsgTestShebeizhuangtaiAd(1, 1));
 		// break;
+			case R.id.btngoBllb:
+				startActivity(new Intent().setClass(this,BllbActivity.class));
+				break;
 		default:
 			break;
 		}

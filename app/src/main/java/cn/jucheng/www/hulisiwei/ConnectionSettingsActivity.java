@@ -1,7 +1,5 @@
 package cn.jucheng.www.hulisiwei;
 
-import java.lang.ref.WeakReference;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -10,6 +8,9 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.Window;
+
+import java.lang.ref.WeakReference;
+
 import cn.jucheng.jclibs.socket.MyGlobal;
 import cn.jucheng.jclibs.socket.WorkService;
 import cn.jucheng.rwbt.BTHeartBeatThread;
@@ -27,7 +28,7 @@ public class ConnectionSettingsActivity extends MyBaseActivity implements
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
-		setContentView(R.layout.activity_settings);
+		setContentView(R.layout.activity_setting);
 		initView();
 		mHandler = new MHandler(this);
 		WorkService.addHandler(mHandler);

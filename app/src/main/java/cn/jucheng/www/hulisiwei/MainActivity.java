@@ -11,6 +11,7 @@ import android.os.Message;
 import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.TextView;
+
 import cn.jucheng.www.hulisiwei.global.AppManager;
 
 public class MainActivity extends MyBaseActivity {
@@ -54,7 +55,7 @@ public class MainActivity extends MyBaseActivity {
 	/** 进入系统 */
 	private void onIn() {
 //		Intent intent = new Intent(this, LoginActivity.class);
-		Intent intent = new Intent(this, BllbActivity.class);
+		Intent intent = new Intent(this, LoginActivity.class);
 		intent.putExtra("isUsbLianJie", false);
 		startActivity(intent);
 		this.finish();

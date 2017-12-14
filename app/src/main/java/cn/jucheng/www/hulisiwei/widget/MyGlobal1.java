@@ -10,5 +10,7 @@ public class MyGlobal1 {
 	public static final String C_DEBUG = "debug";
 	public static final String C_DEVICE_ADDRESS = "deviceAddress";
 	public static final String C_DEVICE_NAME = "deviceName";
+	public static final String NURSE_NAME = "nurseName";
+	public static final String ALLBIAODANMESSAGE = "allbiaodanmessage";
 
 }

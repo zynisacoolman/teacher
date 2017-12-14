@@ -1,11 +1,12 @@
 package cn.jucheng.www.hulisiwei.global;
 
-import java.util.Iterator;
-import java.util.Stack;
-
 import android.app.Activity;
 import android.app.ActivityManager;
 import android.content.Context;
+
+import java.util.Iterator;
+import java.util.Stack;
+
 import cn.jucheng.jclibs.socket.WorkService;
 import cn.jucheng.jclibs.tools.MyLog;
 import cn.jucheng.www.hulisiwei.MyBaseActivity;

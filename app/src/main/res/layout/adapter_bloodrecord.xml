@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="837dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <!--输血记录单日期-->
+            <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                android:id="@+id/bllodrecord_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="6dp"
+                android:textColor="@color/heise"
+                android:textSize="@dimen/text_size16" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <!--输血记录单体温-->
+            <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                android:id="@+id/bllodrecord_animalheat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="6dp"
+                android:text="svdsbv"
+                android:textColor="@color/heise"
+                android:textSize="@dimen/text_size16" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <!--输血记录单头皮针-->
+            <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                android:id="@+id/bllodrecord_headneedle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="6dp"
+                android:text="svdsbv"
+                android:textColor="@color/heise"
+                android:textSize="@dimen/text_size16" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <!--输血记录单留置针-->
+            <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                android:id="@+id/bllodrecord_remainingneedle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="6dp"
+                android:text="svdsbv"
+                android:textColor="@color/heise"
+                android:textSize="@dimen/text_size16" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <!--输血记录单静脉导管-->
+            <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                android:id="@+id/bllodrecord_ductusvenosus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="6dp"
+                android:text="svdsbv"
+                android:textColor="@color/heise"
+                android:textSize="@dimen/text_size16" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <!--输血记录单RBC-->
+            <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                android:id="@+id/bllodrecord_rbc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="6dp"
+                android:text="svdsbv"
+                android:textColor="@color/heise"
+                android:textSize="@dimen/text_size16" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <!--输血记录单PLT-->
+            <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                android:id="@+id/bllodrecord_plt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="6dp"
+                android:text="svdsbv"
+                android:textColor="@color/heise"
+                android:textSize="@dimen/text_size16" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <!--输血记录单血浆-->
+            <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                android:id="@+id/bllodrecord_plasma"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="6dp"
+                android:text="svdsbv"
+                android:textColor="@color/heise"
+                android:textSize="@dimen/text_size16" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <!--输血记录单其他-->
+            <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                android:id="@+id/bllodrecord_else"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="6dp"
+                android:text="svdsbv"
+                android:textColor="@color/heise"
+                android:textSize="@dimen/text_size16" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <!--输血记录单执行者-->
+            <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                android:id="@+id/bllodrecord_performer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="6dp"
+                android:text="svdsbv"
+                android:textColor="@color/heise"
+                android:textSize="@dimen/text_size16" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <!--输血记录单核对者-->
+            <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                android:id="@+id/bllodrecord_checker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="6dp"
+                android:text="svdsbv"
+                android:textColor="@color/heise"
+                android:textSize="@dimen/text_size16" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <!--输血记录单输血开始时间-->
+            <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                android:id="@+id/bllodrecord_action_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="6dp"
+                android:text="svdsbv"
+                android:textColor="@color/heise"
+                android:textSize="@dimen/text_size16" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <!--输血记录单输血健康指导-->
+            <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                android:id="@+id/bllodrecord_healthguidance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="6dp"
+                android:text="svdsbv"
+                android:textColor="@color/heise"
+                android:textSize="@dimen/text_size16" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <!--输血记录单15min-->
+            <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                android:id="@+id/bllodrecord_15min"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="6dp"
+                android:text="svdsbv"
+                android:textColor="@color/heise"
+                android:textSize="@dimen/text_size16" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <!--输血记录单30min-->
+            <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                android:id="@+id/bllodrecord_30min"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="6dp"
+                android:text="svdsbv"
+                android:textColor="@color/heise"
+                android:textSize="@dimen/text_size16" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <!--输血记录单1h-->
+            <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                android:id="@+id/bllodrecord_1h"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="6dp"
+                android:text="svdsbv"
+                android:textColor="@color/heise"
+                android:textSize="@dimen/text_size16" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <!--输血记录单2h-->
+            <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                android:id="@+id/bllodrecord_2h"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="6dp"
+                android:text="svdsbv"
+                android:textColor="@color/heise"
+                android:textSize="@dimen/text_size16" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <!--输血记录单3h-->
+            <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                android:id="@+id/bllodrecord_3h"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="6dp"
+                android:text="svdsbv"
+                android:textColor="@color/heise"
+                android:textSize="@dimen/text_size16" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <!--输血记录单其他-->
+            <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                android:id="@+id/bllodrecord_rest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="6dp"
+                android:text="svdsbv"
+                android:textColor="@color/heise"
+                android:textSize="@dimen/text_size16" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <!--输血记录单无-->
+            <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                android:id="@+id/bllodrecord_not"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="6dp"
+                android:text="svdsbv"
+                android:textColor="@color/heise"
+                android:textSize="@dimen/text_size16" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <!--输血记录单过敏-->
+            <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                android:id="@+id/bllodrecord_allergy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="6dp"
+                android:text="svdsbv"
+                android:textColor="@color/heise"
+                android:textSize="@dimen/text_size16" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <!--输血记录单发热-->
+            <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                android:id="@+id/bllodrecord_fever"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="6dp"
+                android:text="svdsbv"
+                android:textColor="@color/heise"
+                android:textSize="@dimen/text_size16" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <!--输血记录单溶量-->
+            <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                android:id="@+id/bllodrecord_solutioncontent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="6dp"
+                android:text="svdsbv"
+                android:textColor="@color/heise"
+                android:textSize="@dimen/text_size16" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <!--输血记录单大剂量-->
+            <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                android:id="@+id/bllodrecord_largedose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="6dp"
+                android:text="svdsbv"
+                android:textColor="@color/heise"
+                android:textSize="@dimen/text_size16" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <!--输血记录单结束时间-->
+            <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                android:id="@+id/bllodrecord_endtime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="6dp"
+                android:text="svdsbv"
+                android:textColor="@color/heise"
+                android:textSize="@dimen/text_size16" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="3dp" />
+
+        <!--输血记录单护士签名-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            >
+
+            <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                android:id="@+id/bllodrecord_nursname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="6dp"
+                android:textColor="@color/heise"
+                android:textSize="@dimen/text_size16" />
+
+            <cn.jucheng.www.hulisiwei.customcontrols.FitHeightButton
+                android:id="@+id/bllodrecord_signature_buton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:paddingTop="5dp"
+                android:text="@string/qianzi"
+                android:textColor="@color/heise"
+                android:textSize="@dimen/text_size16" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

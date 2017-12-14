@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sun Dec 03 01:03:19 CST 2017
+#Tue Dec 12 20:59:52 CST 2017
 1.base=/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/transforms/dexMerger/debug/0
 0.baseType=DIRECTORY
 1.baseType=DIRECTORY

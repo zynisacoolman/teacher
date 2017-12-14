@@ -1,1 +1,2 @@
-include ':app'
+include ':app', ':tableview'
+project(':tableview').projectDir = new File('app/libs/tableview')

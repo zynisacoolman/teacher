@@ -17,6 +17,7 @@
             />
 
         <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+            android:id="@+id/tv_name_bl"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="388"
@@ -33,6 +34,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="284"
+            android:id="@+id/tv_time_Bl"
             android:gravity="center_vertical"
             android:fontFamily="@font/msyh"
             android:text="病例运行时间:00:00:00"
@@ -43,6 +45,7 @@
             android:layout_height="match_parent"
             android:layout_weight="0"/>
         <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+            android:id="@+id/tv_time_state"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="284"
@@ -74,6 +77,7 @@
             android:layout_height="match_parent"
             android:layout_weight="40"
             android:src="@drawable/btn_sz_n"
+            android:id="@+id/iv_setting"
             android:textSize="@dimen/text_size18" />
 
         <TextView
@@ -117,7 +121,7 @@
         >
 
         <cn.jucheng.www.hulisiwei.customcontrols.FitHeightButton
-
+            android:id="@+id/btn_blnr"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="130"
@@ -132,6 +136,7 @@
 
 
         <cn.jucheng.www.hulisiwei.customcontrols.FitHeightButton
+            android:id="@+id/btn_czjl"
             android:checked="false"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -189,6 +194,7 @@
                         android:fontFamily="@font/msyh"
                         android:text="1/2"
                         android:textSize="10sp"
+                        android:id="@+id/tv_page"
                         android:background="@color/bg_bgcolor1"
                         android:textColor="@color/banner_txt_color"/>
                     <TextView
@@ -229,7 +235,8 @@
             android:layout_weight="260"
             android:orientation="vertical">
 
-            <ExpandableListView
+            <ListView
+                android:id="@+id/lv_blxq"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="517"
@@ -261,6 +268,7 @@
                         android:layout_weight="10"
                         android:background="@color/bg_white"/>
                     <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                        android:id="@+id/tv_blzg"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="240"
@@ -378,11 +386,13 @@
                 android:layout_height="match_parent"
                 android:layout_weight="11"/>
             <cn.jucheng.www.hulisiwei.customcontrols.FitHeightEditText
+                android:id="@+id/ev_jstx"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="879"/>
             <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
                 android:gravity="center"
+                android:id="@+id/tv"
                 android:background="@color/bg_txt_color"
                 android:text="提醒"
                 android:textSize="@dimen/text_size14"

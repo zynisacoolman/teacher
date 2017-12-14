@@ -2,9 +2,10 @@ package cn.jucheng.www.hulisiwei.decoding;
 
 import android.annotation.SuppressLint;
 import android.os.Handler;
+import android.os.Message;
+
 import cn.jucheng.jclibs.tools.DataUtils;
 import cn.jucheng.jclibs.tools.SubStringUtils;
-import cn.jucheng.www.hulisiwei.MyBaseActivity;
 import cn.jucheng.www.hulisiwei.widget.MyMessage;
 
 @SuppressLint("DefaultLocale")
@@ -52,7 +53,104 @@ public class DecodingLibrary {
 					int mingLingZi = Integer
 							.parseInt(SubStringUtils.substring(sbMsg, i + 44,
 									i + 48), 16);
+					Message msg =new Message();
 					switch (mingLingZi) {
+						case MyMessage.MLZ_GZBD://各种表单数据
+							msg.what = MyMessage.MLZ_GZBD;
+							msg.obj = sbMsg.toString();
+							hd.sendMessage(msg);
+							break;
+						case MyMessage.MLZ_SBSJ://校正设备时间
+							msg.what = MyMessage.MLZ_SBSJ;
+							msg.obj = sbMsg.toString();
+							hd.sendMessage(msg);
+							break;
+						case MyMessage.MLZ_BEIAN://设备备案
+							msg.what=MyMessage.MLZ_BEIAN;
+							msg.obj=sbMsg.toString();
+							hd.sendMessage(msg);
+							break;
+						case MyMessage.MLZ_BLM://病例名
+							msg.what=MyMessage.MLZ_BLM;
+							msg.obj=sbMsg.toString();
+							hd.sendMessage(msg);
+							break;
+						case MyMessage.MLZ_DIANLIANG://电量
+							msg.what=MyMessage.MLZ_DIANLIANG;
+							msg.obj=sbMsg.toString();
+							hd.sendMessage(msg);
+							break;
+						case MyMessage.MLZ_FSSLZT://主动发送教师机训练状态
+							msg.what=MyMessage.MLZ_BLM;
+							msg.obj=sbMsg.toString();
+							hd.sendMessage(msg);
+							break;
+						case MyMessage.MLZ_JSTS://教师提示
+							msg.what=MyMessage.MLZ_JSTS;
+							msg.obj=sbMsg.toString();
+							hd.sendMessage(msg);
+							break;
+						case MyMessage.MLZ_JZQRBQ://教师确认病情变化
+							msg.what=MyMessage.MLZ_JZQRBQ;
+							msg.obj=sbMsg.toString();
+							hd.sendMessage(msg);
+							break;
+						case MyMessage.MLZ_JZZSJ://矫正训练总时间
+							msg.what=MyMessage.MLZ_JZZSJ;
+							msg.obj=sbMsg.toString();
+							hd.sendMessage(msg);
+							break;
+						case MyMessage.MLZ_KJ://快进
+							msg.what=MyMessage.MLZ_KJ;
+							msg.obj=sbMsg.toString();
+							hd.sendMessage(msg);
+							break;
+						case MyMessage.MLZ_PJXS://评价学生
+							msg.what=MyMessage.MLZ_PJXS;
+							msg.obj=sbMsg.toString();
+							hd.sendMessage(msg);
+							break;
+						case MyMessage.MLZ_SHOUYINGDASB://收应答设备状态命令字
+							msg.what=MyMessage.MLZ_SHOUYINGDASB;
+							msg.obj=sbMsg.toString();
+							hd.sendMessage(msg);
+							break;
+						case MyMessage.MLZ_SYXSJZT://索要学生机状态
+							msg.what=MyMessage.MLZ_SYXSJZT;
+							msg.obj=sbMsg.toString();
+							hd.sendMessage(msg);
+							break;
+						case MyMessage.MLZ_XINTIAOJIANCE://心跳检测
+							msg.what=MyMessage.MLZ_XINTIAOJIANCE;
+							msg.obj=sbMsg.toString();
+							hd.sendMessage(msg);
+							break;
+						case MyMessage.MLZ_XLJS://训练状态接受
+							msg.what=MyMessage.MLZ_XLJS;
+							msg.obj=sbMsg.toString();
+							hd.sendMessage(msg);
+							break;
+						case MyMessage.MLZ_XSCZ://学会操作信息命令
+							msg.what=MyMessage.MLZ_XSCZ;
+							msg.obj=sbMsg.toString();
+							hd.sendMessage(msg);
+							break;
+						case MyMessage.MLZ_XSTZJS://学生通知教师病情变化
+							msg.what=MyMessage.MLZ_XSTZJS;
+							msg.obj=sbMsg.toString();
+							hd.sendMessage(msg);
+							break;
+						case MyMessage.MLZ_ZCYZ://转抄医嘱
+							msg.what=MyMessage.MLZ_ZCYZ;
+							msg.obj=sbMsg.toString();
+							hd.sendMessage(msg);
+							break;
+						case MyMessage.MLZ_ZTGB://状态改变命令
+							msg.what=MyMessage.MLZ_ZTGB;
+							msg.what=MyMessage.MLZ_ZCYZ;
+							msg.obj=sbMsg.toString();
+							hd.sendMessage(msg);
+							break;
 					// case MyMessage.MLZ_ANYA: {// 按压
 					// shendu = Integer
 					// .parseInt(SubStringUtils.substring(sbMsg,

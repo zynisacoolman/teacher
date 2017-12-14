@@ -21,28 +21,6 @@
                     }
                 }
             ]
-        },
-        {
-            "outputFile": "/Users/admin/work/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-1024x768/values-1024x768.xml",
-            "map": [
-                {
-                    "source": "/Users/admin/work/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/res/values-1024x768/dimens.xml",
-                    "from": {
-                        "startLines": "4,5,17,6,7,8,9,10,11,12,13,14,15,16",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "78,123,651,167,211,255,299,343,387,431,475,519,563,607",
-                        "endColumns": "43,42,44,42,42,42,42,42,42,42,42,42,42,42",
-                        "endOffsets": "117,161,691,205,249,293,337,381,425,469,513,557,601,645"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,99,142,187,230,273,316,359,402,445,488,531,574,617",
-                        "endColumns": "43,42,44,42,42,42,42,42,42,42,42,42,42,42",
-                        "endOffsets": "94,137,182,225,268,311,354,397,440,483,526,569,612,655"
-                    }
-                }
-            ]
         }
     ]
 }

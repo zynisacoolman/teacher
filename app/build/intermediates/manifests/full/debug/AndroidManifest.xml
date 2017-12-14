@@ -24,10 +24,6 @@
         android:name="android.hardware.usb.host"
         android:required="true" />
 
-    <meta-data
-        android:name="android.support.VERSION"
-        android:value="25.3.0" />
-
     <application
         android:name="android.support.multidex.MultiDexApplication"
         android:allowBackup="true"
@@ -36,7 +32,6 @@
         android:label="@string/app_name"
         android:largeHeap="true"
         android:screenOrientation="landscape"
-        android:testOnly="true"
         android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
         <activity
             android:name="cn.jucheng.www.hulisiwei.MainActivity"
@@ -109,6 +104,11 @@
                 android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
                 android:resource="@xml/device_filter" />
         </activity>
+        <activity android:name="cn.jucheng.www.hulisiwei.BlxqActivity" />
+
+        <meta-data
+            android:name="android.support.VERSION"
+            android:value="25.4.0" />
     </application>
 
 </manifest>

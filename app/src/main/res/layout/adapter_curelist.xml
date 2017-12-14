@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="42dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="85" />
+        <!--日期-->
+        <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+            android:id="@+id/cure_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="101"
+            android:layout_gravity="center_vertical"
+            android:maxLines="2"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:paddingTop="5dp"
+            android:textColor="@color/heise"
+            android:textSize="@dimen/text_size16" />
+        <!--治疗项目-->
+        <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+            android:id="@+id/cure_exture"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="450"
+            android:maxLines="2"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:paddingTop="5dp"
+            android:textColor="@color/heise"
+            android:textSize="@dimen/text_size16" />
+        <!--患者签字-->“
+        <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+            android:id="@+id/cure_drug_qianzi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="105"
+            android:maxLines="2"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:paddingTop="5dp"
+            android:textColor="@color/heise"
+            android:textSize="@dimen/text_size16" />
+        <!--治疗时签字-->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="105">
+
+            <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                android:id="@+id/cure_qianiz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:maxLines="2"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:paddingTop="5dp"
+                android:textColor="@color/heise"
+                android:textSize="@dimen/text_size16" />
+
+            <cn.jucheng.www.hulisiwei.customcontrols.FitHeightButton
+                android:id="@+id/cure_signature_buton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:paddingTop="5dp"
+                android:text="@string/qianzi"
+                android:textColor="@color/heise"
+                android:textSize="@dimen/text_size20" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="85" />
+    </LinearLayout>
+
+</LinearLayout>

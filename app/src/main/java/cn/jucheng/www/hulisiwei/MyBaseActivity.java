@@ -1,7 +1,6 @@
 package cn.jucheng.www.hulisiwei;
 
 import android.annotation.SuppressLint;
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -14,6 +13,8 @@ import android.os.Handler.Callback;
 import android.os.Message;
 import android.os.PowerManager;
 import android.os.PowerManager.WakeLock;
+import android.support.annotation.LayoutRes;
+import android.support.v4.app.FragmentActivity;
 import android.view.KeyEvent;
 import android.view.View;
 
@@ -22,6 +23,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 import butterknife.ButterKnife;
+import butterknife.Unbinder;
 import cn.jucheng.callback.RecvCallBack;
 import cn.jucheng.jclibs.socket.MyGlobal;
 import cn.jucheng.jclibs.socket.WorkService;
@@ -33,8 +35,9 @@ import cn.jucheng.www.hulisiwei.global.AppManager;
 import cn.jucheng.www.hulisiwei.widget.MyGlobal1;
 import cn.jucheng.www.hulisiwei.widget.MyMessage;
 import cn.jucheng.www.hulisiwei.widget.MyShareUtils;
+
 /** 封装Activity 基类 所有继承BaseActivity基类; Activity创建时将MyApplication 加入指针方便 销毁退出 */
-public abstract class MyBaseActivity extends Activity {
+public abstract class MyBaseActivity extends FragmentActivity {
 	private static final String TAG = "BaseActivity";
 	protected AlertDialog ag;
 	private long exitTime = 0;// 退出时间
@@ -42,6 +45,7 @@ public abstract class MyBaseActivity extends Activity {
 	private static Timer timerLianJie;
 	public static MyBaseActivity currentMyBaseActivity;
 	public static boolean isZiDongChongLian = true;
+    public Unbinder unbinder;
 
 	// 写一个广播的内部类，当收到动作时，结束activity
 	private BroadcastReceiver broadcastReceiver = new BroadcastReceiver() {
@@ -84,20 +88,19 @@ public abstract class MyBaseActivity extends Activity {
 			WorkService.SetOnRecvCallBack(callback);
 		}
 		super.onCreate(savedInstanceState);
-
 		MyLog.d(this.getClass().getSimpleName().toString(), "--onCreate()");
 		// 在当前的activity中注册广播
 		IntentFilter filter = new IntentFilter();
 		filter.addAction(Intent.ACTION_CLOSE_SYSTEM_DIALOGS);
 		this.registerReceiver(this.broadcastReceiver, filter);
 		changLiang();
+	}
+    @Override
+    public void setContentView(@LayoutRes int layoutResID) {
+        super.setContentView(layoutResID);
+        unbinder = ButterKnife.bind(this);
+    }
 
-	}
-	@Override
-	public void setContentView(int id){
-		super.setContentView(id);
-		ButterKnife.bind(this);
-	}
 
 	// /** 模拟人复位是否成功false-未收到应答，true-复位成功已应答 */
 	private Handler handlerState = new Handler(new Callback() {
@@ -114,6 +117,9 @@ public abstract class MyBaseActivity extends Activity {
 			case MyMessage.MLZ_BEIAN: // 备案
 				MyMessage.sendMessage(MyMessage.getMsgBeian());
 				break;
+				case MyMessage.MLZ_XSTZJS://接受病情变化信息
+                    //首先判断是否与当前病情一致
+                    break;
 			default:
 				currentMyBaseActivity.HandlerMessage(msg);
 				break;
@@ -201,7 +207,7 @@ public abstract class MyBaseActivity extends Activity {
 	public abstract void exc();
 
 	public void onReturn(View v) {
-		AppManager.getAppManager().finishActivity(this);
+		AppManager.getAppManager().finishActivity();
 	}
 
 	public void onSettings(View v) {
@@ -212,6 +218,8 @@ public abstract class MyBaseActivity extends Activity {
 	@Override
 	protected void onDestroy() {
 		exc();
+        if (null != unbinder)
+            unbinder.unbind();
 		MyLog.i(getClass().getSimpleName().toString(), "--onDestroy()");
 		this.unregisterReceiver(this.broadcastReceiver);
 		super.onDestroy();

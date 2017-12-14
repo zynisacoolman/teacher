@@ -1,7 +1,5 @@
 package cn.jucheng.www.hulisiwei;
 
-import java.lang.ref.WeakReference;
-
 import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
 import android.bluetooth.BluetoothAdapter;
@@ -22,6 +20,9 @@ import android.view.Window;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
+
+import java.lang.ref.WeakReference;
+
 import cn.jucheng.jclibs.socket.MyGlobal;
 import cn.jucheng.jclibs.socket.WorkService;
 import cn.jucheng.jclibs.tools.MyToast;
@@ -42,7 +43,7 @@ public class SearchBTActivity extends MyBaseActivity implements OnClickListener 
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
-		setContentView(R.layout.activity_searchbt);
+		setContentView(R.layout.activity_bluetooth);
 
 		findViewById(R.id.buttonSearch).setOnClickListener(this);
 		progressBarSearchStatus = (ProgressBar) findViewById(R.id.progressBarSearchStatus);

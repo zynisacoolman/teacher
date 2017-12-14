@@ -1,7 +1,5 @@
 package cn.jucheng.www.hulisiwei;
 
-import java.lang.ref.WeakReference;
-
 import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.os.Handler;
@@ -11,6 +9,9 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.Window;
 import android.widget.EditText;
+
+import java.lang.ref.WeakReference;
+
 import cn.jucheng.jclibs.socket.MyGlobal;
 import cn.jucheng.jclibs.socket.WorkService;
 import cn.jucheng.jclibs.tools.IPString;

@@ -12,11 +12,11 @@ import cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView;
 import java.lang.IllegalStateException;
 import java.lang.Override;
 
-public class explistBLLBAdapter$ChildViewholder_ViewBinding implements Unbinder {
-  private explistBLLBAdapter.ChildViewholder target;
+public class ExplistBLLBAdapter$ChildViewholder_ViewBinding implements Unbinder {
+  private ExplistBLLBAdapter.ChildViewholder target;
 
   @UiThread
-  public explistBLLBAdapter$ChildViewholder_ViewBinding(explistBLLBAdapter.ChildViewholder target,
+  public ExplistBLLBAdapter$ChildViewholder_ViewBinding(ExplistBLLBAdapter.ChildViewholder target,
       View source) {
     this.target = target;
 
@@ -27,7 +27,7 @@ public class explistBLLBAdapter$ChildViewholder_ViewBinding implements Unbinder 
   @Override
   @CallSuper
   public void unbind() {
-    explistBLLBAdapter.ChildViewholder target = this.target;
+    ExplistBLLBAdapter.ChildViewholder target = this.target;
     if (target == null) throw new IllegalStateException("Bindings already cleared.");
     this.target = null;
 

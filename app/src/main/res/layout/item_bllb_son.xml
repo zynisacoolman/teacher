@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:id="@+id/ll_item_bllb"
     android:clickable="true"
-    android:background="@drawable/s_item_bllb"
+    android:background="@color/bg_bgcolor2"
     >
     <TextView
         android:layout_width="match_parent"

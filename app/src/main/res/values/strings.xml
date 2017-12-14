@@ -12,6 +12,7 @@
     <string name="title_paired_devices">配对设备</string>
     <string name="title_other_devices">其他设备</string>
     <string name="button_scan">扫描设备</string>
+    <string name="qianzi">签字</string>
 
     <!-- shezhi.xml -->
     <string name="tvDeviceText">设备连接状态:</string>
@@ -88,8 +89,10 @@
     <string name="set_alredy_bluetooth">设置>设置连接方式>连接已配对蓝牙设备</string>
     <string name="set_network">设置>设置连接方式>连接网络设备</string>
     <string name="set_about">设置>关于</string>
+    <string name="qianzi_faile">签字失败</string>
 
-
+    <string name="now_times">当前系统时区：</string>
+    <string name="your_times">标准中时区：</string>
     <!-- 设置 -->
 
 

@@ -1,0 +1,19 @@
+package cn.jucheng.www.hulisiwei.module;
+
+/**
+ * Created by w on 2017-12-01.
+ * 药物信息
+ */
+
+public class MedicinesBean {
+
+    private Juchengesp juchengesp;
+
+    public Juchengesp getJuchengesp() {
+        return juchengesp;
+    }
+
+    public void setJuchengesp(Juchengesp juchengesp) {
+        this.juchengesp = juchengesp;
+    }
+}

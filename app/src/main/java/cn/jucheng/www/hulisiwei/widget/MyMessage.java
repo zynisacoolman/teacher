@@ -1,9 +1,10 @@
 package cn.jucheng.www.hulisiwei.widget;
 
+import android.os.Bundle;
+
 import java.util.Timer;
 import java.util.TimerTask;
 
-import android.os.Bundle;
 import cn.jucheng.jclibs.socket.MyGlobal;
 import cn.jucheng.jclibs.socket.WorkService;
 import cn.jucheng.jclibs.tools.DataUtils;
@@ -58,6 +59,8 @@ public class MyMessage {
 	public static final int MLZ_SYXSJZT = 0x0E20;
 	/** 20、主动发送当前教师机的训练状态*/
 	public static final int MLZ_FSSLZT = 0x0E21;
+	/** 21、接受表单头信息*/
+	public static final int MLZ_BDT=0x0E19;
 	// TODO 发送的数据
 	/** 心跳检测 */
 	private static final String MSG_XINTIAOJIANCE = "4F6830 0100 016831 0000000000000000000000000000 00A5 0000 00";
@@ -83,13 +86,27 @@ public class MyMessage {
 	private static final String MSG_JIAOSHIJIXUNLIANZHUANGTAI = "4F6830 0100 016831 0000000000000000000000000000 0E21 %04x %02x%02x%02x%04x %04x";
 	/**设备状态以及电量*/
 	private static final String MSG_SHEBEIDIANLIANG = "4F6830 0100 016831 0000000000000000000000000000 0E22 ";
+	//电子医嘱单
+	/**
+	 * 通知已扫描病人腕带二维码
+	 */
+	private static final String MSG_SAOMIAOBINGRENWANDAI = "4F6832 0100 016831 0000000000000000000000000000 0D10 0000 00";
+	/**
+	 * 学生点击签字
+	 */
+	private static final String MSG_XUESHENGDIANJIQIANZI = "4F6832 0100 016831 0000000000000000000000000000 0D13 0003 %02x%04x 00";
+	/**
+	 * 通知已扫描病人药物二维码
+	 */
+	private static final String MSG_SAOMIAOBINGRENYAOWU = "4F6832 0100 016831 0000000000000000000000000000 0D15 0002 %04x 00";
+	/**
 	// TODO 用于测试的接收的数据
 	/** 校正设备时间 */
 	private static final String MSG_TEST_JIAOZHENGSHEBEISHIJIAN = "4F6831 0100 016830 0000000000000000000000000000 01A0 0007 %04x%02x%02x%02x%02x%02x 00";
 	/** 状态改变 */
 	private static final String MSG_TEST_ZHUANGTAIGAIBIAN = "4F6831 0100 016830 0000000000000000000000000000 0E11 0002 %04x 00";
-	/** 学生操作信息描述 */
-	private static final String MSG_TEST_XUESHENGCAOZUOXINXI = "4F6831 0100 016830 0000000000000000000000000000 0E12 %04x %02x %04x %02x%02x%02x %02x %04x %02x %02x %04x";
+	/** 学生操作信息描述                                                                                           48  医嘱状态  状态id 时   分  秒   医嘱类型 医嘱行号  操作类型枚举 操作类型枚举内容     学生操作信息数据长度 */
+	private static final String MSG_TEST_XUESHENGCAOZUOXINXI = "4F6831 0100 016830 0000000000000000000000000000 0E12  %02x     %04x %02x%02x%02x   %02x    %04x       %02x        %02x                 %04x";
 	/** 学生通知教师病情变化 */
 	private static final String MSG_TEST_BINGQINGBIANHUA = "4F6831 0100 016830 0000000000000000000000000000 0E14 %04x %04x %04x";
 	/** 训练状态接收 */
@@ -102,7 +119,10 @@ public class MyMessage {
 	private static final String MSG_TEST_BIAODAN = "4F6831 0100 016830 0000000000000000000000000000 0E1F %04x";
 	/** 回复索要当前学生机状态 */
 	private static final String MSG_TEST_HUIFUSUOYAOXUESHENGJIZHUANGTAI = "4F6831 0100 016830 0000000000000000000000000000 0E20 0001 %02x 00";
-
+	/**
+	 *  体温表测试数据
+	 */
+	private static final String MSG_TEST_TEMPERCHART="4F6831 0100 010000 0000000000000000000000000000 0E1F 003A 0101 0123 01A5 018D 0202 0213 01A6 0270 01FD 0299 0261 0244 0290 01 A4 02 B5 02 21 03 03 02 E9 02 AC 03 16 02 20 03 05 01 A5 02 B6 01 81 02 9B 01 B6 02 9A 01 E1 00 ";
 	/**
 	 * @return the msgXintiaojiance
 	 */
@@ -224,11 +244,25 @@ public class MyMessage {
 		return String
 				.format(MSG_TEST_HUIFUSUOYAOXUESHENGJIZHUANGTAI, zhuangTai);
 	}
+	/**
+	 * @return MSG_SAOMIAOBINGRENYAOWU
+	 */
+	public static String getMsgSaomiaobingrenyaowu(int drug_id) {
+		return String.format(MSG_SAOMIAOBINGRENYAOWU, drug_id);
+	}
+
+	/**
+	 * @return MSG_XUESHENGDIANJIQIANZI
+	 */
+	public static String getMsgXueshengdianjiqianzi(int type, int rowNum) {
+		return String.format(MSG_XUESHENGDIANJIQIANZI, type, rowNum);
+	}
+
 
 	public static void sendMessage(String msg) {
 		msg = msg.replace(" ", "");
 		byte[] buf = DataUtils.HexStringToBytes(msg);
-		// MyLog.d(TAG, "发送消息:" + msg);
+		 MyLog.d(TAG, "发送消息:" + msg);
 		if (WorkService.workThread != null
 				&& WorkService.workThread.isConnected()) {
 			Bundle data = new Bundle();
