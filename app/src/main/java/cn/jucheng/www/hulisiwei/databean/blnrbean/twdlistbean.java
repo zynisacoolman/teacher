@@ -1,6 +1,6 @@
 package cn.jucheng.www.hulisiwei.databean.blnrbean;
 
-import java.util.HashMap;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -8,24 +8,24 @@ import java.util.List;
  */
 
 public class twdlistbean {
-    private HashMap<Integer,Integer> twsz;
-    private HashMap<Integer,Integer> mbsz;
+    private ArrayList<Integer>[] twsz;
+    private ArrayList<Integer>[] mbsz;
     private List<String> other;
 
 
-    public HashMap<Integer, Integer> getTwsz() {
+    public ArrayList<Integer>[] getTwsz() {
         return twsz;
     }
 
-    public void setTwsz(HashMap<Integer, Integer> twsz) {
+    public void setTwsz(ArrayList<Integer>[] twsz) {
         this.twsz = twsz;
     }
 
-    public HashMap<Integer, Integer> getMbsz() {
+    public ArrayList<Integer>[] getMbsz() {
         return mbsz;
     }
 
-    public void setMbsz(HashMap<Integer, Integer> mbsz) {
+    public void setMbsz(ArrayList<Integer>[] mbsz) {
         this.mbsz = mbsz;
     }
 

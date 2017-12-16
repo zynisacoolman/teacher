@@ -117,9 +117,6 @@ public abstract class MyBaseActivity extends FragmentActivity {
 			case MyMessage.MLZ_BEIAN: // 备案
 				MyMessage.sendMessage(MyMessage.getMsgBeian());
 				break;
-				case MyMessage.MLZ_XSTZJS://接受病情变化信息
-                    //首先判断是否与当前病情一致
-                    break;
 			default:
 				currentMyBaseActivity.HandlerMessage(msg);
 				break;
@@ -437,4 +434,7 @@ public abstract class MyBaseActivity extends FragmentActivity {
 		};
 		timerLianJie.schedule(task, delay);
 	}
+
+
+
 }

@@ -21,10 +21,15 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+import butterknife.ButterKnife;
+import butterknife.OnClick;
 import cn.jucheng.jclibs.socket.MyGlobal;
 import cn.jucheng.jclibs.socket.WorkService;
 import cn.jucheng.jclibs.tools.MyToast;
 
+/**
+ *  连接已配对蓝牙
+ */
 public class ConnectBTPairedActivity extends MyBaseActivity implements
 		OnItemClickListener {
 
@@ -43,15 +48,16 @@ public class ConnectBTPairedActivity extends MyBaseActivity implements
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
-		setContentView(R.layout.activity_connectbtpaired2);
+		setContentView(R.layout.activity_connectbtpaired);
+		ButterKnife.bind(this);
 
 		dialog = new ProgressDialog(this);
 		boundedPrinters = getBoundedPrinters();
 		listView = (ListView) findViewById(R.id.listViewSettingConnect);
 		listView.setAdapter(new SimpleAdapter(this, boundedPrinters,
 				R.layout.list_item_printernameandmac,
-				new String[] { PRINTERNAME },
-				new int[] { R.id.tvListItemPrinterName }));
+				new String[]{PRINTERNAME},
+				new int[]{R.id.tvListItemPrinterName}));
 		listView.setOnItemClickListener(this);
 
 		mHandler = new MHandler(this);
@@ -75,7 +81,7 @@ public class ConnectBTPairedActivity extends MyBaseActivity implements
 	}
 
 	public void onItemClick(AdapterView<?> arg0, View arg1, int position,
-			long id) {
+							long id) {
 		String address = (String) boundedPrinters.get(position).get(PRINTERMAC);
 		dialog.setMessage(MyGlobal.toast_connecting + " " + address);
 		dialog.setIndeterminate(true);
@@ -112,6 +118,11 @@ public class ConnectBTPairedActivity extends MyBaseActivity implements
 		return list;
 	}
 
+	@OnClick(R.id.back_already_bluetooth)
+	public void onViewClicked() {
+		this.finish();
+	}
+
 	private static class MHandler extends Handler {
 
 		private WeakReference<ConnectBTPairedActivity> mActivity;
@@ -124,14 +135,14 @@ public class ConnectBTPairedActivity extends MyBaseActivity implements
 		public void handleMessage(Message msg) {
 			ConnectBTPairedActivity theActivity = mActivity.get();
 			switch (msg.what) {
-			case MyGlobal.MSG_WORKTHREAD_SEND_CONNECTBTRESULT: {
-				int result = msg.arg1;
-				MyToast.showToast(theActivity,
-						(result == 1) ? MyGlobal.toast_success
-								: MyGlobal.toast_fail);
-				theActivity.dialog.cancel();
-				break;
-			}
+				case MyGlobal.MSG_WORKTHREAD_SEND_CONNECTBTRESULT: {
+					int result = msg.arg1;
+					MyToast.showToast(theActivity,
+							(result == 1) ? MyGlobal.toast_success
+									: MyGlobal.toast_fail);
+					theActivity.dialog.cancel();
+					break;
+				}
 			}
 		}
 	}
@@ -139,7 +150,7 @@ public class ConnectBTPairedActivity extends MyBaseActivity implements
 	@Override
 	public void exc() {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override

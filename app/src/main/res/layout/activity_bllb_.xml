@@ -44,6 +44,7 @@
             android:layout_height="match_parent"
             android:layout_weight="40"
             android:src="@drawable/btn_sz_n"
+            android:id="@+id/iv_settings"
             android:textSize="@dimen/text_size18" />
 
         <TextView
@@ -210,7 +211,7 @@
                         android:background="@color/bg_bgcolor2"
                         android:textSize="@dimen/text_size18"
                         android:gravity="center_vertical"
-                        android:text="@string/text_xm"
+                        android:text="@string/sex"
                         android:textColor="@color/banner_txt_color"/>
                     <TextView
                         android:layout_width="0dp"
@@ -225,7 +226,7 @@
                         android:background="@color/bg_bgcolor2"
                         android:gravity="center_vertical"
                         android:textSize="@dimen/text_size18"
-                        android:text="@string/text_xm"
+                        android:text="@string/age"
                         android:textColor="@color/banner_txt_color"/>
                     <TextView
                         android:layout_width="0dp"
@@ -255,7 +256,7 @@
                         android:background="@color/bg_bgcolor2"
                         android:gravity="center_vertical"
                         android:textSize="@dimen/text_size18"
-                        android:text="@string/text_xm"
+                        android:text="婚姻状况："
                         android:textColor="@color/banner_txt_color"/>
                     <TextView
                         android:layout_width="0dp"
@@ -270,7 +271,7 @@
                         android:background="@color/bg_bgcolor2"
                         android:gravity="center_vertical"
                         android:textSize="@dimen/text_size18"
-                        android:text="@string/text_xm"
+                        android:text="职业："
                         android:textColor="@color/banner_txt_color"/>
                     <TextView
                         android:layout_width="0dp"
@@ -285,7 +286,7 @@
                         android:gravity="center_vertical"
                         android:id="@+id/tv_blxq_dh"
                         android:textSize="@dimen/text_size18"
-                        android:text="@string/text_xm"
+                        android:text="电话："
                         android:textColor="@color/banner_txt_color"/>
                     <TextView
                         android:layout_width="0dp"
@@ -315,7 +316,7 @@
                         android:background="@color/bg_bgcolor2"
                         android:gravity="center_vertical"
                         android:textSize="@dimen/text_size18"
-                        android:text="主治：不孕不育"
+                        android:text="住址："
                         android:textColor="@color/banner_txt_color"/>
                     <TextView
                         android:layout_width="0dp"
@@ -370,7 +371,6 @@
                         android:id="@+id/tv_blxq_zs"
                         android:layout_weight="904"
                         android:background="@color/bg_bgcolor2"
-                        android:text="@string/text_xm"
                         android:textSize="@dimen/text_size18"
                         android:textColor="@color/banner_txt_color"/>
                     <TextView
@@ -379,6 +379,11 @@
                         android:layout_weight="50"
                         android:background="@color/bg_bgcolor2"/>
                 </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="16"
+                    android:background="@color/bg_bgcolor2"/>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
@@ -419,7 +424,6 @@
                         android:layout_width="0dp"
                         android:layout_weight="904"
                         android:background="@color/bg_bgcolor2"
-                        android:text="@string/text_xm"
                         android:textSize="@dimen/text_size18"
                         android:textColor="@color/banner_txt_color"/>
                     <TextView

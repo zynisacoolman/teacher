@@ -1,6 +1,7 @@
 package cn.jucheng.www.hulisiwei;
 
 import android.app.ProgressDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -27,8 +28,22 @@ import cn.jucheng.www.hulisiwei.adapter.TreeListViewAdapter;
 import cn.jucheng.www.hulisiwei.customcontrols.FitHeightButton;
 import cn.jucheng.www.hulisiwei.customcontrols.FitHeightEditText;
 import cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView;
+import cn.jucheng.www.hulisiwei.customcontrols.HuShitixingDialog;
 import cn.jucheng.www.hulisiwei.databean.blxqbean.FileBean;
-import cn.jucheng.www.hulisiwei.fragment.formFragement.TwdFragment;
+import cn.jucheng.www.hulisiwei.fragment.formFragement.DzblFragDir.Hljld1Fragment;
+import cn.jucheng.www.hulisiwei.fragment.formFragement.DzblFragDir.Hljld2Fragment;
+import cn.jucheng.www.hulisiwei.fragment.formFragement.DzblFragDir.Hljld3Fragment;
+import cn.jucheng.www.hulisiwei.fragment.formFragement.DzblFragDir.Hljld4Fragment;
+import cn.jucheng.www.hulisiwei.fragment.formFragement.DzblFragDir.JcbgFragment;
+import cn.jucheng.www.hulisiwei.fragment.formFragement.DzblFragDir.MzblFragment;
+import cn.jucheng.www.hulisiwei.fragment.formFragement.DzblFragDir.RyjlFragment;
+import cn.jucheng.www.hulisiwei.fragment.formFragement.DzblFragDir.TgjcFragment;
+import cn.jucheng.www.hulisiwei.fragment.formFragement.DzblFragDir.TwdFragment;
+import cn.jucheng.www.hulisiwei.fragment.formFragement.DzblFragDir.XtjldFragment;
+import cn.jucheng.www.hulisiwei.fragment.formFragement.DzblFragDir.YzdLongFragment;
+import cn.jucheng.www.hulisiwei.fragment.formFragement.DzblFragDir.YzdTemFragment;
+import cn.jucheng.www.hulisiwei.fragment.formFragement.DzblFragDir.ZqtysFragment;
+import cn.jucheng.www.hulisiwei.fragment.formFragement.DzblFragDir.ZyblFragment;
 import cn.jucheng.www.hulisiwei.interfaca.MessageEvent;
 import cn.jucheng.www.hulisiwei.module.UserMessage;
 import cn.jucheng.www.hulisiwei.utils.DateUtils;
@@ -67,7 +82,7 @@ public class BlxqActivity extends MyBaseActivity implements View.OnClickListener
     @BindView(R.id.tv)
     FitHeightTextView tv;
 
-
+    private String conditionNow=null;
     private List<FileBean> mDatas = new ArrayList<FileBean>();
     private TreeListViewAdapter mAdapter;
     //学生操作记录的adapter
@@ -106,7 +121,7 @@ public class BlxqActivity extends MyBaseActivity implements View.OnClickListener
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_blxq_);
         //等待学生发送消息
-        pd = ProgressDialog.show(BlxqActivity.this, "提示", "等待学生选择病例");
+//        pd = ProgressDialog.show(BlxqActivity.this, "提示", "等待学生选择病例");
         tvPage=new FitHeightTextView(this);
         tvPage.findViewById(R.id.tv_page);
 
@@ -126,11 +141,8 @@ public class BlxqActivity extends MyBaseActivity implements View.OnClickListener
                                                         fragmentList,
                                                         R.id.main_tab_fragmentlayout,
                                                         2);
-
             czjlAdapter=new ArrayAdapter<>(this,
                     android.R.layout.simple_list_item_1,CZJLList);
-
-
         } catch (IllegalAccessException e) {
             e.printStackTrace();
         }
@@ -168,6 +180,19 @@ public class BlxqActivity extends MyBaseActivity implements View.OnClickListener
         mDatas.add(new FileBean(23, 18, "口腔护理评估单"));
 
         fragmentList.put(2,new TwdFragment());
+        fragmentList.put(3,new YzdLongFragment());
+        fragmentList.put(4,new YzdTemFragment());
+        fragmentList.put(6,new RyjlFragment());
+        fragmentList.put(7,new TgjcFragment());
+        fragmentList.put(8,new ZqtysFragment());
+        fragmentList.put(9,new XtjldFragment());
+        fragmentList.put(10,new JcbgFragment());
+        fragmentList.put(12,new Hljld1Fragment());
+        fragmentList.put(13,new Hljld2Fragment());
+        fragmentList.put(14,new Hljld3Fragment());
+        fragmentList.put(15,new Hljld4Fragment());
+        fragmentList.put(16,new ZyblFragment());
+        fragmentList.put(17,new MzblFragment());
 //        fragmentList.put(0,new BloodrecordlistFragment());
 //        fragmentList.put(1,new TransfusionrecordFragment());
 
@@ -187,28 +212,69 @@ public class BlxqActivity extends MyBaseActivity implements View.OnClickListener
                 datas.setData(MyGlobal1.ALLBIAODANMESSAGE, head_message);//存储表单头部信息
                 EventBus.getDefault().post(new MessageEvent(head_message, 1));
                 break;
-            case MyMessage.MLZ_XSCZ://学生操作
-                //mStr为临时变量存储解析出来的学生操作
-                String mStr;
+            case MyMessage.MLZ_XSCZ://学生操作 48-50医嘱状态(1个字节，取值参见附录)+状态ID(两个字节)(50-54)
+                //mStr为临时变量存储解析出来的学生操作mCon为当前病人状态 mYZ为医嘱状态，解析出来备用
+                String mStr,mCon,mYZ;
                 int mLenth;
                 mLenth=Integer
                         .parseInt(SubStringUtils.substring(str,
                                 70, 74), 16);
                 mStr=SubStringUtils.substring(str,74,mLenth);
+                mCon=SubStringUtils.substring(str,50,54);
+                mYZ=SubStringUtils.substring(str,48,50);
                 CZJLList.add(HexadecimalConver.decode(mStr));
                 czjlAdapter.notifyDataSetChanged();
                 break;
-            case MyMessage.MLZ_XLJS://学生发送的信息
+            case MyMessage.MLZ_XLJS://学生发送的信息 17标志着开始训练
                 if(Integer.parseInt(SubStringUtils.substring(str,52,54))==1){
                     pd.dismiss();
                     mHandler.postDelayed(TimerRunnable,1000);
                 }
                 break;
-            case MyMessage.MLZ_ZTGB://学生向教师机发送新的状态 说明：状态跳转时，接收学生机发送的新的当前正在进行的病例状态
+            case MyMessage.MLZ_ZTGB://状态改变 说明：状态跳转时，接收学生机发送的新的当前正在进行的病例状态
+                if(!SubStringUtils.substring(str,48,52).equals(conditionNow)){
+                    //将学生当前状态置为改变后的状态
+                    conditionNow=SubStringUtils.substring(str,48,52);
+                    mHandler2.postDelayed(ConditionRunnable,1000);
+                }
+                break;
+            case MyMessage.MLZ_XSTZJS://病人病情状态发生变化，此时教师接收信息，并显示
+                final String stuMsg=SubStringUtils.substring(str,48,52);
+                if(conditionNow.equals(stuMsg)){
+                    int mh,ml,toDate;
+                    mh=Integer.parseInt(SubStringUtils.substring(str,52,54),16);//高位16进制字符
+                    ml=Integer.parseInt(SubStringUtils.substring(str,54,56),16);//低位16进制字符
+//                    StringBuffer sb=new StringBuffer().append(mh).append(ml);//理解错误
+//                    mh=Integer.parseInt(sb.toString());
+                    toDate=mh*256+ml;//toDate是转换后的值
+                    new HuShitixingDialog.Builder(this).setMessage(HexadecimalConver.decode(SubStringUtils.substring(str,56,56+toDate)))
+                            .setPositiveButton("下发新医嘱", new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+                                    if(conditionNow.equals(stuMsg)){
+                                        MyMessage.sendMessage(MyMessage.getMsgJiaoshiquerenbingqingbianhua(stuMsg));
+                                    }else {
+                                        return;//如果现在病人状态和学生发送的病人状态不符，则返回
+                                    }
 
+                                }
+                            }).setNegativeButton("结束训练", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+
+                        }
+                    }).create().show();
+
+                }
                 break;
         }
     }
+
+    @Override
+    public void exc() {
+
+    }
+
     private Runnable TimerRunnable = new Runnable() {
 
         @Override
@@ -221,10 +287,19 @@ public class BlxqActivity extends MyBaseActivity implements View.OnClickListener
             mHandler.postDelayed(TimerRunnable,1000);
         }
     };
-    @Override
-    public void exc() {
+    private Runnable ConditionRunnable = new Runnable() {
 
-    }
+        @Override
+        public void run() {
+            if(!isStopCount2){
+                timer2 += 1000;
+                timeStr2 = DateUtils.getFormatTime(timer2);
+                tvTimeState.setText("病例运行时间："+timeStr2);
+            }
+            mHandler2.postDelayed(ConditionRunnable,1000);
+        }
+    };
+
 
     @Override
     public void onClick(View v) {

@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.ExpandableListView;
 import android.widget.LinearLayout;
 import butterknife.Unbinder;
+import butterknife.internal.DebouncingOnClickListener;
 import butterknife.internal.Utils;
 import cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView;
 import java.lang.IllegalStateException;
@@ -15,15 +16,18 @@ import java.lang.Override;
 public class BllbActivity_ViewBinding implements Unbinder {
   private BllbActivity target;
 
+  private View view2131230934;
+
   @UiThread
   public BllbActivity_ViewBinding(BllbActivity target) {
     this(target, target.getWindow().getDecorView());
   }
 
   @UiThread
-  public BllbActivity_ViewBinding(BllbActivity target, View source) {
+  public BllbActivity_ViewBinding(final BllbActivity target, View source) {
     this.target = target;
 
+    View view;
     target.expandableListView = Utils.findRequiredViewAsType(source, R.id.el_bllb, "field 'expandableListView'", ExpandableListView.class);
     target.vBlxq = Utils.findRequiredViewAsType(source, R.id.v_blxq_layout, "field 'vBlxq'", LinearLayout.class);
     target.tvBlxqXm = Utils.findRequiredViewAsType(source, R.id.tv_blxq_xm, "field 'tvBlxqXm'", FitHeightTextView.class);
@@ -36,6 +40,14 @@ public class BllbActivity_ViewBinding implements Unbinder {
     target.tvBlxqZs = Utils.findRequiredViewAsType(source, R.id.tv_blxq_zs, "field 'tvBlxqZs'", FitHeightTextView.class);
     target.tvBlxqXbs = Utils.findRequiredViewAsType(source, R.id.tv_blxq_xbs, "field 'tvBlxqXbs'", FitHeightTextView.class);
     target.tvbtnxl = Utils.findRequiredViewAsType(source, R.id.tv_btn_xl, "field 'tvbtnxl'", FitHeightTextView.class);
+    view = Utils.findRequiredView(source, R.id.iv_settings, "method 'onClick'");
+    view2131230934 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.onClick(p0);
+      }
+    });
   }
 
   @Override
@@ -57,5 +69,8 @@ public class BllbActivity_ViewBinding implements Unbinder {
     target.tvBlxqZs = null;
     target.tvBlxqXbs = null;
     target.tvbtnxl = null;
+
+    view2131230934.setOnClickListener(null);
+    view2131230934 = null;
   }
 }

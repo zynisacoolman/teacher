@@ -53,9 +53,8 @@
                     android:layout_height="match_parent"
                     android:layout_weight="2" />
 
-                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                <cn.jucheng.www.hulisiwei.customcontrols.FitWidthTextView
                     android:id="@+id/back"
-                    android:fontFamily="@font/msyh"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
@@ -87,12 +86,11 @@
                     android:layout_height="match_parent"
                     android:layout_weight="510">
 
-                    <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    <cn.jucheng.www.hulisiwei.customcontrols.FitWidthTextView
                         android:id="@+id/about_verson"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:fontFamily="@font/msyh"
                         android:layout_weight="774"
                         android:textColor="@color/drug_bton"
                         android:textSize="@dimen/text_size20" />
@@ -120,10 +118,9 @@
                     android:layout_height="match_parent"
                     android:layout_weight="360" />
 
-                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightButton
                     android:id="@+id/about_ok"
                     android:layout_width="0dp"
-                    android:fontFamily="@font/msyh"
                     android:layout_height="match_parent"
                     android:layout_gravity="center_vertical"
                     android:layout_weight="120"

@@ -1,12 +1,11 @@
 package cn.jucheng.www.hulisiwei.adapter.fragmentAdapter;
 
 import android.content.Context;
-import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.ListView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -15,8 +14,6 @@ import java.util.List;
 import cn.jucheng.www.hulisiwei.R;
 import cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView;
 import cn.jucheng.www.hulisiwei.utils.CommUtils;
-import cn.jucheng.www.hulisiwei.utils.DateUtils;
-import cn.jucheng.www.hulisiwei.widget.MyGlobal1;
 import cn.jucheng.www.hulisiwei.widget.MyMessage;
 import cn.jucheng.www.hulisiwei.widget.MyShareUtils;
 
@@ -25,7 +22,7 @@ import cn.jucheng.www.hulisiwei.widget.MyShareUtils;
  * 输液记录单分页
  */
 
-public class TWDFragmentAdapter extends BaseAdapter implements TransfusionAdapter.TranUpdateListener {
+public class TWDFragmentAdapter extends BaseAdapter {
 
 
     private List<String> specailList = new ArrayList<>();//表头信息
@@ -34,7 +31,6 @@ public class TWDFragmentAdapter extends BaseAdapter implements TransfusionAdapte
     private LayoutInflater mInflater;
     private Context mContext = null;
     int index = 1;//数据条数
-    String nurseName = "";//签名
     public static MyShareUtils datas = null;//缓存数据
 
     int yiZhuHangHao = 0;//医嘱行号
@@ -86,7 +82,8 @@ public class TWDFragmentAdapter extends BaseAdapter implements TransfusionAdapte
             holder.h_bednumber = (TextView) convertView.findViewById(R.id.h_bednumber);
             holder.h_ryrq = (FitHeightTextView) convertView.findViewById(R.id.h_ryrq);
             holder.h_zyblh=(FitHeightTextView) convertView.findViewById(R.id.h_zyblh);
-
+            holder.ll_wendu=(LinearLayout)convertView.findViewById(R.id.ll_wendu);
+//            holder.xYtoLine=(XYtoLine)convertView.findViewById(R.id.twLine);
             convertView.setTag(holder); //
 
 //            holder.adapter = new TransfusionAdapter(mContext, page_List);
@@ -109,7 +106,7 @@ public class TWDFragmentAdapter extends BaseAdapter implements TransfusionAdapte
             holder.h_bednumber.setText(CommUtils.getListString(specailList, 4));
             holder.h_ryrq.setText(CommUtils.getListString(specailList, 6));
             holder.h_zyblh.setText(CommUtils.getListString(specailList,7));
-
+//            holder.ll_wendu.addView(new CustomCurveChart(this,));
 //            if ("".equals(holder.transfusion_years.getText().toString())) {
 //                holder.transfusion_years.setText(DateUtils.getYear());
 //                holder.transfusion_mouth.setText(DateUtils.getMonth());
@@ -126,31 +123,7 @@ public class TWDFragmentAdapter extends BaseAdapter implements TransfusionAdapte
         return convertView;
     }
 
-    @Override
-    public void onUpdateClick(int postion, TransfusionAdapter transfusionAdapter, List<List<String>> listdata) {
-        List<String> list_message = new ArrayList<>();
-        list_message = listdata.get(postion);
-        yiZhuType = Integer.parseInt(String.valueOf(list_message.get(5)));
-        yiZhuHangHao = Integer.parseInt(String.valueOf(list_message.get(6)));
 
-        sendMessage(yiZhuType, yiZhuHangHao);
-        nurseName = datas.getData(MyGlobal1.NURSE_NAME);
-        if (TextUtils.isEmpty(nurseName)) {
-            nurseName = "";
-        }
-
-        String date = DateUtils.getminDate();
-
-        if(TextUtils.isEmpty(nurseName)){
-            toastListener.onToastClick();
-        }else {
-            list = new ArrayList<>();
-            list = listdata.get(postion);
-            list.set(3, date);
-            list.set(4, nurseName);
-            transfusionAdapter.setLists(listdata);
-        }
-    }
 
     /**
      * 发送消息
@@ -177,16 +150,10 @@ public class TWDFragmentAdapter extends BaseAdapter implements TransfusionAdapte
         TextView h_age;//年龄
         TextView h_division;//科室
         TextView h_bednumber;//床号
-        ListView transfusion_list;//listview
-        TextView transfusion_years;//年
-        TextView transfusion_mouth;//月
-        TextView transfusion_day;//日
-        TextView transfusion_checkuser;//核对者
-        TextView transfusion_carryout;//执行者
-        TextView transfusion_page_number;//页数
-        TransfusionAdapter adapter;//数据源adapter
+        LinearLayout ll_wendu;
         TextView h_ryrq;//入院日期
         TextView h_zyblh;//住院病历号
+//        XYtoLine xYtoLine;
 
     }
 }

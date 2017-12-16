@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myViewXmlns="http://schemas.android.com/apk/res/cn.jucheng.www.hulisiwei"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -54,44 +55,20 @@
                     android:layout_weight="2" />
 
                 <cn.jucheng.www.hulisiwei.customcontrols.FitWidthTextView
+                    android:id="@+id/set_button"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:layout_weight="774"
-                    android:onClick="onDebug"
+                    android:layout_weight="224"
                     android:text="@string/action_settings"
                     android:textColor="@color/drug_bton"
                     android:textSize="@dimen/text_size22" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="fill_parent"
-                android:layout_height="0dp"
-                android:layout_weight="30"
-                android:orientation="horizontal"
-                android:visibility="gone">
-
-                <Button
-                    android:layout_width="0dp"
-                    android:layout_height="fill_parent"
-                    android:layout_weight="52"
-                    android:background="@android:color/transparent"
-                    android:onClick="onDebug" />
-
-                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
-                    android:layout_width="0dp"
-                    android:layout_height="fill_parent"
-                    android:layout_weight="138"
-                    android:gravity="center_vertical"
-                    android:text="设置"
-                    android:textColor="#56BBe0"
-                    android:textSize="@dimen/text_size18" />
-
                 <CheckBox
                     android:id="@+id/chkLanYa"
                     android:layout_width="0dp"
-                    android:layout_height="fill_parent"
+                    android:layout_height="wrap_content"
                     android:layout_weight="30"
+                    android:layout_gravity="center_vertical"
                     android:background="@drawable/s_chk"
                     android:button="@null"
                     android:visibility="invisible" />
@@ -99,8 +76,9 @@
                 <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
                     android:id="@+id/chk_tv1"
                     android:layout_width="0dp"
-                    android:layout_height="fill_parent"
+                    android:layout_height="wrap_content"
                     android:layout_weight="98"
+                    android:layout_gravity="center_vertical"
                     android:text="@string/_chkLanYa"
                     android:textSize="@dimen/text_size18"
                     android:visibility="invisible" />
@@ -108,7 +86,8 @@
                 <CheckBox
                     android:id="@+id/chkWiFi"
                     android:layout_width="0dp"
-                    android:layout_height="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
                     android:layout_weight="30"
                     android:background="@drawable/s_chk"
                     android:button="@null"
@@ -117,7 +96,8 @@
                 <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
                     android:id="@+id/chk_tv2"
                     android:layout_width="0dp"
-                    android:layout_height="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
                     android:layout_weight="98"
                     android:text="@string/_chkWiFi"
                     android:textSize="@dimen/text_size18"
@@ -126,7 +106,8 @@
                 <CheckBox
                     android:id="@+id/chkUSB"
                     android:layout_width="0dp"
-                    android:layout_height="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
                     android:layout_weight="30"
                     android:background="@drawable/s_chk"
                     android:button="@null"
@@ -135,7 +116,8 @@
                 <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
                     android:id="@+id/chk_tv3"
                     android:layout_width="0dp"
-                    android:layout_height="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
                     android:layout_weight="98"
                     android:text="@string/_chkUSB"
                     android:textSize="@dimen/text_size18"
@@ -145,6 +127,7 @@
                     android:id="@+id/btnDebug"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
                     android:layout_weight="220"
                     android:textOff="不调试"
                     android:textOn="调试"
@@ -198,7 +181,7 @@
                             android:layout_height="match_parent"
                             android:layout_weight="22" />
 
-                        <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                        <cn.jucheng.www.hulisiwei.customcontrols.FitWidthTextView
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="132"
@@ -238,7 +221,7 @@
                             android:layout_height="match_parent"
                             android:layout_weight="22" />
 
-                        <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                        <cn.jucheng.www.hulisiwei.customcontrols.FitWidthTextView
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="132"
@@ -326,13 +309,13 @@
                     android:layout_height="match_parent"
                     android:layout_weight="140" />
 
-                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightButton
                     android:id="@+id/btnConnectDevice"
                     android:layout_width="0dp"
-                    android:gravity="center"
                     android:layout_height="match_parent"
                     android:layout_weight="560"
                     android:background="@color/gray"
+                    android:gravity="center"
                     android:onClick="checkDeviceConnection"
                     android:text="@string/btnConnectDeviceText"
                     android:textColor="@color/baise"
@@ -360,14 +343,14 @@
                     android:layout_height="match_parent"
                     android:layout_weight="140" />
 
-                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
-                    android:gravity="center"
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightButton
                     android:id="@+id/about"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="560"
                     android:background="@color/drug_bton"
-                    android:text="@string/action_settings"
+                    android:text="@string/about"
+                    android:gravity="center"
                     android:onClick="onAbout"
                     android:textColor="@color/baise"
                     android:textSize="@dimen/text_size20" />

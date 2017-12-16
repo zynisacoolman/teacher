@@ -17,7 +17,7 @@ import cn.jucheng.www.hulisiwei.base.BaseFragment;
  * Created by zyn on 2017/12/14.
  */
 
-public class Tab1 extends BaseFragment {
+public abstract class Tab1 extends BaseFragment {
     @BindView(R.id.table_layout)
     TableView tableView;
 
@@ -29,5 +29,9 @@ public class Tab1 extends BaseFragment {
         unbinder = ButterKnife.bind(this, view);
 
         return view;
+    }
+    @Override
+    public int getID(){
+        return R.layout.activity_tabblzg;
     }
 }

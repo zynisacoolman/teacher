@@ -155,7 +155,7 @@ public class MyMessage {
 		return String.format(MSG_XIANSHIPINGJIA_BUXIANSHI, 2);
 	}
 
-	public static String getMsgJiaoshiquerenbingqingbianhua(int zhuangTaiId) {
+	public static String getMsgJiaoshiquerenbingqingbianhua(String zhuangTaiId) {
 		return String.format(MSG_JIAOSHIQUERENBINGQINGBIANHUA, zhuangTaiId);
 	}
 

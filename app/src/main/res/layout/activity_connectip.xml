@@ -1,20 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myViewXmlns="http://schemas.android.com/apk/res/cn.jucheng.www.hulisiwei"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    xmlns:myViewXmlns="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/touming"
+    tools:ignore="ResAuto">
 
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="0dp"
-        android:layout_weight="86" >
-    </TextView>
+        android:layout_weight="86"></TextView>
 
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="0dp"
-        android:layout_weight="580" >
+        android:layout_weight="580"
+        android:orientation="horizontal">
 
         <TextView
             android:layout_width="0dp"
@@ -25,171 +28,208 @@
             android:layout_width="0dp"
             android:layout_height="fill_parent"
             android:layout_weight="840"
-            android:background="@drawable/sz_bg"
-            android:orientation="vertical" >
-
-            <TextView
-                android:layout_width="fill_parent"
-                android:layout_height="0dp"
-                android:layout_weight="10" />
-
+            android:background="@color/baise"
+            android:orientation="vertical">
+            <!--设置-->
             <LinearLayout
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="30"
-                android:orientation="horizontal" >
+                android:layout_weight="48"
+                android:background="@color/setbackground_bton"
+                android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="0dp"
-                    android:layout_height="fill_parent"
-                    android:layout_weight="52" />
+                    android:layout_height="match_parent"
+                    android:layout_weight="15" />
 
-                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/sz" />
+
+                <TextView
                     android:layout_width="0dp"
-                    android:layout_height="fill_parent"
-                    android:layout_weight="788"
-                    android:gravity="center_vertical"
-                    android:text="设置>设置连接方式>连接网络设备"
-                    android:textColor="#56BBe0"
-                    android:textSize="@dimen/text_size18" />
+                    android:layout_height="match_parent"
+                    android:layout_weight="2" />
+
+                <cn.jucheng.www.hulisiwei.customcontrols.FitWidthTextView
+                    android:id="@+id/back_network"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="774"
+                    android:text="@string/set_network"
+                    android:textColor="@color/drug_bton"
+                    android:textSize="@dimen/text_size22" />
+
             </LinearLayout>
 
             <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="0dp"
-                android:layout_weight="130" />
+                android:layout_weight="122" />
 
             <LinearLayout
                 android:id="@+id/relativeLayout1"
                 android:layout_width="fill_parent"
                 android:layout_height="0dp"
                 android:layout_weight="180"
-                android:orientation="horizontal" >
+                android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="233" />
+                    android:layout_height="match_parent"
+                    android:layout_weight="131" />
 
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="fill_parent"
-                    android:layout_weight="580"
-                    android:background="@drawable/ljwlsb_bg"
-                    android:orientation="vertical" >
+                    android:layout_weight="579"
+                    android:background="@color/ywmessage"
+                    android:orientation="vertical">
 
                     <TextView
                         android:layout_width="fill_parent"
                         android:layout_height="0dp"
-                        android:layout_weight="30" />
+                        android:layout_weight="38" />
 
                     <LinearLayout
                         android:layout_width="fill_parent"
                         android:layout_height="0dp"
-                        android:layout_weight="38"
-                        android:gravity="bottom"
-                        android:orientation="horizontal" >
+                        android:layout_weight="42"
+                        android:orientation="horizontal">
 
                         <TextView
                             android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="92" />
+
+                        <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_weight="321" />
+                            android:layout_weight="50"
+                            android:gravity="center_vertical"
+                            android:text="@string/ip"
+                            android:textColor="@color/drug_bton"
+                            android:textSize="@dimen/text_size20" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="17" />
 
                         <cn.jucheng.www.hulisiwei.customcontrols.FitHeightEditText
                             android:id="@+id/editTextInputIp"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="410"
-                            android:background="@null"
+                            android:layout_height="match_parent"
+                            android:layout_weight="260"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:background="@drawable/bg_edittext_normal"
                             android:gravity="center_vertical"
                             android:inputType="text"
-                            android:textColor="#f17673"
+                            android:textColor="@color/drug_bton"
                             android:textSize="@dimen/text_size20" />
 
                         <TextView
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="269" />
+                            android:layout_height="match_parent"
+                            android:layout_weight="290" />
                     </LinearLayout>
 
                     <TextView
                         android:layout_width="fill_parent"
                         android:layout_height="0dp"
-                        android:layout_weight="10" />
+                        android:layout_weight="24" />
 
                     <LinearLayout
                         android:layout_width="fill_parent"
                         android:layout_height="0dp"
-                        android:layout_weight="50"
-                        android:gravity="center_vertical"
-                        android:orientation="horizontal" >
+                        android:layout_weight="42"
+                        android:orientation="horizontal">
 
                         <TextView
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="321" />
+                            android:layout_height="match_parent"
+                            android:layout_weight="92" />
 
-                        <cn.jucheng.www.hulisiwei.customcontrols.FitHeightEditText
-                            android:id="@+id/editTextInputPort"
+                        <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_weight="410"
-                            android:background="@null"
-                            android:inputType="text"
-                            android:textColor="#f17673"
+                            android:layout_weight="50"
+                            android:gravity="center_vertical"
+                            android:text="@string/port"
+                            android:textColor="@color/drug_bton"
                             android:textSize="@dimen/text_size20" />
 
                         <TextView
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="269" />
-                    </LinearLayout>
+                            android:layout_height="match_parent"
+                            android:layout_weight="17" />
 
+                        <cn.jucheng.www.hulisiwei.customcontrols.FitHeightEditText
+                            android:id="@+id/editTextInputPort"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="260"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:background="@drawable/bg_edittext_normal"
+                            android:gravity="center_vertical"
+                            android:inputType="text"
+                            android:textColor="@color/drug_bton"
+                            android:textSize="@dimen/text_size20" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="290" />
+                    </LinearLayout>
                     <TextView
                         android:layout_width="fill_parent"
                         android:layout_height="0dp"
-                        android:layout_weight="22" />
+                        android:layout_weight="34" />
                 </LinearLayout>
 
                 <TextView
                     android:layout_width="0dp"
-                    android:layout_height="fill_parent"
-                    android:layout_weight="279" />
+                    android:layout_height="match_parent"
+                    android:layout_weight="130" />
             </LinearLayout>
 
             <TextView
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="133" />
 
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="0dp"
-                android:layout_weight="55"
-                android:orientation="horizontal" >
+                android:layout_weight="40"
+                android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="407" />
+                    android:layout_weight="360" />
 
                 <cn.jucheng.www.hulisiwei.customcontrols.FitHeightButton
                     android:id="@+id/buttonConnectIP"
                     android:layout_width="0dp"
                     android:layout_height="fill_parent"
-                    android:layout_weight="166"
-                    android:background="@drawable/s_btn2"
-                    android:lineSpacingMultiplier="1.4"
-                    android:paddingBottom="5dp"
+                    android:layout_weight="120"
+                    android:background="@color/drug_bton"
                     android:text="@string/connect"
-                    android:textColor="@color/s_btncolor"
-                    android:textSize="@dimen/text_size26"
-                    myViewXmlns:attr2="2" />
+                    android:textColor="@color/baise"
+                    android:textSize="@dimen/text_size20"
+                    />
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="fill_parent"
-                    android:layout_weight="407" />
+                    android:layout_weight="360" />
             </LinearLayout>
 
             <TextView
@@ -201,14 +241,12 @@
         <TextView
             android:layout_width="0dp"
             android:layout_height="fill_parent"
-            android:layout_weight="220" >
-        </TextView>
+            android:layout_weight="220" />
     </LinearLayout>
 
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="0dp"
-        android:layout_weight="86" >
-    </TextView>
+        android:layout_weight="86"></TextView>
 
 </LinearLayout>

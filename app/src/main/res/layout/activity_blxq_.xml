@@ -239,6 +239,7 @@
                 android:id="@+id/lv_blxq"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
+                android:divider="@null"
                 android:layout_weight="517"
                 android:background="@color/bg_bgcolor2" />
 

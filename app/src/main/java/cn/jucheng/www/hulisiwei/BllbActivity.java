@@ -28,12 +28,14 @@ import java.util.HashMap;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 import cn.jucheng.jclibs.tools.MyLog;
 import cn.jucheng.jclibs.tools.MyToast;
 import cn.jucheng.jclibs.tools.SubStringUtils;
 import cn.jucheng.www.hulisiwei.adapter.ExplistBLLBAdapter;
 import cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView;
 import cn.jucheng.www.hulisiwei.databean.bllbbean.Baseinfo;
+import cn.jucheng.www.hulisiwei.databean.bllbbean.Medicalrecordsbaseinfo;
 import cn.jucheng.www.hulisiwei.databean.bllbbean.Patientinfo;
 import cn.jucheng.www.hulisiwei.interfaca.OnBllbSonClickListener;
 import cn.jucheng.www.hulisiwei.utils.CustomDialog;
@@ -234,9 +236,15 @@ public class BllbActivity extends MyBaseActivity implements View.OnClickListener
     public void exc() {
 
     }
-
+    @OnClick(R.id.iv_settings)
     @Override
     public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.iv_settings:
+                Intent intents = new Intent(this, SettingsActivity.class);
+                startActivity(intents);
+                break;
+        }
     }
     //回调接口实现子列表点击
     @Override
@@ -255,10 +263,12 @@ public class BllbActivity extends MyBaseActivity implements View.OnClickListener
             JsonObject obj = new JsonParser().parse(jsonContent).getAsJsonObject().get("jc2100").getAsJsonObject().get("case").getAsJsonObject();
             JsonObject baseinfo = obj.get("baseinfo").getAsJsonObject();
             JsonObject patientinfo =obj.get("patientinfo").getAsJsonObject();
+            JsonObject medicalrecordsbaseinfo=obj.get("medicalrecordsbaseinfo").getAsJsonObject();
             Gson gson = new Gson();
             Patientinfo pi = gson.fromJson(patientinfo, Patientinfo.class);
             Baseinfo bi = gson.fromJson(baseinfo,Baseinfo.class);
-            object=new Object[] {pi,bi};
+            Medicalrecordsbaseinfo mbi=gson.fromJson(medicalrecordsbaseinfo,Medicalrecordsbaseinfo.class);
+            object=new Object[] {pi,bi,mbi};
 
         }catch (NullPointerException e){
                 Log.d(TAG, "json串有空数据 ");
@@ -268,13 +278,20 @@ public class BllbActivity extends MyBaseActivity implements View.OnClickListener
         protected void onPostExecute(Object result[]) {
             Patientinfo pi=(Patientinfo)result[0];
             Baseinfo bi=(Baseinfo)result[1];
-            setView(pi,bi);
+            Medicalrecordsbaseinfo mbi=(Medicalrecordsbaseinfo)result[2];
+            setView(pi,bi,mbi);
         }
     }
 
-    private void setView(Patientinfo pi,Baseinfo bi) {
-        tvBlxqXm.setText(pi.getName());
-        tvBlxqXb.setText(pi.getSex());
+    private void setView(Patientinfo pi,Baseinfo bi,Medicalrecordsbaseinfo mbi) {
+        tvBlxqXm.setText("年龄："+pi.getName());
+        tvBlxqXb.setText("性别:"+pi.getSex());
+        tvBlxqNld.setText("年龄段:"+pi.getAge());
+        tvBlxqHyzk.setText("婚姻状况:"+pi.getHunyin());
+        tvBlxqXs.setText("职业:"+pi.getZhiye());
+        tvBlxqZz.setText("住址:"+pi.getHukoudizhi());
+        tvBlxqZs.setText(mbi.getZhusu());
+        tvBlxqXbs.setText(mbi.getXianbingshi());
     }
 
     //从sd卡中读取指定目录文件内容并存储到String中
@@ -283,7 +300,8 @@ public class BllbActivity extends MyBaseActivity implements View.OnClickListener
 
         try {
             FileInputStream f = new FileInputStream(path);
-            BufferedReader bis = new BufferedReader(new InputStreamReader(f));
+            //原来一直显示代码，其实改为gbk 或者utf8即可
+            BufferedReader bis = new BufferedReader(new InputStreamReader(f,"GBK"));
             String line = "";
             while ((line = bis.readLine()) != null) {
                 result += line;

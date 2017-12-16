@@ -13,6 +13,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import cn.jucheng.www.hulisiwei.global.AppManager;
+import cn.jucheng.www.hulisiwei.widget.MyMessage;
 
 public class MainActivity extends MyBaseActivity {
 	@SuppressLint("HandlerLeak")
@@ -30,6 +31,8 @@ public class MainActivity extends MyBaseActivity {
 		// 显示版本号
 		TextView tvVersion = (TextView) findViewById(R.id.txtVersion);
 		tvVersion.setText(getVersion(this));
+		//索要学生机状态
+		getUnfinish();
 		// 2秒钟后进入系统
 		mhandler.sendEmptyMessageDelayed(1, 2000);
 		// 得到屏幕宽高维度信息：构造函数DisplayMetrics 不需要传递任何参数；
@@ -51,7 +54,10 @@ public class MainActivity extends MyBaseActivity {
 		}
 		return versionName;
 	}
-
+	/**发送信息索要当前病例状态**/
+	private void getUnfinish(){
+		MyMessage.sendMessage(MyMessage.getMsgSuoyaoxueshengjizhuangtai());
+	}
 	/** 进入系统 */
 	private void onIn() {
 //		Intent intent = new Intent(this, LoginActivity.class);
@@ -71,6 +77,7 @@ public class MainActivity extends MyBaseActivity {
 		super.onSettings(v);
 	}
 
+
 	@Override
 	public void onReturn(View v) {
 		super.onReturn(v);
@@ -83,6 +90,11 @@ public class MainActivity extends MyBaseActivity {
 
 	@Override
 	protected void HandlerMessage(Message msg) {
+        switch (msg.what){
+            case MyMessage.MLZ_XINTIAOJIANCE:
+                break;
+        }
+
 	}
 
 }

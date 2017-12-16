@@ -2,18 +2,19 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:background="@color/touming"
+    android:orientation="vertical">
 
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="0dp"
-        android:layout_weight="86" >
-    </TextView>
+        android:layout_weight="86"></TextView>
 
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="0dp"
-        android:layout_weight="580" >
+        android:layout_weight="580"
+        android:orientation="horizontal">
 
         <TextView
             android:layout_width="0dp"
@@ -24,85 +25,89 @@
             android:layout_width="0dp"
             android:layout_height="fill_parent"
             android:layout_weight="840"
-            android:background="@drawable/sz_bg"
-            android:orientation="vertical" >
+            android:background="@color/baise"
+            android:orientation="vertical">
 
-            <TextView
-                android:layout_width="fill_parent"
-                android:layout_height="0dp"
-                android:layout_weight="10" />
-
+            <!--设置-->
             <LinearLayout
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="30"
-                android:orientation="horizontal" >
+                android:layout_weight="48"
+                android:background="@color/setbackground_bton"
+                android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="0dp"
-                    android:layout_height="fill_parent"
-                    android:layout_weight="52" />
+                    android:layout_height="match_parent"
+                    android:layout_weight="15" />
 
-                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/sz" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2" />
+
+                <cn.jucheng.www.hulisiwei.customcontrols.FitWidthTextView
                     android:id="@+id/back_already_bluetooth"
                     android:layout_width="0dp"
-                    android:layout_height="fill_parent"
-                    android:layout_weight="788"
-                    android:gravity="center_vertical"
-                    android:text="设置>设置连接方式>连接已配对的蓝牙设备"
-                    android:textColor="#56BBe0"
-                    android:textSize="@dimen/text_size18" />
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="774"
+                    android:text="@string/set_alredy_bluetooth"
+                    android:textColor="@color/drug_bton"
+                    android:textSize="@dimen/text_size22" />
+
             </LinearLayout>
 
             <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="0dp"
-                android:layout_weight="88" />
+                android:layout_weight="80" />
 
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="0dp"
-                android:layout_weight="326"
-                android:orientation="horizontal" >
+                android:layout_weight="324"
+                android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="fill_parent"
-                    android:layout_weight="165" >
-                </TextView>
+                    android:layout_weight="140"></TextView>
 
                 <ListView
                     android:id="@+id/listViewSettingConnect"
                     android:layout_width="0dp"
                     android:layout_height="fill_parent"
-                    android:layout_weight="670" >
-                </ListView>
+                    android:divider="@color/touming"
+                    android:layout_weight="560"></ListView>
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="fill_parent"
-                    android:layout_weight="165" >
-                </TextView>
+                    android:layout_weight="140"></TextView>
             </LinearLayout>
 
             <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="0dp"
-                android:layout_weight="126" >
-            </TextView>
+                android:layout_weight="128"></TextView>
         </LinearLayout>
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="fill_parent"
-            android:layout_weight="220" >
-        </TextView>
+            android:layout_weight="220"></TextView>
     </LinearLayout>
 
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="0dp"
-        android:layout_weight="86" >
-    </TextView>
+        android:layout_weight="86"></TextView>
 
 </LinearLayout>

@@ -23,14 +23,25 @@ import android.widget.ProgressBar;
 
 import java.lang.ref.WeakReference;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
 import cn.jucheng.jclibs.socket.MyGlobal;
 import cn.jucheng.jclibs.socket.WorkService;
 import cn.jucheng.jclibs.tools.MyToast;
 
-public class SearchBTActivity extends MyBaseActivity implements OnClickListener {
 
-	private LinearLayout linearlayoutdevices;
-	private ProgressBar progressBarSearchStatus;
+/**
+ * 搜索蓝牙设备
+ */
+public class SearchBTActivity extends MyBaseActivity {
+
+	@BindView(R.id.progressBar_SearchStatus)
+	ProgressBar progressBarSearchStatus;
+
+	@BindView(R.id.linearlayout_devices)
+	LinearLayout linearlayoutdevices;
+
 	private ProgressDialog dialog;
 
 	private BroadcastReceiver broadcastReceiver = null;
@@ -43,11 +54,9 @@ public class SearchBTActivity extends MyBaseActivity implements OnClickListener 
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
-		setContentView(R.layout.activity_bluetooth);
+		setContentView(R.layout.activity_bluetooh);
+		ButterKnife.bind(this);
 
-		findViewById(R.id.buttonSearch).setOnClickListener(this);
-		progressBarSearchStatus = (ProgressBar) findViewById(R.id.progressBarSearchStatus);
-		linearlayoutdevices = (LinearLayout) findViewById(R.id.linearlayoutdevices);
 		dialog = new ProgressDialog(this);
 
 		initBroadcast();
@@ -73,32 +82,6 @@ public class SearchBTActivity extends MyBaseActivity implements OnClickListener 
 		return super.onKeyDown(keyCode, event);
 	}
 
-	public void onClick(View arg0) {
-		// TODO Auto-generated method stub
-		if (arg0.getId() == R.id.buttonSearch) {
-			BluetoothAdapter adapter = BluetoothAdapter.getDefaultAdapter();
-			if (null == adapter) {
-				finish();
-				return;
-			}
-
-			if (!adapter.isEnabled()) {
-				if (adapter.enable()) {
-					while (!adapter.isEnabled())
-						;
-					Log.v(TAG, "Enable BluetoothAdapter");
-				} else {
-					finish();
-					return;
-				}
-			}
-
-			adapter.cancelDiscovery();
-			linearlayoutdevices.removeAllViews();
-			adapter.startDiscovery();
-		}
-	}
-
 	private void initBroadcast() {
 		broadcastReceiver = new BroadcastReceiver() {
 
@@ -120,17 +103,17 @@ public class SearchBTActivity extends MyBaseActivity implements OnClickListener 
 					else if (name.equals(address))
 						name = "BT";
 					Button button = new Button(context);
-					button.setBackgroundResource(R.drawable.s_btn1);
-					button.setTextAppearance(context, R.dimen.text_size16);
+					button.setBackgroundColor(getResources().getColor(R.color.drug_bton));
+					button.setTextAppearance(context, R.dimen.text_size20);
 					button.setTextColor(getResources().getColor(
-							R.color.tvSheZhi_lan));
+							R.color.baise));
 
 					button.setHeight(getResources().getDimensionPixelSize(
 							R.dimen.search_bta_item_btn_height));
 					button.setGravity(Gravity.CENTER);
 					button.setText("   " + name + ": " + address);
 					button.setTextSize(20);
-					button.setGravity(android.view.Gravity.CENTER_VERTICAL
+					button.setGravity(Gravity.CENTER_VERTICAL
 							| Gravity.LEFT);
 
 					button.setOnClickListener(new OnClickListener() {
@@ -168,6 +151,37 @@ public class SearchBTActivity extends MyBaseActivity implements OnClickListener 
 			unregisterReceiver(broadcastReceiver);
 	}
 
+	@OnClick({R.id.back_bluetooth, R.id.serach_buton})
+	public void onViewClicked(View view) {
+		switch (view.getId()) {
+			case R.id.back_bluetooth://返回
+				finish();
+				break;
+			case R.id.serach_buton://搜索
+				BluetoothAdapter adapter = BluetoothAdapter.getDefaultAdapter();
+				if (null == adapter) {
+					finish();
+					return;
+				}
+
+				if (!adapter.isEnabled()) {
+					if (adapter.enable()) {
+						while (!adapter.isEnabled())
+							;
+						Log.v(TAG, "Enable BluetoothAdapter");
+					} else {
+						finish();
+						return;
+					}
+				}
+
+				adapter.cancelDiscovery();
+				linearlayoutdevices.removeAllViews();
+				adapter.startDiscovery();
+				break;
+		}
+	}
+
 	private static class MHandler extends Handler {
 
 		private WeakReference<SearchBTActivity> mActivity;
@@ -180,15 +194,15 @@ public class SearchBTActivity extends MyBaseActivity implements OnClickListener 
 		public void handleMessage(Message msg) {
 			SearchBTActivity theActivity = mActivity.get();
 			switch (msg.what) {
-			case MyGlobal.MSG_WORKTHREAD_SEND_CONNECTBTRESULT: {
-				int result = msg.arg1;
-				MyToast.showToast(theActivity,
-						(result == 1) ? MyGlobal.toast_success
-								: MyGlobal.toast_fail);
-				Log.v(TAG, "Connect Result: " + result);
-				theActivity.dialog.cancel();
-				break;
-			}
+				case MyGlobal.MSG_WORKTHREAD_SEND_CONNECTBTRESULT: {
+					int result = msg.arg1;
+					MyToast.showToast(theActivity,
+							(result == 1) ? MyGlobal.toast_success
+									: MyGlobal.toast_fail);
+					Log.v(TAG, "Connect Result: " + result);
+					theActivity.dialog.cancel();
+					break;
+				}
 			}
 		}
 	}

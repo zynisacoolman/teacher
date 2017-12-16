@@ -49,7 +49,7 @@
     <string name="blcpy_string3">正在运行</string>
     <string name="v1_1_0">V1.1.0</string>
     <string name="str_bllb">病例列表</string>
-    <string name="text_xm">姓名：王小二</string>
+    <string name="text_xm">姓名：</string>
     <string name="str_blzg">病例转归</string>
     <string name="str_xunlian">训练</string>
     <!--主页-->
@@ -59,6 +59,7 @@
     <string name="name">姓名：</string>
     <string name="sex">性别：</string>
     <string name="age">年龄：</string>
+    <string name="marriage">婚否：</string>
     <string name="hospitalNumber">住院号：</string>
     <string name="bedNumber">床号：</string>
     <string name="office">科室：</string>

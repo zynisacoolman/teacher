@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "cn.jucheng.www.hulisiwei"
-        minSdkVersion 14
+        minSdkVersion 21
         targetSdkVersion 14
         multiDexEnabled true
     }

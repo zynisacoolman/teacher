@@ -81,16 +81,7 @@ public class LoginActivity extends MyBaseActivity {
 			if (TextUtils.isEmpty(etZhuangTaiId)) {
 				etZhuangTaiId = "1";
 			}
-			try {
-				MyMessage.sendMessage(MyMessage
-						.getMsgJiaoshiquerenbingqingbianhua(new Integer(
-								etZhuangTaiId)));
-				etXianShi.setText(MyMessage
-						.getMsgJiaoshiquerenbingqingbianhua(new Integer(
-								etZhuangTaiId)));
-			} catch (Exception e) {
-				MyToast.showToast(this, "请检查输入内容");
-			}
+
 			break;
 		case R.id.btnFSXunLianZhuangTaiJieShou:
 			String etXunLianZhuangTai = ((EditText) findViewById(R.id.etXunLianZhuangTai))
@@ -213,4 +204,5 @@ public class LoginActivity extends MyBaseActivity {
 		// TODO Auto-generated method stub
 
 	}
+
 }
