@@ -1,7 +1,6 @@
 package cn.jucheng.www.hulisiwei.adapter.fragmentAdapter;
 
 import android.content.Context;
-import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,8 +15,6 @@ import cn.jucheng.www.hulisiwei.R;
 import cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView;
 import cn.jucheng.www.hulisiwei.module.UserMessage;
 import cn.jucheng.www.hulisiwei.utils.CommUtils;
-import cn.jucheng.www.hulisiwei.utils.DateUtils;
-import cn.jucheng.www.hulisiwei.widget.MyGlobal1;
 import cn.jucheng.www.hulisiwei.widget.MyShareUtils;
 
 /**
@@ -100,27 +97,11 @@ public class XTJLDFragmentAdapter extends BaseAdapter {
             holder.h_age.setText(CommUtils.getListString(specailList, 2));
             holder.h_division.setText(CommUtils.getListString(specailList, 3));
             holder.h_bednumber.setText(CommUtils.getListString(specailList, 4));
-            holder.h_zyblh.setText(CommUtils.getListString(specailList,7));
-
-            if ("".equals(holder.transfusion_years.getText().toString())) {
-                holder.transfusion_years.setText(DateUtils.getYear());
-                holder.transfusion_mouth.setText(DateUtils.getMonth());
-                holder.transfusion_day.setText(DateUtils.getDay());
-            }
-            nurseName = datas.getData(MyGlobal1.NURSE_NAME);
-            if (nurseName != null && !TextUtils.isEmpty(nurseName)) {
-                holder.transfusion_carryout.setText(nurseName);
-            } else {
-                holder.transfusion_carryout.setText("");
-            }
+            holder.h_illrecordNum.setText(CommUtils.getListString(specailList, 5));
         }
 
         return convertView;
     }
-
-
-
-
 
     class ViewHolder {
         TextView h_name;//姓名

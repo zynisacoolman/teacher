@@ -320,7 +320,6 @@
     <string name="injectionlist_text">注射单</string>
     <string name="inputbtmachint">在此输入蓝牙地址，形如01:23:45:67:89:AB</string>
     <string name="ip">IP</string>
-    <string name="marriage">婚否：</string>
     <string name="medicalordersexecutive_text">医嘱执行单</string>
     <string name="name">姓名：</string>
     <string name="none_found">找不到设备</string>
@@ -347,7 +346,7 @@
     <string name="str_blzg">病例转归</string>
     <string name="str_xunlian">训练</string>
     <string name="takemedicinelist_text">服药单</string>
-    <string name="text_xm">姓名：</string>
+    <string name="text_xm">姓名：王小二</string>
     <string name="title_other_devices">其他设备</string>
     <string name="title_paired_devices">配对设备</string>
     <string name="transfusionlist_text">输液单</string>

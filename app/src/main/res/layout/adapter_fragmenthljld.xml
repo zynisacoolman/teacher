@@ -13,7 +13,7 @@
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="1360dp"
-            android:background="@drawable/fragment_ybhljud"
+            android:background="@drawable/fragment_hljld"
             android:orientation="vertical">
 
             <TextView
