@@ -3,13 +3,9 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical">
-
-    <ScrollView
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:fillViewport="true"
-        android:scrollbars="none">
-
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="1360dp"
@@ -18,13 +14,13 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="156dp" />
+                android:layout_height="189dp"/>
             <!--表头-->
             <include layout="@layout/fragment_formhead_layout"/>
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="14dp"
+                android:layout_height="30dp"
                 android:orientation="horizontal">
 
             </TextView>
@@ -53,6 +49,28 @@
                     android:text="住院病历号"/>
             </LinearLayout>
             <!--内容-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+            <GridView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:numColumns="7"
+                android:id="@+id/gv_twd_ryrq"
+                />
+            <GridView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:numColumns="7"
+                android:id="@+id/gv_twd_zydays"
+            />
+            <GridView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:numColumns="7"
+                android:id="@+id/gv_twd_sshdays"
+                />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="930dp"
@@ -67,8 +85,64 @@
                     <!--/>-->
 
             </LinearLayout>
+            <GridView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:numColumns="42"
+                android:id="@+id/gv_twd_hxcs1">
 
+            </GridView>
+            <GridView
+                android:layout_weight="1"
+                android:layout_height="10dp"
+                android:numColumns="42"
+                android:id="@+id/gv_twd_hxcs2"
+                android:layout_width="wrap_content">
 
+            </GridView>
+            <GridView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:numColumns="14"
+                android:id="@+id/gv_twd_xueya"
+                >
+
+            </GridView>
+            <GridView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:numColumns="7"
+                android:id="@+id/gv_twd_ruliang">
+
+            </GridView>
+            <GridView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:numColumns="7"
+                android:id="@+id/gv_twd_chuliang">
+
+            </GridView>
+            <GridView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:numColumns="7"
+                android:id="@+id/gv_twd_dabian">
+
+            </GridView>
+            <GridView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:numColumns="7"
+                android:id="@+id/gv_twd_tizhong">
+
+            </GridView>
+            <GridView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:numColumns="7"
+                android:id="@+id/gv_twd_shengao">
+
+            </GridView>
 
             <TextView
                 android:layout_width="match_parent"
@@ -103,5 +177,5 @@
                 android:layout_width="match_parent"
                 android:layout_height="76dp" />
         </LinearLayout>
-    </ScrollView>
+        </ScrollView>
 </LinearLayout>

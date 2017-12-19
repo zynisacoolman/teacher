@@ -16,7 +16,7 @@ import java.lang.Override;
 public class BllbActivity_ViewBinding implements Unbinder {
   private BllbActivity target;
 
-  private View view2131230934;
+  private View view2131230946;
 
   @UiThread
   public BllbActivity_ViewBinding(BllbActivity target) {
@@ -41,7 +41,7 @@ public class BllbActivity_ViewBinding implements Unbinder {
     target.tvBlxqXbs = Utils.findRequiredViewAsType(source, R.id.tv_blxq_xbs, "field 'tvBlxqXbs'", FitHeightTextView.class);
     target.tvbtnxl = Utils.findRequiredViewAsType(source, R.id.tv_btn_xl, "field 'tvbtnxl'", FitHeightTextView.class);
     view = Utils.findRequiredView(source, R.id.iv_settings, "method 'onClick'");
-    view2131230934 = view;
+    view2131230946 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -70,7 +70,7 @@ public class BllbActivity_ViewBinding implements Unbinder {
     target.tvBlxqXbs = null;
     target.tvbtnxl = null;
 
-    view2131230934.setOnClickListener(null);
-    view2131230934 = null;
+    view2131230946.setOnClickListener(null);
+    view2131230946 = null;
   }
 }

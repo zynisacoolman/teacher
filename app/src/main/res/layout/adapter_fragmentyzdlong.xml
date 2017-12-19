@@ -33,14 +33,37 @@
                 android:layout_width="match_parent"
                 android:layout_height="930dp"
                 android:orientation="horizontal">
-
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7.5"
+                    />
                 <cn.jucheng.www.hulisiwei.base.MyList
-                    android:id="@+id/inject_list"
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:divider="@color/touming"
-                    android:scrollbars="none"
-                    android:listSelector="@color/touming" />
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="36"
+                    android:id="@+id/gv_start"/>
+                <cn.jucheng.www.hulisiwei.base.MyList
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:id="@+id/gv_hssign"
+                    android:layout_height="match_parent"/>
+                <cn.jucheng.www.hulisiwei.base.MyList
+                    android:layout_width="0dp"
+                    android:layout_weight="23"
+                    android:id="@+id/gv_stop"
+                    android:layout_height="match_parent"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"/>
+                <!--<cn.jucheng.www.hulisiwei.base.MyList-->
+                    <!--android:id="@+id/inject_list"-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="fill_parent"-->
+                    <!--android:divider="@color/touming"-->
+                    <!--android:scrollbars="none"-->
+                    <!--android:listSelector="@color/touming" />-->
 
             </LinearLayout>
 

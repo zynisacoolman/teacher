@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import cn.jucheng.www.hulisiwei.databean.blnrbean.twdlistbean;
+import cn.jucheng.www.hulisiwei.databean.blnrbean.TwdResult;
 
 /**
  * Created by w on 2017-11-29.
@@ -35,5 +35,12 @@ public class UserMessage {
     //药物信息
     public static Map<String, Object> drug_Message_Map = new HashMap<>();
     //体温单信息
-    public static twdlistbean twd_twdbean=new twdlistbean();
+    public static TwdResult twdResult=new TwdResult();
+    //长期医嘱单信息 开始医嘱
+    public static List<List<String>> YZDlongstart =new ArrayList<>();
+    //长期医嘱单信息 停止医嘱
+    public static List<List<String>> YZDlongstop =new ArrayList<>();
+
+
+
 }

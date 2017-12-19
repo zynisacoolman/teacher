@@ -32,7 +32,7 @@ import cn.jucheng.www.hulisiwei.widget.HexadecimalConver;
 import cn.jucheng.www.hulisiwei.widget.MyGlobal1;
 import cn.jucheng.www.hulisiwei.widget.MyShareUtils;
 
-import static cn.jucheng.www.hulisiwei.module.UserMessage.twd_twdbean;
+import static cn.jucheng.www.hulisiwei.module.UserMessage.twdResult;
 
 /**
  * Created by zyn on 2017-11-22.
@@ -211,17 +211,17 @@ public class ZtjldFragment extends BaseFragment implements TWDFragmentAdapter.To
         formType=Integer.parseInt(SubStringUtils.substring(message,54,56),16);
         switch (formType){
             case 1:
-                twd_twdbean.setMbsz(
+                twdResult.setMbsz(
                         CommUtils.getDatamap(SubStringUtils.substring(message,56,56+validLenth))
                 );
                 break;
             case 2:
-                twd_twdbean.setTwsz(
+                twdResult.setTwsz(
                         CommUtils.getDatamap(SubStringUtils.substring(message,56,56+validLenth))
                 );
                 break;
             case 3:
-                twd_twdbean.setOther(
+                twdResult.setOther(
                         CommUtils.getJson(message, "tiwendan")
                 );
                 break;

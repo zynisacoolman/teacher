@@ -61,6 +61,9 @@ public class MyMessage {
 	public static final int MLZ_FSSLZT = 0x0E21;
 	/** 21、接受表单头信息*/
 	public static final int MLZ_BDT=0x0E19;
+	/** 22、通知电子医嘱单中的内容**/
+	public static final int MLZ_YZD=0x0E23;
+
 	// TODO 发送的数据
 	/** 心跳检测 */
 	private static final String MSG_XINTIAOJIANCE = "4F6830 0100 016831 0000000000000000000000000000 00A5 0000 00";

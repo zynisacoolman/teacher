@@ -267,6 +267,11 @@ public class BlxqActivity extends MyBaseActivity implements View.OnClickListener
 
                 }
                 break;
+            case MyMessage.MLZ_YZD:
+                //电子医嘱单 长期临时数据都在这里处理
+                UserMessage.biaodan_message = str;//缓存表单数据
+                EventBus.getDefault().post(new MessageEvent(UserMessage.biaodan_message, 4));
+                break;
         }
     }
 

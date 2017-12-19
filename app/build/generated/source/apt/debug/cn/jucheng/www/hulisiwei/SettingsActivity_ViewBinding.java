@@ -14,7 +14,7 @@ import java.lang.Override;
 public class SettingsActivity_ViewBinding implements Unbinder {
   private SettingsActivity target;
 
-  private View view2131230996;
+  private View view2131231008;
 
   @UiThread
   public SettingsActivity_ViewBinding(SettingsActivity target) {
@@ -28,7 +28,7 @@ public class SettingsActivity_ViewBinding implements Unbinder {
     View view;
     view = Utils.findRequiredView(source, R.id.set_button, "field 'setButton' and method 'onViewClicked'");
     target.setButton = Utils.castView(view, R.id.set_button, "field 'setButton'", FitWidthTextView.class);
-    view2131230996 = view;
+    view2131231008 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -46,7 +46,7 @@ public class SettingsActivity_ViewBinding implements Unbinder {
 
     target.setButton = null;
 
-    view2131230996.setOnClickListener(null);
-    view2131230996 = null;
+    view2131231008.setOnClickListener(null);
+    view2131231008 = null;
   }
 }

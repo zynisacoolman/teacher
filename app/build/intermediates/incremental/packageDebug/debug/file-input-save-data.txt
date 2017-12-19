@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sat Dec 16 22:03:55 CST 2017
+#Mon Dec 18 10:56:56 CST 2017
 2.base=/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/transforms/dexMerger/debug/0
 5.set=DEX
 0.path=classes.dex

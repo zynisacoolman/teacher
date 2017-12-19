@@ -12,6 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import cn.jucheng.www.hulisiwei.R;
+import cn.jucheng.www.hulisiwei.base.MyList;
 import cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView;
 import cn.jucheng.www.hulisiwei.module.UserMessage;
 import cn.jucheng.www.hulisiwei.utils.CommUtils;
@@ -38,6 +39,9 @@ public class YZDLongFragmentAdapter extends BaseAdapter {
     int yiZhuHangHao = 0;//医嘱行号
     int yiZhuType = 0;//医嘱种类
 
+    List<List<String>> nowTeacherList=new ArrayList<>();//存储左边list
+    List<List<String>> nowHushiList=new ArrayList<>();//左边护士list
+    List<List<String>> nowStopList=new ArrayList<>();//停止list
     ToastListener toastListener;
 
 
@@ -74,6 +78,7 @@ public class YZDLongFragmentAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         ViewHolder holder;
+        YZDLongFragmentLEFTitemAdapter yzdleft=new YZDLongFragmentLEFTitemAdapter(mContext,nowTeacherList,position);
         if (convertView == null) {
             convertView = mInflater.inflate(R.layout.adapter_fragmentyzdlong, null);
             holder = new ViewHolder();
@@ -83,16 +88,18 @@ public class YZDLongFragmentAdapter extends BaseAdapter {
             holder.h_division = (TextView) convertView.findViewById(R.id.h_division);
             holder.h_bednumber = (TextView) convertView.findViewById(R.id.h_bednumber);
             holder.h_illrecordNum=(FitHeightTextView) convertView.findViewById(R.id.h_illrecordNum);
-
+            holder.lv_hssign=(MyList) convertView.findViewById(R.id.gv_hssign);
+            holder.lv_start=(MyList) convertView.findViewById(R.id.gv_start);
+            holder.lv_stop=(MyList) convertView.findViewById(R.id.gv_stop);
+            holder.lv_start.setAdapter(yzdleft);
+            yzdleft.notifyDataSetChanged();
             convertView.setTag(holder); //
 
         } else {
             holder = (ViewHolder) convertView.getTag(); //
         }
-
 //        holder.transfusion_page_number.setText("第" + (position + 1) + "页");
-        page_List = new ArrayList<>();
-        page_List.addAll(CommUtils.getDataList(UserMessage.transfusion_Message, (position + 1), 18));
+        nowTeacherList=(CommUtils.getDataList(UserMessage.transfusion_Message, (position + 1), 38));
 
         if (specailList.size() >= 0 || specailList != null) {
             holder.h_name.setText(CommUtils.getListString(specailList, 0));
@@ -142,6 +149,9 @@ public class YZDLongFragmentAdapter extends BaseAdapter {
         TextView transfusion_page_number;//页数
         TextView h_ryrq;//入院日期
         TextView h_zyblh;//住院病历号
+        MyList lv_hssign;
+        MyList lv_start;
+        MyList lv_stop;
 
     }
 }

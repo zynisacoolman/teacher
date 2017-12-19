@@ -57,24 +57,30 @@ public class CommUtils {
      * 解析坐标数据
      */
     public static ArrayList[] getDatamap(String str){
-        int h0,h1,l0,l1;
+//        int h0,h1,l0,l1;
+        int x,y;
         ArrayList[] al=new ArrayList[2];
-        al[0]=new ArrayList<Integer>();
-        al[1]=new ArrayList<Integer>();
+        al[0]=new ArrayList<Integer>();//存放x 坐标
+        al[1]=new ArrayList<Integer>();//存放y 坐标
         int count=str.length()/8;//坐标数量
         for(int i=0;i<count;i++){
-            h0=Integer.parseInt(SubStringUtils.substring(str,
-                            0, 2), 16);
-            h1=Integer.parseInt(SubStringUtils.substring(str,
-                            2, 4), 16);
-            h0=Integer.parseInt(h0+h1+"");
-            al[0].add(h0);
-            l0=Integer.parseInt(SubStringUtils.substring(str,
-                    4, 6), 16);
-            l1=Integer.parseInt(SubStringUtils.substring(str,6
-                    , 8), 16);
-            l0=Integer.parseInt(l0+l1+"");
-            al[1].add(l0);
+            x=Integer.parseInt(SubStringUtils.substring(str,0,4),16);
+            y=Integer.parseInt(SubStringUtils.substring(str,4,8),16);
+            al[0].add(x);
+            al[1].add(y);
+            //解析高低位
+//            h0=Integer.parseInt(SubStringUtils.substring(str,
+//                            0, 2), 16);
+//            h1=Integer.parseInt(SubStringUtils.substring(str,
+//                            2, 4), 16);
+//            h0=Integer.parseInt(h0+h1+"");
+//            al[0].add(h0);
+//            l0=Integer.parseInt(SubStringUtils.substring(str,
+//                    4, 6), 16);
+//            l1=Integer.parseInt(SubStringUtils.substring(str,6
+//                    , 8), 16);
+//            l0=Integer.parseInt(l0+l1+"");
+//            al[1].add(l0);
 
         }
         return al;

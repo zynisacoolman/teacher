@@ -33,13 +33,15 @@ public class CustomCurveChart extends View {
     // 坐标单位
     private String[] xLabel;
     private String[] yLabel;
-    // 画笔
+    //数据 这是个Arraylist数组 0表示 x坐标 1
     private ArrayList<Integer>[] dataList;
+    // 画笔
     private Paint paintCurve ;
 
     public CustomCurveChart(Context context,String[] xlabel,String[] ylabel,
                             ArrayList<Integer>[] xy,
                             int color, boolean showValue) {
+
         super(context);
         this.dataList=xy;
         this.color = color;
