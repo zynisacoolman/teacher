@@ -254,8 +254,8 @@ public abstract class MyBaseActivity extends FragmentActivity {
 	}
 
 	static {
-		MyLog.setLogPath("cpr");
-		MyLog.isDebug = false;
+		MyLog.setLogPath("hulisiwei");
+		MyLog.isDebug = true;
 		MyLog.isPrintingLog = false;
 		MyLog.init();
 		MyLog.d(TAG, "---又一次新的运行 " + MyLog.Second_PATH);
@@ -273,13 +273,7 @@ public abstract class MyBaseActivity extends FragmentActivity {
 		public void handleMessage(Message msg) {
 			switch (msg.what) {
 			/** DrawerService 的 onStartCommand会发送这个消息 */
-			case MyGlobal.MSG_ON_RECIVE: {
-				Bundle data = msg.getData();
-				byte[] buffer = data.getByteArray(MyGlobal.BYTESPARA1);
-				int count = data.getInt(MyGlobal.INTPARA2);
-				dl.newDataChuLi(buffer, count);
-				break;
-			}
+
 			case MyGlobal.MSG_WORKTHREAD_SEND_CONNECTBTRESULT: {
 				int result = msg.arg1;
 				if (1 == result) {// 连接成功记录最后一次连接成功记录

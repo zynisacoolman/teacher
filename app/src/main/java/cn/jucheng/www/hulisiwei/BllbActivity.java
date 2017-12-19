@@ -126,7 +126,7 @@ public class BllbActivity extends MyBaseActivity implements View.OnClickListener
         }
     }
 
-
+    //从文件夹中获取strfa,strson 数据
     private void getDate(String filepath) {
 
         File file = new File(filepath);
@@ -150,16 +150,23 @@ public class BllbActivity extends MyBaseActivity implements View.OnClickListener
         tvbtnxl.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-    //                int m=0;
-    //                for(int i = 0;!nameCN[i].equals(fa); i++){
-    //                    m=i;
-    //                }
-//                int i =0;
-//                while(!nameCN[i].equals(fa)){
-//                    i++;
-//                }
-//                MyMessage.sendMessage(MyMessage.getMsgBinglimingcheng(i, nameEn[i]));
-                startActivity(new Intent(BllbActivity.this,BlxqActivity.class));
+                int m=0;
+                for (String s:nameCN) {
+                    int i=0;
+                    i++;
+                    if(s.equals(fa)){
+                        m=i;
+                    }
+                }
+                if(m==0){
+                    MyToast.showTestToast(BllbActivity.this,"请先选择一个病例");
+                }else{
+                    MyMessage.sendMessage(MyMessage.getMsgBinglimingcheng(m,
+//                                                                    nameEn[m-1]
+                                                                        so
+                    ));
+                    startActivity(new Intent(BllbActivity.this,BlxqActivity.class));
+                }
             }
         });
     }
@@ -255,7 +262,7 @@ public class BllbActivity extends MyBaseActivity implements View.OnClickListener
     public void exc() {
 
     }
-    @OnClick(R.id.iv_settings)
+    @OnClick({R.id.iv_settings,R.id.tv_btn_xl})
     @Override
     public void onClick(View v) {
         switch (v.getId()){
@@ -263,6 +270,7 @@ public class BllbActivity extends MyBaseActivity implements View.OnClickListener
                 Intent intents = new Intent(this, SettingsActivity.class);
                 startActivity(intents);
                 break;
+
         }
     }
     //回调接口实现子列表点击
@@ -291,26 +299,38 @@ public class BllbActivity extends MyBaseActivity implements View.OnClickListener
 
         }catch (NullPointerException e){
                 Log.d(TAG, "json串有空数据 ");
+                return null;
             }
             return object;
         }
         protected void onPostExecute(Object result[]) {
-            Patientinfo pi=(Patientinfo)result[0];
-            Baseinfo bi=(Baseinfo)result[1];
-            Medicalrecordsbaseinfo mbi=(Medicalrecordsbaseinfo)result[2];
-            setView(pi,bi,mbi);
+            //判断是否存在数据
+            if(result!=null){
+                Patientinfo pi=(Patientinfo)result[0];
+                Medicalrecordsbaseinfo mbi=(Medicalrecordsbaseinfo)result[2];
+                setView(pi,mbi);
+            }else{
+                //不存在数据，置空
+                tvBlxqXm.setText("年龄:");
+                tvBlxqXb.setText("性别:");
+                tvBlxqNld.setText("年龄段:");
+                tvBlxqHyzk.setText("婚姻状况:");
+                tvBlxqXs.setText("职业:");
+                tvBlxqZz.setText("住址:");
+                tvBlxqZs.setText("");
+                tvBlxqXbs.setText("");
+            }
         }
     }
-
-    private void setView(Patientinfo pi,Baseinfo bi,Medicalrecordsbaseinfo mbi) {
-        tvBlxqXm.setText("年龄："+pi.getName());
-        tvBlxqXb.setText("性别:"+pi.getSex());
-        tvBlxqNld.setText("年龄段:"+pi.getAge());
-        tvBlxqHyzk.setText("婚姻状况:"+pi.getHunyin());
-        tvBlxqXs.setText("职业:"+pi.getZhiye());
-        tvBlxqZz.setText("住址:"+pi.getHukoudizhi());
-        tvBlxqZs.setText(mbi.getZhusu());
-        tvBlxqXbs.setText(mbi.getXianbingshi());
+    private void setView(Patientinfo pi,Medicalrecordsbaseinfo mbi) {
+        tvBlxqXm.setText(String.format("年龄：%s",(pi.getName()==null)?"":pi.getName()));
+        tvBlxqXb.setText(String.format("性别:%s",pi.getSex()==null?"":pi.getSex()));
+        tvBlxqNld.setText(String.format("年龄段:%s",pi.getAge()==null?"":pi.getAge()));
+        tvBlxqHyzk.setText(String.format("婚姻状况:%s",pi.getHunyin()==null?"":pi.getHunyin()));
+        tvBlxqXs.setText(String.format("职业:%s",pi.getZhiye())==null?"":pi.getZhiye());
+        tvBlxqZz.setText(String.format("住址:%s",pi.getHukoudizhi()==null?"":pi.getHukoudizhi()));
+        tvBlxqZs.setText(mbi.getZhusu()==null?"":mbi.getZhusu());
+        tvBlxqXbs.setText(mbi.getXianbingshi()==null?"":mbi.getXianbingshi());
     }
 
     //从sd卡中读取指定目录文件内容并存储到String中

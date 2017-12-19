@@ -8,6 +8,7 @@ import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import butterknife.Unbinder;
+import butterknife.internal.DebouncingOnClickListener;
 import butterknife.internal.Utils;
 import cn.jucheng.www.hulisiwei.customcontrols.FitHeightButton;
 import cn.jucheng.www.hulisiwei.customcontrols.FitHeightEditText;
@@ -18,19 +19,32 @@ import java.lang.Override;
 public class BlxqActivity_ViewBinding implements Unbinder {
   private BlxqActivity target;
 
+  private View view2131230808;
+
+  private View view2131230952;
+
   @UiThread
   public BlxqActivity_ViewBinding(BlxqActivity target) {
     this(target, target.getWindow().getDecorView());
   }
 
   @UiThread
-  public BlxqActivity_ViewBinding(BlxqActivity target, View source) {
+  public BlxqActivity_ViewBinding(final BlxqActivity target, View source) {
     this.target = target;
 
+    View view;
     target.tvNameBl = Utils.findRequiredViewAsType(source, R.id.tv_name_bl, "field 'tvNameBl'", FitHeightTextView.class);
     target.tvTimeBl = Utils.findRequiredViewAsType(source, R.id.tv_time_Bl, "field 'tvTimeBl'", FitHeightTextView.class);
     target.tvTimeState = Utils.findRequiredViewAsType(source, R.id.tv_time_state, "field 'tvTimeState'", FitHeightTextView.class);
-    target.btnBlnr = Utils.findRequiredViewAsType(source, R.id.btn_blnr, "field 'btnBlnr'", FitHeightButton.class);
+    view = Utils.findRequiredView(source, R.id.btn_blnr, "field 'btnBlnr' and method 'onClick'");
+    target.btnBlnr = Utils.castView(view, R.id.btn_blnr, "field 'btnBlnr'", FitHeightButton.class);
+    view2131230808 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.onClick(p0);
+      }
+    });
     target.btnCzjl = Utils.findRequiredViewAsType(source, R.id.btn_czjl, "field 'btnCzjl'", FitHeightButton.class);
     target.lvBlxq = Utils.findRequiredViewAsType(source, R.id.lv_blxq, "field 'lvBlxq'", ListView.class);
     target.tvBlzg = Utils.findRequiredViewAsType(source, R.id.tv_blzg, "field 'tvBlzg'", FitHeightTextView.class);
@@ -38,6 +52,14 @@ public class BlxqActivity_ViewBinding implements Unbinder {
     target.fg1 = Utils.findRequiredViewAsType(source, R.id.fg_1, "field 'fg1'", LinearLayout.class);
     target.evJstx = Utils.findRequiredViewAsType(source, R.id.ev_jstx, "field 'evJstx'", FitHeightEditText.class);
     target.tv = Utils.findRequiredViewAsType(source, R.id.tv, "field 'tv'", FitHeightTextView.class);
+    view = Utils.findRequiredView(source, R.id.iv_setting, "method 'onClick'");
+    view2131230952 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.onClick(p0);
+      }
+    });
   }
 
   @Override
@@ -58,5 +80,10 @@ public class BlxqActivity_ViewBinding implements Unbinder {
     target.fg1 = null;
     target.evJstx = null;
     target.tv = null;
+
+    view2131230808.setOnClickListener(null);
+    view2131230808 = null;
+    view2131230952.setOnClickListener(null);
+    view2131230952 = null;
   }
 }

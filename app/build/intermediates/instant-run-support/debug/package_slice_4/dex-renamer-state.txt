@@ -1,4 +1,4 @@
-#Tue Nov 21 16:02:40 CST 2017
-base.0=D\:\\wsadt\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\5
+#Tue Dec 19 09:44:12 CST 2017
+base.0=C\:\\Users\\admin\\StudioProjects\\teacher\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\12
 path.0=classes.dex
 renamed.0=classes.dex

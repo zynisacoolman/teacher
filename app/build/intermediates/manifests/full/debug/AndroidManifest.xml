@@ -2,7 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="cn.jucheng.www.hulisiwei"
     android:installLocation="auto"
-    android:sharedUserId="cn.jucheng.www"
     android:versionCode="2"
     android:versionName="V1.1.0" >
 

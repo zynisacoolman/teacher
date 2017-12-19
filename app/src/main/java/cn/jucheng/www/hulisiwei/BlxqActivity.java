@@ -20,6 +20,7 @@ import java.util.HashMap;
 import java.util.List;
 
 import butterknife.BindView;
+import butterknife.OnClick;
 import cn.jucheng.jclibs.tools.MyToast;
 import cn.jucheng.jclibs.tools.SubStringUtils;
 import cn.jucheng.www.hulisiwei.adapter.FragmentListAdapter;
@@ -121,7 +122,7 @@ public class BlxqActivity extends MyBaseActivity implements View.OnClickListener
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_blxq_);
         //等待学生发送消息
-//        pd = ProgressDialog.show(BlxqActivity.this, "提示", "等待学生选择病例");
+        pd = ProgressDialog.show(BlxqActivity.this, "提示", "等待学生选择病例");
         tvPage=new FitHeightTextView(this);
         tvPage.findViewById(R.id.tv_page);
 
@@ -267,11 +268,7 @@ public class BlxqActivity extends MyBaseActivity implements View.OnClickListener
 
                 }
                 break;
-            case MyMessage.MLZ_YZD:
-                //电子医嘱单 长期临时数据都在这里处理
-                UserMessage.biaodan_message = str;//缓存表单数据
-                EventBus.getDefault().post(new MessageEvent(UserMessage.biaodan_message, 4));
-                break;
+
         }
     }
 
@@ -305,7 +302,7 @@ public class BlxqActivity extends MyBaseActivity implements View.OnClickListener
         }
     };
 
-
+    @OnClick({R.id.btn_blnr,R.id.iv_setting})
     @Override
     public void onClick(View v) {
         switch (v.getId()) {

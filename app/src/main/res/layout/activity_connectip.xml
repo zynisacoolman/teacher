@@ -222,6 +222,7 @@
                     android:layout_weight="120"
                     android:background="@color/drug_bton"
                     android:text="@string/connect"
+                    android:gravity="center"
                     android:textColor="@color/baise"
                     android:textSize="@dimen/text_size20"
                     />
