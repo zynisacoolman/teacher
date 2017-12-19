@@ -1,10 +1,32 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-1024x732/values-1024x732.xml",
+            "outputFile": "C:\\Users\\zyn\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-1024x732\\values-1024x732.xml",
             "map": [
                 {
-                    "source": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/res/values-1024x732/dimens.xml",
+                    "source": "C:\\Users\\zyn\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\src\\main\\res\\values-1024x732\\dimens.xml",
+                    "from": {
+                        "startLines": "4,16,5,6,7,8,9,10,11,12,13,14,15",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "78,606,122,166,210,254,298,342,386,430,474,518,562",
+                        "endColumns": "42,44,42,42,42,42,42,42,42,42,42,42,42",
+                        "endOffsets": "116,646,160,204,248,292,336,380,424,468,512,556,600"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,98,143,186,229,272,315,358,401,444,487,530,573",
+                        "endColumns": "42,44,42,42,42,42,42,42,42,42,42,42,42",
+                        "endOffsets": "93,138,181,224,267,310,353,396,439,482,525,568,611"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\Users\\admin\\StudioProjects\\teacher\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-1024x732\\values-1024x732.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\admin\\StudioProjects\\teacher\\app\\src\\main\\res\\values-1024x732\\dimens.xml",
                     "from": {
                         "startLines": "4,16,5,6,7,8,9,10,11,12,13,14,15",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",

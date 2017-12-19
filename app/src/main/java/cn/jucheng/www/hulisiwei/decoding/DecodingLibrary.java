@@ -5,6 +5,7 @@ import android.os.Handler;
 import android.os.Message;
 
 import cn.jucheng.jclibs.tools.DataUtils;
+import cn.jucheng.jclibs.tools.MyLog;
 import cn.jucheng.jclibs.tools.SubStringUtils;
 import cn.jucheng.www.hulisiwei.widget.MyMessage;
 
@@ -17,7 +18,7 @@ public class DecodingLibrary {
 	/** 是否正在处理数据 */
 	private boolean isChuLiing = false;
 	/** 协议最小长度 */
-	private int lenMin = 60;
+	private int lenMin = 50;
 	private Handler hd;
 
 	public DecodingLibrary(Handler hd) {
@@ -28,9 +29,9 @@ public class DecodingLibrary {
 	public void newDataChuLi(byte[] buffer, int len) {
 		StringBuilder newMsg = DataUtils.BytesToHexStr(buffer, 0, len);
 		sbMsg.append(newMsg);
-		// MyLog.d(TAG, "接收的数据：" // + i + " "
-		// // + isChuLiing + " len: " + len + " "
-		// + newMsg.toString());
+		 MyLog.d(TAG, "接收的数据：" // + i + " "
+		 // + isChuLiing + " len: " + len + " "
+		 + newMsg.toString());
 		if (!isChuLiing) {
 			isComplete();
 		}
@@ -45,10 +46,10 @@ public class DecodingLibrary {
 			xunhuan = true;
 		}
 		while (xunhuan) {
-			// MyLog.d(TAG, "tancexinfei 解析开始");
+			 MyLog.d(TAG, "tancexinfei 解析开始");
 			if (sbMsg.length() - i >= lenMin) {// 最小长度27字节
 				if (check(sbMsg, i)) {// 是否满足协议头要求
-					// MyLog.d(TAG, "check tongguo");
+					 MyLog.d(TAG, "check tongguo");
 					// 解析命令字
 					int mingLingZi = Integer
 							.parseInt(SubStringUtils.substring(sbMsg, i + 44,
@@ -166,7 +167,7 @@ public class DecodingLibrary {
 					// break;
 					// }
 					 default:// 其他未在定义中的指令
-					 // MyLog.d(TAG, "其他未定义的指令？？" + sbMsg);
+					  MyLog.d(TAG, "其他未定义的指令？？" + sbMsg);
 					 break;
 					}
 					i = isContinue(sbMsg, i, i + lenMin);
@@ -177,7 +178,7 @@ public class DecodingLibrary {
 						continue;
 					}
 				} else {
-					// MyLog.d(TAG, "weitongguo");
+					 MyLog.d(TAG, "未通过");
 					i = isContinue(sbMsg, i, i + 2);
 					if (i == -1) {
 						isChuLiing = false;

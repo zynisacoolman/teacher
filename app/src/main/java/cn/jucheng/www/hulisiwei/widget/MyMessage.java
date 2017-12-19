@@ -69,8 +69,8 @@ public class MyMessage {
 	private static final String MSG_XINTIAOJIANCE = "4F6830 0100 016831 0000000000000000000000000000 00A5 0000 00";
 	/** 设备备案 */
 	private static final String MSG_BEIAN = "4F6830 0100 016831 0000000000000000000000000000 00A6 0000 00";
-	/** 发送病例名称 */
-	private static final String MSG_BINGLIMINGCHENG = "4F6830 0100 016831 0000000000000000000000000000 0E10 %04x %02x%02x%04x %04x";
+	/** 发送病例名称 */																					  //数据长度（字节长度）  预留 类型 病例名长度
+	private static final String MSG_BINGLIMINGCHENG = "4F6830 0100 016831 0000000000000000000000000000 0E10  %04x    %02x %02x   %04x   ";
 	/** 7显示评价 */
 	private static final String MSG_XIANSHIPINGJIA = "4F6830 0100 016831 0000000000000000000000000000 0E13 %04x %02x %04x";
 	/** 不显示评价 */
@@ -143,8 +143,8 @@ public class MyMessage {
 	public static String getMsgBinglimingcheng(int bingLiType, String bingLiName) {
 		String bingLiName2 = HexadecimalConver.getHexResult(bingLiName);
 		int bingLiNameLen = bingLiName2.length() / 2;
-		return String.format(MSG_BINGLIMINGCHENG, bingLiNameLen + 4, 1,
-				bingLiType, bingLiNameLen) + bingLiName2 + " 00";
+		//第一个字节表示模式（预留） 第二个字节表示枚举类型 三四表示病例名长度（以字节计数）
+		return String.format(MSG_BINGLIMINGCHENG,bingLiNameLen + 4,0x00, bingLiType, bingLiNameLen) + bingLiName2+"00";
 	}
 
 	public static String getMsgXianshipingjia_xianShi(String pingJia) {

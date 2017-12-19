@@ -17,7 +17,7 @@ public class ConnectionSettingsActivity_ViewBinding implements Unbinder {
 
   private View view2131230827;
 
-  private View view2131231007;
+  private View view2131231014;
 
   private View view2131230828;
 
@@ -53,7 +53,7 @@ public class ConnectionSettingsActivity_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.serach_connent_bluetooh, "method 'onViewClicked'");
-    view2131231007 = view;
+    view2131231014 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -97,8 +97,8 @@ public class ConnectionSettingsActivity_ViewBinding implements Unbinder {
     view2131230742 = null;
     view2131230827.setOnClickListener(null);
     view2131230827 = null;
-    view2131231007.setOnClickListener(null);
-    view2131231007 = null;
+    view2131231014.setOnClickListener(null);
+    view2131231014 = null;
     view2131230828.setOnClickListener(null);
     view2131230828 = null;
     view2131230829.setOnClickListener(null);

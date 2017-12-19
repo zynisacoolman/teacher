@@ -1,4 +1,4 @@
-#Mon Dec 18 10:56:56 CST 2017
+#Tue Dec 19 16:31:17 CST 2017
 path.1=classes.dex
 path.0=classes.dex
 renamed.5=classes6.dex
@@ -7,12 +7,12 @@ renamed.3=classes4.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
-base.5=/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/transforms/dexMerger/debug/0
-base.4=/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/transforms/dexMerger/debug/5
-base.3=/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/transforms/dexMerger/debug/3
-base.2=/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/transforms/dexMerger/debug/4
-base.1=/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/transforms/dexMerger/debug/1
-base.0=/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/transforms/dexMerger/debug/2
+base.5=C\:\\Users\\admin\\StudioProjects\\teacher\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\27
+base.4=C\:\\Users\\admin\\StudioProjects\\teacher\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\24
+base.3=C\:\\Users\\admin\\StudioProjects\\teacher\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\26
+base.2=C\:\\Users\\admin\\StudioProjects\\teacher\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\1
+base.1=C\:\\Users\\admin\\StudioProjects\\teacher\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\28
+base.0=C\:\\Users\\admin\\StudioProjects\\teacher\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\25
 path.5=classes.dex
 path.4=classes.dex
 path.3=classes.dex

@@ -1,10 +1,25 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-w480dp-v13/values-w480dp-v13.xml",
+            "outputFile": "C:\\Users\\zyn\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-w480dp-v13\\values-w480dp-v13.xml",
             "map": [
                 {
-                    "source": "/Users/zyn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/c1d35ea391acb09695534075575802c5/res/values-w480dp-v13/values-w480dp-v13.xml",
+                    "source": "C:\\Users\\zyn\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\c1d35ea391acb09695534075575802c5\\res\\values-w480dp-v13\\values-w480dp-v13.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,117",
+                        "endColumns": "61,71",
+                        "endOffsets": "112,184"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\Users\\admin\\StudioProjects\\teacher\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-w480dp-v13\\values-w480dp-v13.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\admin\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\a4e39c8f11436041ed1ac03495fdc9ec\\res\\values-w480dp-v13\\values-w480dp-v13.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
