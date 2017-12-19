@@ -1,4 +1,4 @@
-package cn.jucheng.www.hulisiwei.customcontrols;
+package cn.jucheng.www.hulisiwei.Dialogs;
 
 import android.app.Dialog;
 import android.content.Context;

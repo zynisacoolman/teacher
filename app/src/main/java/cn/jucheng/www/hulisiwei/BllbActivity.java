@@ -100,22 +100,29 @@ public class BllbActivity extends MyBaseActivity implements View.OnClickListener
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bllb_);
         ButterKnife.bind(this);
+        //索要学生机状态
+        MyMessage.sendMessage(MyMessage.getMsgSuoyaoxueshengjizhuangtai());
+
         if (Environment.getExternalStorageState().
                 equals(Environment.MEDIA_MOUNTED)) {
-            File file = new File(BLPath);
-            if (file.exists()) {
-                //初始化
-                init();
-                getDate(BLPath);
-                viewInit();
-            } else {
-                try {
-                    file.createNewFile();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
+            getFile();
             viewInit();
+        }
+    }
+    //获取sd卡中文件
+    private void getFile() {
+        File file = new File(BLPath);
+        if (file.exists()) {
+            //初始化
+            init();
+            getDate(BLPath);
+            viewInit();
+        } else {
+            try {
+                file.createNewFile();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 
@@ -160,33 +167,45 @@ public class BllbActivity extends MyBaseActivity implements View.OnClickListener
 
     @Override
     protected void HandlerMessage(Message msg) {
+        String string=(String)msg.obj;
         switch (msg.what){
             case MyMessage.MLZ_SBSJ://校正时间
-                Object z1 = msg.obj;
-                String a1 = (String) z1;
+
                 int nian = Integer
-                        .parseInt(SubStringUtils.substring(a1,
+                        .parseInt(SubStringUtils.substring(string,
                                 52, 56), 16);
                 int yue = Integer
-                        .parseInt(SubStringUtils.substring(a1,
+                        .parseInt(SubStringUtils.substring(string,
                                 56, 58), 16);
                 int ri = Integer
-                        .parseInt(SubStringUtils.substring(a1,
+                        .parseInt(SubStringUtils.substring(string,
                                 58, 60), 16);
                 int shi = Integer
-                        .parseInt(SubStringUtils.substring(a1,
+                        .parseInt(SubStringUtils.substring(string,
                                 60, 62), 16);
                 int fen = Integer
-                        .parseInt(SubStringUtils.substring(a1,
+                        .parseInt(SubStringUtils.substring(string,
                                 62, 64), 16);
                 int miao = Integer
-                        .parseInt(SubStringUtils.substring(a1,
+                        .parseInt(SubStringUtils.substring(string,
                                 64, 66), 16);
                 befortime = nian + "-" + yue + "-" + ri + " " + shi + ":" + fen + ":" + miao;
 
                 String timename = DateUtils.getCurrentTimeZone();
                 MyLog.d("mwh","timename"+timename);
                 SetTime();
+            case MyMessage.MLZ_SYXSJZT:
+                int status=Integer.parseInt(SubStringUtils.substring(string,48,52),16);
+                switch (status){
+                    case 0://没有收到教师下发的病例且没有开始
+                        break;
+                    default://收到教师下发的病例
+
+                        break;
+                }
+                break;
+            case MyMessage.MLZ_BLM:
+                break;
         }
 
     }
@@ -300,7 +319,7 @@ public class BllbActivity extends MyBaseActivity implements View.OnClickListener
 
         try {
             FileInputStream f = new FileInputStream(path);
-            //原来一直显示代码，其实改为gbk 或者utf8即可
+            //原来一直显示乱码，其实改为gbk 或者utf8即可
             BufferedReader bis = new BufferedReader(new InputStreamReader(f,"GBK"));
             String line = "";
             while ((line = bis.readLine()) != null) {

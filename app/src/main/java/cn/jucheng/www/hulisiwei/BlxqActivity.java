@@ -28,7 +28,7 @@ import cn.jucheng.www.hulisiwei.adapter.TreeListViewAdapter;
 import cn.jucheng.www.hulisiwei.customcontrols.FitHeightButton;
 import cn.jucheng.www.hulisiwei.customcontrols.FitHeightEditText;
 import cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView;
-import cn.jucheng.www.hulisiwei.customcontrols.HuShitixingDialog;
+import cn.jucheng.www.hulisiwei.Dialogs.HuShitixingDialog;
 import cn.jucheng.www.hulisiwei.databean.blxqbean.FileBean;
 import cn.jucheng.www.hulisiwei.fragment.formFragement.DzblFragDir.Hljld1Fragment;
 import cn.jucheng.www.hulisiwei.fragment.formFragement.DzblFragDir.Hljld2Fragment;
