@@ -20,7 +20,6 @@ import cn.jucheng.jclibs.tools.MyToast;
 import cn.jucheng.jclibs.tools.SubStringUtils;
 import cn.jucheng.www.hulisiwei.BlxqActivity;
 import cn.jucheng.www.hulisiwei.R;
-import cn.jucheng.www.hulisiwei.adapter.fragmentAdapter.TWDFragmentAdapter;
 import cn.jucheng.www.hulisiwei.adapter.fragmentAdapter.YZDLongFragmentAdapter;
 import cn.jucheng.www.hulisiwei.base.BaseFragment;
 import cn.jucheng.www.hulisiwei.base.MyList;
@@ -39,7 +38,7 @@ import static cn.jucheng.www.hulisiwei.module.UserMessage.twdResult;
  * 住院病历
  */
 
-public class ZyblFragment extends BaseFragment implements TWDFragmentAdapter.ToastListener,AbsListView.OnScrollListener {
+public class ZyblFragment extends BaseFragment implements AbsListView.OnScrollListener {
 
     @BindView(R.id.fragment_fitlist)
     MyList twd;
@@ -98,7 +97,6 @@ public class ZyblFragment extends BaseFragment implements TWDFragmentAdapter.Toa
      * 初始adapter
      */
     public void initAdapter() {
-        adapter = new YZDLongFragmentAdapter(getActivity(), UserMessage.fragmentHead, pages);
         twd.setAdapter(adapter);
         twd.setOnScrollListener(this);
     }
@@ -118,7 +116,6 @@ public class ZyblFragment extends BaseFragment implements TWDFragmentAdapter.Toa
         if (biaoDanType ==1) {
             pages = 1;
             getPage();
-            adapter.setLists(UserMessage.fragmentHead, pages);
         }
     }
 
@@ -140,9 +137,6 @@ public class ZyblFragment extends BaseFragment implements TWDFragmentAdapter.Toa
     public void setBiaodanHead(String message) {
         String messaegs = message.substring(0,message.length()-2);
         UserMessage.fragmentHead = CommUtils.getJson(HexadecimalConver.toStringHex(messaegs), "baseinfo");
-        if(adapter != null){
-            adapter.setLists(UserMessage.fragmentHead, pages);
-        }
     }
 
     /**
@@ -235,7 +229,6 @@ public class ZyblFragment extends BaseFragment implements TWDFragmentAdapter.Toa
         UserMessage.fragmentHead.clear();
         UserMessage.transfusion_Message.clear();
         pages = 1;
-        adapter.setLists(UserMessage.fragmentHead, pages);
 
     }
 
@@ -250,10 +243,6 @@ public class ZyblFragment extends BaseFragment implements TWDFragmentAdapter.Toa
         super.onDestroyView();
     }
 
-    @Override
-    public void onToastClick() {
-        MyToast.showTestToast(getActivity(),"请先填写护士姓名.");
-    }
 
     @Override
     public void onScrollStateChanged(AbsListView view, int scrollState) {

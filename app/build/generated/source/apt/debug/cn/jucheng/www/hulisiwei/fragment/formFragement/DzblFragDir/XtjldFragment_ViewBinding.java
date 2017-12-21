@@ -18,7 +18,7 @@ public class XtjldFragment_ViewBinding implements Unbinder {
   public XtjldFragment_ViewBinding(XtjldFragment target, View source) {
     this.target = target;
 
-    target.twd = Utils.findRequiredViewAsType(source, R.id.fragment_fitlist, "field 'twd'", MyList.class);
+    target.xtjld = Utils.findRequiredViewAsType(source, R.id.fragment_fitlist, "field 'xtjld'", MyList.class);
   }
 
   @Override
@@ -28,6 +28,6 @@ public class XtjldFragment_ViewBinding implements Unbinder {
     if (target == null) throw new IllegalStateException("Bindings already cleared.");
     this.target = null;
 
-    target.twd = null;
+    target.xtjld = null;
   }
 }

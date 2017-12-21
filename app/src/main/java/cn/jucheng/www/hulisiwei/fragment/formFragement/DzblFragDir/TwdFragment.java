@@ -38,7 +38,7 @@ import static cn.jucheng.www.hulisiwei.module.UserMessage.twdResult;
  * 体温单
  */
 
-public class TwdFragment extends BaseFragment implements TWDFragmentAdapter.ToastListener,AbsListView.OnScrollListener {
+public class TwdFragment extends BaseFragment implements AbsListView.OnScrollListener {
 
     @BindView(R.id.fragment_fitlist)
     MyList twd;
@@ -99,7 +99,6 @@ public class TwdFragment extends BaseFragment implements TWDFragmentAdapter.Toas
     public void initAdapter() {
         adapter = new TWDFragmentAdapter(getActivity(), UserMessage.fragmentHead, pages);
         twd.setAdapter(adapter);
-        adapter.setOntoastClickListener(this);
         twd.setOnScrollListener(this);
     }
 
@@ -252,10 +251,6 @@ public class TwdFragment extends BaseFragment implements TWDFragmentAdapter.Toas
         super.onDestroyView();
     }
 
-    @Override
-    public void onToastClick() {
-        MyToast.showTestToast(getActivity(),"请先填写护士姓名.");
-    }
 
     @Override
     public void onScrollStateChanged(AbsListView view, int scrollState) {

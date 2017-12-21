@@ -21,7 +21,6 @@ import cn.jucheng.jclibs.tools.SubStringUtils;
 import cn.jucheng.www.hulisiwei.BlxqActivity;
 import cn.jucheng.www.hulisiwei.R;
 import cn.jucheng.www.hulisiwei.adapter.fragmentAdapter.RYJLFragmentAdapter;
-import cn.jucheng.www.hulisiwei.adapter.fragmentAdapter.TWDFragmentAdapter;
 import cn.jucheng.www.hulisiwei.base.BaseFragment;
 import cn.jucheng.www.hulisiwei.base.MyList;
 import cn.jucheng.www.hulisiwei.interfaca.MessageEvent;
@@ -39,7 +38,7 @@ import static cn.jucheng.www.hulisiwei.module.UserMessage.twdResult;
  * 入院记录
  */
 
-public class RyjlFragment extends BaseFragment implements TWDFragmentAdapter.ToastListener,AbsListView.OnScrollListener {
+public class RyjlFragment extends BaseFragment implements AbsListView.OnScrollListener {
 
     @BindView(R.id.fragment_fitlist)
     MyList twd;
@@ -250,10 +249,6 @@ public class RyjlFragment extends BaseFragment implements TWDFragmentAdapter.Toa
         super.onDestroyView();
     }
 
-    @Override
-    public void onToastClick() {
-        MyToast.showTestToast(getActivity(),"请先填写护士姓名.");
-    }
 
     @Override
     public void onScrollStateChanged(AbsListView view, int scrollState) {

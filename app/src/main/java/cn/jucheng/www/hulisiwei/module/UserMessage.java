@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Map;
 
 import cn.jucheng.www.hulisiwei.databean.blnrbean.TwdResult;
+import cn.jucheng.www.hulisiwei.databean.blnrbean.XtjlDateBean;
 
 /**
  * Created by w on 2017-11-29.
@@ -15,6 +16,7 @@ import cn.jucheng.www.hulisiwei.databean.blnrbean.TwdResult;
 public class UserMessage {
 
     //表头信息
+    public static String headmsg="";
     public static List<String> fragmentHead = new ArrayList<String>();
     public static String biaodan_message = "";//表单信息
 
@@ -40,7 +42,13 @@ public class UserMessage {
     public static List<List<String>> YZDlongstart =new ArrayList<>();
     //长期医嘱单信息 停止医嘱
     public static List<List<String>> YZDlongstop =new ArrayList<>();
-
-
+    //长期医嘱单信息 护士签字
+    public static List<List<String>> YZDlonghssign =new ArrayList<>();
+    //临时医嘱单
+    public static List<List<String>> YZDtempleft=new ArrayList<>();
+    //临时医嘱单 护士签字
+    public static List<List<String>> YZDtempright=new ArrayList<>();
+    //血糖记录单
+    public static List<XtjlDateBean> XTJLD=new ArrayList<>();
 
 }

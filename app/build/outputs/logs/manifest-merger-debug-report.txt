@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/AndroidManifest.xml:2:1-115:12
-INJECTED from /Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/AndroidManifest.xml:2:1-115:12
-INJECTED from /Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/AndroidManifest.xml:2:1-115:12
-INJECTED from /Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/AndroidManifest.xml:2:1-115:12
+ADDED from /Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/AndroidManifest.xml:2:1-117:12
+INJECTED from /Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/AndroidManifest.xml:2:1-117:12
+INJECTED from /Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/AndroidManifest.xml:2:1-117:12
+INJECTED from /Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/AndroidManifest.xml:2:1-117:12
 MERGED from [:tableview] /Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/libs/tableview/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-17:12
 MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/zyn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/c1d35ea391acb09695534075575802c5/AndroidManifest.xml:17:1-27:12
 MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/zyn/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-23.4.0.aar/f827b592110a3a6a841df65f1b83619f/AndroidManifest.xml:2:1-9:12
@@ -16,9 +16,9 @@ MERGED from [com.android.support:support-media-compat:25.4.0] /Users/zyn/.gradle
 MERGED from [com.android.support:support-core-utils:25.4.0] /Users/zyn/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.4.0.aar/dcc13df1bd5a746d2a9ea3887718e618/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-core-ui:25.4.0] /Users/zyn/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.4.0.aar/335253612715aafa3c525011c4003175/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-compat:25.4.0] /Users/zyn/.gradle/caches/transforms-1/files-1.1/support-compat-25.4.0.aar/486370720682c8d1b447ed902c664ff4/AndroidManifest.xml:17:1-31:12
-INJECTED from /Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/AndroidManifest.xml:2:1-115:12
-INJECTED from /Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/AndroidManifest.xml:2:1-115:12
-INJECTED from /Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/AndroidManifest.xml:2:1-115:12
+INJECTED from /Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/AndroidManifest.xml:2:1-117:12
+INJECTED from /Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/AndroidManifest.xml:2:1-117:12
+INJECTED from /Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/AndroidManifest.xml:2:1-117:12
 	package
 		ADDED from /Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/AndroidManifest.xml:3:5-39
 		INJECTED from /Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/AndroidManifest.xml
@@ -118,7 +118,7 @@ ADDED from /Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/
 	android:name
 		ADDED from /Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/AndroidManifest.xml:23:9-49
 application
-ADDED from /Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/AndroidManifest.xml:26:5-113:19
+ADDED from /Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/AndroidManifest.xml:26:5-115:19
 MERGED from [:tableview] /Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/libs/tableview/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-15:19
 MERGED from [:tableview] /Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/libs/tableview/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-15:19
 MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/zyn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/c1d35ea391acb09695534075575802c5/AndroidManifest.xml:25:5-20
@@ -281,6 +281,14 @@ activity#cn.jucheng.www.hulisiwei.BlxqActivity
 ADDED from /Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/AndroidManifest.xml:112:9-50
 	android:name
 		ADDED from /Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/AndroidManifest.xml:112:19-47
+activity#cn.jucheng.www.hulisiwei.fragment.formFragement.DzblFragDir.YzdTemFragment
+ADDED from /Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/AndroidManifest.xml:113:9-87
+	android:name
+		ADDED from /Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/AndroidManifest.xml:113:19-84
+activity#cn.jucheng.www.hulisiwei.fragment.formFragement.DzblFragDir.YzdLongFragment
+ADDED from /Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/AndroidManifest.xml:114:9-88
+	android:name
+		ADDED from /Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/AndroidManifest.xml:114:19-85
 meta-data#android.support.VERSION
 ADDED from [com.android.support:support-v4:25.4.0] /Users/zyn/.gradle/caches/transforms-1/files-1.1/support-v4-25.4.0.aar/bea7a77658907f2605984ac763fe56e3/AndroidManifest.xml:26:9-28:38
 MERGED from [com.android.support:support-fragment:25.4.0] /Users/zyn/.gradle/caches/transforms-1/files-1.1/support-fragment-25.4.0.aar/b727ef5017ff9a047e3a40ed29f85c27/AndroidManifest.xml:26:9-28:38

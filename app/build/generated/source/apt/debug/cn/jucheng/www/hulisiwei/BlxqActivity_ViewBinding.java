@@ -21,7 +21,7 @@ public class BlxqActivity_ViewBinding implements Unbinder {
 
   private View view2131230808;
 
-  private View view2131230952;
+  private View view2131230955;
 
   @UiThread
   public BlxqActivity_ViewBinding(BlxqActivity target) {
@@ -53,7 +53,7 @@ public class BlxqActivity_ViewBinding implements Unbinder {
     target.evJstx = Utils.findRequiredViewAsType(source, R.id.ev_jstx, "field 'evJstx'", FitHeightEditText.class);
     target.tv = Utils.findRequiredViewAsType(source, R.id.tv, "field 'tv'", FitHeightTextView.class);
     view = Utils.findRequiredView(source, R.id.iv_setting, "method 'onClick'");
-    view2131230952 = view;
+    view2131230955 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -83,7 +83,7 @@ public class BlxqActivity_ViewBinding implements Unbinder {
 
     view2131230808.setOnClickListener(null);
     view2131230808 = null;
-    view2131230952.setOnClickListener(null);
-    view2131230952 = null;
+    view2131230955.setOnClickListener(null);
+    view2131230955 = null;
   }
 }

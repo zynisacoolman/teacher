@@ -95,6 +95,8 @@
     <string name="now_times">当前系统时区：</string>
     <string name="your_times">标准中时区：</string>
     <!-- 设置 -->
-
+    <string name="rectime">状态改变时间</string>
+    <string name="rectype">状态改变类型</string>
+    <string name="recblmc">状态改变病例名称</string>
 
 </resources>

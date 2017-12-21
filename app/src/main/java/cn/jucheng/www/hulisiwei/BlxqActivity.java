@@ -29,7 +29,7 @@ import cn.jucheng.www.hulisiwei.adapter.TreeListViewAdapter;
 import cn.jucheng.www.hulisiwei.customcontrols.FitHeightButton;
 import cn.jucheng.www.hulisiwei.customcontrols.FitHeightEditText;
 import cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView;
-import cn.jucheng.www.hulisiwei.Dialogs.HuShitixingDialog;
+import cn.jucheng.www.hulisiwei.dialogs.HuShitixingDialog;
 import cn.jucheng.www.hulisiwei.databean.blxqbean.FileBean;
 import cn.jucheng.www.hulisiwei.fragment.formFragement.DzblFragDir.Hljld1Fragment;
 import cn.jucheng.www.hulisiwei.fragment.formFragement.DzblFragDir.Hljld2Fragment;
@@ -46,6 +46,9 @@ import cn.jucheng.www.hulisiwei.fragment.formFragement.DzblFragDir.YzdTemFragmen
 import cn.jucheng.www.hulisiwei.fragment.formFragement.DzblFragDir.ZqtysFragment;
 import cn.jucheng.www.hulisiwei.fragment.formFragement.DzblFragDir.ZyblFragment;
 import cn.jucheng.www.hulisiwei.interfaca.MessageEvent;
+import cn.jucheng.www.hulisiwei.interfaca.OnZhuanChao;
+import cn.jucheng.www.hulisiwei.interfaca.OnformDateUpdate;
+import cn.jucheng.www.hulisiwei.interfaca.OnformHeadUpdate;
 import cn.jucheng.www.hulisiwei.module.UserMessage;
 import cn.jucheng.www.hulisiwei.utils.DateUtils;
 import cn.jucheng.www.hulisiwei.widget.HexadecimalConver;
@@ -82,7 +85,10 @@ public class BlxqActivity extends MyBaseActivity implements View.OnClickListener
     FitHeightEditText evJstx;
     @BindView(R.id.tv)
     FitHeightTextView tv;
-
+    //定义一个接口来通知fragment进行数据更新
+    OnformHeadUpdate onformHeadUpdate;
+    OnformDateUpdate onformDateUpdate;
+    OnZhuanChao onZhuanChao;
     private String conditionNow=null;
     private List<FileBean> mDatas = new ArrayList<FileBean>();
     private TreeListViewAdapter mAdapter;
@@ -121,8 +127,15 @@ public class BlxqActivity extends MyBaseActivity implements View.OnClickListener
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_blxq_);
-        //等待学生发送消息
-        pd = ProgressDialog.show(BlxqActivity.this, "提示", "等待学生选择病例");
+        Intent intent = getIntent();
+        Bundle bundle=intent.getExtras();
+//        pd = ProgressDialog.show(BlxqActivity.this, "提示", "等待学生选择病例");
+        //接受bundle信息 如果是由异常状态恢复的，不出现等待条，如果bundle为空说明是是新开的病例，打开状态条\
+        if (bundle!=null){
+            pd.dismiss();
+            timer=DateUtils.getTimeLong(SubStringUtils.substring(bundle.getString("rectime"),0,6));
+            timer2=DateUtils.getTimeLong(SubStringUtils.substring(bundle.getString("rectime"),6,12));
+        }
         tvPage=new FitHeightTextView(this);
         tvPage.findViewById(R.id.tv_page);
 
@@ -206,10 +219,15 @@ public class BlxqActivity extends MyBaseActivity implements View.OnClickListener
         switch(msg.what){
             case MyMessage.MLZ_GZBD:
                 UserMessage.biaodan_message = str;//缓存表单数据
+                onformDateUpdate.OnformDateUpdate(str);
                 EventBus.getDefault().post(new MessageEvent(UserMessage.biaodan_message, 4));
+                break;
+            case MyMessage.MLZ_ZCYZ:
+                onZhuanChao.OnZhuanchao(str);
                 break;
             case MyMessage.MLZ_BDT:
                 String head_message = str.substring(52);
+                onformHeadUpdate.OnformHeadUpdate(str);
                 datas.setData(MyGlobal1.ALLBIAODANMESSAGE, head_message);//存储表单头部信息
                 EventBus.getDefault().post(new MessageEvent(head_message, 1));
                 break;
@@ -248,7 +266,8 @@ public class BlxqActivity extends MyBaseActivity implements View.OnClickListener
 //                    StringBuffer sb=new StringBuffer().append(mh).append(ml);//理解错误
 //                    mh=Integer.parseInt(sb.toString());
                     toDate=mh*256+ml;//toDate是转换后的值
-                    new HuShitixingDialog.Builder(this).setMessage(HexadecimalConver.decode(SubStringUtils.substring(str,56,56+toDate)))
+                    new HuShitixingDialog.Builder(this)
+                            .setMessage(HexadecimalConver.decode(SubStringUtils.substring(str,56,56+toDate)))
                             .setPositiveButton("下发新医嘱", new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialog, int which) {
@@ -259,7 +278,7 @@ public class BlxqActivity extends MyBaseActivity implements View.OnClickListener
                                     }
 
                                 }
-                            }).setNegativeButton("结束训练", new DialogInterface.OnClickListener() {
+                            }).setNegativeButton("取消下发", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
 

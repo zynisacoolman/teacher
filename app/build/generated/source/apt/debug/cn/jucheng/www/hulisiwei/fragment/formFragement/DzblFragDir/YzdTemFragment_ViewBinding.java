@@ -18,7 +18,7 @@ public class YzdTemFragment_ViewBinding implements Unbinder {
   public YzdTemFragment_ViewBinding(YzdTemFragment target, View source) {
     this.target = target;
 
-    target.twd = Utils.findRequiredViewAsType(source, R.id.fragment_fitlist, "field 'twd'", MyList.class);
+    target.tempyzd = Utils.findRequiredViewAsType(source, R.id.fragment_fitlist, "field 'tempyzd'", MyList.class);
   }
 
   @Override
@@ -28,6 +28,6 @@ public class YzdTemFragment_ViewBinding implements Unbinder {
     if (target == null) throw new IllegalStateException("Bindings already cleared.");
     this.target = null;
 
-    target.twd = null;
+    target.tempyzd = null;
   }
 }

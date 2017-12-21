@@ -7,6 +7,8 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.TimeZone;
 
+import cn.jucheng.jclibs.tools.SubStringUtils;
+
 /**
  * Created by w on 2017-11-23.
  */
@@ -228,6 +230,18 @@ public class DateUtils {
         String strHour = ("00" + hour).substring(("00" + hour).length() - 2);
 
         return strHour + ":" + strMinute + ":" + strSecond;
+    }
+    /**
+     * 将字符串转化为以秒表示的时间
+     * @param time
+     * @return  sum
+     * */
+    public static long getTimeLong(String time){
+        int h=Integer.parseInt(SubStringUtils.substring(time,0,2),16);
+        int m=Integer.parseInt(SubStringUtils.substring(time,2,4),16);
+        int s=Integer.parseInt(SubStringUtils.substring(time,4,6),16);
+        long sum=h*3600+m*60+s;
+        return sum;
     }
 
 }

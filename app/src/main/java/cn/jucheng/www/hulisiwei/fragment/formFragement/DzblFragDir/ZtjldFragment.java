@@ -20,7 +20,6 @@ import cn.jucheng.jclibs.tools.MyToast;
 import cn.jucheng.jclibs.tools.SubStringUtils;
 import cn.jucheng.www.hulisiwei.BlxqActivity;
 import cn.jucheng.www.hulisiwei.R;
-import cn.jucheng.www.hulisiwei.adapter.fragmentAdapter.TWDFragmentAdapter;
 import cn.jucheng.www.hulisiwei.adapter.fragmentAdapter.YZDLongFragmentAdapter;
 import cn.jucheng.www.hulisiwei.base.BaseFragment;
 import cn.jucheng.www.hulisiwei.base.MyList;
@@ -39,7 +38,7 @@ import static cn.jucheng.www.hulisiwei.module.UserMessage.twdResult;
  *
  */
 
-public class ZtjldFragment extends BaseFragment implements TWDFragmentAdapter.ToastListener,AbsListView.OnScrollListener {
+public class ZtjldFragment extends BaseFragment implements AbsListView.OnScrollListener {
 
     @BindView(R.id.fragment_fitlist)
     MyList twd;
@@ -98,7 +97,7 @@ public class ZtjldFragment extends BaseFragment implements TWDFragmentAdapter.To
      * 初始adapter
      */
     public void initAdapter() {
-        adapter = new YZDLongFragmentAdapter(getActivity(), UserMessage.fragmentHead, pages);
+        adapter = new YZDLongFragmentAdapter(getActivity(), pages);
         twd.setAdapter(adapter);
         twd.setOnScrollListener(this);
     }
@@ -118,7 +117,7 @@ public class ZtjldFragment extends BaseFragment implements TWDFragmentAdapter.To
         if (biaoDanType ==1) {
             pages = 1;
             getPage();
-            adapter.setLists(UserMessage.fragmentHead, pages);
+
         }
     }
 
@@ -141,7 +140,6 @@ public class ZtjldFragment extends BaseFragment implements TWDFragmentAdapter.To
         String messaegs = message.substring(0,message.length()-2);
         UserMessage.fragmentHead = CommUtils.getJson(HexadecimalConver.toStringHex(messaegs), "baseinfo");
         if(adapter != null){
-            adapter.setLists(UserMessage.fragmentHead, pages);
         }
     }
 
@@ -154,9 +152,6 @@ public class ZtjldFragment extends BaseFragment implements TWDFragmentAdapter.To
         switch (messageType){
             case 1://1是表单头部信息
                 setBiaodanHead(message);
-                break;
-            case 2://2是清空所有信息
-                ClearBiaodanHead();
                 break;
             case 3://3是签字信息
                 biaoDanType = Integer
@@ -231,13 +226,7 @@ public class ZtjldFragment extends BaseFragment implements TWDFragmentAdapter.To
     /**
      * 清空本表所有个人信息
      */
-    public void ClearBiaodanHead() {
-        UserMessage.fragmentHead.clear();
-        UserMessage.transfusion_Message.clear();
-        pages = 1;
-        adapter.setLists(UserMessage.fragmentHead, pages);
 
-    }
 
     @Override
     public void onResume() {
@@ -250,10 +239,6 @@ public class ZtjldFragment extends BaseFragment implements TWDFragmentAdapter.To
         super.onDestroyView();
     }
 
-    @Override
-    public void onToastClick() {
-        MyToast.showTestToast(getActivity(),"请先填写护士姓名.");
-    }
 
     @Override
     public void onScrollStateChanged(AbsListView view, int scrollState) {

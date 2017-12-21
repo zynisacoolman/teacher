@@ -110,6 +110,8 @@
                 android:resource="@xml/device_filter" />
         </activity>
         <activity android:name=".BlxqActivity" />
+        <activity android:name=".fragment.formFragement.DzblFragDir.YzdTemFragment" />
+        <activity android:name=".fragment.formFragement.DzblFragDir.YzdLongFragment" />
     </application>
 
 </manifest>

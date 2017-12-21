@@ -21,7 +21,6 @@ import cn.jucheng.www.hulisiwei.customcontrols.CustomCurveChart;
 import cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView;
 import cn.jucheng.www.hulisiwei.module.UserMessage;
 import cn.jucheng.www.hulisiwei.utils.CommUtils;
-import cn.jucheng.www.hulisiwei.widget.MyMessage;
 import cn.jucheng.www.hulisiwei.widget.MyShareUtils;
 
 /**
@@ -51,7 +50,6 @@ public class TWDFragmentAdapter extends BaseAdapter {
     int yiZhuType = 0;//医嘱种类
     int group=0;
 
-    ToastListener toastListener;
     String[] xLabel = {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"};
     String[] yLabel = {"0", "100", "200", "300", "400", "500", "600", "700", "800", "900", "1000", "1100"};
 
@@ -99,7 +97,7 @@ public class TWDFragmentAdapter extends BaseAdapter {
             holder.h_bednumber = (TextView) convertView.findViewById(R.id.h_bednumber);
             holder.h_ryrq = (FitHeightTextView) convertView.findViewById(R.id.h_ryrq);
             holder.h_zyblh=(FitHeightTextView) convertView.findViewById(R.id.h_zyblh);
-            holder.ll_wendu=(LinearLayout)convertView.findViewById(R.id.ll_wendu);
+//            holder.ll_wendu=(LinearLayout)convertView.findViewById(R.id.ll_wendu);
             holder.gv_date =(GridView)convertView.findViewById(R.id.gv_twd_ryrq);//日期
             holder.gv_zydays=(GridView)convertView.findViewById(R.id.gv_twd_zydays);//住院天数
             holder.gv_ssdays=(GridView)convertView.findViewById(R.id.gv_twd_sshdays);//手术后天数
@@ -162,24 +160,7 @@ public class TWDFragmentAdapter extends BaseAdapter {
     }
 
 
-    /**
-     * 发送消息
-     *
-     * @param etYiZhuZhongLei
-     * @param etHangHao
-     */
-    public void sendMessage(int etYiZhuZhongLei, int etHangHao) {
-        MyMessage.sendMessage(MyMessage.getMsgXueshengdianjiqianzi(
-                new Integer(etYiZhuZhongLei), new Integer(etHangHao)));
-    }
 
-    public interface ToastListener {
-        public void onToastClick();
-    }
-
-    public void setOntoastClickListener(ToastListener toastListener) {
-        this.toastListener = toastListener;
-    }
 
     class ViewHolder {
         TextView h_name;//姓名

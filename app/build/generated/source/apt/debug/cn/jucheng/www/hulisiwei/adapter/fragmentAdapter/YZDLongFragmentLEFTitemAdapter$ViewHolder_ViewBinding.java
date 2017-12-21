@@ -12,10 +12,10 @@ import java.lang.IllegalStateException;
 import java.lang.Override;
 
 public class YZDLongFragmentLEFTitemAdapter$ViewHolder_ViewBinding implements Unbinder {
-  private YZDLongFragmentLEFTitemAdapter.ViewHolder target;
+  private YZDLongStartAdapter.ViewHolder target;
 
   @UiThread
-  public YZDLongFragmentLEFTitemAdapter$ViewHolder_ViewBinding(YZDLongFragmentLEFTitemAdapter.ViewHolder target,
+  public YZDLongFragmentLEFTitemAdapter$ViewHolder_ViewBinding(YZDLongStartAdapter.ViewHolder target,
       View source) {
     this.target = target;
 
@@ -28,7 +28,7 @@ public class YZDLongFragmentLEFTitemAdapter$ViewHolder_ViewBinding implements Un
   @Override
   @CallSuper
   public void unbind() {
-    YZDLongFragmentLEFTitemAdapter.ViewHolder target = this.target;
+    YZDLongStartAdapter.ViewHolder target = this.target;
     if (target == null) throw new IllegalStateException("Bindings already cleared.");
     this.target = null;
 

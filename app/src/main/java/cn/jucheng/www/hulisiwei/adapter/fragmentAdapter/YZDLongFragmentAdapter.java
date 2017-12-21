@@ -14,9 +14,7 @@ import java.util.List;
 import cn.jucheng.www.hulisiwei.R;
 import cn.jucheng.www.hulisiwei.base.MyList;
 import cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView;
-import cn.jucheng.www.hulisiwei.module.UserMessage;
 import cn.jucheng.www.hulisiwei.utils.CommUtils;
-import cn.jucheng.www.hulisiwei.widget.MyMessage;
 import cn.jucheng.www.hulisiwei.widget.MyShareUtils;
 
 /**
@@ -39,26 +37,17 @@ public class YZDLongFragmentAdapter extends BaseAdapter {
     int yiZhuHangHao = 0;//医嘱行号
     int yiZhuType = 0;//医嘱种类
 
-    List<List<String>> nowTeacherList=new ArrayList<>();//存储左边list
-    List<List<String>> nowHushiList=new ArrayList<>();//左边护士list
-    List<List<String>> nowStopList=new ArrayList<>();//停止list
-    ToastListener toastListener;
 
 
-    public YZDLongFragmentAdapter(Context context, List<String> specailList, int index) {
+
+    public YZDLongFragmentAdapter(Context context, int index) {
         this.mContext = context;
-        this.specailList = specailList;
         this.index = index;
         mInflater = LayoutInflater.from(context);
         if (datas == null)
             datas = MyShareUtils.getInstances(context);
     }
 
-    public void setLists(List<String> specailList, int index) {
-        this.index = index;
-        this.specailList = specailList;
-        notifyDataSetChanged();
-    }
 
     @Override
     public int getCount() {
@@ -78,7 +67,9 @@ public class YZDLongFragmentAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         ViewHolder holder;
-        YZDLongFragmentLEFTitemAdapter yzdleft=new YZDLongFragmentLEFTitemAdapter(mContext,nowTeacherList,position);
+        YZDLongStartAdapter yzdleft=new YZDLongStartAdapter(mContext,position);
+        YZDLongStopAdapter yzdright=new YZDLongStopAdapter(mContext,position);
+        YZDLonghsAdapter yzdmiddle = new YZDLonghsAdapter(mContext,position);
         if (convertView == null) {
             convertView = mInflater.inflate(R.layout.adapter_fragmentyzdlong, null);
             holder = new ViewHolder();
@@ -90,16 +81,21 @@ public class YZDLongFragmentAdapter extends BaseAdapter {
             holder.h_illrecordNum=(FitHeightTextView) convertView.findViewById(R.id.h_illrecordNum);
             holder.lv_hssign=(MyList) convertView.findViewById(R.id.gv_hssign);
             holder.lv_start=(MyList) convertView.findViewById(R.id.gv_start);
+            holder.transfusion_page_number=(TextView)convertView.findViewById(R.id.inject_page_number);//页面号
+                holder.lv_start.setAdapter(yzdleft);
+                yzdleft.notifyDataSetChanged();
             holder.lv_stop=(MyList) convertView.findViewById(R.id.gv_stop);
-            holder.lv_start.setAdapter(yzdleft);
-            yzdleft.notifyDataSetChanged();
+                holder.lv_stop.setAdapter(yzdright);
+                yzdright.notifyDataSetChanged();
+            holder.lv_hssign=(MyList)convertView.findViewById(R.id.gv_hssign);
+                holder.lv_hssign.setAdapter(yzdmiddle);
+                yzdmiddle.notifyDataSetChanged();
             convertView.setTag(holder); //
 
         } else {
             holder = (ViewHolder) convertView.getTag(); //
         }
-//        holder.transfusion_page_number.setText("第" + (position + 1) + "页");
-        nowTeacherList=(CommUtils.getDataList(UserMessage.transfusion_Message, (position + 1), 38));
+        holder.transfusion_page_number.setText("第" + (position + 1) + "页");
 
         if (specailList.size() >= 0 || specailList != null) {
             holder.h_name.setText(CommUtils.getListString(specailList, 0));
@@ -113,24 +109,7 @@ public class YZDLongFragmentAdapter extends BaseAdapter {
     }
 
 
-    /**
-     * 发送消息
-     *
-     * @param etYiZhuZhongLei
-     * @param etHangHao
-     */
-    public void sendMessage(int etYiZhuZhongLei, int etHangHao) {
-        MyMessage.sendMessage(MyMessage.getMsgXueshengdianjiqianzi(
-                new Integer(etYiZhuZhongLei), new Integer(etHangHao)));
-    }
 
-    public interface ToastListener {
-        public void onToastClick();
-    }
-
-    public void setOntoastClickListener(ToastListener toastListener) {
-        this.toastListener = toastListener;
-    }
 
     class ViewHolder {
         TextView h_name;//姓名

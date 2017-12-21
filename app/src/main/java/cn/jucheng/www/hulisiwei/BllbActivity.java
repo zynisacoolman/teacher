@@ -1,6 +1,7 @@
 package cn.jucheng.www.hulisiwei;
 
 import android.app.Dialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -32,6 +33,7 @@ import butterknife.OnClick;
 import cn.jucheng.jclibs.tools.MyLog;
 import cn.jucheng.jclibs.tools.MyToast;
 import cn.jucheng.jclibs.tools.SubStringUtils;
+import cn.jucheng.www.hulisiwei.dialogs.ReconnectDialog;
 import cn.jucheng.www.hulisiwei.adapter.ExplistBLLBAdapter;
 import cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView;
 import cn.jucheng.www.hulisiwei.databean.bllbbean.Baseinfo;
@@ -40,6 +42,7 @@ import cn.jucheng.www.hulisiwei.databean.bllbbean.Patientinfo;
 import cn.jucheng.www.hulisiwei.interfaca.OnBllbSonClickListener;
 import cn.jucheng.www.hulisiwei.utils.CustomDialog;
 import cn.jucheng.www.hulisiwei.utils.DateUtils;
+import cn.jucheng.www.hulisiwei.widget.HexadecimalConver;
 import cn.jucheng.www.hulisiwei.widget.MyMessage;
 
 import static cn.jucheng.jclibs.tools.MyLog.init;
@@ -72,6 +75,16 @@ public class BllbActivity extends MyBaseActivity implements View.OnClickListener
     };
     String[] nameEn ={"CaseCteg_Breathe","CaseCteg_Periodic","CaseCteg_Digestion","CaseCteg_Urinary","CaseCteg_Blood","CaseCteg_InternalSecretion",
     "CaseCteg_Rheumatism","CaseCteg_LiHua","CaseCteg_NutritionMetabolism","CaseCteg_ICU","CaseCteg_Shock","CaseCteg_Other"};
+    /**
+     * 存储状态发生改变后的数据
+     * rectime 状态进行的时间
+     * recstates 当前病例运行状态
+     * recblmc 当前病例名称
+     * */
+    String rectime;
+    String recstates;
+    String recblmc;
+
     HashMap<String ,String > hashmap;
     @BindView(R.id.tv_blxq_xm)
     FitHeightTextView tvBlxqXm;
@@ -207,11 +220,44 @@ public class BllbActivity extends MyBaseActivity implements View.OnClickListener
                     case 0://没有收到教师下发的病例且没有开始
                         break;
                     default://收到教师下发的病例
-
+                        new ReconnectDialog.Builder(this).
+                                setTitle("提示").
+                                setMessage("是否结束当前病例").
+                                setPositiveButton("是", new DialogInterface.OnClickListener() {
+                                    @Override
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        dialog.dismiss();
+                                    }
+                                }).
+                                setNegativeButton("否", new DialogInterface.OnClickListener() {
+                                    @Override
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        //开始当前病例
+                                        Bundle bundle=new Bundle();
+                                        bundle.putString("rectime",rectime);
+                                        bundle.putString("recstatus",recstates);
+                                        bundle.putString("recname",recblmc);
+                                        startActivity(new Intent(BllbActivity.this,BlxqActivity.class).putExtras(bundle));
+                                    }
+                                }).create().show();
                         break;
                 }
                 break;
+            //接受重新连接后学生机发送的病例名
             case MyMessage.MLZ_BLM:
+                //病例名长度
+                int lenth;
+                lenth=Integer.parseInt(SubStringUtils.substring(string,48,52),16);
+                recblmc= HexadecimalConver.decode(SubStringUtils.substring(string,60,lenth));
+                break;
+            //接受重新连接后学生机发送的状态改变命令 //当前病例状态
+            case MyMessage.MLZ_ZTGB:
+                //前两位高位后两位低位
+                recstates=SubStringUtils.substring(string,52,56);
+                break;
+            //接受重新连接后学生机发送的训练总时间，前三个字节是总时间，后三个字节是状态改变时间
+            case MyMessage.MLZ_JZZSJ:
+                rectime=SubStringUtils.substring(string,52,64);
                 break;
         }
 
