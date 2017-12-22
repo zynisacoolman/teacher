@@ -239,8 +239,9 @@ public class MyMessage {
 				miao, shi1, fen1, miao1);
 	}
 
-	public static String getMsgTestBiaodan(int biaoDanType, String biaoDanNeiRen) {
-		return String.format(MSG_TEST_BIAODAN, biaoDanNeiRen.length() / 2, 1);
+	public static String getMsgTestBiaodan(String biaoDanNeiRen) {
+		int biaodanlen=HexadecimalConver.getHexResult(biaoDanNeiRen).length()/2;
+		return String.format(MSG_TEST_BIAODAN, biaodanlen, 1);
 	}
 
 	public static String getMsgTestHuifusuoyaoxueshengjizhuangtai(int zhuangTai) {

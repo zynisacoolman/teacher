@@ -6,6 +6,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AbsListView;
 
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -18,6 +21,7 @@ import cn.jucheng.www.hulisiwei.R;
 import cn.jucheng.www.hulisiwei.adapter.fragmentAdapter.YZDLongFragmentAdapter;
 import cn.jucheng.www.hulisiwei.base.BaseFragment;
 import cn.jucheng.www.hulisiwei.base.MyList;
+import cn.jucheng.www.hulisiwei.interfaca.MessageEvent;
 import cn.jucheng.www.hulisiwei.interfaca.OnZhuanChao;
 import cn.jucheng.www.hulisiwei.interfaca.OnformDateUpdate;
 import cn.jucheng.www.hulisiwei.interfaca.OnformHeadUpdate;
@@ -56,6 +60,35 @@ public class YzdLongFragment extends BaseFragment implements OnformDateUpdate,On
         tempyzd.setAdapter(adapter);
         return view;
     }
+    @Subscribe(threadMode = ThreadMode.MAIN)
+    public void onEventMainThread(MessageEvent evnt) {
+
+        int msgType = evnt.getIsMessage();
+        String message_str = evnt.getMessage();
+        setBiaodanMessage(message_str,msgType);
+
+    }
+    /**
+     * 解析表单信息
+     *
+     * @param message
+     */
+    public void setBiaodanMessage(String message,int messageType) {
+        switch (messageType){
+            case 1://1是表单头部信息
+                OnformHeadUpdate(message);
+                break;
+
+            case 4://4是表单信息
+                OnformDateUpdate(message);
+                break;
+            case 5://转抄医嘱
+                OnZhuanchao(message);
+                break;
+            default:
+                break;
+        }
+    }
 
     /**
      * 计算页数
@@ -77,7 +110,6 @@ public class YzdLongFragment extends BaseFragment implements OnformDateUpdate,On
         BlxqActivity.setPageNumber(number);
     }
 
-    @Override
     public void OnformDateUpdate(String string) {
         int lenth = Integer.parseInt(SubStringUtils.substring(string,48,52),16);//有效位长度
         int formtype = Integer.parseInt(SubStringUtils.substring(string,52,54),16);
@@ -106,7 +138,6 @@ public class YzdLongFragment extends BaseFragment implements OnformDateUpdate,On
 
         }
     }
-    @Override
     public void OnformHeadUpdate(String string) {
         int bdt=Integer.parseInt(SubStringUtils.substring(string,48,52),16);
         String jsont= HexadecimalConver.decode(
@@ -116,7 +147,6 @@ public class YzdLongFragment extends BaseFragment implements OnformDateUpdate,On
         adapter.notifyDataSetChanged();
     }
 
-    @Override
     public void OnZhuanchao(String string) {
         //医嘱类型
         int formtyp=Integer.parseInt(SubStringUtils.substring(string,52,54),16);

@@ -151,7 +151,7 @@ public class LoginActivity extends MyBaseActivity {
 
 				break;
 		 case R.id.btnJSBiaoDan:
-		 	MyMessage.sendMessage(MyMessage.getMsgTestBiaodan(1,"are you ok mifan"));
+		 	MyMessage.sendMessage(MyMessage.getMsgTestBiaodan("are you ok mifans"));
 		 	break;
 //		 testReciveMsg(MyMessage.getMsgTestBiaodan(15, 1, 1, 1, "内容"));
 //		 etXianShi.setText(MyMessage.getMsgTestBiaodan(15, 1, 1, 1, "内容"));

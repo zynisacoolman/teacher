@@ -6,6 +6,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AbsListView;
 
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -18,9 +21,7 @@ import cn.jucheng.www.hulisiwei.R;
 import cn.jucheng.www.hulisiwei.adapter.fragmentAdapter.YZDTempFragmentAdapter;
 import cn.jucheng.www.hulisiwei.base.BaseFragment;
 import cn.jucheng.www.hulisiwei.base.MyList;
-import cn.jucheng.www.hulisiwei.interfaca.OnZhuanChao;
-import cn.jucheng.www.hulisiwei.interfaca.OnformDateUpdate;
-import cn.jucheng.www.hulisiwei.interfaca.OnformHeadUpdate;
+import cn.jucheng.www.hulisiwei.interfaca.MessageEvent;
 import cn.jucheng.www.hulisiwei.module.UserMessage;
 import cn.jucheng.www.hulisiwei.utils.CommUtils;
 import cn.jucheng.www.hulisiwei.widget.HexadecimalConver;
@@ -31,9 +32,6 @@ import cn.jucheng.www.hulisiwei.widget.HexadecimalConver;
  */
 
 public class YzdTemFragment extends BaseFragment implements
-        OnZhuanChao,
-        OnformHeadUpdate,
-        OnformDateUpdate,
         AbsListView.OnScrollListener {
     @BindView(R.id.fragment_fitlist)
     MyList tempyzd;
@@ -64,6 +62,64 @@ public class YzdTemFragment extends BaseFragment implements
         return view;
     }
 
+    @Subscribe(threadMode = ThreadMode.MAIN)
+    public void onEventMainThread(MessageEvent evnt) {
+
+        int msgType = evnt.getIsMessage();
+        String message_str = evnt.getMessage();
+        setBiaodanMessage(message_str,msgType);
+
+    }
+
+    /**
+     * 解析表单信息
+     *
+     * @param message
+     */
+    public void setBiaodanMessage(String message,int messageType) {
+        switch (messageType){
+            case 1://1是表单头部信息
+                setBiaodanHead(message);
+                break;
+
+            case 4://4是表单信息
+                setBiaodan(message);
+                break;
+            case 5://转抄医嘱
+                zhuanchao(message);
+                break;
+            default:
+                break;
+        }
+    }
+
+    public void setBiaodan(String string){
+        int lenth = Integer.parseInt(SubStringUtils.substring(string,48,52),16);//有效位长度
+        int formtype = Integer.parseInt(SubStringUtils.substring(string,52,54),16);
+        int opratype = Integer.parseInt(SubStringUtils.substring(string,54,56),16);
+        int page = Integer.parseInt(SubStringUtils.substring(string,56,60),16);
+        int line = Integer.parseInt(SubStringUtils.substring(string,60,64),16);
+        int jsonlenth=Integer.parseInt(SubStringUtils.substring(string,64,68),16);
+        String json = SubStringUtils.substring(string,68,jsonlenth*2+68);
+        List<String> specialList = CommUtils.getJson(json, "linshiyizhu");
+        //加入医嘱
+        if(formtype==3&&opratype==1){
+            if(UserMessage.YZDtempleft.size()==line)
+                UserMessage.YZDtempleft.set(line,specialList);
+            else
+                UserMessage.YZDtempleft.add(specialList);
+        }
+
+    }
+    public void setBiaodanHead(String string) {
+        int bdt=Integer.parseInt(SubStringUtils.substring(string,48,52),16);
+        String jsont= HexadecimalConver.decode(
+                SubStringUtils.substring(string,52,52+bdt*2));
+
+        UserMessage.fragmentHead=CommUtils.getJson(jsont,"baseinfo");
+        adapter.notifyDataSetChanged();
+
+    }
 
 
     /**
@@ -86,8 +142,7 @@ public class YzdTemFragment extends BaseFragment implements
         BlxqActivity.setPageNumber(number);
     }
 
-    @Override
-    public void OnZhuanchao(String string) {
+    public void zhuanchao(String string) {
         //医嘱类型
         int formtyp=Integer.parseInt(SubStringUtils.substring(string,52,54),16);
         //页号
@@ -115,34 +170,6 @@ public class YzdTemFragment extends BaseFragment implements
         }
     }
 
-    @Override
-    public void OnformDateUpdate(String string) {
-        int lenth = Integer.parseInt(SubStringUtils.substring(string,48,52),16);//有效位长度
-        int formtype = Integer.parseInt(SubStringUtils.substring(string,52,54),16);
-        int opratype = Integer.parseInt(SubStringUtils.substring(string,54,56),16);
-        int page = Integer.parseInt(SubStringUtils.substring(string,56,60),16);
-        int line = Integer.parseInt(SubStringUtils.substring(string,60,64),16);
-        int jsonlenth=Integer.parseInt(SubStringUtils.substring(string,64,68),16);
-        String json = SubStringUtils.substring(string,68,jsonlenth*2+68);
-        List<String> specialList = CommUtils.getJson(json, "linshiyizhu");
-        //加入医嘱
-        if(formtype==3&&opratype==1){
-            if(UserMessage.YZDtempleft.size()==line)
-                UserMessage.YZDtempleft.set(line,specialList);
-            else
-                UserMessage.YZDtempleft.add(specialList);
-        }
-    }
-
-    @Override
-    public void OnformHeadUpdate(String string) {
-        int bdt=Integer.parseInt(SubStringUtils.substring(string,48,52),16);
-        String jsont= HexadecimalConver.decode(
-                SubStringUtils.substring(string,52,52+bdt*2));
-
-        UserMessage.fragmentHead=CommUtils.getJson(jsont,"baseinfo");
-        adapter.notifyDataSetChanged();
-    }
     @Override
     public void onDestroyView() {
         super.onDestroyView();

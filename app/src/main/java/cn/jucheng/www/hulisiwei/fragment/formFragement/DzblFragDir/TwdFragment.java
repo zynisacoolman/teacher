@@ -213,12 +213,12 @@ public class TwdFragment extends BaseFragment implements AbsListView.OnScrollLis
         switch (formType){
             case 1:
                 twdResult.setMbsz(
-                        CommUtils.getDatamap(SubStringUtils.substring(message,56,56+validLenth))
+                        CommUtils.getDatamap(SubStringUtils.substring(message,56,56+validLenth*2))
                 );
                 break;
             case 2:
                 twdResult.setTwsz(
-                        CommUtils.getDatamap(SubStringUtils.substring(message,56,56+validLenth))
+                        CommUtils.getDatamap(SubStringUtils.substring(message,56,56+validLenth*2))
                 );
                 break;
             case 3:

@@ -52,22 +52,22 @@ public class XTJLDiTemFragmentAdapter extends BaseAdapter {
             vh = (ViewHolder) convertView.getTag();
         }
         vh.data.setText(UserMessage.XTJLD.get(page).getDate());
-        vh.shang1.setText(UserMessage.XTJLD.get(page).getData().get(0).get(0));
-        vh.xia1.setText(UserMessage.XTJLD.get(page).getData().get(0).get(1));
-        vh.shang2.setText(UserMessage.XTJLD.get(page).getData().get(1).get(0));
-        vh.xia2.setText(UserMessage.XTJLD.get(page).getData().get(1).get(1));
-        vh.shang3.setText(UserMessage.XTJLD.get(page).getData().get(2).get(0));
-        vh.xia3.setText(UserMessage.XTJLD.get(page).getData().get(2).get(1));
-        vh.shang4.setText(UserMessage.XTJLD.get(page).getData().get(3).get(0));
-        vh.xia4.setText(UserMessage.XTJLD.get(page).getData().get(3).get(1));
-        vh.shang5.setText(UserMessage.XTJLD.get(page).getData().get(4).get(0));
-        vh.xia5.setText(UserMessage.XTJLD.get(page).getData().get(4).get(1));
-        vh.shang6.setText(UserMessage.XTJLD.get(page).getData().get(5).get(0));
-        vh.xia6.setText(UserMessage.XTJLD.get(page).getData().get(5).get(1));
-        vh.shang7.setText(UserMessage.XTJLD.get(page).getData().get(6).get(0));
-        vh.xia7.setText(UserMessage.XTJLD.get(page).getData().get(6).get(1));
-        vh.shang8.setText(UserMessage.XTJLD.get(page).getData().get(7).get(0));
-        vh.xia8.setText(UserMessage.XTJLD.get(page).getData().get(7).get(1));
+        vh.shang1.setText(UserMessage.XTJLD.get(page).getData().get(position*18).get(0));
+        vh.xia1.setText(UserMessage.XTJLD.get(page).getData().get(position*18).get(1));
+        vh.shang2.setText(UserMessage.XTJLD.get(page).getData().get(1+position*18).get(0));
+        vh.xia2.setText(UserMessage.XTJLD.get(page).getData().get(1+position*18).get(1));
+        vh.shang3.setText(UserMessage.XTJLD.get(page).getData().get(2+position*18).get(0));
+        vh.xia3.setText(UserMessage.XTJLD.get(page).getData().get(2+position*18).get(1));
+        vh.shang4.setText(UserMessage.XTJLD.get(page).getData().get(3+position*18).get(0));
+        vh.xia4.setText(UserMessage.XTJLD.get(page).getData().get(3+position*18).get(1));
+        vh.shang5.setText(UserMessage.XTJLD.get(page).getData().get(4+position*18).get(0));
+        vh.xia5.setText(UserMessage.XTJLD.get(page).getData().get(4+position*18).get(1));
+        vh.shang6.setText(UserMessage.XTJLD.get(page).getData().get(5+position*18).get(0));
+        vh.xia6.setText(UserMessage.XTJLD.get(page).getData().get(5+position*18).get(1));
+        vh.shang7.setText(UserMessage.XTJLD.get(page).getData().get(6+position*18).get(0));
+        vh.xia7.setText(UserMessage.XTJLD.get(page).getData().get(6+position*18).get(1));
+        vh.shang8.setText(UserMessage.XTJLD.get(page).getData().get(7+position*18).get(0));
+        vh.xia8.setText(UserMessage.XTJLD.get(page).getData().get(7+position*18).get(1));
 
         return convertView;
     }

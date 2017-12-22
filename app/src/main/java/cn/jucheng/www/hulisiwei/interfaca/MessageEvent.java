@@ -9,7 +9,7 @@ package cn.jucheng.www.hulisiwei.interfaca;
     public class MessageEvent {
 
         private String message;//信息
-        int isMessage = 0;//信息分类，1是表单头部信息，2是清空所有信息，3是签字信息,4是表单信息
+        int isMessage = 0;//信息分类，1是表单头部信息，2是清空所有信息，3是签字信息,4是表单信息,5转抄医嘱
 
         /**
          *

@@ -7,8 +7,8 @@
     <ScrollView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:fillViewport="true"
-        android:scrollbars="none">
+        android:scrollbars="none"
+        >
 
         <LinearLayout
             android:layout_width="fill_parent"
@@ -16,9 +16,9 @@
             android:background="@drawable/fragment_bljl"
             android:orientation="vertical">
 
-            <TextView
+            <View
                 android:layout_width="match_parent"
-                android:layout_height="156dp" />
+                android:layout_height="155dp" />
             <!--表头-->
             <LinearLayout
                 android:layout_width="match_parent"
@@ -124,60 +124,277 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="77dp"
+                android:layout_height="60dp"
                 android:orientation="horizontal">
 
             </LinearLayout>
-            <!--内容-->
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="930dp"
+                android:layout_height="224dp"
                 android:orientation="horizontal">
 
-                <cn.jucheng.www.hulisiwei.base.MyList
-                    android:id="@+id/inject_list"
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:divider="@color/touming"
-                    android:scrollbars="none"
-                    android:listSelector="@color/touming" />
+                <View
+                    android:layout_width="173dp"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="27dp" />
+
+                    <TextView
+                        android:id="@+id/tv_sex"
+                        android:layout_width="match_parent"
+                        android:layout_height="27dp"
+                        android:layout_marginTop="13dp" />
+
+                    <TextView
+                        android:id="@+id/tv_age"
+                        android:layout_width="match_parent"
+                        android:layout_height="27dp"
+                        android:layout_marginTop="10dp" />
+
+                    <TextView
+                        android:id="@+id/tv_marry"
+                        android:layout_width="match_parent"
+                        android:layout_height="27dp"
+                        android:layout_marginTop="12dp" />
+
+                    <TextView
+                        android:id="@+id/tv_race"
+                        android:layout_width="match_parent"
+                        android:layout_height="27dp"
+                        android:layout_marginTop="11dp" />
+
+                    <TextView
+                        android:id="@+id/tv_work"
+                        android:layout_width="match_parent"
+                        android:layout_height="27dp"
+                        android:layout_marginTop="11dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="290dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="138dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_bornplace"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp" />
+
+                    <TextView
+                        android:id="@+id/tv_liveplace"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="9dp" />
+
+                    <TextView
+                        android:id="@+id/tv_workplace"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="9dp" />
+
+                    <TextView
+                        android:id="@+id/tv_inhospital"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="8dp" />
+
+                    <TextView
+                        android:id="@+id/tv_recordhist"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="8dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="9dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="13dp" />
+
+                        <TextView
+                            android:layout_width="810dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="110dp" />
+                    </LinearLayout>
+                </LinearLayout>
 
             </LinearLayout>
-
-
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="50dp" />
+                android:layout_height="40dp" />
             <!--页数-->
+            <TextView
+                android:layout_width="540dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="540dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="38dp" />
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:orientation="horizontal">
+                android:layout_height="52dp"
+                android:layout_marginTop="330dp"
+                android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="446" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp">
 
-                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
-                    android:id="@+id/inject_page_number"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="50"
-                    android:text="第1页"
-                    android:textColor="@color/black_333"
-                    android:textSize="@dimen/text_size14" />
+                    <CheckBox
+                        android:layout_width="15dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="131dp" />
 
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="444" />
+                    <CheckBox
+                        android:layout_width="15dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="27dp" />
+
+                    <CheckBox
+                        android:layout_width="15dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="40dp" />
+
+                    <CheckBox
+                        android:layout_width="15dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="85dp" />
+
+                    <CheckBox
+                        android:layout_width="15dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="40dp" />
+
+                    <CheckBox
+                        android:layout_width="15dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="40dp" />
+
+                    <CheckBox
+                        android:layout_width="15dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="93dp" />
+
+                    <CheckBox
+                        android:layout_width="15dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="40dp" />
+
+                    <CheckBox
+                        android:layout_width="15dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="40dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="12dp">
+
+                    <CheckBox
+                        android:layout_width="15dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="131dp" />
+
+                    <CheckBox
+                        android:layout_width="15dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="40dp" />
+
+                    <CheckBox
+                        android:layout_width="15dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="128dp" />
+
+                    <CheckBox
+                        android:layout_width="15dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="40dp" />
+
+                    <CheckBox
+                        android:layout_width="15dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="148dp" />
+
+                    <CheckBox
+                        android:layout_width="15dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="40dp" />
+
+                    <CheckBox
+                        android:layout_width="15dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="40dp" />
+                </LinearLayout>
             </LinearLayout>
 
             <TextView
+                android:layout_width="550dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="155dp"
+                android:layout_marginTop="16dp" />
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="76dp" />
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="206dp" />
+
+                <CheckBox
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="20dp" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="145dp" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="95dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="105dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="595dp"
+                android:layout_marginTop="40dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="225dp">
+            </LinearLayout>
         </LinearLayout>
+
+
     </ScrollView>
 </LinearLayout>
