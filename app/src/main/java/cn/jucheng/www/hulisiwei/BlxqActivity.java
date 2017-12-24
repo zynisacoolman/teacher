@@ -219,16 +219,13 @@ public class BlxqActivity extends MyBaseActivity implements View.OnClickListener
         switch(msg.what){
             case MyMessage.MLZ_GZBD:
                 UserMessage.biaodan_message = str;//缓存表单数据
-                onformDateUpdate.OnformDateUpdate(str);
                 EventBus.getDefault().post(new MessageEvent(UserMessage.biaodan_message, 4));
                 break;
             case MyMessage.MLZ_ZCYZ:
                 onZhuanChao.OnZhuanchao(str);
                 break;
             case MyMessage.MLZ_BDT:
-                String head_message = str.substring(52);
-                onformHeadUpdate.OnformHeadUpdate(str);
-                datas.setData(MyGlobal1.ALLBIAODANMESSAGE, head_message);//存储表单头部信息
+                String head_message = str;
                 EventBus.getDefault().post(new MessageEvent(head_message, 1));
                 break;
             case MyMessage.MLZ_XSCZ://学生操作 48-50医嘱状态(1个字节，取值参见附录)+状态ID(两个字节)(50-54)

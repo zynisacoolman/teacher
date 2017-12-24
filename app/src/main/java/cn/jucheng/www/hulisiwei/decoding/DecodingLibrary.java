@@ -148,7 +148,11 @@ public class DecodingLibrary {
 							break;
 						case MyMessage.MLZ_ZTGB://状态改变命令
 							msg.what=MyMessage.MLZ_ZTGB;
-							msg.what=MyMessage.MLZ_ZCYZ;
+							msg.obj=sbMsg.toString();
+							hd.sendMessage(msg);
+							break;
+						case MyMessage.MLZ_BDT://表单头命令
+							msg.what=MyMessage.MLZ_BDT;
 							msg.obj=sbMsg.toString();
 							hd.sendMessage(msg);
 							break;

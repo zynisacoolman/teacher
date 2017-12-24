@@ -1,11 +1,13 @@
 package cn.jucheng.www.hulisiwei.fragment.formFragement.DzblFragDir;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AbsListView;
 
+import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
 
@@ -34,9 +36,10 @@ import cn.jucheng.www.hulisiwei.widget.HexadecimalConver;
  * 临时医嘱单
  */
 
-public class YzdLongFragment extends BaseFragment implements OnformDateUpdate,OnformHeadUpdate,OnZhuanChao,AbsListView.OnScrollListener {
+public class YzdLongFragment extends BaseFragment implements AbsListView.OnScrollListener {
     @BindView(R.id.fragment_fitlist)
     MyList tempyzd;
+    protected final String TAG="YzdLongFragment";
     private View view;
     /**
      * 数据源
@@ -56,17 +59,17 @@ public class YzdLongFragment extends BaseFragment implements OnformDateUpdate,On
         view = inflater.inflate(R.layout.fragment_fitlist, null);
         getPage();
         unbinder = ButterKnife.bind(this, view);
+        EventBus.getDefault().register(this);
         adapter=new YZDLongFragmentAdapter(getActivity(),pages);
         tempyzd.setAdapter(adapter);
         return view;
     }
     @Subscribe(threadMode = ThreadMode.MAIN)
     public void onEventMainThread(MessageEvent evnt) {
-
         int msgType = evnt.getIsMessage();
         String message_str = evnt.getMessage();
         setBiaodanMessage(message_str,msgType);
-
+        adapter.notifyDataSetChanged();
     }
     /**
      * 解析表单信息
@@ -78,7 +81,6 @@ public class YzdLongFragment extends BaseFragment implements OnformDateUpdate,On
             case 1://1是表单头部信息
                 OnformHeadUpdate(message);
                 break;
-
             case 4://4是表单信息
                 OnformDateUpdate(message);
                 break;
@@ -116,10 +118,10 @@ public class YzdLongFragment extends BaseFragment implements OnformDateUpdate,On
         int opratype = Integer.parseInt(SubStringUtils.substring(string,54,56),16);
         int page = Integer.parseInt(SubStringUtils.substring(string,56,60),16);
         int line = Integer.parseInt(SubStringUtils.substring(string,60,64),16);
-        int jsonlenth=Integer.parseInt(SubStringUtils.substring(string,64,68),16);
-        String json = SubStringUtils.substring(string,68,jsonlenth*2+68);
-        List<String> specialList = CommUtils.getJson(json, "linshiyizhu");
-        //加入医嘱
+        String json = HexadecimalConver.decode(SubStringUtils.substring(string,64,64+(lenth-6)*2));
+        List<String> specialList = CommUtils.getJson(json, "changqiyizhu");
+        Log.d(TAG, "OnformDateUpdate: "+json);
+        //长期医嘱
         if(formtype==2){
             switch (opratype){
                 case 1:
@@ -130,12 +132,11 @@ public class YzdLongFragment extends BaseFragment implements OnformDateUpdate,On
                     break;
                 case 2:
                     if(UserMessage.YZDlongstop.size()==line)
-                        UserMessage.YZDlongstop.set(line,specialList);
+                        UserMessage.YZDlongstop.set(line-1,specialList);
                     else
                         UserMessage.YZDlongstop.add(specialList);
                     break;
             }
-
         }
     }
     public void OnformHeadUpdate(String string) {
@@ -144,9 +145,8 @@ public class YzdLongFragment extends BaseFragment implements OnformDateUpdate,On
                 SubStringUtils.substring(string,52,52+bdt*2));
 
         UserMessage.fragmentHead=CommUtils.getJson(jsont,"baseinfo");
-        adapter.notifyDataSetChanged();
-    }
 
+    }
     public void OnZhuanchao(String string) {
         //医嘱类型
         int formtyp=Integer.parseInt(SubStringUtils.substring(string,52,54),16);
@@ -172,10 +172,12 @@ public class YzdLongFragment extends BaseFragment implements OnformDateUpdate,On
                 UserMessage.YZDlonghssign.add(speciallist);
             }
         }
+        adapter.notifyDataSetChanged();
     }
     @Override
     public void onDestroyView() {
         super.onDestroyView();
         unbinder.unbind();
+        EventBus.getDefault().unregister(this);
     }
 }

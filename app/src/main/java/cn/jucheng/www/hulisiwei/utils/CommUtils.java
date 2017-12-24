@@ -161,14 +161,11 @@ public class CommUtils {
      */
     public static List<List<String>> getDataList(List<List<String>> list, int page, int rows) {
         int size = list.size();
-        int fromIndex = (page - 1) * rows;
+        int fromIndex = (page) * rows;
         int toIndex = fromIndex + rows;
 
         fromIndex = fromIndex >= size ? size : fromIndex;
         toIndex = toIndex >= size ? size : toIndex;
-
         return list.subList(fromIndex, toIndex);
     }
-
-
 }

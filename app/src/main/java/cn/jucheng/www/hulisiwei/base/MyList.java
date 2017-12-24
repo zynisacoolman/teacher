@@ -14,7 +14,6 @@ public class MyList extends ListView {
         super(context, attrs);
         // TODO Auto-generated constructor stub
     }
-
     /**
      * Integer.MAX_VALUE >> 2,
      * MeasureSpec.AT_MOST的意思就是wrap_content

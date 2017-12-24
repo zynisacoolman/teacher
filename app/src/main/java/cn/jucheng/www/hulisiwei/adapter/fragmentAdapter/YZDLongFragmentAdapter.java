@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.ListView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -14,7 +13,7 @@ import java.util.List;
 import cn.jucheng.www.hulisiwei.R;
 import cn.jucheng.www.hulisiwei.base.MyList;
 import cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView;
-import cn.jucheng.www.hulisiwei.utils.CommUtils;
+import cn.jucheng.www.hulisiwei.module.UserMessage;
 import cn.jucheng.www.hulisiwei.widget.MyShareUtils;
 
 /**
@@ -23,8 +22,6 @@ import cn.jucheng.www.hulisiwei.widget.MyShareUtils;
  */
 
 public class YZDLongFragmentAdapter extends BaseAdapter {
-
-
     private List<String> specailList = new ArrayList<>();//表头信息
     private List<List<String>> page_List = new ArrayList<>();//此页item信息
     List<String> list = new ArrayList<>();//某一项的要修改的信息
@@ -36,6 +33,7 @@ public class YZDLongFragmentAdapter extends BaseAdapter {
 
     int yiZhuHangHao = 0;//医嘱行号
     int yiZhuType = 0;//医嘱种类
+    final String TAG="YZDLongFragmentAdapter";
 
 
 
@@ -67,9 +65,9 @@ public class YZDLongFragmentAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         ViewHolder holder;
-        YZDLongStartAdapter yzdleft=new YZDLongStartAdapter(mContext,position);
-        YZDLongStopAdapter yzdright=new YZDLongStopAdapter(mContext,position);
-        YZDLonghsAdapter yzdmiddle = new YZDLonghsAdapter(mContext,position);
+//        YZDLongStartAdapter yzdleft=new YZDLongStartAdapter(mContext,position);
+//        YZDLongStopAdapter yzdright=new YZDLongStopAdapter(mContext,position);
+//        YZDLonghsAdapter yzdmiddle = new YZDLonghsAdapter(mContext,position);
         if (convertView == null) {
             convertView = mInflater.inflate(R.layout.adapter_fragmentyzdlong, null);
             holder = new ViewHolder();
@@ -82,28 +80,27 @@ public class YZDLongFragmentAdapter extends BaseAdapter {
             holder.lv_hssign=(MyList) convertView.findViewById(R.id.gv_hssign);
             holder.lv_start=(MyList) convertView.findViewById(R.id.gv_start);
             holder.transfusion_page_number=(TextView)convertView.findViewById(R.id.inject_page_number);//页面号
-                holder.lv_start.setAdapter(yzdleft);
-                yzdleft.notifyDataSetChanged();
+            holder.yzdright=new YZDLongStopAdapter(mContext,position);
             holder.lv_stop=(MyList) convertView.findViewById(R.id.gv_stop);
-                holder.lv_stop.setAdapter(yzdright);
-                yzdright.notifyDataSetChanged();
-            holder.lv_hssign=(MyList)convertView.findViewById(R.id.gv_hssign);
-                holder.lv_hssign.setAdapter(yzdmiddle);
-                yzdmiddle.notifyDataSetChanged();
+            holder.lv_stop.setAdapter(holder.yzdright);
+//            holder.yzdright.notifyDataSetChanged();
+//                yzdright.notifyDataSetChanged();
+//            holder.lv_hssign=(MyList)convertView.findViewById(R.id.gv_hssign);
+//                holder.lv_hssign.setAdapter(yzdmiddle);
+//                yzdmiddle.notifyDataSetChanged();
             convertView.setTag(holder); //
-
         } else {
             holder = (ViewHolder) convertView.getTag(); //
         }
+        holder.yzdright.notifyDataSetChanged();
         holder.transfusion_page_number.setText("第" + (position + 1) + "页");
-
         if (specailList.size() >= 0 || specailList != null) {
-            holder.h_name.setText(CommUtils.getListString(specailList, 0));
-            holder.h_sex.setText(CommUtils.getListString(specailList, 1));
-            holder.h_age.setText(CommUtils.getListString(specailList, 2));
-            holder.h_division.setText(CommUtils.getListString(specailList, 3));
-            holder.h_bednumber.setText(CommUtils.getListString(specailList, 4));
-            holder.h_illrecordNum.setText(CommUtils.getListString(specailList, 5));
+            holder.h_name.setText(UserMessage.fragmentHead.get(0));
+            holder.h_sex.setText(UserMessage.fragmentHead.get(1));
+            holder.h_age.setText(UserMessage.fragmentHead.get(2));
+            holder.h_division.setText(UserMessage.fragmentHead.get(3));
+            holder.h_bednumber.setText(UserMessage.fragmentHead.get(4));
+            holder.h_illrecordNum.setText(UserMessage.fragmentHead.get(5));
         }
         return convertView;
     }
@@ -119,12 +116,9 @@ public class YZDLongFragmentAdapter extends BaseAdapter {
         TextView h_bednumber;//床号
         FitHeightTextView h_illrecordNum;//病案号
 
-        ListView transfusion_list;//listview
-        TextView transfusion_years;//年
-        TextView transfusion_mouth;//月
-        TextView transfusion_day;//日
-        TextView transfusion_checkuser;//核对者
-        TextView transfusion_carryout;//执行者
+        YZDLongStopAdapter yzdright;
+        YZDLongStartAdapter yzdleft;
+        YZDLonghsAdapter yzdhs;
         TextView transfusion_page_number;//页数
         TextView h_ryrq;//入院日期
         TextView h_zyblh;//住院病历号
