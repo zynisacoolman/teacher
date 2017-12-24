@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-fr-rCA/values-fr-rCA.xml",
+            "outputFile": "C:\\Users\\admin\\StudioProjects\\teacher\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-fr-rCA\\values-fr-rCA.xml",
             "map": [
                 {
-                    "source": "/Users/zyn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/c1d35ea391acb09695534075575802c5/res/values-fr-rCA/values-fr-rCA.xml",
+                    "source": "C:\\Users\\admin\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\a4e39c8f11436041ed1ac03495fdc9ec\\res\\values-fr-rCA\\values-fr-rCA.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -16,10 +16,10 @@
             ]
         },
         {
-            "outputFile": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/C:\\Users\\admin\\StudioProjects\\teacher\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-fr-rCA\\values-fr-rCA.xml",
+            "outputFile": "C:\\Users\\zyn\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-fr-rCA\\values-fr-rCA.xml",
             "map": [
                 {
-                    "source": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/C:\\Users\\admin\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\a4e39c8f11436041ed1ac03495fdc9ec\\res\\values-fr-rCA\\values-fr-rCA.xml",
+                    "source": "C:\\Users\\zyn\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\c1d35ea391acb09695534075575802c5\\res\\values-fr-rCA\\values-fr-rCA.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -31,10 +31,25 @@
             ]
         },
         {
-            "outputFile": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/C:\\Users\\zyn\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-fr-rCA\\values-fr-rCA.xml",
+            "outputFile": "C:\\Users\\zyn\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\C:\\Users\\admin\\StudioProjects\\teacher\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-fr-rCA\\values-fr-rCA.xml",
             "map": [
                 {
-                    "source": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/C:\\Users\\zyn\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\c1d35ea391acb09695534075575802c5\\res\\values-fr-rCA\\values-fr-rCA.xml",
+                    "source": "C:\\Users\\zyn\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\C:\\Users\\admin\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\a4e39c8f11436041ed1ac03495fdc9ec\\res\\values-fr-rCA\\values-fr-rCA.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,166,274,397,512,623,710,826,956,1039,1119,1215,1325,1437,1540,1651,1758,1860,1982,2081",
+                        "endColumns": "110,107,122,114,110,86,115,129,82,79,95,109,111,102,110,106,101,121,98,100",
+                        "endOffsets": "161,269,392,507,618,705,821,951,1034,1114,1210,1320,1432,1535,1646,1753,1855,1977,2076,2177"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\Users\\zyn\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\C:\\Users\\zyn\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-fr-rCA\\values-fr-rCA.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\zyn\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\C:\\Users\\zyn\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\c1d35ea391acb09695534075575802c5\\res\\values-fr-rCA\\values-fr-rCA.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

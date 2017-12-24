@@ -20,8 +20,7 @@ import cn.jucheng.www.hulisiwei.module.UserMessage;
 public class YZDLongStartAdapter extends BaseAdapter {
     Context context;
 
-    List<String> listitem;//每一项的数据
-    int page;//定义页数,第几页显示第几页的内容
+    int page;//定义页数,显示第几页的内容
 
     public YZDLongStartAdapter(Context mcontext,  int mpage) {
         context = mcontext;

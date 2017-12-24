@@ -77,14 +77,6 @@ public class TwdFragment extends BaseFragment implements AbsListView.OnScrollLis
      * 加载数据
      */
     public void initView() {
-        //获取表头信息
-        if (datas == null) {
-            datas = MyShareUtils.getInstances(getActivity());
-            String header_message = datas.getData(MyGlobal1.ALLBIAODANMESSAGE);
-            if (!TextUtils.isEmpty(header_message)) {
-                setBiaodanHead(header_message);
-            }
-        }
         //获取表单信息
         if (!TextUtils.isEmpty(UserMessage.biaodan_message)) {
             setBiaodan(UserMessage.biaodan_message);
@@ -110,7 +102,7 @@ public class TwdFragment extends BaseFragment implements AbsListView.OnScrollLis
      */
     @Subscribe(threadMode = ThreadMode.MAIN)
     public void onEventMainThread(MessageEvent evnt) {
-
+        setBiaodanHead();
         int msgType = evnt.getIsMessage();
         String message_str = evnt.getMessage();
         setBiaodanMessage(message_str,msgType);
@@ -134,11 +126,9 @@ public class TwdFragment extends BaseFragment implements AbsListView.OnScrollLis
     /**
      * 解析表头信息
      *
-     * @param message
+     *
      */
-    public void setBiaodanHead(String message) {
-        String messaegs = message.substring(0,message.length()-2);
-        UserMessage.fragmentHead = CommUtils.getJson(HexadecimalConver.toStringHex(messaegs), "baseinfo");
+    public void setBiaodanHead() {
         if(adapter != null){
             adapter.setLists(UserMessage.fragmentHead, pages);
         }
@@ -152,7 +142,7 @@ public class TwdFragment extends BaseFragment implements AbsListView.OnScrollLis
     public void setBiaodanMessage(String message,int messageType) {
         switch (messageType){
             case 1://1是表单头部信息
-                setBiaodanHead(message);
+                OnformHeadUpdate(message);
                 break;
             case 2://2是清空所有信息
                 ClearBiaodanHead();
@@ -199,6 +189,14 @@ public class TwdFragment extends BaseFragment implements AbsListView.OnScrollLis
             default:
                 break;
         }
+    }
+    public void OnformHeadUpdate(String string) {
+        int bdt=Integer.parseInt(SubStringUtils.substring(string,48,52),16);
+        String jsont= HexadecimalConver.decode(
+                SubStringUtils.substring(string,52,52+bdt*2));
+
+        UserMessage.fragmentHead=CommUtils.getJson(jsont,"baseinfo");
+        adapter.notifyDataSetChanged();
     }
 
     public void setBiaodan(String message){

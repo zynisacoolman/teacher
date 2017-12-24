@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-nb/values-nb.xml",
+            "outputFile": "C:\\Users\\zyn\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-nb\\values-nb.xml",
             "map": [
                 {
-                    "source": "/Users/zyn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/c1d35ea391acb09695534075575802c5/res/values-nb/values-nb.xml",
+                    "source": "C:\\Users\\zyn\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\c1d35ea391acb09695534075575802c5\\res\\values-nb\\values-nb.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -16,10 +16,10 @@
             ]
         },
         {
-            "outputFile": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/C:\\Users\\admin\\StudioProjects\\teacher\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-nb\\values-nb.xml",
+            "outputFile": "C:\\Users\\admin\\StudioProjects\\teacher\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-nb\\values-nb.xml",
             "map": [
                 {
-                    "source": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/C:\\Users\\admin\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\a4e39c8f11436041ed1ac03495fdc9ec\\res\\values-nb\\values-nb.xml",
+                    "source": "C:\\Users\\admin\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\a4e39c8f11436041ed1ac03495fdc9ec\\res\\values-nb\\values-nb.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -31,10 +31,25 @@
             ]
         },
         {
-            "outputFile": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/C:\\Users\\zyn\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-nb\\values-nb.xml",
+            "outputFile": "C:\\Users\\zyn\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\C:\\Users\\zyn\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-nb\\values-nb.xml",
             "map": [
                 {
-                    "source": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/C:\\Users\\zyn\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\c1d35ea391acb09695534075575802c5\\res\\values-nb\\values-nb.xml",
+                    "source": "C:\\Users\\zyn\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\C:\\Users\\zyn\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\c1d35ea391acb09695534075575802c5\\res\\values-nb\\values-nb.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,163,272,397,492,606,692,792,905,981,1057,1137,1240,1339,1435,1539,1637,1738,1854,1951",
+                        "endColumns": "107,108,124,94,113,85,99,112,75,75,79,102,98,95,103,97,100,115,96,100",
+                        "endOffsets": "158,267,392,487,601,687,787,900,976,1052,1132,1235,1334,1430,1534,1632,1733,1849,1946,2047"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\Users\\zyn\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\C:\\Users\\admin\\StudioProjects\\teacher\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-nb\\values-nb.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\zyn\\jc2100\\code\\version1.0\\AndroidCode\\hulisiweiZYNAS\\C:\\Users\\admin\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\a4e39c8f11436041ed1ac03495fdc9ec\\res\\values-nb\\values-nb.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

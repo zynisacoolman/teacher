@@ -17,7 +17,28 @@ public class UserMessage {
 
     //表头信息
     public static String headmsg="";
-    public static List<String> fragmentHead = new ArrayList<String>();
+    public static List<String> fragmentHead = new ArrayList<String>(){
+        {
+            add("");
+            add("");
+            add("");
+            add("");
+            add("");
+            add("");
+            add("");
+        }
+
+    };
+    public static List<String> fragmentHead2 = new ArrayList<String>(){
+        {
+            add("1");
+            add("2");
+            add("3");
+            add("4");
+        }
+
+    };
+
     public static String biaodan_message = "";//表单信息
 
     //注射单信息
@@ -41,7 +62,13 @@ public class UserMessage {
     //长期医嘱单信息 开始医嘱
     public static List<List<String>> YZDlongstart =new ArrayList<>();
     //长期医嘱单信息 停止医嘱
-    public static List<List<String>> YZDlongstop =new ArrayList<>();
+    public static List<List<String>> YZDlongstop =new ArrayList<List<String>>(){{
+                    add(fragmentHead2);
+        add(fragmentHead2);
+        add(fragmentHead2);add(fragmentHead2);add(fragmentHead2);add(fragmentHead2);add(fragmentHead2);
+        }
+    };
+
     //长期医嘱单信息 护士签字
     public static List<List<String>> YZDlonghssign =new ArrayList<>();
     //临时医嘱单
