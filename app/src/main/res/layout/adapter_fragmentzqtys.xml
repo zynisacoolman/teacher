@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:orientation="vertical">
 
     <ScrollView
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:scrollbars="none">
 
         <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="1360dp"
+            android:layout_width="match_parent"
+            android:layout_height="1400dp"
             android:background="@drawable/fragment_zqtys"
             android:orientation="vertical">
 
@@ -20,64 +19,484 @@
                 android:layout_width="match_parent"
                 android:layout_height="156dp" />
             <!--表头-->
-            <include layout="@layout/fragment_formhead_layout"/>
-
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="77dp"
-                android:orientation="horizontal">
-
-            </LinearLayout>
-            <!--内容-->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="930dp"
-                android:orientation="horizontal">
-
-                <cn.jucheng.www.hulisiwei.base.MyList
-                    android:id="@+id/inject_list"
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:divider="@color/touming"
-                    android:scrollbars="none"
-                    android:listSelector="@color/touming" />
-
-            </LinearLayout>
-
-
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="50dp" />
-            <!--页数-->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
+                android:layout_height="30dp"
                 android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="446" />
+                    android:layout_weight="123" />
+                <!--姓名-->
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/transfusion_name"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="80"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="42" />
+                <!--性别-->
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/transfusion_sex"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="60"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="51" />
+                <!--年龄-->
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/transfusion_age"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="60"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="51" />
+                <!--科别-->
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/transfusion_division"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="100"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="57" />
+                <!--床号-->
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/transfusion_bednumber"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="80"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="71" />
+                <!--病案号-->
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/transfusion_medicalrecord_number"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="80"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="85" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="54dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="239" />
+                <!-- 医生告诉我患有-->
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/transfusion_Condition"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="300"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="401" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="106dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="173" />
+                <!-- 诊断-->
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/transfusion_diagnose"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="660"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="107" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="7dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="173" />
+                <!--血型 -->
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/transfusion_bloodtype"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="659"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="108" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="7dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="29dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="173" />
+                <!--输血史 -->
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/transfusion_TransfusionHistory"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="291"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="79" />
+                <!--妊娠史-->
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/transfusion_PregnancyHistory"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="290"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="107" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="165" />
+                <!-- -->
+                <CheckBox
+                    android:id="@+id/transfusion_alt"
+                    style="@style/Checkbox" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="163" />
+
+                <CheckBox
+                    android:id="@+id/transfusion_hcv"
+                    style="@style/Checkbox" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="163" />
+
+                <CheckBox
+                    android:id="@+id/transfusion_hiv"
+                    style="@style/Checkbox" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="394" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="13dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="165" />
+                <!-- -->
+                <CheckBox
+                    android:id="@+id/transfusion_hbsag"
+                    style="@style/Checkbox" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="163" />
+
+                <CheckBox
+                    android:id="@+id/transfusion_hbsab"
+                    style="@style/Checkbox" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="163" />
+
+                <CheckBox
+                    android:id="@+id/transfusion_hbeag"
+                    style="@style/Checkbox" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="394" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="13dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="165" />
+                <!-- -->
+                <CheckBox
+                    android:id="@+id/transfusion_hbeab"
+                    style="@style/Checkbox" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="163" />
+
+                <CheckBox
+                    android:id="@+id/transfusion_hbcag"
+                    style="@style/Checkbox" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="163" />
+
+                <CheckBox
+                    android:id="@+id/transfusion_syphilis"
+                    style="@style/Checkbox" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="394" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="41dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="165" />
+                <!--输异体血 -->
+                <CheckBox
+                    android:id="@+id/transfusion_allogeneicblood"
+                    style="@style/Checkbox" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="163" />
+                <!--输自体血 -->
+                <CheckBox
+                    android:id="@+id/transfusion_autologousblood"
+                    style="@style/Checkbox" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="163" />
+                <!--输异体血和自体血 -->
+                <CheckBox
+                    android:id="@+id/transfusion_allogeneicautologous"
+                    style="@style/Checkbox" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="394" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="6dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="165" />
+                <!-- -->
+                <CheckBox
+                    android:id="@+id/transfusion_other_checkbox"
+                    style="@style/Checkbox" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="58" />
 
                 <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
-                    android:id="@+id/inject_page_number"
+                    android:id="@+id/transfusion_other_text"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="50"
-                    android:text="第1页"
-                    android:textColor="@color/black_333"
-                    android:textSize="@dimen/text_size14" />
+                    android:layout_weight="592"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="444" />
+                    android:layout_weight="107" />
             </LinearLayout>
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="76dp" />
+                android:layout_height="490dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="737" />
+
+                <!--签字-->
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/transfusion_signature"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="118"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="85" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="181" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

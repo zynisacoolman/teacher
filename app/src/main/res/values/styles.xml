@@ -77,6 +77,21 @@
         </style>
 
 
+        <style name="Checkbox" parent="@android:style/Widget.CompoundButton.CheckBox">
+            <item name="android:background">@drawable/s_checkbox</item>
+            <item name="android:layout_weight">18</item>
+            <item name="android:layout_width">0dp</item>
+            <item name="android:layout_height">18dp</item>
+            <item name="android:button">@null</item>
+            <item name="android:clickable">false</item>
+        </style>
 
+    <style name="Checkboxl" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:background">@drawable/s_checkbox</item>
+        <item name="android:layout_width">18dp</item>
+        <item name="android:layout_height">18dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:clickable">false</item>
+    </style>
 
 </resources>

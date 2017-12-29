@@ -1,400 +1,1602 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical">
-
-    <ScrollView
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:scrollbars="none"
-        >
-
         <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="1360dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
             android:background="@drawable/fragment_bljl"
-            android:orientation="vertical">
-
+            >
             <View
                 android:layout_width="match_parent"
-                android:layout_height="155dp" />
-            <!--表头-->
+                android:layout_height="156dp"/>
+            <include layout="@layout/fragment_formhead_layout"/>
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:orientation="horizontal">
+                android:layout_marginTop="57dp"
+                android:layout_height="223dp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="202"
+                        />
+                    <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="80"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="163"
+                        />
+                    <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="340" />
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="155"/>
+                </LinearLayout>
 
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="123" />
-                <!--注射单姓名-->
-                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
-                    android:id="@+id/inject_name"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="80"
-                    android:gravity="center_vertical"
-                    android:paddingLeft="6dp"
-                    android:textColor="@color/heise"
-                    android:textSize="@dimen/text_size16" />
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="42" />
-                <!--注射单性别-->
-                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
-                    android:id="@+id/inject_sex"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="60"
-                    android:gravity="center_vertical"
-                    android:paddingLeft="6dp"
-                    android:textColor="@color/heise"
-                    android:textSize="@dimen/text_size16" />
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="51" />
-                <!--注射单年龄-->
-                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
-                    android:id="@+id/inject_age"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="60"
-                    android:gravity="center_vertical"
-                    android:paddingLeft="6dp"
-                    android:textColor="@color/heise"
-                    android:textSize="@dimen/text_size16" />
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="51" />
-                <!--注射单科别-->
-                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
-                    android:id="@+id/inject_division"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="100"
-                    android:gravity="center_vertical"
-                    android:paddingLeft="6dp"
-                    android:textColor="@color/heise"
-                    android:textSize="@dimen/text_size16" />
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="57" />
-                <!--注射单床号-->
-                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
-                    android:id="@+id/inject_bednumber"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="80"
-                    android:gravity="center_vertical"
-                    android:paddingLeft="6dp"
-                    android:textColor="@color/heise"
-                    android:textSize="@dimen/text_size16" />
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="71" />
-                <!--注射单病案号-->
-                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
-                    android:id="@+id/inject_medicalrecord_number"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="80"
-                    android:gravity="center_vertical"
-                    android:paddingLeft="6dp"
-                    android:textColor="@color/heise"
-                    android:textSize="@dimen/text_size16" />
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="85" />
-
+                <LinearLayout
+                    android:layout_marginTop="9dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="202"
+                        />
+                    <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="80"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="163"
+                        />
+                    <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="340" />
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="155"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="202"
+                        />
+                    <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="80"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="163"
+                        />
+                    <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="340" />
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="155"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="9dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="202"
+                        />
+                    <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="80"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="163"
+                        />
+                    <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="340" />
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="155"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="202"
+                        />
+                    <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="80"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="163"
+                        />
+                    <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="340" />
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="155"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="9dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="202"
+                        />
+                    <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="80"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="177"
+                        />
+                    <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="100" />
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="126"/>
+                    <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="100" />
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="155"/>
+                </LinearLayout>
             </LinearLayout>
-
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="45dp"
+                android:layout_width="630dp"
+                android:layout_height="100dp" />
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="34dp"
+                android:layout_width="630dp"
+                android:layout_height="100dp" />
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:orientation="horizontal">
-
+                android:layout_height="18dp"
+                android:layout_marginTop="332dp">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="151"
+                    />
+                <CheckBox
+                    style="@style/Checkbox"
+                    />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="34"
+                    />
+                <CheckBox
+                    style="@style/Checkbox"
+                    />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="47"
+                    />
+                <CheckBox
+                    style="@style/Checkbox"
+                    />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="98"
+                    />
+                <CheckBox
+                    style="@style/Checkbox"
+                    />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="48"
+                    />
+                <CheckBox
+                    style="@style/Checkbox"
+                    />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="47"
+                    />
+                <CheckBox
+                    style="@style/Checkbox"
+                    />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="109"/>
+                <CheckBox
+                    style="@style/Checkbox"
+                    />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="48"
+                    />
+                <CheckBox
+                    style="@style/Checkbox"
+                    />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="47"
+                    />
+                <CheckBox
+                    style="@style/Checkbox"
+                    />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="149"/>
             </LinearLayout>
-
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="224dp"
-                android:orientation="horizontal">
+                android:layout_height="18dp"
+                android:layout_marginTop="13dp" >
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="151"
+                    />
+                <CheckBox
+                    style="@style/Checkbox"
+                    />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="52"
+                    />
+                <CheckBox
+                    style="@style/Checkbox"
+                    />
 
                 <View
-                    android:layout_width="173dp"
-                    android:layout_height="match_parent" />
-
-                <LinearLayout
-                    android:layout_width="70dp"
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/tv_name"
-                        android:layout_width="match_parent"
-                        android:layout_height="27dp" />
-
-                    <TextView
-                        android:id="@+id/tv_sex"
-                        android:layout_width="match_parent"
-                        android:layout_height="27dp"
-                        android:layout_marginTop="13dp" />
-
-                    <TextView
-                        android:id="@+id/tv_age"
-                        android:layout_width="match_parent"
-                        android:layout_height="27dp"
-                        android:layout_marginTop="10dp" />
-
-                    <TextView
-                        android:id="@+id/tv_marry"
-                        android:layout_width="match_parent"
-                        android:layout_height="27dp"
-                        android:layout_marginTop="12dp" />
-
-                    <TextView
-                        android:id="@+id/tv_race"
-                        android:layout_width="match_parent"
-                        android:layout_height="27dp"
-                        android:layout_marginTop="11dp" />
-
-                    <TextView
-                        android:id="@+id/tv_work"
-                        android:layout_width="match_parent"
-                        android:layout_height="27dp"
-                        android:layout_marginTop="11dp" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="290dp"
+                    android:layout_weight="145"
+                    />
+                <CheckBox
+                    style="@style/Checkbox"
+                    />
+                <View
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="138dp"
-                    android:orientation="vertical">
+                    android:layout_weight="48"
+                    />
+                <CheckBox
+                    style="@style/Checkbox"
+                    />
 
-                    <TextView
-                        android:id="@+id/tv_bornplace"
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp" />
 
-                    <TextView
-                        android:id="@+id/tv_liveplace"
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:layout_marginTop="9dp" />
-
-                    <TextView
-                        android:id="@+id/tv_workplace"
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:layout_marginTop="9dp" />
-
-                    <TextView
-                        android:id="@+id/tv_inhospital"
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:layout_marginTop="8dp" />
-
-                    <TextView
-                        android:id="@+id/tv_recordhist"
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:layout_marginTop="8dp" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:layout_marginTop="9dp"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="80dp"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="13dp" />
-
-                        <TextView
-                            android:layout_width="810dp"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="110dp" />
-                    </LinearLayout>
-                </LinearLayout>
-
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="174"/>
+                <CheckBox
+                    style="@style/Checkbox"
+                    />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="48"
+                    />
+                <CheckBox
+                    style="@style/Checkbox"
+                    />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="47"
+                    />
+                <CheckBox
+                    style="@style/Checkbox"
+                    />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="149"/>
             </LinearLayout>
-
-            <TextView
+            <LinearLayout
+                android:layout_marginTop="17dp"
                 android:layout_width="match_parent"
-                android:layout_height="40dp" />
-            <!--页数-->
-            <TextView
-                android:layout_width="540dp"
-                android:layout_height="100dp"
-                android:layout_gravity="center" />
-
-            <TextView
-                android:layout_width="540dp"
-                android:layout_height="100dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="38dp" />
+                android:layout_height="30dp">
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="183"/>
+            <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="642"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="115"/>
+            </LinearLayout>
 
             <LinearLayout
+                android:layout_marginTop="11dp"
                 android:layout_width="match_parent"
-                android:layout_height="52dp"
-                android:layout_marginTop="330dp"
-                android:orientation="vertical">
+                android:layout_height="30dp"
+                android:gravity="center_vertical">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="243"/>
+                <CheckBox
+                    style="@style/Checkbox" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="29"/>
+                <CheckBox
+                    style="@style/Checkbox" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="171"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="118"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="110"/>
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="118"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="115"/>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="20dp">
-
-                    <CheckBox
-                        android:layout_width="15dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="131dp" />
-
-                    <CheckBox
-                        android:layout_width="15dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="27dp" />
-
-                    <CheckBox
-                        android:layout_width="15dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="40dp" />
-
-                    <CheckBox
-                        android:layout_width="15dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="85dp" />
-
-                    <CheckBox
-                        android:layout_width="15dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="40dp" />
-
-                    <CheckBox
-                        android:layout_width="15dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="40dp" />
-
-                    <CheckBox
-                        android:layout_width="15dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="93dp" />
-
-                    <CheckBox
-                        android:layout_width="15dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="40dp" />
-
-                    <CheckBox
-                        android:layout_width="15dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="40dp" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="20dp"
-                    android:layout_marginTop="12dp">
-
-                    <CheckBox
-                        android:layout_width="15dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="131dp" />
-
-                    <CheckBox
-                        android:layout_width="15dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="40dp" />
-
-                    <CheckBox
-                        android:layout_width="15dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="128dp" />
-
-                    <CheckBox
-                        android:layout_width="15dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="40dp" />
-
-                    <CheckBox
-                        android:layout_width="15dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="148dp" />
-
-                    <CheckBox
-                        android:layout_width="15dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="40dp" />
-
-                    <CheckBox
-                        android:layout_width="15dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="40dp" />
-                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="43dp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="707"/>
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="118"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="115"/>
             </LinearLayout>
 
-            <TextView
-                android:layout_width="550dp"
+            <include layout="@layout/fragment_formhead_layout"
+                android:layout_marginTop="230dp"
                 android:layout_height="30dp"
-                android:layout_marginLeft="155dp"
-                android:layout_marginTop="16dp" />
+                android:layout_width="match_parent" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:layout_marginTop="53dp">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="221"
+                    />
+                <CheckBox
+                    style="@style/Checkbox"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="59"
+                    />
+                <CheckBox
+                    style="@style/Checkbox"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="48"/>
+                <CheckBox
+                    style="@style/Checkbox"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="558"/>
 
+            </LinearLayout>
+            <!--高血压-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="26dp"
+                android:gravity="center_vertical">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="105"/>
+                <CheckBox
+                    style="@style/Checkbox"
+                    />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="31"/>
+                <CheckBox
+                    style="@style/Checkbox"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="47"/>
+                <CheckBox
+                    style="@style/Checkbox"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="76"/>
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="40"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="107"/>
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="40"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="22" />
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="40"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="150"
+                    />
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="50"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="26"/>
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="50"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="102"
+                    />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="4dp"
+                android:gravity="center_vertical">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="165"/>
+                <CheckBox
+                    style="@style/Checkbox"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="64"/>
+                <CheckBox
+                    style="@style/Checkbox"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="170"/>
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="435"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="85"/>
+
+
+            </LinearLayout>
+            <!--冠心病-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="19dp"
+                android:gravity="center_vertical">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="105"/>
+                <CheckBox
+                    style="@style/Checkbox"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="31"/>
+                <CheckBox
+                    style="@style/Checkbox"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="47"/>
+                <CheckBox
+                    style="@style/Checkbox"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="76"/>
+
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="40"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="90"/>
+                <CheckBox
+                    style="@style/Checkbox"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="65"/>
+                <CheckBox
+                    style="@style/Checkbox"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="80"/>
+                <CheckBox
+                    style="@style/Checkbox"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="80"/>
+                <CheckBox
+                    style="@style/Checkbox"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="199"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="106"/>
+                <CheckBox
+                    style="@style/Checkbox" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="64"/>
+                <CheckBox
+                    style="@style/Checkbox" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="154"/>
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="495"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="85"/>
+
+            </LinearLayout>
+            <!--糖尿病-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="19dp"
+                android:gravity="center_vertical">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="105"/>
+                <CheckBox
+                    style="@style/Checkbox"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="31"/>
+                <CheckBox
+                    style="@style/Checkbox"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="47"/>
+                <CheckBox
+                    style="@style/Checkbox"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="76"/>
+
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="40"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="90"/>
+                <CheckBox
+                    style="@style/Checkbox"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="41"/>
+                <CheckBox
+                    style="@style/Checkbox"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="44"/>
+                <CheckBox
+                    style="@style/Checkbox"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="64"/>
+                <CheckBox
+                    style="@style/Checkbox"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="275"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="209"
+                    />
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="646"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="85"
+                    />
+            </LinearLayout>
+            <!--脑血管病-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="19dp"
+                android:gravity="center_vertical">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="105"/>
+                <CheckBox
+                    style="@style/Checkbox" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="31"/>
+                <CheckBox
+                    style="@style/Checkbox" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="47"/>
+                <CheckBox
+                    style="@style/Checkbox" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="76"/>
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="40"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="90"/>
+                <CheckBox
+                    style="@style/Checkbox" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="65"/>
+                <CheckBox
+                    style="@style/Checkbox" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="123"/>
+                <CheckBox
+                    style="@style/Checkbox" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="33"/>
+                <CheckBox
+                    style="@style/Checkbox" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="204"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="105"/>
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="130"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="117"/>
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="503"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="85"/>
+
+            </LinearLayout>
+            <!--其他疾病诊治情况-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="252"
+                    />
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="603"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="85"/>
+            </LinearLayout>
+            <!--传染病史-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="6dp"
+                android:gravity="center_vertical">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="183"
+                    />
+                <CheckBox
+                    style="@style/Checkbox" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="33"/>
+                <CheckBox
+                    style="@style/Checkbox" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="165"/>
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="438"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="85"/>
+
+            </LinearLayout>
+            <!--食物药物以及其他过敏史-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="7dp"
+                android:gravity="center_vertical">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="304"/>
+                <CheckBox
+                    style="@style/Checkbox" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="33"/>
+                <CheckBox
+                    style="@style/Checkbox" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="60"/>
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="110"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="63"/>
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="249"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="85"/>
+
+            </LinearLayout>
+            <!--手术及外伤史-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="7dp"
+                android:gravity="center_vertical">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="213"/>
+                <CheckBox
+                    style="@style/Checkbox" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="33"/>
+                <CheckBox
+                    style="@style/Checkbox" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="92"/>
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="481"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="85"/>
+            </LinearLayout>
+            <!--输血史-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:layout_marginTop="14dp">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="158" />
+
+                <CheckBox style="@style/Checkbox" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="33" />
+
+                <CheckBox style="@style/Checkbox" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="116" />
+
+                <CheckBox style="@style/Checkbox" />
+
+            </LinearLayout>
+            <!--个人史-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="31dp"
+                android:gravity="center_vertical">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="161"/>
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="170"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="96"/>
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="170"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="163"/>
+                <CheckBox style="@style/Checkbox" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="33"/>
+                <CheckBox style="@style/Checkbox" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="111"/>
+            </LinearLayout>
+            <!--不良嗜好-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="6dp"
+                android:gravity="center_vertical">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="189"/>
+                <CheckBox style="@style/Checkbox" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="33"/>
+                <CheckBox style="@style/Checkbox" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="38"/>
+                <CheckBox style="@style/Checkbox" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="40"/>
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="40"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="74"/>
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="40"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="112"/>
+                <CheckBox style="@style/Checkbox" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="33"/>
+                <CheckBox style="@style/Checkbox" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="89"/>
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="77"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="85"/>
+            </LinearLayout>
+            <!--不良嗜好2nd-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="7dp"
+                android:gravity="center_vertical">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="106"/>
+                <CheckBox style="@style/Checkbox" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="40"/>
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="40"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="74"/>
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="40"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="109"/>
+                <CheckBox style="@style/Checkbox" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="33"/>
+                <CheckBox style="@style/Checkbox" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="89"/>
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="77"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"/>
+                <CheckBox style="@style/Checkbox" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="88"/>
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="77"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="85"/>
+            </LinearLayout>
+            <!--工业病毒、粉尘、放射性物质接触史-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="6dp"
+                android:gravity="center_vertical">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="381"/>
+                <CheckBox style="@style/Checkbox" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="33"/>
+                <CheckBox style="@style/Checkbox" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="101"/>
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="77"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="112"/>
+                <CheckBox style="@style/Checkbox" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="33"/>
+                <CheckBox style="@style/Checkbox" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="131"/>
+
+            </LinearLayout>
+            <!--疾病名称-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="6dp">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="188"/>
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="667"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="85"/>
+
+            </LinearLayout>
+            <!--婚育史-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
                 android:gravity="center_vertical"
-                android:orientation="horizontal">
-
-                <CheckBox
-                    android:layout_width="18dp"
-                    android:layout_height="18dp"
-                    android:layout_marginLeft="206dp" />
-
-                <CheckBox
-                    android:layout_width="18dp"
-                    android:layout_height="18dp"
-                    android:layout_marginLeft="20dp" />
-
-                <TextView
-                    android:layout_width="100dp"
+                android:layout_marginTop="27dp">
+                <View
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="145dp" />
-
-                <TextView
-                    android:layout_width="100dp"
+                    android:layout_weight="196"/>
+                <CheckBox style="@style/Checkbox" />
+                <View
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="95dp" />
+                    android:layout_weight="49"/>
+                <CheckBox style="@style/Checkbox" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="49"/>
+                <CheckBox style="@style/Checkbox" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="49"/>
+                <CheckBox style="@style/Checkbox" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="49"/>
+                <CheckBox style="@style/Checkbox" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="126"/>
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="40"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="290"/>
             </LinearLayout>
-
-            <TextView
-                android:layout_width="105dp"
-                android:layout_height="36dp"
-                android:layout_marginLeft="595dp"
-                android:layout_marginTop="40dp" />
-
+            <!--婚育史2-->
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="225dp">
+                android:layout_height="30dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center_vertical">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="117"
+                    />
+                <CheckBox style="@style/Checkbox" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="51"/>
+                <CheckBox style="@style/Checkbox" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="81"
+                    />
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="40"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="33"/>
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="40"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="542"/>
             </LinearLayout>
+            <!--女性月经史1-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="31dp"
+                android:gravity="center_vertical">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="118"/>
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="60"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="57"/>
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="60"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="71"/>
+                <CheckBox style="@style/Checkbox" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="49"/>
+                <CheckBox style="@style/Checkbox" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="31"/>
+                <CheckBox style="@style/Checkbox" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="84"/>
+                <CheckBox style="@style/Checkbox" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="31"/>
+                <CheckBox style="@style/Checkbox" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="119"/>
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="60"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="110"/>
+
+            </LinearLayout>
+            <!--女性月经史2-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="7dp"
+                android:gravity="center_vertical">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="117"/>
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="60"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="26"/>
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="60"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="26"/>
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="60"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="592"/>
+
+            </LinearLayout>
+            <!--家族史、父亲-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="26dp"
+                android:gravity="center_vertical">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="164"/>
+                <CheckBox style="@style/Checkbox" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="49"/>
+                <CheckBox style="@style/Checkbox" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="48"/>
+                <CheckBox style="@style/Checkbox" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="72"/>
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="90"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="58"/>
+                <CheckBox style="@style/Checkbox" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="49"/>
+                <CheckBox style="@style/Checkbox" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="49"/>
+                <CheckBox style="@style/Checkbox" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="72"/>
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="90"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="92"/>
+            </LinearLayout>
+            <!--家族史、遗传病1-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="7dp"
+                android:gravity="center_vertical">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="180"/>
+                <CheckBox style="@style/Checkbox" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="32"/>
+                <CheckBox style="@style/Checkbox" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="104"/>
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="90"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="61"/>
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="90"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="89"/>
+                <CheckBox style="@style/Checkbox" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="32"/>
+                <CheckBox style="@style/Checkbox" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="190"/>
+            </LinearLayout>
+            <!--遗传病 2-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="6dp">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="116"/>
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="90"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="59"/>
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="90"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="89"/>
+                <CheckBox style="@style/Checkbox" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="32"/>
+                <CheckBox style="@style/Checkbox" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="105"/>
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="90"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="58"/>
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="90"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="85"/>
+            </LinearLayout>
+            <!---->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="35dp"
+                android:gravity="center_vertical">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="243"/>
+                <CheckBox
+                    style="@style/Checkbox" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="29"/>
+                <CheckBox
+                    style="@style/Checkbox" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="171"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="118"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="110"/>
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="118"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="115"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="45dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="238dp"/>
+            <include layout="@layout/fragment_formhead_layout"/>
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="35dp"
+                android:layout_width="710dp"
+                android:layout_height="984dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="52dp">
+
+            </LinearLayout>
+
         </LinearLayout>
 
 
+
+            
     </ScrollView>
-</LinearLayout>

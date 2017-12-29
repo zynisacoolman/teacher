@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AbsListView;
 
+import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
 
@@ -56,6 +57,8 @@ public class YzdTemFragment extends BaseFragment implements
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
         view = inflater.inflate(R.layout.fragment_fitlist, null);
         unbinder = ButterKnife.bind(this, view);
+        EventBus.getDefault().register(this);
+
         getPage();
         adapter=new YZDTempFragmentAdapter(getActivity(),pages);
         tempyzd.setAdapter(adapter);
@@ -174,5 +177,7 @@ public class YzdTemFragment extends BaseFragment implements
     public void onDestroyView() {
         super.onDestroyView();
         unbinder.unbind();
+        EventBus.getDefault().unregister(this);
+
     }
 }

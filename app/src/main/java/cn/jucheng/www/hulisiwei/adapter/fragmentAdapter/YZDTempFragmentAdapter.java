@@ -66,19 +66,21 @@ public class YZDTempFragmentAdapter extends BaseAdapter {
             holder.h_division = (TextView) convertView.findViewById(R.id.h_division);
             holder.h_bednumber = (TextView) convertView.findViewById(R.id.h_bednumber);
             holder.h_illrecordNum=(FitHeightTextView) convertView.findViewById(R.id.h_illrecordNum);
-            holder.lv_left=(ListView)convertView.findViewById(R.id.lv_left);
-            YZDTempLeftListItem yzdtempleft = new YZDTempLeftListItem(mContext,position);
-                holder.lv_left.setAdapter(yzdtempleft);
-                yzdtempleft.notifyDataSetChanged();
-            YZDTempRightListItem yzdtempright = new YZDTempRightListItem(mContext,position);
-            holder.lv_right=(ListView)convertView.findViewById(R.id.lv_right);
-                holder.lv_right.setAdapter(yzdtempright);
-                yzdtempright.notifyDataSetChanged();
-            convertView.setTag(holder); //
 
+            holder.yzdTempLeftListItem = new YZDTempLeftListItem(mContext,position);
+            holder.lv_left=(ListView)convertView.findViewById(R.id.lv_left);
+            holder.lv_left.setAdapter(holder.yzdTempLeftListItem);
+
+            holder.yzdTempRightListItem = new YZDTempRightListItem(mContext,position);
+            holder.lv_right=(ListView)convertView.findViewById(R.id.lv_right);
+            holder.lv_right.setAdapter(holder.yzdTempLeftListItem);
+
+            convertView.setTag(holder); //
         } else {
             holder = (ViewHolder) convertView.getTag(); //
         }
+            holder.yzdTempRightListItem.notifyDataSetChanged();
+            holder.yzdTempLeftListItem.notifyDataSetChanged();
             holder.h_name.setText(UserMessage.fragmentHead.get(0));
             holder.h_sex.setText(UserMessage.fragmentHead.get(1));
             holder.h_age.setText(UserMessage.fragmentHead.get(2));
@@ -87,7 +89,6 @@ public class YZDTempFragmentAdapter extends BaseAdapter {
             holder.h_illrecordNum.setText(UserMessage.fragmentHead.get(5));
         return convertView;
     }
-
 
 
     class ViewHolder {
@@ -102,6 +103,8 @@ public class YZDTempFragmentAdapter extends BaseAdapter {
         TextView h_zyblh;//住院病历号
         ListView lv_left;
         ListView lv_right;
+        YZDTempLeftListItem yzdTempLeftListItem;
+        YZDTempRightListItem yzdTempRightListItem;
 
     }
 }

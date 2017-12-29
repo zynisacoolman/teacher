@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AbsListView;
 
+import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
 
@@ -67,6 +68,8 @@ public class TwdFragment extends BaseFragment implements AbsListView.OnScrollLis
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment_fitlist, null);
         unbinder= ButterKnife.bind(this,view);
+        EventBus.getDefault().register(this);
+
         initView();
         initAdapter();
         return view;
@@ -247,6 +250,8 @@ public class TwdFragment extends BaseFragment implements AbsListView.OnScrollLis
     @Override
     public void onDestroyView() {
         super.onDestroyView();
+        unbinder.unbind();
+        EventBus.getDefault().unregister(this);
     }
 
 

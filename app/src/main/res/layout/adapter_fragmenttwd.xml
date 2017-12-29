@@ -3,27 +3,27 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical"
+    android:id="@+id/ll_twd"
     android:background="@drawable/twd_">
-        <!--<ScrollView-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content">-->
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="138dp" />
-            <!--表头-->
-            <include layout="@layout/fragment_formhead_layout"/>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="9dp"
-                android:orientation="horizontal">
-
-            </TextView>
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="25dp">
+                android:layout_height="25dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="138dp" />
+                <!--表头-->
+                <include layout="@layout/fragment_formhead_layout"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="9dp"
+                    android:orientation="horizontal"/>
 
                 <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
                     android:layout_height="match_parent"
@@ -40,137 +40,107 @@
                     android:gravity="center_vertical"
                     android:id="@+id/h_zyblh"
                     android:text="住院病历号"/>
+                <!--内容-->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="19dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="155dp"
+                        android:layout_height="match_parent" />
+                    <LinearLayout
+                        android:layout_width="572dp"
+                        android:layout_height="785dp"
+                        android:orientation="vertical">
+                        <GridView
+                            android:layout_width="match_parent"
+                            android:layout_height="27dp"
+                            android:numColumns="7"
+                            android:id="@+id/gv_twd_ryrq"
+                            />
+                        <GridView
+                            android:layout_width="match_parent"
+                            android:layout_height="27dp"
+                            android:numColumns="7"
+                            android:id="@+id/gv_twd_zydays"
+                            />
+                        <GridView
+                            android:layout_width="match_parent"
+                            android:layout_height="27dp"
+                            android:numColumns="7"
+                            android:id="@+id/gv_twd_sshdays"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="591dp" />
+
+                        <GridView
+                            android:layout_width="match_parent"
+                            android:layout_height="14dp"
+                            android:numColumns="42"
+                            android:id="@+id/gv_twd_hxcs1">
+
+                        </GridView>
+                        <GridView
+
+                            android:layout_height="14dp"
+                            android:numColumns="42"
+                            android:id="@+id/gv_twd_hxcs2"
+                            android:layout_width="wrap_content">
+
+                        </GridView>
+                        <GridView
+                            android:layout_width="match_parent"
+                            android:layout_height="14dp"
+                            android:numColumns="14"
+                            android:id="@+id/gv_twd_xueya"
+                            >
+
+                        </GridView>
+                        <GridView
+                            android:layout_width="match_parent"
+                            android:layout_height="14dp"
+                            android:numColumns="7"
+                            android:id="@+id/gv_twd_ruliang">
+
+                        </GridView>
+                        <GridView
+                            android:layout_width="match_parent"
+                            android:layout_height="14dp"
+                            android:numColumns="7"
+                            android:id="@+id/gv_twd_chuliang">
+
+                        </GridView>
+                        <GridView
+                            android:layout_width="match_parent"
+                            android:layout_height="14dp"
+                            android:numColumns="7"
+                            android:id="@+id/gv_twd_dabian">
+
+                        </GridView>
+                        <GridView
+                            android:layout_width="match_parent"
+                            android:layout_height="14dp"
+                            android:numColumns="7"
+                            android:id="@+id/gv_twd_tizhong">
+
+                        </GridView>
+                        <GridView
+                            android:layout_width="match_parent"
+                            android:layout_height="14dp"
+                            android:numColumns="7"
+                            android:id="@+id/gv_twd_shengao">
+
+                        </GridView>
+                    </LinearLayout>
+                </LinearLayout>
             </LinearLayout>
-            <!--内容-->
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="19dp"/>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <TextView
-            android:layout_width="155dp"
-            android:layout_height="match_parent" />
-    <LinearLayout
-        android:layout_width="572dp"
-        android:layout_height="785dp"
-        android:orientation="vertical">
-            <GridView
-                android:layout_width="match_parent"
-                android:layout_height="27dp"
-                android:numColumns="7"
-                android:id="@+id/gv_twd_ryrq"
-                />
-            <GridView
-                android:layout_width="match_parent"
-                android:layout_height="27dp"
-                android:numColumns="7"
-                android:id="@+id/gv_twd_zydays"
-            />
-            <GridView
-                android:layout_width="match_parent"
-                android:layout_height="27dp"
-                android:numColumns="7"
-                android:id="@+id/gv_twd_sshdays"
-                />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="591dp" />
-
-            <GridView
-                android:layout_width="match_parent"
-                android:layout_height="14dp"
-                android:numColumns="42"
-                android:id="@+id/gv_twd_hxcs1">
-
-            </GridView>
-            <GridView
-
-                android:layout_height="14dp"
-                android:numColumns="42"
-                android:id="@+id/gv_twd_hxcs2"
-                android:layout_width="wrap_content">
-
-            </GridView>
-            <GridView
-                android:layout_width="match_parent"
-                android:layout_height="14dp"
-                android:numColumns="14"
-                android:id="@+id/gv_twd_xueya"
-                >
-
-            </GridView>
-            <GridView
-                android:layout_width="match_parent"
-                android:layout_height="14dp"
-                android:numColumns="7"
-                android:id="@+id/gv_twd_ruliang">
-
-            </GridView>
-            <GridView
-                android:layout_width="match_parent"
-                android:layout_height="14dp"
-                android:numColumns="7"
-                android:id="@+id/gv_twd_chuliang">
-
-            </GridView>
-            <GridView
-                android:layout_width="match_parent"
-                android:layout_height="14dp"
-                android:numColumns="7"
-                android:id="@+id/gv_twd_dabian">
-
-            </GridView>
-            <GridView
-                android:layout_width="match_parent"
-                android:layout_height="14dp"
-                android:numColumns="7"
-                android:id="@+id/gv_twd_tizhong">
-
-            </GridView>
-            <GridView
-                android:layout_width="match_parent"
-                android:layout_height="14dp"
-                android:numColumns="7"
-                android:id="@+id/gv_twd_shengao">
-
-            </GridView>
-
-
-
-
-
-        </LinearLayout>
-    </LinearLayout>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="120dp" />
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="20dp"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="446" />
-
-        <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
-            android:id="@+id/inject_page_number"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="50"
-            android:text="第1页"
-            android:textColor="@color/black_333"
-            android:textSize="@dimen/text_size14" />
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="444" />
-    </LinearLayout>
+    </ScrollView>
 </LinearLayout>
     <!--页数-->
 

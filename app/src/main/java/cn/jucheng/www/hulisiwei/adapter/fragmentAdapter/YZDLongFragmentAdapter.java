@@ -80,19 +80,25 @@ public class YZDLongFragmentAdapter extends BaseAdapter {
             holder.lv_hssign=(MyList) convertView.findViewById(R.id.gv_hssign);
             holder.lv_start=(MyList) convertView.findViewById(R.id.gv_start);
             holder.transfusion_page_number=(TextView)convertView.findViewById(R.id.inject_page_number);//页面号
+
             holder.yzdright=new YZDLongStopAdapter(mContext,position);
             holder.lv_stop=(MyList) convertView.findViewById(R.id.gv_stop);
             holder.lv_stop.setAdapter(holder.yzdright);
-//            holder.yzdright.notifyDataSetChanged();
-//                yzdright.notifyDataSetChanged();
-//            holder.lv_hssign=(MyList)convertView.findViewById(R.id.gv_hssign);
-//                holder.lv_hssign.setAdapter(yzdmiddle);
-//                yzdmiddle.notifyDataSetChanged();
+
+            holder.yzdleft=new YZDLongStartAdapter(mContext,position);
+            holder.lv_start=(MyList)convertView.findViewById(R.id.gv_start);
+            holder.lv_start.setAdapter(holder.yzdleft);
+
+            holder.yzdhs=new YZDLonghsAdapter(mContext,position);
+            holder.lv_hssign=(MyList)convertView.findViewById(R.id.gv_hssign);
+            holder.lv_hssign.setAdapter(holder.yzdhs);
             convertView.setTag(holder); //
         } else {
             holder = (ViewHolder) convertView.getTag(); //
         }
         holder.yzdright.notifyDataSetChanged();
+        holder.yzdleft.notifyDataSetChanged();
+        holder.yzdhs.notifyDataSetChanged();
         holder.transfusion_page_number.setText("第" + (position + 1) + "页");
         if (specailList.size() >= 0 || specailList != null) {
             holder.h_name.setText(UserMessage.fragmentHead.get(0));

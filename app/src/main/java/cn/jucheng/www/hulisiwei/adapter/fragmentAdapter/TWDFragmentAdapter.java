@@ -97,7 +97,7 @@ public class TWDFragmentAdapter extends BaseAdapter {
             holder.h_bednumber = (TextView) convertView.findViewById(R.id.h_bednumber);
             holder.h_ryrq = (FitHeightTextView) convertView.findViewById(R.id.h_ryrq);
             holder.h_zyblh=(FitHeightTextView) convertView.findViewById(R.id.h_zyblh);
-//            holder.ll_wendu=(LinearLayout)convertView.findViewById(R.id.ll_wendu);
+            holder.ll_twd =(LinearLayout)convertView.findViewById(R.id.ll_twd);
             holder.gv_date =(GridView)convertView.findViewById(R.id.gv_twd_ryrq);//日期
             holder.gv_zydays=(GridView)convertView.findViewById(R.id.gv_twd_zydays);//住院天数
             holder.gv_ssdays=(GridView)convertView.findViewById(R.id.gv_twd_sshdays);//手术后天数
@@ -121,9 +121,9 @@ public class TWDFragmentAdapter extends BaseAdapter {
             holder.h_bednumber.setText(CommUtils.getListString(specailList, 4));
 
             if(UserMessage.twdResult.getTwsz()!=null)
-                holder.ll_wendu.addView(new CustomCurveChart(mContext, xLabel,yLabel,UserMessage.twdResult.getTwsz(),R.color.bg_bgcolor1,false));
+                holder.ll_twd.addView(new CustomCurveChart(mContext, xLabel,yLabel,UserMessage.twdResult.getTwsz(),R.color.bg_bgcolor1,false));
             if(UserMessage.twdResult.getMbsz()!=null)
-                holder.ll_wendu.addView(new CustomCurveChart(mContext, xLabel,yLabel,UserMessage.twdResult.getMbsz(),R.color.bg_bgcolor2,false));
+                holder.ll_twd.addView(new CustomCurveChart(mContext, xLabel,yLabel,UserMessage.twdResult.getMbsz(),R.color.bg_bgcolor2,false));
             if(UserMessage.twdResult.getOther()!=null){
                 holder.h_ryrq.setText(CommUtils.getListString(UserMessage.twdResult.getOther(),0));//设置日期 由于这部分内容在json中所以 日期需要在这里实现
                 holder.h_zyblh.setText(CommUtils.getListString(UserMessage.twdResult.getOther(),1));//住院病历号
@@ -168,7 +168,7 @@ public class TWDFragmentAdapter extends BaseAdapter {
         TextView h_age;//年龄
         TextView h_division;//科室
         TextView h_bednumber;//床号
-        LinearLayout ll_wendu;
+        LinearLayout ll_twd;
         TextView h_ryrq;//入院日期
         TextView h_zyblh;//住院病历号
 //        XYtoLine xYtoLine;
