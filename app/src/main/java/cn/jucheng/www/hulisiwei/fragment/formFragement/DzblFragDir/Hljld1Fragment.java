@@ -29,7 +29,7 @@ import cn.jucheng.www.hulisiwei.widget.HexadecimalConver;
 
 public class Hljld1Fragment extends BaseFragment implements AbsListView.OnScrollListener {
 
-    protected final String TAG="Hljld1Fragment";
+    protected final String TAG="护理记录单首页";
     private View view;
     /**
      * 数据源

@@ -26,7 +26,8 @@
                     <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="60" />
+                        android:layout_weight="60"
+                        android:id="@+id/tv_0"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -35,7 +36,8 @@
                     <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="40"/>
+                        android:layout_weight="40"
+                        android:id="@+id/tv_1"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -44,7 +46,8 @@
                     <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="40" />
+                        android:layout_weight="40"
+                        android:id="@+id/tv_2"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -53,7 +56,8 @@
                     <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="40" />
+                        android:layout_weight="40"
+                        android:id="@+id/tv_3"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -62,7 +66,8 @@
                     <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="40" />
+                        android:layout_weight="40"
+                        android:id="@+id/tv_4"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -71,7 +76,8 @@
                     <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="230" />
+                        android:layout_weight="230"
+                        android:id="@+id/tv_5"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -90,7 +96,8 @@
 
                     <CheckBox
 
-                        style="@style/Checkbox"/>
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_6"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -98,7 +105,7 @@
 
                     <CheckBox
                         style="@style/Checkbox"
-
+                        android:id="@+id/cb_7"
                         />
                     <View
                         android:layout_width="0dp"
@@ -107,6 +114,7 @@
 
                     <CheckBox
                         style="@style/Checkbox"
+                        android:id="@+id/cb_8"
                          />
                     <View
                         android:layout_width="0dp"
@@ -114,7 +122,8 @@
                         android:layout_weight="47"/>
 
                     <CheckBox
-                        style="@style/Checkbox" />
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_9"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -123,7 +132,8 @@
                     <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
                         android:layout_width="0dp"
                         android:layout_weight="80"
-                        android:layout_height="match_parent" />
+                        android:layout_height="match_parent"
+                        android:id="@+id/tv_10"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -131,7 +141,9 @@
                         />
 
                     <CheckBox
-                        style="@style/Checkbox" />
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_11"
+                        />
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -139,14 +151,16 @@
                         />
 
                     <CheckBox
-                        style="@style/Checkbox" />
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_12"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="47"
                         />
                     <CheckBox
-                        style="@style/Checkbox" />
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_13"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -168,7 +182,8 @@
                     <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
                         android:layout_width="0dp"
                         android:layout_weight="60"
-                        android:layout_height="match_parent" />
+                        android:layout_height="match_parent"
+                        android:id="@+id/tv_14"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -178,7 +193,8 @@
                     <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
                         android:layout_width="0dp"
                         android:layout_weight="120"
-                        android:layout_height="match_parent"/>
+                        android:layout_height="match_parent"
+                        android:id="@+id/tv_15"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -198,20 +214,23 @@
                     <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
                         android:layout_width="0dp"
                         android:layout_weight="60"
-                        android:layout_height="match_parent" />
+                        android:layout_height="match_parent"
+                        android:id="@+id/tv_16"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="124"/>
                     <CheckBox
-                        style="@style/Checkbox" />
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_17"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="47"/>
 
                     <CheckBox
-                        style="@style/Checkbox" />
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_18"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -221,7 +240,8 @@
                     <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="251"/>
+                        android:layout_weight="251"
+                        android:id="@+id/tv_19"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -241,6 +261,7 @@
                         android:layout_width="0dp"
                         android:layout_weight="60"
                         android:layout_height="match_parent"
+                        android:id="@+id/tv_20"
                         />
                     <View
                         android:layout_width="0dp"
@@ -248,13 +269,15 @@
                         android:layout_height="match_parent"/>
 
                     <CheckBox
-                        style="@style/Checkbox"/>
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_21"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="47"/>
                     <CheckBox
-                        style="@style/Checkbox"/>
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_22"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -263,6 +286,7 @@
                         android:layout_width="0dp"
                         android:layout_weight="295"
                         android:layout_height="match_parent"
+                        android:id="@+id/tv_23"
                         />
                     <View
                         android:layout_width="0dp"
@@ -281,14 +305,16 @@
                         android:layout_height="match_parent"
                         android:layout_weight="215"/>
                     <CheckBox
-                        style="@style/Checkbox"/>
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_24"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="47"/>
 
                     <CheckBox
-                        style="@style/Checkbox"/>
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_25"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -296,7 +322,8 @@
                     <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="466"/>
+                        android:layout_weight="466"
+                        android:id="@+id/tv_26"/>
 
                     <View
                         android:layout_width="0dp"
@@ -314,34 +341,39 @@
                         android:layout_height="match_parent"
                         android:layout_weight="167"/>
                     <CheckBox
-                        style="@style/Checkbox" />
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_27"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="46"/>
                     <CheckBox
-                        style="@style/Checkbox"/>
-                    <View
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="46"/>
-
-                    <CheckBox
-                        style="@style/Checkbox" />
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_28"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="46"/>
 
                     <CheckBox
-                        style="@style/Checkbox"/>
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_29"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="46"/>
 
                     <CheckBox
-                        style="@style/Checkbox" />
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_30"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="46"/>
+
+                    <CheckBox
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_31"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -359,47 +391,54 @@
                         android:layout_height="15dp"
                         android:layout_marginLeft="175dp"
                         android:background="@drawable/s_checkbox"
-                        android:button="@null" />
+                        android:button="@null"
+                        android:id="@+id/cb32"/>
 
                     <CheckBox
                         android:layout_width="15dp"
                         android:layout_height="15dp"
                         android:layout_marginLeft="40dp"
                         android:background="@drawable/s_checkbox"
-                        android:button="@null" />
+                        android:button="@null"
+                        android:id="@+id/cb_33"/>
 
                     <CheckBox
                         android:layout_width="15dp"
                         android:layout_height="15dp"
                         android:layout_marginLeft="39dp"
                         android:background="@drawable/s_checkbox"
-                        android:button="@null" />
+                        android:button="@null"
+                        android:id="@+id/cb_34"/>
 
                     <CheckBox
                         android:layout_width="15dp"
                         android:layout_height="15dp"
                         android:layout_marginLeft="39dp"
                         android:background="@drawable/s_checkbox"
-                        android:button="@null" />
+                        android:button="@null"
+                        android:id="@+id/cb_35"/>
 
                     <CheckBox
                         android:layout_width="15dp"
                         android:layout_height="15dp"
                         android:layout_marginLeft="39dp"
                         android:background="@drawable/s_checkbox"
-                        android:button="@null" />
+                        android:button="@null"
+                        android:id="@+id/cb_36"/>
 
                     <CheckBox
                         android:layout_width="15dp"
                         android:layout_height="15dp"
                         android:layout_marginLeft="39dp"
                         android:background="@drawable/s_checkbox"
-                        android:button="@null" />
+                        android:button="@null"
+                        android:id="@+id/cb_37"/>
 
                     <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
                         android:layout_width="223dp"
                         android:layout_height="match_parent"
-                        android:layout_marginLeft="44dp" />
+                        android:layout_marginLeft="44dp"
+                        android:id="@+id/tv_38"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -413,14 +452,16 @@
                         android:layout_weight="232"/>
 
                     <CheckBox
-                        style="@style/Checkbox"/>
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_39"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="46"/>
 
                     <CheckBox
-                        style="@style/Checkbox" />
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_40"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -430,6 +471,7 @@
                         android:layout_width="0dp"
                         android:layout_weight="403"
                         android:layout_height="match_parent"
+                        android:id="@+id/tv_41"
                         />
                     <View
                         android:layout_width="0dp"
@@ -448,14 +490,16 @@
                         android:layout_weight="250"/>
 
                     <CheckBox
-                        style="@style/Checkbox"/>
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_42"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="36"/>
 
                     <CheckBox
-                        style="@style/Checkbox"/>
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_43"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -464,6 +508,7 @@
                     <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
                         android:layout_width="68dp"
                         android:layout_height="match_parent"
+                        android:id="@+id/tv_44"
                          />
                     <View
                         android:layout_width="0dp"
@@ -482,21 +527,24 @@
                         android:layout_height="match_parent"
                         android:layout_weight="205"/>
                     <CheckBox
-                        style="@style/Checkbox"/>
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_45"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="46"/>
 
                     <CheckBox
-                        style="@style/Checkbox" />
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_46"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="46"/>
 
                     <CheckBox
-                        style="@style/Checkbox" />
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_47"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -504,6 +552,7 @@
 
                     <CheckBox
                         style="@style/Checkbox"
+                        android:id="@+id/cb_48"
                         />
                     <View
                         android:layout_width="0dp"
@@ -512,6 +561,7 @@
 
                     <CheckBox
                         style="@style/Checkbox"
+                        android:id="@+id/cb_49"
                         />
                     <View
                         android:layout_width="0dp"
@@ -520,6 +570,7 @@
 
                     <CheckBox
                         style="@style/Checkbox"
+                        android:id="@+id/cb_50"
                          />
 
                     <View
@@ -529,6 +580,7 @@
                     <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
+                        android:id="@+id/tv_51"
                         android:layout_weight="183"/>
                     <View
                         android:layout_width="0dp"
@@ -546,45 +598,52 @@
                         android:layout_height="match_parent"
                         android:layout_weight="218"/>
                     <CheckBox
-                        style="@style/Checkbox" />
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_52"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="46"/>
 
                     <CheckBox
-                        style="@style/Checkbox" />
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_53"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="42"/>
 
                     <CheckBox
-                        style="@style/Checkbox" />
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_54"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="46"/>
                     <CheckBox
-                        style="@style/Checkbox" />
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_55"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="46"/>
                     <CheckBox
-                        style="@style/Checkbox" />
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_56"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="46"/>
                     <CheckBox
-                        style="@style/Checkbox" />
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_57"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="46"/>
                     <CheckBox
-                        style="@style/Checkbox" />
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_58"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -592,7 +651,8 @@
                     <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="183" />
+                        android:layout_weight="183"
+                        android:id="@+id/tv_59"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -609,13 +669,15 @@
                         android:layout_height="match_parent"
                         android:layout_weight="169"/>
                     <CheckBox
-                        style="@style/Checkbox" />
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_60"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="46"/>
                     <CheckBox
-                        style="@style/Checkbox" />
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_61"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -624,28 +686,32 @@
                     <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
                         android:layout_width="0dp"
                         android:layout_weight="50"
-                        android:layout_height="match_parent" />
+                        android:layout_height="match_parent"
+                        android:id="@+id/tv_62"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="91"/>
 
                     <CheckBox
-                        style="@style/Checkbox" />
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_63"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="46"/>
 
                     <CheckBox
-                        style="@style/Checkbox"/>
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_64"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="48"/>
 
                     <CheckBox
-                        style="@style/Checkbox"/>
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_65"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -662,14 +728,16 @@
                         android:layout_height="match_parent"
                         android:layout_weight="206"/>
                     <CheckBox
-                        style="@style/Checkbox"/>
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_66"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="29"/>
 
                     <CheckBox
-                        style="@style/Checkbox" />
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_67"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -678,7 +746,8 @@
                     <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
                         android:layout_width="0dp"
                         android:layout_weight="50"
-                        android:layout_height="match_parent"/>
+                        android:layout_height="match_parent"
+                        android:id="@+id/tv_68"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -695,37 +764,43 @@
                         android:layout_height="match_parent"
                         android:layout_weight="142"/>
                     <CheckBox
-                        style="@style/Checkbox"/>
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_69"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="46"/>
                     <CheckBox
-                        style="@style/Checkbox" />
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_70"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="46"/>
                     <CheckBox
-                        style="@style/Checkbox"/>
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_71"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="72"/>
                     <CheckBox
-                        style="@style/Checkbox"/>
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_72"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="81"/>
                     <CheckBox
-                        style="@style/Checkbox" />
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_73"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="73"/>
                     <CheckBox
-                        style="@style/Checkbox" />
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_74"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -742,39 +817,45 @@
                         android:layout_height="match_parent"
                         android:layout_weight="167"/>
                     <CheckBox
-                        style="@style/Checkbox"/>
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_75"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="46"/>
                     <CheckBox
-                        style="@style/Checkbox" />
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_76"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="46"/>
 
                     <CheckBox
-                        style="@style/Checkbox"/>
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_77"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="10"/>
                     <CheckBox
-                        style="@style/Checkbox"/>
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_78"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="46"/>
 
                     <CheckBox
-                        style="@style/Checkbox"/>
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_79"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="46"/>
                     <CheckBox
-                        style="@style/Checkbox" />
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_80"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -791,20 +872,23 @@
                         android:layout_height="match_parent"
                         android:layout_weight="167"/>
                     <CheckBox
-                        style="@style/Checkbox" />
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_81"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="46"/>
                     <CheckBox
-                        style="@style/Checkbox" />
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_82"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="46"/>
 
                     <CheckBox
-                        style="@style/Checkbox"/>
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_83"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -820,20 +904,23 @@
                         android:layout_height="match_parent"
                         android:layout_weight="167"/>
                     <CheckBox
-                        style="@style/Checkbox" />
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_84"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="46"/>
                     <CheckBox
-                        style="@style/Checkbox" />
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_85"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="46"/>
 
                     <CheckBox
-                        style="@style/Checkbox"/>
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_86"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -851,13 +938,15 @@
                         android:layout_height="match_parent"
                         android:layout_weight="151"/>
                     <CheckBox
-                        style="@style/Checkbox" />
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_87"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="29"/>
                     <CheckBox
-                        style="@style/Checkbox" />
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_88"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -865,21 +954,24 @@
                     <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
                         android:layout_width="0dp"
                         android:layout_weight="80"
-                        android:layout_height="match_parent" />
+                        android:layout_height="match_parent"
+                        android:id="@+id/tv_89"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="61"/>
                     <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
                         android:layout_width="67dp"
-                        android:layout_height="match_parent" />
+                        android:layout_height="match_parent"
+                        android:id="@+id/tv_90"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="61"/>
                     <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
                         android:layout_width="67dp"
-                        android:layout_height="match_parent" />
+                        android:layout_height="match_parent"
+                        android:id="@+id/tv_91"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -896,31 +988,36 @@
                         android:layout_height="match_parent"
                         android:layout_weight="167"/>
                     <CheckBox
-                        style="@style/Checkbox"/>
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_92"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="74"/>
                     <CheckBox
-                        style="@style/Checkbox" />
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_93"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="46"/>
                     <CheckBox
-                        style="@style/Checkbox" />
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_94"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="45"/>
                     <CheckBox
-                        style="@style/Checkbox"/>
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_95"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="43"/>
                     <CheckBox
-                        style="@style/Checkbox"/>
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_96"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -937,19 +1034,22 @@
                         android:layout_height="match_parent"
                         android:layout_weight="183"/>
                     <CheckBox
-                        style="@style/Checkbox"/>
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_97"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="44"/>
                     <CheckBox
-                        style="@style/Checkbox" />
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_98"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="76"/>
                     <CheckBox
-                        style="@style/Checkbox" />
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_99"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -967,7 +1067,8 @@
                     <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="688"/>
+                        android:layout_weight="688"
+                        android:id="@+id/tv_100"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -987,19 +1088,22 @@
                     <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
                         android:layout_width="0dp"
                         android:layout_weight="80"
-                        android:layout_height="match_parent" />
+                        android:layout_height="match_parent"
+                        android:id="@+id/tv_101"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="10"/>
                     <CheckBox
-                        style="@style/Checkbox"/>
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_102"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="44"/>
                     <CheckBox
-                        style="@style/Checkbox" />
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_103"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -1007,7 +1111,8 @@
                     <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
                         android:layout_width="0dp"
                         android:layout_weight="80"
-                        android:layout_height="match_parent" />
+                        android:layout_height="match_parent"
+                        android:id="@+id/tv_104"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -1025,37 +1130,43 @@
                         android:layout_height="match_parent"
                         android:layout_weight="165"/>
                     <CheckBox
-                        style="@style/Checkbox"/>
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_105"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="27"/>
                     <CheckBox
-                        style="@style/Checkbox" />
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_106"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="27"/>
                     <CheckBox
-                        style="@style/Checkbox"/>
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_107"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="27"/>
                     <CheckBox
-                        style="@style/Checkbox" />
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_108"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="27"/>
                     <CheckBox
-                        style="@style/Checkbox" />
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_109"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="27"/>
                     <CheckBox
-                        style="@style/Checkbox" />
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_110"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -1072,25 +1183,29 @@
                         android:layout_height="match_parent"
                         android:layout_weight="199"/>
                     <CheckBox
-                        style="@style/Checkbox"/>
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_111"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="61"/>
                     <CheckBox
-                        style="@style/Checkbox" />
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_112"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="59"/>
                     <CheckBox
-                        style="@style/Checkbox" />
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_113"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="61"/>
                     <CheckBox
-                        style="@style/Checkbox"/>
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_114"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -1098,7 +1213,8 @@
                     <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
                         android:layout_width="0dp"
                         android:layout_weight="80"
-                        android:layout_height="match_parent" />
+                        android:layout_height="match_parent"
+                        android:id="@+id/tv_115"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_weight="360"
@@ -1115,19 +1231,22 @@
                         android:layout_height="match_parent"
                         android:layout_weight="165"/>
                     <CheckBox
-                        style="@style/Checkbox"/>
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_116"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="44"/>
                     <CheckBox
-                        style="@style/Checkbox" />
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_117"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="46"/>
                     <CheckBox
-                        style="@style/Checkbox" />
+                        style="@style/Checkbox"
+                        android:id="@+id/cb_118"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -1135,7 +1254,8 @@
                     <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
                         android:layout_width="0dp"
                         android:layout_weight="80"
-                        android:layout_height="match_parent"/>
+                        android:layout_height="match_parent"
+                        android:id="@+id/tv_119"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -1154,6 +1274,7 @@
                         android:layout_height="match_parent"
                         android:layout_width="0dp"
                         android:layout_weight="80"
+                        android:id="@+id/tv_120"
                         />
                     <View
                         android:layout_width="0dp"
@@ -1164,6 +1285,7 @@
                         android:layout_height="match_parent"
                         android:layout_width="0dp"
                         android:layout_weight="120"
+                        android:id="@+id/tv_121"
                         />
                     <View
                         android:layout_width="0dp"
@@ -1181,7 +1303,8 @@
                     <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="120"/>
+                        android:layout_weight="120"
+                        android:id="@+id/tv_122"/>
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"

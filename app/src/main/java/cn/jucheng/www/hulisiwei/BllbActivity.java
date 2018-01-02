@@ -18,11 +18,8 @@ import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
-import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.text.ParseException;
 import java.util.Date;
 import java.util.HashMap;
@@ -33,12 +30,12 @@ import butterknife.OnClick;
 import cn.jucheng.jclibs.tools.MyLog;
 import cn.jucheng.jclibs.tools.MyToast;
 import cn.jucheng.jclibs.tools.SubStringUtils;
-import cn.jucheng.www.hulisiwei.dialogs.ReconnectDialog;
 import cn.jucheng.www.hulisiwei.adapter.ExplistBLLBAdapter;
 import cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView;
 import cn.jucheng.www.hulisiwei.databean.bllbbean.Baseinfo;
 import cn.jucheng.www.hulisiwei.databean.bllbbean.Medicalrecordsbaseinfo;
 import cn.jucheng.www.hulisiwei.databean.bllbbean.Patientinfo;
+import cn.jucheng.www.hulisiwei.dialogs.ReconnectDialog;
 import cn.jucheng.www.hulisiwei.interfaca.OnBllbSonClickListener;
 import cn.jucheng.www.hulisiwei.utils.CustomDialog;
 import cn.jucheng.www.hulisiwei.utils.DateUtils;
@@ -46,6 +43,7 @@ import cn.jucheng.www.hulisiwei.widget.HexadecimalConver;
 import cn.jucheng.www.hulisiwei.widget.MyMessage;
 
 import static cn.jucheng.jclibs.tools.MyLog.init;
+import static cn.jucheng.www.hulisiwei.utils.CommUtils.getFileFromSD;
 
 
 /**
@@ -379,23 +377,5 @@ public class BllbActivity extends MyBaseActivity implements View.OnClickListener
         tvBlxqXbs.setText(mbi.getXianbingshi()==null?"":mbi.getXianbingshi());
     }
 
-    //从sd卡中读取指定目录文件内容并存储到String中
-    private String getFileFromSD(String path) {
-        String result = "";
-
-        try {
-            FileInputStream f = new FileInputStream(path);
-            //原来一直显示乱码，其实改为gbk 或者utf8即可
-            BufferedReader bis = new BufferedReader(new InputStreamReader(f,"GBK"));
-            String line = "";
-            while ((line = bis.readLine()) != null) {
-                result += line;
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return result;
-
-    }
 
 }

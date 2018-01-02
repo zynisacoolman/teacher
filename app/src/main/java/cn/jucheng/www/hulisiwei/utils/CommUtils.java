@@ -7,6 +7,9 @@ import android.content.pm.PackageManager;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.TypeReference;
 
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -167,5 +170,24 @@ public class CommUtils {
         fromIndex = fromIndex >= size ? size : fromIndex;
         toIndex = toIndex >= size ? size : toIndex;
         return list.subList(fromIndex, toIndex);
+    }
+
+    //从sd卡中读取指定目录文件内容并存储到String中
+    public static String getFileFromSD(String path) {
+        String result = "";
+
+        try {
+            FileInputStream f = new FileInputStream(path);
+            //原来一直显示乱码，其实改为gbk 或者utf8即可
+            BufferedReader bis = new BufferedReader(new InputStreamReader(f,"GBK"));
+            String line = "";
+            while ((line = bis.readLine()) != null) {
+                result += line;
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return result;
+
     }
 }

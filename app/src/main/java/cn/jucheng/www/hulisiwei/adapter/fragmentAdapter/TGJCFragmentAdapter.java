@@ -73,7 +73,7 @@ public class TGJCFragmentAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
         ViewHolder holder;
         if (convertView == null) {
-            convertView = mInflater.inflate(R.layout.adapter_fragmentbstgjc, null);
+            convertView = mInflater.inflate(R.layout.adapter_fragmentbljltgjc, null);
             holder = new ViewHolder();
             holder.h_name = (TextView) convertView.findViewById(R.id.h_name);
             holder.h_sex = (TextView) convertView.findViewById(R.id.h_sex);
