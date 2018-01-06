@@ -105,6 +105,5 @@ public class YZDTempFragmentAdapter extends BaseAdapter {
         ListView lv_right;
         YZDTempLeftListItem yzdTempLeftListItem;
         YZDTempRightListItem yzdTempRightListItem;
-
     }
 }

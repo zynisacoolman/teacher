@@ -5,11 +5,14 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import cn.jucheng.www.hulisiwei.databean.bllbbean.Baseinfo;
 import cn.jucheng.www.hulisiwei.databean.blnrbean.TwdResult;
 import cn.jucheng.www.hulisiwei.databean.blnrbean.XtjlDateBean;
+import cn.jucheng.www.hulisiwei.databean.blzgbean.BlzgBean;
+import cn.jucheng.www.hulisiwei.databean.blzgbean.BlzgItemBean;
 
 /**
- * Created by w on 2017-11-29.
+ * Created by zyn on 2017-11-29.
  * 表单信息
  */
 
@@ -38,8 +41,17 @@ public class UserMessage {
         }
 
     };
+    //存储baseinfo 避免重复解析json 提高程序运行效率
+    public static Baseinfo baseinfo ;
+    //病例转归存储信息
+    public static int currentState= 0 ;
+    public static BlzgBean blzgCache;
+    //存储上一个运行中的状态
+    public static BlzgItemBean blzgLastItemCache;
 
     public static String biaodan_message = "";//表单信息
+    public static String biaodan_zhuanchao ="";//转抄信息
+    public static String biaodan_head="";
 
     //注射单信息
     public static List<List<String>> inject_Message = new ArrayList<>();
@@ -64,8 +76,12 @@ public class UserMessage {
     //长期医嘱单信息 停止医嘱
     public static List<List<String>> YZDlongstop =new ArrayList<List<String>>(){{
                     add(fragmentHead2);
-        add(fragmentHead2);
-        add(fragmentHead2);add(fragmentHead2);add(fragmentHead2);add(fragmentHead2);add(fragmentHead2);
+                    add(fragmentHead2);
+                    add(fragmentHead2);
+                    add(fragmentHead2);
+                    add(fragmentHead2);
+                    add(fragmentHead2);
+                    add(fragmentHead2);
         }
     };
 

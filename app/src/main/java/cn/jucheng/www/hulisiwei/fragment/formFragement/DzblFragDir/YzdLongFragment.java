@@ -24,9 +24,6 @@ import cn.jucheng.www.hulisiwei.adapter.fragmentAdapter.YZDLongFragmentAdapter;
 import cn.jucheng.www.hulisiwei.base.BaseFragment;
 import cn.jucheng.www.hulisiwei.base.MyList;
 import cn.jucheng.www.hulisiwei.interfaca.MessageEvent;
-import cn.jucheng.www.hulisiwei.interfaca.OnZhuanChao;
-import cn.jucheng.www.hulisiwei.interfaca.OnformDateUpdate;
-import cn.jucheng.www.hulisiwei.interfaca.OnformHeadUpdate;
 import cn.jucheng.www.hulisiwei.module.UserMessage;
 import cn.jucheng.www.hulisiwei.utils.CommUtils;
 import cn.jucheng.www.hulisiwei.widget.HexadecimalConver;
@@ -143,8 +140,8 @@ public class YzdLongFragment extends BaseFragment implements AbsListView.OnScrol
         int bdt=Integer.parseInt(SubStringUtils.substring(string,48,52),16);
         String jsont= HexadecimalConver.decode(
                 SubStringUtils.substring(string,52,52+bdt*2));
-
         UserMessage.fragmentHead=CommUtils.getJson(jsont,"baseinfo");
+        adapter.notifyDataSetChanged();
 
     }
     public void OnZhuanchao(String string) {

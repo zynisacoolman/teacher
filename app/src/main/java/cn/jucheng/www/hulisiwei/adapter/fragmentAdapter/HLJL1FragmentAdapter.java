@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.ListView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -114,12 +113,7 @@ public class HLJL1FragmentAdapter extends BaseAdapter {
         TextView h_bednumber;//床号
         FitHeightTextView h_illrecordNum;//病案号
 
-        ListView transfusion_list;//listview
-        TextView transfusion_years;//年
-        TextView transfusion_mouth;//月
-        TextView transfusion_day;//日
-        TextView transfusion_checkuser;//核对者
-        TextView transfusion_carryout;//执行者
+
         TextView transfusion_page_number;//页数
         TextView h_ryrq;//入院日期
         TextView h_zyblh;//住院病历号

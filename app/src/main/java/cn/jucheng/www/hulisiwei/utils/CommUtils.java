@@ -6,6 +6,8 @@ import android.content.pm.PackageManager;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.TypeReference;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
@@ -173,7 +175,7 @@ public class CommUtils {
     }
 
     //从sd卡中读取指定目录文件内容并存储到String中
-    public static String getFileFromSD(String path) {
+    public static String getStringFromPath(String path) {
         String result = "";
 
         try {
@@ -189,5 +191,11 @@ public class CommUtils {
         }
         return result;
 
+    }
+    //将字符换转化为json格式数据
+    public static JsonObject getJSON(String str) {
+        JsonObject obj;
+        obj=new JsonParser().parse(str).getAsJsonObject().get("jc2100").getAsJsonObject().get("case").getAsJsonObject();
+        return obj;
     }
 }

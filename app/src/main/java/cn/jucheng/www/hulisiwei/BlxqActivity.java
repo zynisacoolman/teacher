@@ -13,6 +13,10 @@ import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 
+import com.google.gson.Gson;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
+
 import org.greenrobot.eventbus.EventBus;
 
 import java.util.ArrayList;
@@ -29,8 +33,10 @@ import cn.jucheng.www.hulisiwei.adapter.TreeListViewAdapter;
 import cn.jucheng.www.hulisiwei.customcontrols.FitHeightButton;
 import cn.jucheng.www.hulisiwei.customcontrols.FitHeightEditText;
 import cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView;
-import cn.jucheng.www.hulisiwei.dialogs.HuShitixingDialog;
+import cn.jucheng.www.hulisiwei.databean.bllbbean.Baseinfo;
 import cn.jucheng.www.hulisiwei.databean.blxqbean.FileBean;
+import cn.jucheng.www.hulisiwei.databean.blzgbean.BlzgBean;
+import cn.jucheng.www.hulisiwei.dialogs.HuShitixingDialog;
 import cn.jucheng.www.hulisiwei.fragment.formFragement.DzblFragDir.Hljld1Fragment;
 import cn.jucheng.www.hulisiwei.fragment.formFragement.DzblFragDir.Hljld2Fragment;
 import cn.jucheng.www.hulisiwei.fragment.formFragement.DzblFragDir.Hljld3Fragment;
@@ -46,13 +52,10 @@ import cn.jucheng.www.hulisiwei.fragment.formFragement.DzblFragDir.YzdTemFragmen
 import cn.jucheng.www.hulisiwei.fragment.formFragement.DzblFragDir.ZqtysFragment;
 import cn.jucheng.www.hulisiwei.fragment.formFragement.DzblFragDir.ZyblFragment;
 import cn.jucheng.www.hulisiwei.interfaca.MessageEvent;
-import cn.jucheng.www.hulisiwei.interfaca.OnZhuanChao;
-import cn.jucheng.www.hulisiwei.interfaca.OnformDateUpdate;
-import cn.jucheng.www.hulisiwei.interfaca.OnformHeadUpdate;
 import cn.jucheng.www.hulisiwei.module.UserMessage;
+import cn.jucheng.www.hulisiwei.utils.CommUtils;
 import cn.jucheng.www.hulisiwei.utils.DateUtils;
 import cn.jucheng.www.hulisiwei.widget.HexadecimalConver;
-import cn.jucheng.www.hulisiwei.widget.MyGlobal1;
 import cn.jucheng.www.hulisiwei.widget.MyMessage;
 
 /**
@@ -86,9 +89,6 @@ public class BlxqActivity extends MyBaseActivity implements View.OnClickListener
     @BindView(R.id.tv)
     FitHeightTextView tv;
     //定义一个接口来通知fragment进行数据更新
-    OnformHeadUpdate onformHeadUpdate;
-    OnformDateUpdate onformDateUpdate;
-    OnZhuanChao onZhuanChao;
     private String conditionNow=null;
     private List<FileBean> mDatas = new ArrayList<FileBean>();
     private TreeListViewAdapter mAdapter;
@@ -96,11 +96,16 @@ public class BlxqActivity extends MyBaseActivity implements View.OnClickListener
     private ArrayAdapter czjlAdapter;
     //学生操作记录
     private ArrayList CZJLList=new ArrayList();
+    //是否为首次进行状态改变
+    boolean firstChange =true;
+    //当前状态id
+    int current_state_order;
 
     FragmentListAdapter fragmentAdapter;
     private HashMap fragmentList = new HashMap();
     //等待进度条
     private ProgressDialog pd;
+
 
     //计时器 病例运行时间
     private boolean isStopCount = false;
@@ -209,7 +214,13 @@ public class BlxqActivity extends MyBaseActivity implements View.OnClickListener
         fragmentList.put(17,new MzblFragment());
 //        fragmentList.put(0,new BloodrecordlistFragment());
 //        fragmentList.put(1,new TransfusionrecordFragment());
-
+        //获取Baseinfo并存储到cache中
+        JsonObject datas = CommUtils.getJSON(CommUtils.getStringFromPath(BLPath2)).get("baseinfo").getAsJsonObject();
+        UserMessage.baseinfo=new Gson().fromJson(datas, Baseinfo.class);
+        //从baseinfo中拿到 状态状态数据
+        String stateString = UserMessage.baseinfo.getState_chart();
+        JsonObject jsonObject = new JsonParser().parse(stateString).getAsJsonObject();
+        UserMessage.blzgCache = new Gson().fromJson(jsonObject, BlzgBean.class);
 
     }
 
@@ -222,7 +233,8 @@ public class BlxqActivity extends MyBaseActivity implements View.OnClickListener
                 EventBus.getDefault().post(new MessageEvent(UserMessage.biaodan_message, 4));
                 break;
             case MyMessage.MLZ_ZCYZ:
-                onZhuanChao.OnZhuanchao(str);
+                UserMessage.biaodan_message = str;//缓存转抄数据
+                EventBus.getDefault().post(new MessageEvent(UserMessage.biaodan_message, 5));
                 break;
             case MyMessage.MLZ_BDT:
                 String head_message = str;
@@ -248,10 +260,37 @@ public class BlxqActivity extends MyBaseActivity implements View.OnClickListener
                 }
                 break;
             case MyMessage.MLZ_ZTGB://状态改变 说明：状态跳转时，接收学生机发送的新的当前正在进行的病例状态
-                if(!SubStringUtils.substring(str,48,52).equals(conditionNow)){
+                if(!SubStringUtils.substring(str,52,56).equals(conditionNow)){
                     //将学生当前状态置为改变后的状态
-                    conditionNow=SubStringUtils.substring(str,48,52);
+                    conditionNow=SubStringUtils.substring(str,52,56);
+                    //开始计时
                     mHandler2.postDelayed(ConditionRunnable,1000);
+                    //改变病例转归的数据信息
+                    int id =Integer.parseInt(conditionNow);
+                        for(int i=0;i<UserMessage.blzgCache.getDatas().size();i++){
+//                            if(!firstChange){
+                                //for(int t =0;t<UserMessage.blzgCache.getDatas().size();t++){
+                                /**
+                                 * 将上个进行中状态设为已读,已读状态为3
+                                 * */
+                            if(UserMessage.blzgCache.getDatas().get(i).getId()==UserMessage.blzgLastItemCache.getId()){
+                                    UserMessage.blzgCache.getDatas().get(i).setState(3);
+                                    //}
+                            }
+//                                else{
+//                                    /***此次更新状态不用设置已读*/
+//                                    Log.v("首次状态改变","首次状态改变");
+//                                }
+//                            }
+                            if(id==UserMessage.blzgCache.getDatas().get(i).getId()){
+                                //将当前运行中的状态值置为2
+                                UserMessage.blzgCache.getDatas().get(i).setState(2);
+                                current_state_order=i;
+                            }
+                        }
+                    //将当前condition记录下来备用
+                    UserMessage.blzgLastItemCache =UserMessage.blzgCache.getDatas().get(current_state_order);
+//                    firstChange=false ;
                 }
                 break;
             case MyMessage.MLZ_XSTZJS://病人病情状态发生变化，此时教师接收信息，并显示
@@ -318,7 +357,7 @@ public class BlxqActivity extends MyBaseActivity implements View.OnClickListener
         }
     };
 
-    @OnClick({R.id.btn_blnr,R.id.iv_setting})
+    @OnClick({R.id.btn_blnr,R.id.iv_setting,R.id.tv_blzg})
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
@@ -345,6 +384,9 @@ public class BlxqActivity extends MyBaseActivity implements View.OnClickListener
             case R.id.iv_setting:
                 Intent intents = new Intent(this, SettingsActivity.class);
                 startActivity(intents);
+                break;
+            case R.id.tv_blzg:
+                startActivity(new Intent(this,BlzgActivity.class));
                 break;
 
         }
