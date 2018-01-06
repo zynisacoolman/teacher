@@ -98,5 +98,7 @@
     <string name="rectime">状态改变时间</string>
     <string name="rectype">状态改变类型</string>
     <string name="recblmc">状态改变病例名称</string>
+    <string name="blzg_title">病例转归</string>
+    <string name="string_close">关闭</string>
 
 </resources>

@@ -23,7 +23,9 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:gravity="center_vertical"
                     android:text="病例转归"
+                    android:paddingLeft="10dp"
                     android:textColor="@color/vfrontc"
                     android:fontFamily="@font/msyh"
                     android:textSize="@dimen/text_size16"/>
@@ -40,6 +42,8 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
                     android:text="状态标题"
                     android:textColor="@color/vfrontc"
                     />
@@ -60,9 +64,24 @@
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="736"
-                android:background="@drawable/blzg_bg"></LinearLayout>
+                android:layout_weight="736">
+
+                    <cn.jucheng.www.hulisiwei.customcontrols.HVScrollView
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent">
+
+                        <RelativeLayout
+                            android:id="@+id/rl_blzg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/blzg_bg">
+
+                        </RelativeLayout>
+                    </cn.jucheng.www.hulisiwei.customcontrols.HVScrollView>
+            </LinearLayout>
+
             <View
+
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -77,6 +96,7 @@
                     android:layout_height="0dp"
                     android:layout_weight="110"
                     android:text="状态内容"
+                    android:paddingLeft="10dp"
                     android:fontFamily="@font/msyh"
                     android:textColor="@color/vfrontc"
                     android:textSize="@dimen/text_size16"
@@ -142,7 +162,29 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="91">
-
+        android:layout_weight="91"
+        android:background="@color/bg_bgcolor1"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="550"/>
+        <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="120"
+            android:background="@color/btn_color_blue"
+            android:layout_gravity="center_vertical"
+            android:text="@string/string_close"
+            android:gravity="center"
+            android:textSize="@dimen/text_size20"
+            android:fontFamily="@font/msyh"
+            android:textColor="@color/color1"
+            android:id="@+id/tv_close"
+            />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="548"/>
     </LinearLayout>
 </LinearLayout>
