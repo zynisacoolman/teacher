@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.shizhefei:HVScrollView-1.0.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/HVScrollView-1.0.1.aar/c61cccf74ad5bcfd6166ae55be26b01e/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/HVScrollView-1.0.1.aar/c61cccf74ad5bcfd6166ae55be26b01e/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.shizhefei/HVScrollView/1.0.1/588aab7aed0384bd3c7165a5fafc66a81be3eea3/HVScrollView-1.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
