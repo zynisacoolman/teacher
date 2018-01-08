@@ -11,6 +11,7 @@ MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/zyn/.gra
 MERGED from [com.android.support:support-v4:25.4.0] /Users/zyn/.gradle/caches/transforms-1/files-1.1/support-v4-25.4.0.aar/bea7a77658907f2605984ac763fe56e3/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:multidex:1.0.2] /Users/zyn/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/87aed44ad94df7256ddd2c1a1064f8d8/AndroidManifest.xml:17:1-22:12
 MERGED from [com.jakewharton:butterknife:8.8.1] /Users/zyn/.gradle/caches/transforms-1/files-1.1/butterknife-8.8.1.aar/1b920851a5a6ebbab9bb4abd15c5f82d/AndroidManifest.xml:2:1-7:12
+MERGED from [com.shizhefei:HVScrollView:1.0.1] /Users/zyn/.gradle/caches/transforms-1/files-1.1/HVScrollView-1.0.1.aar/c61cccf74ad5bcfd6166ae55be26b01e/AndroidManifest.xml:2:1-12:12
 MERGED from [com.android.support:support-fragment:25.4.0] /Users/zyn/.gradle/caches/transforms-1/files-1.1/support-fragment-25.4.0.aar/b727ef5017ff9a047e3a40ed29f85c27/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-media-compat:25.4.0] /Users/zyn/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.4.0.aar/c851efe0c8021961aef62a80cbe21fb3/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-core-utils:25.4.0] /Users/zyn/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.4.0.aar/dcc13df1bd5a746d2a9ea3887718e618/AndroidManifest.xml:17:1-31:12
@@ -53,6 +54,8 @@ MERGED from [com.android.support:multidex:1.0.2] /Users/zyn/.gradle/caches/trans
 MERGED from [com.android.support:multidex:1.0.2] /Users/zyn/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/87aed44ad94df7256ddd2c1a1064f8d8/AndroidManifest.xml:20:5-43
 MERGED from [com.jakewharton:butterknife:8.8.1] /Users/zyn/.gradle/caches/transforms-1/files-1.1/butterknife-8.8.1.aar/1b920851a5a6ebbab9bb4abd15c5f82d/AndroidManifest.xml:5:5-43
 MERGED from [com.jakewharton:butterknife:8.8.1] /Users/zyn/.gradle/caches/transforms-1/files-1.1/butterknife-8.8.1.aar/1b920851a5a6ebbab9bb4abd15c5f82d/AndroidManifest.xml:5:5-43
+MERGED from [com.shizhefei:HVScrollView:1.0.1] /Users/zyn/.gradle/caches/transforms-1/files-1.1/HVScrollView-1.0.1.aar/c61cccf74ad5bcfd6166ae55be26b01e/AndroidManifest.xml:8:5-10:41
+MERGED from [com.shizhefei:HVScrollView:1.0.1] /Users/zyn/.gradle/caches/transforms-1/files-1.1/HVScrollView-1.0.1.aar/c61cccf74ad5bcfd6166ae55be26b01e/AndroidManifest.xml:8:5-10:41
 MERGED from [com.android.support:support-fragment:25.4.0] /Users/zyn/.gradle/caches/transforms-1/files-1.1/support-fragment-25.4.0.aar/b727ef5017ff9a047e3a40ed29f85c27/AndroidManifest.xml:21:5-23:60
 MERGED from [com.android.support:support-fragment:25.4.0] /Users/zyn/.gradle/caches/transforms-1/files-1.1/support-fragment-25.4.0.aar/b727ef5017ff9a047e3a40ed29f85c27/AndroidManifest.xml:21:5-23:60
 MERGED from [com.android.support:support-media-compat:25.4.0] /Users/zyn/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.4.0.aar/c851efe0c8021961aef62a80cbe21fb3/AndroidManifest.xml:21:5-23:63

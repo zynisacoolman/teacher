@@ -66,18 +66,28 @@
                 android:layout_height="match_parent"
                 android:layout_weight="736">
 
-                    <cn.jucheng.www.hulisiwei.customcontrols.HVScrollView
+                    <HorizontalScrollView
                         android:layout_width="fill_parent"
-                        android:layout_height="match_parent">
-
+                        android:layout_height="match_parent"
+                        android:scrollbars="horizontal">
                         <RelativeLayout
                             android:id="@+id/rl_blzg"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:background="@drawable/blzg_bg">
-
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tv_1"
+                                android:text="1231231231231231231123123123123123"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@id/tv_1"
+                                android:layout_marginLeft="1000dp"
+                                android:text="1231231231231231231123123123123123"/>
                         </RelativeLayout>
-                    </cn.jucheng.www.hulisiwei.customcontrols.HVScrollView>
+                    </HorizontalScrollView>
             </LinearLayout>
 
             <View
@@ -144,12 +154,18 @@
                         android:text="体征参数"
                         android:layout_weight="159"/>
                 </LinearLayout>
-                <com.wjk.tableview.TableView
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="410"
-                    android:id="@+id/table_layout">
-                </com.wjk.tableview.TableView>
+                <!--<com.wjk.tableview.TableView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="0dp"-->
+                    <!--android:layout_weight="410"-->
+                    <!--android:id="@+id/table_layout">-->
+                <!--</com.wjk.tableview.TableView>-->
+                <android.support.v7.widget.FitWindowsFrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="410"
+                android:id="@+id/fragment_layout">
+                </android.support.v7.widget.FitWindowsFrameLayout>
             </LinearLayout>
 
         </LinearLayout>

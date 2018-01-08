@@ -147,13 +147,12 @@
             android:background="@color/red"
             android:text="去病例列表页面" />
         <Button
+            android:id="@+id/horizenscroll"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="fill_parent"
             android:onClick="onTest"
-            android:layout_marginLeft="5dp"
-            android:id="@+id/twdJS"
             android:background="@color/red"
-            android:text="发送病例数据"/>
+            android:text="横向滚动" />
     </LinearLayout>
 
     <LinearLayout

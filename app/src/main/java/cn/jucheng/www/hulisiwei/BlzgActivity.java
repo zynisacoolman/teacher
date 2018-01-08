@@ -1,6 +1,5 @@
 package cn.jucheng.www.hulisiwei;
 
-import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.Message;
@@ -28,12 +27,13 @@ public class BlzgActivity extends MyBaseActivity {
 //    ItemBlzgView[] blzgViews;
     TextView[] blzgViews;
 
-    Resources resources = currentMyBaseActivity.getResources();
+
+//    Resources resources = currentMyBaseActivity.getResources();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_blzg_layout);
+        setContentView(R.layout.activity_blzg_layout_test);
 //        第一步需要解析数据
         getData();
 //        第二部在布局中根据数据布置控件
