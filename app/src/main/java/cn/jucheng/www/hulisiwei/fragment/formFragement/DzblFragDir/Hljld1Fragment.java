@@ -67,7 +67,7 @@ public class Hljld1Fragment extends BaseFragment implements AbsListView.OnScroll
         unbinder = ButterKnife.bind(this, view);
         EventBus.getDefault().register(this);
         //解析jsonobj
-        obj=CommUtils.getJSON(BLPath2);
+        obj=CommUtils.getcaseJSON(BLPath2);
         setHead();
         return view;
     }

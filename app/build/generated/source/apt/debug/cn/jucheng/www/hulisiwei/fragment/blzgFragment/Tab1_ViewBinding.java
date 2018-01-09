@@ -12,10 +12,10 @@ import java.lang.IllegalStateException;
 import java.lang.Override;
 
 public class Tab1_ViewBinding implements Unbinder {
-  private Tab1 target;
+  private Tabztzg target;
 
   @UiThread
-  public Tab1_ViewBinding(Tab1 target, View source) {
+  public Tab1_ViewBinding(Tabztzg target, View source) {
     this.target = target;
 
     target.tableView = Utils.findRequiredViewAsType(source, R.id.table_layout, "field 'tableView'", TableView.class);
@@ -24,7 +24,7 @@ public class Tab1_ViewBinding implements Unbinder {
   @Override
   @CallSuper
   public void unbind() {
-    Tab1 target = this.target;
+    Tabztzg target = this.target;
     if (target == null) throw new IllegalStateException("Bindings already cleared.");
     this.target = null;
 

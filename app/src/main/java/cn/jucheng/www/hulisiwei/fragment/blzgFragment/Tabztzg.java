@@ -7,18 +7,22 @@ import android.view.ViewGroup;
 
 import com.wjk.tableview.TableView;
 
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
+
 import butterknife.BindView;
-import butterknife.ButterKnife;
 import butterknife.Unbinder;
 import cn.jucheng.www.hulisiwei.R;
 import cn.jucheng.www.hulisiwei.base.BaseFragment;
+import cn.jucheng.www.hulisiwei.interfaca.MessageEvent;
 
 /**
  * Created by zyn on 2017/12/14.
  */
 
-public abstract class Tab1 extends BaseFragment {
-    @BindView(R.id.table_layout)
+public class Tabztzg extends BaseFragment {
+    @BindView(R.id.tableview)
     TableView tableView;
 
     Unbinder unbinder;
@@ -26,12 +30,21 @@ public abstract class Tab1 extends BaseFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
         view = inflater.inflate(R.layout.activity_tabblzg, null);
-        unbinder = ButterKnife.bind(this, view);
 
         return view;
     }
     @Override
     public int getID(){
         return R.layout.activity_tabblzg;
+    }
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        unbinder.unbind();
+        EventBus.getDefault().unregister(this);
+    }
+    @Subscribe(threadMode = ThreadMode.MAIN)
+    public void onEventMainThread(MessageEvent evnt) {
     }
 }

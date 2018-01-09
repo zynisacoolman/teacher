@@ -15,8 +15,8 @@ public final class R {
     }
     public static final class id {
         public static final int both = 0x7f08003f;
-        public static final int horizontal = 0x7f080130;
-        public static final int none = 0x7f0801af;
+        public static final int horizontal = 0x7f080131;
+        public static final int none = 0x7f0801b0;
         public static final int vertical = 0x7f08026c;
     }
     public static final class styleable {

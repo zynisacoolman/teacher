@@ -18,7 +18,7 @@ public class BllbActivity_ViewBinding implements Unbinder {
 
   private View view2131231327;
 
-  private View view2131231124;
+  private View view2131231125;
 
   @UiThread
   public BllbActivity_ViewBinding(BllbActivity target) {
@@ -51,7 +51,7 @@ public class BllbActivity_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.iv_settings, "method 'onClick'");
-    view2131231124 = view;
+    view2131231125 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -82,7 +82,7 @@ public class BllbActivity_ViewBinding implements Unbinder {
 
     view2131231327.setOnClickListener(null);
     view2131231327 = null;
-    view2131231124.setOnClickListener(null);
-    view2131231124 = null;
+    view2131231125.setOnClickListener(null);
+    view2131231125 = null;
   }
 }

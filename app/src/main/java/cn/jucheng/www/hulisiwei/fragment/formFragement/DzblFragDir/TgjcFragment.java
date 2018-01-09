@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AbsListView;
 
+import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
 
@@ -247,6 +248,8 @@ public class TgjcFragment extends BaseFragment implements AbsListView.OnScrollLi
     @Override
     public void onDestroyView() {
         super.onDestroyView();
+        unbinder.unbind();
+        EventBus.getDefault().unregister(this);
     }
 
 

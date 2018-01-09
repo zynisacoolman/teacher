@@ -215,7 +215,7 @@ public class BlxqActivity extends MyBaseActivity implements View.OnClickListener
 //        fragmentList.put(0,new BloodrecordlistFragment());
 //        fragmentList.put(1,new TransfusionrecordFragment());
         //获取Baseinfo并存储到cache中
-        JsonObject datas = CommUtils.getJSON(CommUtils.getStringFromPath(BLPath2)).get("baseinfo").getAsJsonObject();
+        JsonObject datas = CommUtils.getcaseJSON(CommUtils.getStringFromPath(BLPath2)).get("baseinfo").getAsJsonObject();
         UserMessage.baseinfo=new Gson().fromJson(datas, Baseinfo.class);
         //从baseinfo中拿到 状态状态数据
         String stateString = UserMessage.baseinfo.getState_chart();
