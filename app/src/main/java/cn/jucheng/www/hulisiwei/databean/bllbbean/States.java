@@ -22,6 +22,7 @@ public class States {
     private List<Physical_examination_info> physical_examination_info;
     private int state_waitingtime;
     private List<Changqiyizhu> changqiyizhu;
+    private List<linshiyizhu> linshiyizhu;
     private List<States_transfer> states_transfer;
     public void setInheritStatus(int InheritStatus) {
          this.InheritStatus = InheritStatus;
@@ -99,5 +100,13 @@ public class States {
      public List<States_transfer> getStates_transfer() {
          return states_transfer;
      }
+
+    public List<linshiyizhu> getLinshiyizhu() {
+        return linshiyizhu;
+    }
+
+    public void setLinshiyizhu(List<linshiyizhu> linshiyizhu) {
+        this.linshiyizhu = linshiyizhu;
+    }
 
 }

@@ -4,6 +4,8 @@
 package cn.jucheng.www.hulisiwei.databean.blzgbean.phyexam;
 import java.util.List;
 
+import cn.jucheng.www.hulisiwei.module.UserMessage;
+
 /**
  * Auto-generated: 2018-01-08 22:33:28
  *
@@ -34,6 +36,17 @@ public class Physical {
      }
      public List<Item> getItem() {
          return item;
+     }
+
+     public void init名字toID默认值(){
+         for (Item item:item
+              ) {
+             IDValue idValue = new IDValue();
+             idValue.setDefValue(item.getNumbervalue());
+             idValue.setName(item.getName());
+             idValue.setId(item.getId());
+             UserMessage.searchValue.put(item.getName(),idValue);
+         }
      }
 
 }

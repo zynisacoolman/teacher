@@ -6,10 +6,14 @@ import java.util.List;
 import java.util.Map;
 
 import cn.jucheng.www.hulisiwei.databean.bllbbean.Baseinfo;
+import cn.jucheng.www.hulisiwei.databean.bllbbean.Numbervalue;
+import cn.jucheng.www.hulisiwei.databean.bllbbean.States_transfer;
+import cn.jucheng.www.hulisiwei.databean.bllbbean.Statesinfo;
 import cn.jucheng.www.hulisiwei.databean.blnrbean.TwdResult;
 import cn.jucheng.www.hulisiwei.databean.blnrbean.XtjlDateBean;
 import cn.jucheng.www.hulisiwei.databean.blzgbean.BlzgBean;
 import cn.jucheng.www.hulisiwei.databean.blzgbean.BlzgItemBean;
+import cn.jucheng.www.hulisiwei.databean.blzgbean.phyexam.IDValue;
 
 /**
  * Created by zyn on 2017-11-29.
@@ -43,6 +47,23 @@ public class UserMessage {
     };
     //存储baseinfo 避免重复解析json 提高程序运行效率
     public static Baseinfo baseinfo ;
+    public static Statesinfo statesinfo;
+    //用来存放 医嘱药物信息
+    public static Map<Integer, cn.jucheng.www.hulisiwei.databean.blzgbean.medicine.Medicines> allMedicines = new HashMap<>();
+    //用来存放 特殊处理方式
+    public static Map<Integer,String> allSpecialdispose=new HashMap<>();
+    //用来存放 map<状态转归id，状态转归>
+    public static Map<Integer ,List<States_transfer>> searchmapStatetransfer = new HashMap<>();
+    //用来存放 map<状态专柜id,状态名称>
+    public static Map<Integer,String> searchmapStatename = new HashMap<>();
+    //用来存放 map 对应的是 phyexam文件 用名称对应ID和默认值
+    public static Map<String,IDValue> searchValue = new HashMap<>();
+    //用来存放 map 对应的是 ID ->参数列表
+    public static Map<Integer,Map<Integer,Numbervalue>> searchExamResult=new HashMap<>();
+
+    //存放 id 和状态 的map
+    public static Map<Integer,BlzgItemBean> idStatus=new HashMap();
+
     //病例转归存储信息
     public static int currentState= 0 ;
     public static BlzgBean blzgCache;

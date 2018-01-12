@@ -13,6 +13,7 @@ public class Numbervalue {
 
     private double state_value;
     private int type;
+    private int dftValue;
     public void setState_value(double state_value) {
          this.state_value = state_value;
      }
@@ -27,4 +28,11 @@ public class Numbervalue {
          return type;
      }
 
+    public int getDftValue() {
+        return dftValue;
+    }
+
+    public void setDftValue(int dftValue) {
+        this.dftValue = dftValue;
+    }
 }

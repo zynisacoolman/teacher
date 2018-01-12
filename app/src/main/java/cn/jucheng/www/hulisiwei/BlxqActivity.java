@@ -34,6 +34,7 @@ import cn.jucheng.www.hulisiwei.customcontrols.FitHeightButton;
 import cn.jucheng.www.hulisiwei.customcontrols.FitHeightEditText;
 import cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView;
 import cn.jucheng.www.hulisiwei.databean.bllbbean.Baseinfo;
+import cn.jucheng.www.hulisiwei.databean.bllbbean.Statesinfo;
 import cn.jucheng.www.hulisiwei.databean.blxqbean.FileBean;
 import cn.jucheng.www.hulisiwei.databean.blzgbean.BlzgBean;
 import cn.jucheng.www.hulisiwei.dialogs.HuShitixingDialog;
@@ -126,8 +127,6 @@ public class BlxqActivity extends MyBaseActivity implements View.OnClickListener
 
     private long timer2 = 0;
     private String timeStr2 = "";
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -215,13 +214,19 @@ public class BlxqActivity extends MyBaseActivity implements View.OnClickListener
 //        fragmentList.put(0,new BloodrecordlistFragment());
 //        fragmentList.put(1,new TransfusionrecordFragment());
         //获取Baseinfo并存储到cache中
-        JsonObject datas = CommUtils.getcaseJSON(CommUtils.getStringFromPath(BLPath2)).get("baseinfo").getAsJsonObject();
-        UserMessage.baseinfo=new Gson().fromJson(datas, Baseinfo.class);
+        JsonObject datas = CommUtils.getcaseJSON(CommUtils.getStringFromPath(BLPath2)).getAsJsonObject();
+        Gson gson = new Gson();
+        UserMessage.baseinfo = gson.fromJson(datas.get("baseinfo").getAsJsonObject(), Baseinfo.class);
+        UserMessage.statesinfo = gson.fromJson(datas.get("statesinfo").getAsJsonObject(), Statesinfo.class);
+        UserMessage.statesinfo.初始化状态转归Map();
+        UserMessage.statesinfo.初始化状态名称Map();
+        UserMessage.statesinfo.初始化状态参数map();
+
         //从baseinfo中拿到 状态状态数据
         String stateString = UserMessage.baseinfo.getState_chart();
         JsonObject jsonObject = new JsonParser().parse(stateString).getAsJsonObject();
         UserMessage.blzgCache = new Gson().fromJson(jsonObject, BlzgBean.class);
-
+        UserMessage.blzgCache.initBlztMap();
     }
 
     @Override

@@ -4,6 +4,8 @@
 package cn.jucheng.www.hulisiwei.databean.blzgbean;
 import java.util.List;
 
+import cn.jucheng.www.hulisiwei.module.UserMessage;
+
 /**
  * Auto-generated: 2018-01-03 20:42:14
  *
@@ -35,5 +37,10 @@ public class BlzgBean {
      public int getStartId() {
          return startId;
      }
+    public void initBlztMap(){
+        for(BlzgItemBean blzgItemBean:datas){
+            UserMessage.idStatus.put(blzgItemBean.getId(),blzgItemBean);
+        }
 
+    }
 }

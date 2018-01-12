@@ -6,6 +6,13 @@ package cn.jucheng.www.hulisiwei.databean.blzgbean;
 /**
  * Auto-generated: 2018-01-03 20:42:14
  *
+ *
+ *
+ *"cId": 5,    //连线的id
+ "tId": 4,    //子状态的id
+ "sDir": 2,   //连线的出口方向
+ "tDir": 0    //连线的入口方向
+ *
  * @author bejson.com (i@bejson.com)
  * @website http://www.bejson.com/java2pojo/
  */

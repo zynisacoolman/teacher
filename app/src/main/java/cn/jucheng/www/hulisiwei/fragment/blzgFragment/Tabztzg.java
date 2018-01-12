@@ -7,7 +7,6 @@ import android.view.ViewGroup;
 
 import com.wjk.tableview.TableView;
 
-import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
 
@@ -41,8 +40,6 @@ public class Tabztzg extends BaseFragment {
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        unbinder.unbind();
-        EventBus.getDefault().unregister(this);
     }
     @Subscribe(threadMode = ThreadMode.MAIN)
     public void onEventMainThread(MessageEvent evnt) {

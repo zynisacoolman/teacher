@@ -66,28 +66,18 @@
                 android:layout_height="match_parent"
                 android:layout_weight="736">
 
-                    <HorizontalScrollView
-                        android:layout_width="fill_parent"
+                    <cn.jucheng.www.hulisiwei.customcontrols.HVScrollView
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:background="@drawable/blzg_bg"
                         android:scrollbars="horizontal">
+
                         <RelativeLayout
                             android:id="@+id/rl_blzg"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/blzg_bg">
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:id="@+id/tv_1"
-                                android:text="1231231231231231231123123123123123"/>
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_toRightOf="@id/tv_1"
-                                android:layout_marginLeft="1000dp"
-                                android:text="1231231231231231231123123123123123"/>
-                        </RelativeLayout>
-                    </HorizontalScrollView>
+                            android:layout_height="wrap_content"/>
+
+                    </cn.jucheng.www.hulisiwei.customcontrols.HVScrollView>
             </LinearLayout>
 
             <View

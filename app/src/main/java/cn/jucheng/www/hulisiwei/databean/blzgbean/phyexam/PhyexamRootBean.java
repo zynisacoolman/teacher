@@ -15,8 +15,9 @@ public class PhyexamRootBean {
     public void setJuchengesp(Juchengesp juchengesp) {
          this.juchengesp = juchengesp;
      }
-     public Juchengesp getJuchengesp() {
+    public Juchengesp getJuchengesp() {
          return juchengesp;
      }
+
 
 }

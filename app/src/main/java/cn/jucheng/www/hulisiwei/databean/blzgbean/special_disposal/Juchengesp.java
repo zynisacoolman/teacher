@@ -4,6 +4,8 @@
 package cn.jucheng.www.hulisiwei.databean.blzgbean.special_disposal;
 import java.util.List;
 
+import cn.jucheng.www.hulisiwei.module.UserMessage;
+
 /**
  * Auto-generated: 2018-01-08 22:34:0
  *
@@ -18,6 +20,14 @@ public class Juchengesp {
      }
      public List<Special_disposal> getSpecial_disposal() {
          return special_disposal;
+     }
+     
+     public void mapSpecialdisposal(){
+         for (Special_disposal sdp:
+              special_disposal) {
+             UserMessage.allSpecialdispose.put(sdp.getId(),sdp.getName());
+         }
+            
      }
 
 }

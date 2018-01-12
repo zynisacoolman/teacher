@@ -15,6 +15,7 @@ public class Content {
     private int drug_dose;
     private int select_dispose_way;
     private String times;
+    private int specialdispse_id;
     public void setDrug_id(int drug_id) {
          this.drug_id = drug_id;
      }
@@ -43,4 +44,11 @@ public class Content {
          return times;
      }
 
+    public int getSpecialdispse_id() {
+        return specialdispse_id;
+    }
+
+    public void setSpecialdispse_id(int specialdispse_id) {
+        this.specialdispse_id = specialdispse_id;
+    }
 }
