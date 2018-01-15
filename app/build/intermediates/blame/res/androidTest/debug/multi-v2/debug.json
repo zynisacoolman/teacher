@@ -138,21 +138,6 @@
             ]
         },
         {
-            "outputFile": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/res/merged/androidTest/debug/values-es_values-es.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/zyn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/c1d35ea391acb09695534075575802c5/res/values-es/values-es.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,172,280,403,516,624,709,810,938,1014,1090,1172,1279,1379,1478,1586,1693,1800,1922,2022",
-                        "endColumns": "116,107,122,112,107,84,100,127,75,75,81,106,99,98,107,106,106,121,99,100",
-                        "endOffsets": "167,275,398,511,619,704,805,933,1009,1085,1167,1274,1374,1473,1581,1688,1795,1917,2017,2118"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/res/merged/androidTest/debug/values-ar_values-ar.arsc.flat",
             "map": [
                 {
@@ -163,6 +148,21 @@
                         "startOffsets": "55,172,280,403,507,616,698,799,913,992,1071,1150,1255,1356,1452,1560,1663,1766,1885,1982",
                         "endColumns": "116,107,122,103,108,81,100,113,78,78,78,104,100,95,107,102,102,118,96,100",
                         "endOffsets": "167,275,398,502,611,693,794,908,987,1066,1145,1250,1351,1447,1555,1658,1761,1880,1977,2078"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/res/merged/androidTest/debug/values-es_values-es.arsc.flat",
+            "map": [
+                {
+                    "source": "/Users/zyn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/c1d35ea391acb09695534075575802c5/res/values-es/values-es.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,172,280,403,516,624,709,810,938,1014,1090,1172,1279,1379,1478,1586,1693,1800,1922,2022",
+                        "endColumns": "116,107,122,112,107,84,100,127,75,75,81,106,99,98,107,106,106,121,99,100",
+                        "endOffsets": "167,275,398,511,619,704,805,933,1009,1085,1167,1274,1374,1473,1581,1688,1795,1917,2017,2118"
                     }
                 }
             ]
@@ -528,6 +528,21 @@
             ]
         },
         {
+            "outputFile": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/res/merged/androidTest/debug/values-h720dp-v13_values-h720dp-v13.arsc.flat",
+            "map": [
+                {
+                    "source": "/Users/zyn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/c1d35ea391acb09695534075575802c5/res/values-h720dp-v13/values-h720dp-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "66",
+                        "endOffsets": "117"
+                    }
+                }
+            ]
+        },
+        {
             "outputFile": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/res/merged/androidTest/debug/values_values.arsc.flat",
             "map": [
                 {
@@ -569,21 +584,6 @@
             ]
         },
         {
-            "outputFile": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/res/merged/androidTest/debug/values-h720dp-v13_values-h720dp-v13.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/zyn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/c1d35ea391acb09695534075575802c5/res/values-h720dp-v13/values-h720dp-v13.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "66",
-                        "endOffsets": "117"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/res/merged/androidTest/debug/values-eu-rES_values-eu-rES.arsc.flat",
             "map": [
                 {
@@ -599,16 +599,16 @@
             ]
         },
         {
-            "outputFile": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/res/merged/androidTest/debug/values-fr_values-fr.arsc.flat",
+            "outputFile": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/res/merged/androidTest/debug/values-is-rIS_values-is-rIS.arsc.flat",
             "map": [
                 {
-                    "source": "/Users/zyn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/c1d35ea391acb09695534075575802c5/res/values-fr/values-fr.xml",
+                    "source": "/Users/zyn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/c1d35ea391acb09695534075575802c5/res/values-is-rIS/values-is-rIS.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,166,274,397,512,623,705,811,941,1024,1104,1190,1300,1412,1515,1626,1733,1840,1962,2061",
-                        "endColumns": "110,107,122,114,110,81,105,129,82,79,85,109,111,102,110,106,106,121,98,100",
-                        "endOffsets": "161,269,392,507,618,700,806,936,1019,1099,1185,1295,1407,1510,1621,1728,1835,1957,2056,2157"
+                        "startOffsets": "55,155,263,386,483,595,680,781,895,975,1055,1136,1246,1354,1452,1561,1660,1763,1881,1979",
+                        "endColumns": "99,107,122,96,111,84,100,113,79,79,80,109,107,97,108,98,102,117,97,100",
+                        "endOffsets": "150,258,381,478,590,675,776,890,970,1050,1131,1241,1349,1447,1556,1655,1758,1876,1974,2075"
                     }
                 }
             ]
@@ -630,16 +630,16 @@
             ]
         },
         {
-            "outputFile": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/res/merged/androidTest/debug/values-is-rIS_values-is-rIS.arsc.flat",
+            "outputFile": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/res/merged/androidTest/debug/values-fr_values-fr.arsc.flat",
             "map": [
                 {
-                    "source": "/Users/zyn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/c1d35ea391acb09695534075575802c5/res/values-is-rIS/values-is-rIS.xml",
+                    "source": "/Users/zyn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/c1d35ea391acb09695534075575802c5/res/values-fr/values-fr.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,155,263,386,483,595,680,781,895,975,1055,1136,1246,1354,1452,1561,1660,1763,1881,1979",
-                        "endColumns": "99,107,122,96,111,84,100,113,79,79,80,109,107,97,108,98,102,117,97,100",
-                        "endOffsets": "150,258,381,478,590,675,776,890,970,1050,1131,1241,1349,1447,1556,1655,1758,1876,1974,2075"
+                        "startOffsets": "55,166,274,397,512,623,705,811,941,1024,1104,1190,1300,1412,1515,1626,1733,1840,1962,2061",
+                        "endColumns": "110,107,122,114,110,81,105,129,82,79,85,109,111,102,110,106,106,121,98,100",
+                        "endOffsets": "161,269,392,507,618,700,806,936,1019,1099,1185,1295,1407,1510,1621,1728,1835,1957,2056,2157"
                     }
                 }
             ]
@@ -751,21 +751,6 @@
             ]
         },
         {
-            "outputFile": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/res/merged/androidTest/debug/values-sw600dp-v13_values-sw600dp-v13.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/zyn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/c1d35ea391acb09695534075575802c5/res/values-sw600dp-v13/values-sw600dp-v13.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,124,194,268,344,403,474,542",
-                        "endColumns": "68,69,73,75,58,70,67,54",
-                        "endOffsets": "119,189,263,339,398,469,537,592"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/res/merged/androidTest/debug/values-v11_values-v11.arsc.flat",
             "map": [
                 {
@@ -777,6 +762,21 @@
                         "endLines": "7,13,19,25,31,37,38,39,44,49,51,53,54,55,106,158,159",
                         "endColumns": "12,12,12,12,12,12,88,100,12,12,12,12,70,82,12,12,90",
                         "endOffsets": "469,894,1322,1748,2175,2600,2689,2790,3198,3618,3725,3854,3925,4008,7716,11564,11655"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/res/merged/androidTest/debug/values-sw600dp-v13_values-sw600dp-v13.arsc.flat",
+            "map": [
+                {
+                    "source": "/Users/zyn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/c1d35ea391acb09695534075575802c5/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,124,194,268,344,403,474,542",
+                        "endColumns": "68,69,73,75,58,70,67,54",
+                        "endOffsets": "119,189,263,339,398,469,537,592"
                     }
                 }
             ]

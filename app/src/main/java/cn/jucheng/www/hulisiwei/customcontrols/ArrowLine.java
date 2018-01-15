@@ -16,11 +16,17 @@ public class ArrowLine extends View{
 
     private Canvas myCanvas;
     private Paint myPaint=new Paint();
-//    int sx,sy,ex,ey;
+    int sx,sy,ex,ey;
 
     public ArrowLine(Context context) {
         super(context);
         // TODO Auto-generated constructor stub
+    }
+    public ArrowLine(Context context,int xs,int ys,int xe,int ye) {
+        super(context);
+        // TODO Auto-generated constructor stub
+        sx=xs ;sy=ys;ex=xe;ey=ye;
+
     }
 
     public ArrowLine(Context context, AttributeSet attrs, int defStyle) {
@@ -38,7 +44,7 @@ public class ArrowLine extends View{
         // TODO Auto-generated method stub
         super.onDraw(canvas);
         this.myCanvas=canvas;
-        drawAL(0, 0, 100, 100);
+        drawAL(sx, sy, ex, ey);
     }
 
     /**
@@ -136,6 +142,12 @@ public class ArrowLine extends View{
         }
         return mathstr;
     }
+
+//    @Override
+//    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+//        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+//        setMeasuredDimension(widthMeasureSpec,heightMeasureSpec);
+//    }
 
 
 }

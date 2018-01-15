@@ -66,7 +66,7 @@ public class TgjcFragment extends BaseFragment implements AbsListView.OnScrollLi
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.fragment_fitlist, null);
+        view = inflater.inflate(R.layout.adapter_fragmentbljltgjc, null);
         unbinder= ButterKnife.bind(this,view);
         initView();
         initAdapter();

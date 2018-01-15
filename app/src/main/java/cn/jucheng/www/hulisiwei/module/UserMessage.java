@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Map;
 
 import cn.jucheng.www.hulisiwei.databean.bllbbean.Baseinfo;
+import cn.jucheng.www.hulisiwei.databean.bllbbean.Medicalrecords;
 import cn.jucheng.www.hulisiwei.databean.bllbbean.Numbervalue;
 import cn.jucheng.www.hulisiwei.databean.bllbbean.States_transfer;
 import cn.jucheng.www.hulisiwei.databean.bllbbean.Statesinfo;
@@ -48,6 +49,8 @@ public class UserMessage {
     //存储baseinfo 避免重复解析json 提高程序运行效率
     public static Baseinfo baseinfo ;
     public static Statesinfo statesinfo;
+    //用来存放表单数据
+    public static Medicalrecords medicalrecords;
     //用来存放 医嘱药物信息
     public static Map<Integer, cn.jucheng.www.hulisiwei.databean.blzgbean.medicine.Medicines> allMedicines = new HashMap<>();
     //用来存放 特殊处理方式

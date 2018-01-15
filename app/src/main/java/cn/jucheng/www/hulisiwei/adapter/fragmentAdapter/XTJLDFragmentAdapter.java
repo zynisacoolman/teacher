@@ -57,7 +57,7 @@ public class XTJLDFragmentAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         ViewHolder holder;
-        XTJLDiTemFragmentAdapter xtjlDiTemFragmentAdapter=new XTJLDiTemFragmentAdapter(mContext,position);
+
 
         if (convertView == null) {
             convertView = mInflater.inflate(R.layout.adapter_fragmentxtjcb, null);
@@ -70,8 +70,9 @@ public class XTJLDFragmentAdapter extends BaseAdapter {
             holder.h_illrecordNum=(FitHeightTextView) convertView.findViewById(R.id.h_illrecordNum);
             holder.transfusion_page_number=(FitHeightTextView)convertView.findViewById(R.id.inject_page_number);
             holder.listView=(MyList)convertView.findViewById(R.id.inject_list);
-            holder.listView.setAdapter(xtjlDiTemFragmentAdapter);
-            xtjlDiTemFragmentAdapter.notifyDataSetChanged();
+            holder.xtjlDiTemFragmentAdapter=new XTJLDiTemFragmentAdapter(mContext,position);
+            holder.listView.setAdapter(holder.xtjlDiTemFragmentAdapter);
+            holder.xtjlDiTemFragmentAdapter.notifyDataSetChanged();
             convertView.setTag(holder); //
         } else {
             holder = (ViewHolder) convertView.getTag(); //
@@ -95,7 +96,7 @@ public class XTJLDFragmentAdapter extends BaseAdapter {
         TextView h_division;//科室
         TextView h_bednumber;//床号
         FitHeightTextView h_illrecordNum;//病案号
-
+        XTJLDiTemFragmentAdapter xtjlDiTemFragmentAdapter;
         ListView listView;//listview
         TextView transfusion_page_number;//页数
         TextView h_ryrq;//入院日期

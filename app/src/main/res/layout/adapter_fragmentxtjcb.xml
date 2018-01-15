@@ -30,12 +30,11 @@
                 android:layout_height="935dp"
                 android:orientation="horizontal">
                 <View
-                    android:layout_width="72dp"
+                    android:layout_width="114dp"
                     android:layout_height="match_parent"/>
-
                 <cn.jucheng.www.hulisiwei.base.MyList
-                    android:id="@+id/inject_list"
-                    android:layout_width="659dp"
+                    android:id="@+id/xtjc_list"
+                    android:layout_width="1050dp"
                     android:layout_height="fill_parent"
                     android:divider="@color/touming"
                     android:scrollbars="none"
@@ -43,11 +42,7 @@
                 <View
                     android:layout_width="80dp"
                     android:layout_height="match_parent"/>
-
             </LinearLayout>
-
-
-
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="50dp" />

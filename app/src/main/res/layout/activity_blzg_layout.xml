@@ -106,43 +106,52 @@
                     android:layout_height="0dp"
                     android:layout_weight="40"
                     >
-                    <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+
+                    <cn.jucheng.www.hulisiwei.customcontrols.FitHeightButton
+                        android:id="@+id/fitbutton_1"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:background="@color/bg_white"
-                        android:textColor="@color/vfrontc"
+                        android:layout_weight="159"
                         android:gravity="center"
-                        android:textSize="@dimen/text_size16"
                         android:text="医嘱列表"
-                        android:layout_weight="159"/>
+                        android:background="@drawable/s_btn_btnbg"
+                        android:textColor="@color/s_btn_btntxt"
+                        android:checked="false"
+                        android:textSize="@dimen/text_size16" />
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:background="@color/divid_line"/>
-                    <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+
+                    <cn.jucheng.www.hulisiwei.customcontrols.FitHeightButton
+                        android:id="@+id/fitbutton_2"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:background="@color/bg_white"
-                        android:textColor="@color/vfrontc"
+                        android:layout_weight="159"
+                        android:background="@drawable/s_btn_btnbg"
+                        android:textColor="@color/s_btn_btntxt"
                         android:gravity="center"
-                        android:textSize="@dimen/text_size16"
                         android:text="状态转归"
-                        android:layout_weight="159"/>
+                        android:checked="true"
+                        android:textSize="@dimen/text_size16" />
                     <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:background="@color/divid_line"/>
-                    <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+
+                    <cn.jucheng.www.hulisiwei.customcontrols.FitHeightButton
+                        android:id="@+id/fitbutton_3"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:background="@color/bg_white"
-                        android:textColor="@color/vfrontc"
+                        android:layout_weight="159"
                         android:gravity="center"
-                        android:textSize="@dimen/text_size16"
                         android:text="体征参数"
-                        android:layout_weight="159"/>
+                        android:checked="false"
+                        android:background="@drawable/s_btn_btnbg"
+                        android:textColor="@color/s_btn_btntxt"
+                        android:textSize="@dimen/text_size16" />
                 </LinearLayout>
                 <!--<com.wjk.tableview.TableView-->
                     <!--android:layout_width="match_parent"-->

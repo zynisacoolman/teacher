@@ -14,12 +14,15 @@ import android.widget.TextView;
 
 import com.google.gson.Gson;
 
+import org.greenrobot.eventbus.EventBus;
+
 import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.BindView;
 import cn.jucheng.jclibs.tools.MyToast;
 import cn.jucheng.www.hulisiwei.customcontrols.ArrowLine;
+import cn.jucheng.www.hulisiwei.customcontrols.FitHeightButton;
 import cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView;
 import cn.jucheng.www.hulisiwei.databean.bllbbean.Changqiyizhu;
 import cn.jucheng.www.hulisiwei.databean.bllbbean.States_transfer;
@@ -32,6 +35,7 @@ import cn.jucheng.www.hulisiwei.databean.blzgbean.special_disposal.SpecialRootBe
 import cn.jucheng.www.hulisiwei.fragment.blzgFragment.Tabtzcs;
 import cn.jucheng.www.hulisiwei.fragment.blzgFragment.Tabyzlb;
 import cn.jucheng.www.hulisiwei.fragment.blzgFragment.Tabztzg;
+import cn.jucheng.www.hulisiwei.interfaca.MessageEventblzg;
 import cn.jucheng.www.hulisiwei.module.UserMessage;
 import cn.jucheng.www.hulisiwei.utils.CommUtils;
 
@@ -42,9 +46,15 @@ import static cn.jucheng.www.hulisiwei.module.UserMessage.searchmapStatetransfer
  * Created by zyn on 2018/1/3.
  */
 
-public class BlzgActivity extends MyBaseActivity {
+public class BlzgActivity extends MyBaseActivity implements View.OnClickListener{
     @BindView(R.id.tv_close)
     FitHeightTextView tv_close;
+    @BindView(R.id.fitbutton_1)
+    FitHeightButton fitHeightButton1;
+    @BindView(R.id.fitbutton_2)
+    FitHeightButton fitHeightButton2;
+    @BindView(R.id.fitbutton_3)
+    FitHeightButton fitHeightButton3;
     Context context ;
     //存放文件信息的全局变量
     MedicineRootBean medicineRootBean;
@@ -53,10 +63,8 @@ public class BlzgActivity extends MyBaseActivity {
     //当前状态id
     int cur_id;
     //存放 医嘱名称
-    ArrayList<String> yzneirong = new ArrayList<>();
     //存放 病例转归页面的医嘱名称
-    List<TableItemBlzgBean> zgTablelst=new ArrayList<>();
-    //存放
+
     RelativeLayout.LayoutParams[] layoutParams ;
     List<ChildList> childListlst=new ArrayList<>();
     TextView[] blzgViews;
@@ -89,8 +97,15 @@ public class BlzgActivity extends MyBaseActivity {
         setBlzgItem();
 
 //        第二部在左边布局中根据数据布置控件
-        initView();
+        初始化病例转归图();
+        初始化按钮控件();
         initFragment();
+    }
+
+    private void 初始化按钮控件() {
+        fitHeightButton1.setOnClickListener(this);
+        fitHeightButton2.setOnClickListener(this);
+        fitHeightButton3.setOnClickListener(this);
     }
 
     private void initdata() {
@@ -104,7 +119,6 @@ public class BlzgActivity extends MyBaseActivity {
         for(Physical physical:phyexamRootBean.getJuchengesp().getPhysical()){
             physical.init名字toID默认值();
         }
-
         specialRootBean = gson.fromJson(special_disposal, SpecialRootBean.class);
         specialRootBean.getJuchengesp().mapSpecialdisposal();
     }
@@ -120,16 +134,10 @@ public class BlzgActivity extends MyBaseActivity {
     public void setBlzgItem() {
         layoutParams = new RelativeLayout.LayoutParams[UserMessage.blzgCache.getDatas().size()];
         blzgViews = new TextView[UserMessage.blzgCache.getDatas().size()];
-
     }
 
-    private void initView() {
-        tv_close.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                BlzgActivity.this.finish();
-            }
-        });
+
+    private void 初始化病例转归图() {
         RelativeLayout rlBl=(RelativeLayout) findViewById(R.id.rl_blzg);
         for(int i=0;i<UserMessage.blzgCache.getDatas().size();i++){
             blzgViews[i]=new TextView(this);
@@ -159,8 +167,8 @@ public class BlzgActivity extends MyBaseActivity {
             blzgViews[i].setBackground(bgDrawable);
             blzgViews[i].setText(UserMessage.blzgCache.getDatas().get(i).getTitle());
             blzgViews[i].setGravity(Gravity.CENTER);
-            layoutParams[i] = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT
-                    ,RelativeLayout.LayoutParams.WRAP_CONTENT); // 大小
+            layoutParams[i] = new RelativeLayout.LayoutParams(158
+                    ,110); // 大小
             layoutParams[i].topMargin = UserMessage.blzgCache.getDatas().get(i).getY();
             layoutParams[i].leftMargin = UserMessage.blzgCache.getDatas().get(i).getX(); // 设置的按钮位置
             blzgViews[i].setLayoutParams(layoutParams[i]);
@@ -170,44 +178,46 @@ public class BlzgActivity extends MyBaseActivity {
                 int sx = 0,sy = 0,tx = 0,ty = 0;
                 switch (cl.getSDir()){
                     case 0:
-                        sx=UserMessage.blzgCache.getDatas().get(i).getX()+blzgViews[i].getWidth()/2;
+                        sx=UserMessage.blzgCache.getDatas().get(i).getX()+79;
                         sy=UserMessage.blzgCache.getDatas().get(i).getY();
                         break;
                     case 1:
-                        sx=UserMessage.blzgCache.getDatas().get(i).getX()+blzgViews[i].getWidth();
-                        sy=UserMessage.blzgCache.getDatas().get(i).getY()+blzgViews[i].getHeight()/2;
+                        sx=UserMessage.blzgCache.getDatas().get(i).getX()+158;
+                        sy=UserMessage.blzgCache.getDatas().get(i).getY()+55;
                         break;
                     case 2:
-                        sx=UserMessage.blzgCache.getDatas().get(i).getX()+blzgViews[i].getWidth()/2;
-                        sy=UserMessage.blzgCache.getDatas().get(i).getY()+blzgViews[i].getHeight();
+                        sx=UserMessage.blzgCache.getDatas().get(i).getX()+79;
+                        sy=UserMessage.blzgCache.getDatas().get(i).getY()+110;
                         break;
                     case 3:
                         sx=UserMessage.blzgCache.getDatas().get(i).getX();
-                        sy=UserMessage.blzgCache.getDatas().get(i).getY()+blzgViews[i].getHeight()/2;
+                        sy=UserMessage.blzgCache.getDatas().get(i).getY()+55;
                         break;
                 }
                 switch (cl.getTDir()){
                     case 0:
-                        tx=UserMessage.idStatus.get(cl.getTId()).getX()+blzgViews[i].getWidth()/2;
+                        tx=UserMessage.idStatus.get(cl.getTId()).getX()+79;
                         ty=UserMessage.idStatus.get(cl.getTId()).getY();
                         break;
                     case 1:
                         tx=UserMessage.idStatus.get(cl.getTId()).getX()+blzgViews[i].getWidth();
-                        ty=UserMessage.idStatus.get(cl.getTId()).getY()+blzgViews[i].getHeight()/2;
+                        ty=UserMessage.idStatus.get(cl.getTId()).getY()+55;
                         break;
                     case 2:
-                        tx=UserMessage.idStatus.get(cl.getTId()).getX()+blzgViews[i].getWidth()/2;
+                        tx=UserMessage.idStatus.get(cl.getTId()).getX()+79;
                         ty=UserMessage.idStatus.get(cl.getTId()).getY()+blzgViews[i].getHeight();
                         break;
                     case 3:
                         tx=UserMessage.idStatus.get(cl.getTId()).getX();
-                        ty=UserMessage.idStatus.get(cl.getTId()).getY()+blzgViews[i].getHeight()/2;
+                        ty=UserMessage.idStatus.get(cl.getTId()).getY()+55;
                         break;
                 }
-                ArrowLine arrowLine =new ArrowLine(BlzgActivity.this);
+                ArrowLine arrowLine =new ArrowLine(this,sx,sy,tx,ty);
 //                arrowLine.drawAL(sx,sy,tx,ty);
-                rlBl.addView(arrowLine);
+                arrowLine.setLayoutParams(new RelativeLayout.LayoutParams(800,600));
+//                arrowLine.setPaintDefaultStyle();
 
+                rlBl.addView(arrowLine);
             }
 
         }
@@ -235,10 +245,22 @@ public class BlzgActivity extends MyBaseActivity {
         Double db6 = UserMessage.searchExamResult.get(cur_id).get(UserMessage.searchValue.get("体温").getId())==null?
                 UserMessage.searchValue.get("体温").getDefValue().getDefaultvalue():
                 UserMessage.searchExamResult.get(cur_id).get(UserMessage.searchValue.get("体温").getId()).getState_value();
+        ArrayList<Double> arrayList = new ArrayList<>();
+        arrayList.add(db1);
+        arrayList.add(db2);
+        arrayList.add(db3);
+        arrayList.add(db4);
+        arrayList.add(db51);
+        arrayList.add(db52);
+        arrayList.add(db6);
+        MessageEventblzg msg = new MessageEventblzg(3,arrayList);
+        EventBus.getDefault().post(msg);
+
     }
 
 
     private void 获取状态转归信息(int id) {
+        ArrayList<TableItemBlzgBean> zgTablelst=new ArrayList<>();
         List<States_transfer> lst=null;
         TableItemBlzgBean tbib=new TableItemBlzgBean();
         if(searchmapStatetransfer.containsKey(id)){
@@ -288,6 +310,8 @@ public class BlzgActivity extends MyBaseActivity {
             }
             zgTablelst.add(tbib);
         }
+        MessageEventblzg msg = new MessageEventblzg(2,zgTablelst);
+        EventBus.getDefault().post(msg);
     }
 
     @Override
@@ -302,7 +326,7 @@ public class BlzgActivity extends MyBaseActivity {
 
 
     public void 获取医嘱列表信息(int id) {
-
+        ArrayList<String> yzneirong = new ArrayList<>();
         /**
          *@param yzneirong 这个list存放的是组装好的数据
          *@parma sb 这个变量存储
@@ -310,6 +334,7 @@ public class BlzgActivity extends MyBaseActivity {
         for (int i=0;i<UserMessage.statesinfo.getStates().size();i++){
             if(id == UserMessage.statesinfo.getStates().get(i).getId()){
                 cur_id=id;
+
 
                 if(UserMessage.statesinfo.getStates().get(i).getChangqiyizhu()!=null
                         ||UserMessage.statesinfo.getStates().get(i).getLinshiyizhu()!=null){
@@ -364,6 +389,32 @@ public class BlzgActivity extends MyBaseActivity {
                 }
 
             }
+        }
+        MessageEventblzg msg = new MessageEventblzg(1,yzneirong);
+        EventBus.getDefault().post(msg);
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.tv_close:
+                BlzgActivity.this.finish();
+                break;
+            case R.id.fitbutton_1:
+                fitHeightButton1.setChecked(true);
+                fitHeightButton2.setChecked(false);
+                fitHeightButton3.setChecked(false);
+                break;
+            case R.id.fitbutton_2:
+                fitHeightButton1.setChecked(false);
+                fitHeightButton2.setChecked(true);
+                fitHeightButton3.setChecked(false);
+                break;
+            case R.id.fitbutton_3:
+                fitHeightButton1.setChecked(false);
+                fitHeightButton2.setChecked(false);
+                fitHeightButton3.setChecked(true);
+                break;
         }
     }
 }

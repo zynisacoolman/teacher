@@ -12,7 +12,7 @@
             android:layout_height="match_parent"
             android:layout_weight="123" />
         <!--注射单姓名-->
-        <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+        <TextView
             android:id="@+id/h_name"
             android:layout_width="0dp"
             android:layout_height="match_parent"

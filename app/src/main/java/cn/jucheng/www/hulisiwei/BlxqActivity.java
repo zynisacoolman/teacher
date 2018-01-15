@@ -34,6 +34,7 @@ import cn.jucheng.www.hulisiwei.customcontrols.FitHeightButton;
 import cn.jucheng.www.hulisiwei.customcontrols.FitHeightEditText;
 import cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView;
 import cn.jucheng.www.hulisiwei.databean.bllbbean.Baseinfo;
+import cn.jucheng.www.hulisiwei.databean.bllbbean.Medicalrecords;
 import cn.jucheng.www.hulisiwei.databean.bllbbean.Statesinfo;
 import cn.jucheng.www.hulisiwei.databean.blxqbean.FileBean;
 import cn.jucheng.www.hulisiwei.databean.blzgbean.BlzgBean;
@@ -217,6 +218,7 @@ public class BlxqActivity extends MyBaseActivity implements View.OnClickListener
         JsonObject datas = CommUtils.getcaseJSON(CommUtils.getStringFromPath(BLPath2)).getAsJsonObject();
         Gson gson = new Gson();
         UserMessage.baseinfo = gson.fromJson(datas.get("baseinfo").getAsJsonObject(), Baseinfo.class);
+        UserMessage.medicalrecords = gson.fromJson(datas.get("medicalrecords").getAsJsonObject(), Medicalrecords.class);
         UserMessage.statesinfo = gson.fromJson(datas.get("statesinfo").getAsJsonObject(), Statesinfo.class);
         UserMessage.statesinfo.初始化状态转归Map();
         UserMessage.statesinfo.初始化状态名称Map();

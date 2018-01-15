@@ -18,7 +18,7 @@ public class XtjldFragment_ViewBinding implements Unbinder {
   public XtjldFragment_ViewBinding(XtjldFragment target, View source) {
     this.target = target;
 
-    target.xtjld = Utils.findRequiredViewAsType(source, R.id.fragment_fitlist, "field 'xtjld'", MyList.class);
+    target.xtjld = Utils.findRequiredViewAsType(source, R.id.xtjc_list, "field 'xtjld'", MyList.class);
   }
 
   @Override

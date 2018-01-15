@@ -125,10 +125,10 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="130"
-            android:background="@drawable/s_btn_btnbg"
             android:checked="true"
             android:gravity="center"
             android:text="病历内容"
+            android:background="@drawable/s_btn_btnbg"
             android:textColor="@color/s_btn_btntxt"
             android:fontFamily="@font/msyh"
             android:textSize="@dimen/text_size14" />

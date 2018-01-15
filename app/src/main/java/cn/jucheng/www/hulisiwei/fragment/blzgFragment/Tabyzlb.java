@@ -1,25 +1,34 @@
 package cn.jucheng.www.hulisiwei.fragment.blzgFragment;
 
+import android.os.Build;
+import android.support.annotation.RequiresApi;
+import android.widget.ListView;
+
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
 
+import butterknife.BindView;
 import cn.jucheng.www.hulisiwei.R;
+import cn.jucheng.www.hulisiwei.adapter.AdapterblzgTab1;
 import cn.jucheng.www.hulisiwei.base.BaseFragment;
-import cn.jucheng.www.hulisiwei.interfaca.MessageEvent;
+import cn.jucheng.www.hulisiwei.interfaca.MessageEventblzg;
 
 /**
  * Created by zyn on 2018/1/8.
  */
 
 public class Tabyzlb extends BaseFragment {
-
+    @BindView(R.id.tab1_yzlb)
+    ListView lst;
     @Override
     protected int getID() {
-        return R.layout.activity_about;
+        return R.layout.fragment_blzg_tab1;
     }
+    @RequiresApi(api = Build.VERSION_CODES.M)
     @Subscribe(threadMode = ThreadMode.MAIN)
-    public void onEventMainThread(MessageEvent evnt) {
-
-
+    public void onEventMainThread(MessageEventblzg evnt) {
+        if(evnt.getType()==1){
+            lst.setAdapter(new AdapterblzgTab1(getContext(),evnt.getAl()));
+        }
     }
 }

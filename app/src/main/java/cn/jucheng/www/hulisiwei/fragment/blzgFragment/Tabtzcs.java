@@ -14,7 +14,7 @@ import cn.jucheng.www.hulisiwei.interfaca.MessageEvent;
 public class Tabtzcs extends BaseFragment {
     @Override
     protected int getID() {
-        return R.layout.activity_about;
+        return R.layout.frag@drawable/blzg_bgment_blzg_tab3;
     }
     @Subscribe(threadMode = ThreadMode.MAIN)
     public void onEventMainThread(MessageEvent evnt) {

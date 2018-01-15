@@ -2,10 +2,13 @@ package cn.jucheng.www.hulisiwei.fragment.formFragement.DzblFragDir;
 
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AbsListView;
+import android.widget.CheckBox;
+import android.widget.LinearLayout;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
@@ -14,7 +17,6 @@ import org.greenrobot.eventbus.ThreadMode;
 import java.util.ArrayList;
 import java.util.List;
 
-import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
 import cn.jucheng.jclibs.tools.MyToast;
@@ -23,7 +25,7 @@ import cn.jucheng.www.hulisiwei.BlxqActivity;
 import cn.jucheng.www.hulisiwei.R;
 import cn.jucheng.www.hulisiwei.adapter.fragmentAdapter.RYJLFragmentAdapter;
 import cn.jucheng.www.hulisiwei.base.BaseFragment;
-import cn.jucheng.www.hulisiwei.base.MyList;
+import cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView;
 import cn.jucheng.www.hulisiwei.interfaca.MessageEvent;
 import cn.jucheng.www.hulisiwei.module.UserMessage;
 import cn.jucheng.www.hulisiwei.utils.CommUtils;
@@ -41,8 +43,8 @@ import static cn.jucheng.www.hulisiwei.module.UserMessage.twdResult;
 
 public class RyjlFragment extends BaseFragment implements AbsListView.OnScrollListener {
 
-    @BindView(R.id.fragment_fitlist)
-    MyList twd;
+//    @BindView(R.id.fragment_fitlist)
+//    MyList twd;
 
     Unbinder unbinder;
     private View view;
@@ -56,6 +58,8 @@ public class RyjlFragment extends BaseFragment implements AbsListView.OnScrollLi
     public static MyShareUtils datas = null;//缓存数据
     int biaoDanType;//表单类型
     int pages = 1;//页数
+    //递归用变量
+    int valideCounts=0;
 
     int validLenth;//字符串有效长度
     int formType;//体温单细分类 1.脉搏 2.体温 3.其他json类型数据
@@ -66,13 +70,44 @@ public class RyjlFragment extends BaseFragment implements AbsListView.OnScrollLi
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.fragment_fitlist, null);
+        view = inflater.inflate(R.layout.adapter_fragmentbljlryjl, null);
+        LinearLayout linearlayout = (LinearLayout)view.findViewById(R.id.ll_1sthljld);
+
         unbinder= ButterKnife.bind(this,view);
         initView();
         initAdapter();
+        setWidget(linearlayout);
         return view;
     }
 
+    private void setWidget(ViewGroup viewGroup) {
+        if (viewGroup == null) {
+            return;
+        }
+
+        int count = viewGroup.getChildCount();
+        for (int i = 0; i < count; i++) {
+            View view = viewGroup.getChildAt(i);
+            if (view instanceof FitHeightTextView ||view instanceof CheckBox) { // 若是Button记录下
+
+                if(view instanceof FitHeightTextView){
+                    FitHeightTextView newDtv = (FitHeightTextView) view;
+                    newDtv.setText(UserMessage.medicalrecords.getHulijiludanshouye().get(valideCounts));
+                    Log.v("red",newDtv.getText()+"");
+                }else{
+                    CheckBox newCkb = (CheckBox) view;
+                    newCkb.setChecked(UserMessage.medicalrecords.getHulijiludanshouye().get(valideCounts).equals("0"));
+                }
+                if(valideCounts<UserMessage.medicalrecords.getHulijiludanshouye().size()-1){
+                    valideCounts++;
+                }
+
+            } else if (view instanceof ViewGroup) {
+                // 若是布局控件（LinearLayout或RelativeLayout）,继续查询子View
+                setWidget((ViewGroup) view);
+            }
+        }
+    }
 
     /**
      * 加载数据
@@ -99,8 +134,8 @@ public class RyjlFragment extends BaseFragment implements AbsListView.OnScrollLi
      */
     public void initAdapter() {
         adapter = new RYJLFragmentAdapter(getActivity(), UserMessage.fragmentHead, pages);
-        twd.setAdapter(adapter);
-        twd.setOnScrollListener(this);
+//        twd.setAdapter(adapter);
+//        twd.setOnScrollListener(this);
     }
 
     /**
