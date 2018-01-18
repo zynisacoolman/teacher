@@ -1,4 +1,4 @@
-#Thu Jan 18 08:21:33 CST 2018
+#Thu Jan 18 10:58:56 CST 2018
 base.0=/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/transforms/dexMerger/debug/1
 path.1=classes.dex
 renamed.1=classes2.dex

@@ -275,20 +275,12 @@ public class BlxqActivity extends MyBaseActivity implements View.OnClickListener
                     //改变病例转归的数据信息
                     int id =Integer.parseInt(conditionNow);
                         for(int i=0;i<UserMessage.blzgCache.getDatas().size();i++){
-//                            if(!firstChange){
-                                //for(int t =0;t<UserMessage.blzgCache.getDatas().size();t++){
                                 /**
                                  * 将上个进行中状态设为已读,已读状态为3
                                  * */
                             if(UserMessage.blzgCache.getDatas().get(i).getId()==UserMessage.blzgLastItemCache.getId()){
                                     UserMessage.blzgCache.getDatas().get(i).setState(3);
-                                    //}
                             }
-//                                else{
-//                                    /***此次更新状态不用设置已读*/
-//                                    Log.v("首次状态改变","首次状态改变");
-//                                }
-//                            }
                             if(id==UserMessage.blzgCache.getDatas().get(i).getId()){
                                 //将当前运行中的状态值置为2
                                 UserMessage.blzgCache.getDatas().get(i).setState(2);

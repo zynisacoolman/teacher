@@ -4,7 +4,7 @@
     android:layout_height="wrap_content"
     android:minHeight="40dp"
     android:orientation="horizontal"
-    android:background="@drawable/excel_bottom_line">
+    android:background="@drawable/excel_bottom_line_white">
 
     <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
         android:layout_width="0dp"

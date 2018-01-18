@@ -88,32 +88,28 @@
         "source": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/res/drawable-mdpi/ic_loading_white_04.png"
     },
     {
-        "merged": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_loading_white_10.png.flat",
-        "source": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/res/drawable-mdpi/ic_loading_white_10.png"
+        "merged": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/res/merged/debug/drawable_s_item_bllb.xml.flat",
+        "source": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/res/drawable/s_item_bllb.xml"
     },
     {
         "merged": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/res/merged/debug/drawable-mdpi_twd_.png.flat",
         "source": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/res/drawable-mdpi/twd_.png"
     },
     {
-        "merged": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/res/merged/debug/drawable_s_item_bllb.xml.flat",
-        "source": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/res/drawable/s_item_bllb.xml"
+        "merged": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_loading_white_10.png.flat",
+        "source": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/res/drawable-mdpi/ic_loading_white_10.png"
     },
     {
         "merged": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/res/merged/debug/drawable-mdpi_sz_n.png.flat",
         "source": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/res/drawable-mdpi/sz_n.png"
     },
     {
-        "merged": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/res/merged/debug/layout_adapter_transfusion.xml.flat",
-        "source": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/res/layout/adapter_transfusion.xml"
-    },
-    {
         "merged": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/res/merged/debug/layout_fragment_blzg_tab2.xml.flat",
         "source": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/res/layout/fragment_blzg_tab2.xml"
     },
     {
-        "merged": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/res/merged/debug/drawable-xhdpi_excel_bottom_line.xml.flat",
-        "source": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/res/drawable-xhdpi/excel_bottom_line.xml"
+        "merged": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/res/merged/debug/layout_adapter_transfusion.xml.flat",
+        "source": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/res/layout/adapter_transfusion.xml"
     },
     {
         "merged": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/res/merged/debug/drawable-mdpi_fragment_kqhlpg.png.flat",
@@ -128,12 +124,12 @@
         "source": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/res/drawable-mdpi/ic_loading_white_01.png"
     },
     {
-        "merged": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/res/merged/debug/drawable-mdpi_ssbljlysb_btn_ss_p.png.flat",
-        "source": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/res/drawable-mdpi/ssbljlysb_btn_ss_p.png"
-    },
-    {
         "merged": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/res/merged/debug/drawable-mdpi_fragment_cryljld.png.flat",
         "source": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/res/drawable-mdpi/fragment_cryljld.png"
+    },
+    {
+        "merged": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/res/merged/debug/drawable-mdpi_ssbljlysb_btn_ss_p.png.flat",
+        "source": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/res/drawable-mdpi/ssbljlysb_btn_ss_p.png"
     },
     {
         "merged": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/res/merged/debug/drawable-hdpi_execute_bac.png.flat",
@@ -204,6 +200,10 @@
         "source": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/res/layout/activity_blcpy_.xml"
     },
     {
+        "merged": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/res/merged/debug/drawable-xhdpi_excel_bottomhead_line_white.xml.flat",
+        "source": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/res/drawable-xhdpi/excel_bottomhead_line_white.xml"
+    },
+    {
         "merged": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/res/merged/debug/drawable-mdpi_fragment_cqyzd.png.flat",
         "source": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/res/drawable-mdpi/fragment_cqyzd.png"
     },
@@ -232,12 +232,12 @@
         "source": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/res/layout/adapter_medicalorsersexrcutive.xml"
     },
     {
-        "merged": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/res/merged/debug/drawable-mdpi_zk.png.flat",
-        "source": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/res/drawable-mdpi/zk.png"
-    },
-    {
         "merged": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/res/merged/debug/drawable-mdpi_dl_bg.png.flat",
         "source": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/res/drawable-mdpi/dl_bg.png"
+    },
+    {
+        "merged": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/res/merged/debug/drawable-mdpi_zk.png.flat",
+        "source": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/res/drawable-mdpi/zk.png"
     },
     {
         "merged": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/res/merged/debug/drawable-mdpi_bg_qidongyemian.png.flat",
@@ -360,12 +360,12 @@
         "source": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/res/drawable-mdpi/dxk_d.png"
     },
     {
-        "merged": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/res/merged/debug/drawable-mdpi_fragment_ybhljud.png.flat",
-        "source": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/res/drawable-mdpi/fragment_ybhljud.png"
-    },
-    {
         "merged": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/res/merged/debug/layout_fragment_blzg_tab1.xml.flat",
         "source": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/res/layout/fragment_blzg_tab1.xml"
+    },
+    {
+        "merged": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/res/merged/debug/drawable-mdpi_fragment_ybhljud.png.flat",
+        "source": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/res/drawable-mdpi/fragment_ybhljud.png"
     },
     {
         "merged": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/res/merged/debug/layout_activity_bllb_.xml.flat",
@@ -406,10 +406,6 @@
     {
         "merged": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/res/merged/debug/layout_adapter_fragmentbljltgjc.xml.flat",
         "source": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/res/layout/adapter_fragmentbljltgjc.xml"
-    },
-    {
-        "merged": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/res/merged/debug/drawable-xhdpi_excel_head_line.xml.flat",
-        "source": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/res/drawable-xhdpi/excel_head_line.xml"
     },
     {
         "merged": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/res/merged/debug/drawable-mdpi_an_p.png.flat",
@@ -584,10 +580,6 @@
         "source": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/res/drawable-mdpi/guanbi_p.png"
     },
     {
-        "merged": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/res/merged/debug/drawable-xhdpi_excel_bottomhead_line.xml.flat",
-        "source": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/res/drawable-xhdpi/excel_bottomhead_line.xml"
-    },
-    {
         "merged": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/res/merged/debug/drawable-mdpi_fragment_lsyzd.png.flat",
         "source": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/res/drawable-mdpi/fragment_lsyzd.png"
     },
@@ -688,6 +680,10 @@
         "source": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/res/drawable/s_banner_btnsz.xml"
     },
     {
+        "merged": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/res/merged/debug/drawable-xhdpi_excel_bottom_line_white.xml.flat",
+        "source": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/res/drawable-xhdpi/excel_bottom_line_white.xml"
+    },
+    {
         "merged": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/res/merged/debug/drawable_s_chk.xml.flat",
         "source": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/res/drawable/s_chk.xml"
     },
@@ -706,6 +702,10 @@
     {
         "merged": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/res/merged/debug/font_msyhbd.ttf.flat",
         "source": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/res/font/msyhbd.ttf"
+    },
+    {
+        "merged": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/res/merged/debug/drawable-xhdpi_excel_head_line_white.xml.flat",
+        "source": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/res/drawable-xhdpi/excel_head_line_white.xml"
     },
     {
         "merged": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/res/merged/debug/drawable-mdpi_ljwlsb_bg.png.flat",
@@ -834,10 +834,6 @@
     {
         "merged": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/res/merged/debug/drawable_s_item_bllb_iv.xml.flat",
         "source": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/res/drawable/s_item_bllb_iv.xml"
-    },
-    {
-        "merged": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/res/merged/debug/layout_activity_blzg_layout_test.xml.flat",
-        "source": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/res/layout/activity_blzg_layout_test.xml"
     },
     {
         "merged": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/res/merged/debug/layout_adapter_bloodrecord.xml.flat",

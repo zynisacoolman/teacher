@@ -68,7 +68,7 @@ public class ItemZtzgAdapter extends BaseAdapter {
                 vh = (ViewHolder)convertView.getTag();
             }
         vh.tvOrder.setText(new StringBuilder().append(position + 1).append("").toString());
-        vh.tvOrder.setBackgroundResource(R.drawable.excel_bottom_line);
+        vh.tvOrder.setBackgroundResource(R.drawable.excel_bottom_line_white);
         for(String str:arrayList.get(position).get遗嘱内容()){
             TextView tv = new TextView(context);
             tv.setText(str);
@@ -82,7 +82,7 @@ public class ItemZtzgAdapter extends BaseAdapter {
             params.gravity = Gravity.CENTER;
             params.weight = 1 ;
             tv.setLayoutParams(params);
-            tv.setBackgroundResource(R.drawable.excel_bottom_line);
+            tv.setBackgroundResource(R.drawable.excel_bottom_line_white);
             vh.llYizhu.addView(tv);
         }
         for(TableItemBlzgBean.Exitdispose str:arrayList.get(position).get出口状态概率()){
@@ -99,7 +99,7 @@ public class ItemZtzgAdapter extends BaseAdapter {
             tv1.setTextColor(context.getResources().getColor(R.color.btn_color_blue));
             tv1.setTextSize(18);
             tv1.setLayoutParams(paramss);
-            tv1.setBackgroundResource(R.drawable.excel_bottom_line);
+            tv1.setBackgroundResource(R.drawable.excel_bottom_line_white);
             vh.llChukou1.addView(tv1);
 
             TextView tv2 = new TextView(context);
@@ -110,7 +110,7 @@ public class ItemZtzgAdapter extends BaseAdapter {
             tv2.setTextColor(context.getResources().getColor(R.color.btn_color_blue));
             tv2.setTextSize(18);
             tv2.setLayoutParams(paramss);
-            tv2.setBackgroundResource(R.drawable.excel_bottom_line);
+            tv2.setBackgroundResource(R.drawable.excel_bottom_line_white);
 
             vh.llChukou2.addView(tv2);
         }

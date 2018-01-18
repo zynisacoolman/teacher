@@ -51,7 +51,7 @@ public class XtjldFragment extends BaseFragment implements AbsListView.OnScrollL
 
     @Override
     public int getID() {
-        return R.id.fragment_fitlist;
+        return R.layout.adapter_fragmentxtjcb;
     }
 
     @Override

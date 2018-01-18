@@ -121,9 +121,9 @@ public class TWDFragmentAdapter extends BaseAdapter {
             holder.h_bednumber.setText(CommUtils.getListString(specailList, 4));
 
             if(UserMessage.twdResult.getTwsz()!=null)
-                holder.ll_twd.addView(new CustomCurveChart(mContext, xLabel,yLabel,UserMessage.twdResult.getTwsz(),R.color.bg_bgcolor1,false));
+                holder.ll_twd.addView(new CustomCurveChart(mContext, xLabel,yLabel,UserMessage.twdResult.getTwsz(),R.color.red,false));
             if(UserMessage.twdResult.getMbsz()!=null)
-                holder.ll_twd.addView(new CustomCurveChart(mContext, xLabel,yLabel,UserMessage.twdResult.getMbsz(),R.color.bg_bgcolor2,false));
+                holder.ll_twd.addView(new CustomCurveChart(mContext, xLabel,yLabel,UserMessage.twdResult.getMbsz(),R.color.bg_txt_color,false));
             if(UserMessage.twdResult.getOther()!=null){
                 holder.h_ryrq.setText(CommUtils.getListString(UserMessage.twdResult.getOther(),0));//设置日期 由于这部分内容在json中所以 日期需要在这里实现
                 holder.h_zyblh.setText(CommUtils.getListString(UserMessage.twdResult.getOther(),1));//住院病历号

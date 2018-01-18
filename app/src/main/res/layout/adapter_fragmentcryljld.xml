@@ -24,14 +24,14 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="77dp"
+                android:layout_height="97dp"
                 android:orientation="horizontal">
 
             </LinearLayout>
             <!--内容-->
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="930dp"
+                android:layout_height="900dp"
                 android:orientation="horizontal">
 
                 <cn.jucheng.www.hulisiwei.base.MyList
@@ -39,8 +39,8 @@
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:divider="@color/touming"
-                    android:scrollbars="none"
-                    android:listSelector="@color/touming" />
+                    android:listSelector="@color/touming"
+                    android:scrollbars="none" />
 
             </LinearLayout>
 
@@ -55,7 +55,7 @@
                 android:layout_height="20dp"
                 android:orientation="horizontal">
 
-                <TextView
+                <View
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="446" />
@@ -69,7 +69,7 @@
                     android:textColor="@color/black_333"
                     android:textSize="@dimen/text_size14" />
 
-                <TextView
+                <View
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="444" />

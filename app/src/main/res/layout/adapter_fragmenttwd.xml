@@ -4,91 +4,110 @@
     android:layout_height="fill_parent"
     android:orientation="vertical"
     android:id="@+id/ll_twd"
-    android:background="@drawable/twd_">
-        <ScrollView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+    >
+
+
 
 
             <LinearLayout
+                android:background="@drawable/twd_"
                 android:layout_width="match_parent"
-                android:layout_height="25dp"
+                android:layout_height="1400dp"
                 android:orientation="vertical">
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="138dp" />
+                    android:layout_height="156dp"
+                    />
                 <!--表头-->
                 <include layout="@layout/fragment_formhead_layout"/>
 
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="9dp"
+                    android:layout_height="13dp"
                     android:orientation="horizontal"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal">
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="154"/>
+                    <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="227"
+                        android:gravity="center_vertical"
+                        android:id="@+id/h_ryrq"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="148"/>
+                    <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                        android:layout_width="0dp"
+                        android:layout_weight="168"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:id="@+id/h_zyblh"
+                        />
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="243"/>
 
-                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
-                    android:layout_height="match_parent"
-                    android:layout_width="192dp"
-                    android:layout_marginLeft="133dp"
-                    android:gravity="center_vertical"
-                    android:id="@+id/h_ryrq"
-                    android:text="入院日期"/>
+                </LinearLayout>
 
-                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
-                    android:layout_marginLeft="125dp"
-                    android:layout_width="143dp"
-                    android:layout_height="match_parent"
-                    android:gravity="center_vertical"
-                    android:id="@+id/h_zyblh"
-                    android:text="住院病历号"/>
                 <!--内容-->
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="19dp"/>
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:orientation="horizontal">
 
                     <TextView
-                        android:layout_width="155dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="183"
                         android:layout_height="match_parent" />
                     <LinearLayout
-                        android:layout_width="572dp"
-                        android:layout_height="785dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="672"
+                        android:layout_height="match_parent"
                         android:orientation="vertical">
                         <GridView
                             android:layout_width="match_parent"
-                            android:layout_height="27dp"
+                            android:layout_height="32dp"
                             android:numColumns="7"
                             android:id="@+id/gv_twd_ryrq"
                             />
                         <GridView
                             android:layout_width="match_parent"
-                            android:layout_height="27dp"
+                            android:layout_height="31dp"
                             android:numColumns="7"
                             android:id="@+id/gv_twd_zydays"
                             />
                         <GridView
                             android:layout_width="match_parent"
-                            android:layout_height="27dp"
+                            android:layout_height="31dp"
                             android:numColumns="7"
                             android:id="@+id/gv_twd_sshdays"
                             />
 
-                        <TextView
+                        <View
                             android:layout_width="match_parent"
-                            android:layout_height="591dp" />
+                            android:layout_height="673dp" />
 
                         <GridView
                             android:layout_width="match_parent"
-                            android:layout_height="14dp"
+                            android:layout_height="15dp"
                             android:numColumns="42"
                             android:id="@+id/gv_twd_hxcs1">
 
                         </GridView>
                         <GridView
 
-                            android:layout_height="14dp"
+                            android:layout_height="16dp"
                             android:numColumns="42"
                             android:id="@+id/gv_twd_hxcs2"
                             android:layout_width="wrap_content">
@@ -96,7 +115,7 @@
                         </GridView>
                         <GridView
                             android:layout_width="match_parent"
-                            android:layout_height="14dp"
+                            android:layout_height="16dp"
                             android:numColumns="14"
                             android:id="@+id/gv_twd_xueya"
                             >
@@ -104,44 +123,44 @@
                         </GridView>
                         <GridView
                             android:layout_width="match_parent"
-                            android:layout_height="14dp"
+                            android:layout_height="16dp"
                             android:numColumns="7"
                             android:id="@+id/gv_twd_ruliang">
 
                         </GridView>
                         <GridView
                             android:layout_width="match_parent"
-                            android:layout_height="14dp"
+                            android:layout_height="16dp"
                             android:numColumns="7"
                             android:id="@+id/gv_twd_chuliang">
 
                         </GridView>
                         <GridView
                             android:layout_width="match_parent"
-                            android:layout_height="14dp"
+                            android:layout_height="16dp"
                             android:numColumns="7"
                             android:id="@+id/gv_twd_dabian">
 
                         </GridView>
                         <GridView
                             android:layout_width="match_parent"
-                            android:layout_height="14dp"
+                            android:layout_height="16dp"
                             android:numColumns="7"
                             android:id="@+id/gv_twd_tizhong">
 
                         </GridView>
                         <GridView
                             android:layout_width="match_parent"
-                            android:layout_height="14dp"
+                            android:layout_height="16dp"
                             android:numColumns="7"
                             android:id="@+id/gv_twd_shengao">
 
                         </GridView>
                     </LinearLayout>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="85"/>
                 </LinearLayout>
             </LinearLayout>
-    </ScrollView>
 </LinearLayout>
-    <!--页数-->
-
-        <!--</ScrollView>-->

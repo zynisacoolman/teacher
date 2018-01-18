@@ -92,7 +92,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="543"
                 android:orientation="vertical"
-                android:background="@drawable/excel_bottom_line">
+                android:background="@drawable/excel_bottom_line_white">
                 <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
                     android:singleLine="false"
                     android:layout_width="match_parent"
@@ -104,7 +104,7 @@
                     android:textColor="@color/vfrontc"
                     android:id="@+id/tv_zt"
                     android:textSize="@dimen/text_size18"
-                    android:background="@drawable/excel_bottom_line"
+                    android:background="@drawable/excel_bottom_line_white"
                     />
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -168,14 +168,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="360"
-                    android:background="@drawable/excel_bottom_line"
+                    android:background="@drawable/excel_bottom_line_white"
                     android:id="@+id/fragment_layout">
                 </FrameLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="70"
-                    android:background="@color/bg_white"
+                    android:background="@drawable/excel_head_line_white"
                     android:gravity="center">
                     <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
                         android:layout_width="160dp"

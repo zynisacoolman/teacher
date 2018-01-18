@@ -14,7 +14,6 @@ import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
 
-import butterknife.ButterKnife;
 import butterknife.Unbinder;
 import cn.jucheng.jclibs.tools.SubStringUtils;
 import cn.jucheng.www.hulisiwei.BlxqActivity;
@@ -62,10 +61,8 @@ public class Hljld1Fragment extends BaseFragment implements AbsListView.OnScroll
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.adapter_fragmenthljld, null);
-        LinearLayout linearlayout = (LinearLayout)view.findViewById(R.id.ll_tgjcbsjl);
+        LinearLayout linearlayout = (LinearLayout)view.findViewById(R.id.ll_1sthljld);
         getPage();
-        unbinder = ButterKnife.bind(this, view);
-        EventBus.getDefault().register(this);
         //解析jsonobj
 //        UserMessage.medicalrecords.getHulijiludanshouye();
 //        setHead();

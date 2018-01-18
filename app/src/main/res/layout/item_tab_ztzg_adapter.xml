@@ -8,7 +8,7 @@
         android:layout_height="match_parent"
         android:layout_weight="3"
         android:gravity="center"
-        android:background="@drawable/excel_bottomhead_line"
+        android:background="@drawable/excel_bottomhead_line_white"
         android:textColor="@color/btn_color_blue"
         android:textSize="@dimen/text_size16"
         android:fontFamily="@font/msyh"

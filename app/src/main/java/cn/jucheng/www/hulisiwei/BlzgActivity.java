@@ -151,6 +151,7 @@ public class BlzgActivity extends MyBaseActivity implements View.OnClickListener
     public void setBlzgItem() {
         layoutParams = new RelativeLayout.LayoutParams[UserMessage.blzgCache.getDatas().size()];
         blzgViews = new TextView[UserMessage.blzgCache.getDatas().size()];
+        tv_close.setOnClickListener(this);
     }
 
 
@@ -441,10 +442,10 @@ public class BlzgActivity extends MyBaseActivity implements View.OnClickListener
     @Override
     public void onClick(View v) {
         FragmentTransaction ft = getFragmentManager().beginTransaction();
-
+        Log.d(TAG, "onClick: "+v.getId());
         switch (v.getId()){
             case R.id.tv_close:
-                BlzgActivity.this.finish();
+                finish();
                 break;
             case R.id.fitbutton_1:
                 fitHeightButton1.setChecked(true);
