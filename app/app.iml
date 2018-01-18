@@ -100,6 +100,7 @@
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/manifests" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/prebuild" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/res" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/rs" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/shaders" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/split-apk" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/splits-support" />
@@ -113,13 +114,10 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="__local_aars__:/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/libs/fastjson-1.2.41.jar:unspecified@jar" level="project" />
     <orderEntry type="library" name="com.android.support:multidex-1.0.2" level="project" />
-    <orderEntry type="library" name="com.android.support:support-vector-drawable-23.4.0" level="project" />
     <orderEntry type="library" name="com.google.code.gson:gson:2.8.0@jar" level="project" />
     <orderEntry type="library" name="com.jakewharton:butterknife-8.8.1" level="project" />
     <orderEntry type="library" name="com.jakewharton:butterknife-annotations:8.8.1@jar" level="project" />
     <orderEntry type="library" name="com.shizhefei:HVScrollView-1.0.1" level="project" />
-    <orderEntry type="library" name="com.android.support:appcompat-v7-23.4.0" level="project" />
-    <orderEntry type="library" name="com.android.support:animated-vector-drawable-23.4.0" level="project" />
     <orderEntry type="library" name="com.android.support:support-core-ui-25.4.0" level="project" />
     <orderEntry type="library" name="com.android.support:support-compat-25.4.0" level="project" />
     <orderEntry type="library" name="__local_aars__:/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/libs/iText-2.0.8.jar:unspecified@jar" level="project" />
@@ -131,6 +129,5 @@
     <orderEntry type="library" name="com.android.support:support-v4-25.4.0" level="project" />
     <orderEntry type="library" name="com.android.support:support-fragment-25.4.0" level="project" />
     <orderEntry type="library" name="com.android.support:support-media-compat-25.4.0" level="project" />
-    <orderEntry type="module" module-name="tableview" />
   </component>
 </module>

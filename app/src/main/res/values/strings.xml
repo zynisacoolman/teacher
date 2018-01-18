@@ -100,5 +100,18 @@
     <string name="recblmc">状态改变病例名称</string>
     <string name="blzg_title">病例转归</string>
     <string name="string_close">关闭</string>
+    <string name="hr">HR(心率)</string>
+    <string name="PP">PP(呼吸率)</string>
+    <string name="NBP">NBP(血压)</string>
+    <string name="PR">PR(脉率)</string>
+    <string name="SPO">SPO2(血氧)</string>
+    <string name="T">T(体温)</string>
+    <string name="_150_100_mmhg">150/100 mmHg</string>
+    <string name="序号">序号</string>
+    <string name="遗嘱内容">遗嘱内容</string>
+    <string name="跳转">跳转</string>
+    <string name="医嘱内容">医嘱内容</string>
+    <string name="出口状态">出口状态</string>
+    <string name="出口概率">出口概率</string>
 
 </resources>

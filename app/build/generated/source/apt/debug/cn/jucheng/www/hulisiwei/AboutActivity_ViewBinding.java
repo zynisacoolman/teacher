@@ -15,9 +15,9 @@ import java.lang.Override;
 public class AboutActivity_ViewBinding implements Unbinder {
   private AboutActivity target;
 
-  private View view2131230742;
+  private View view2131099652;
 
-  private View view2131230721;
+  private View view2131099649;
 
   @UiThread
   public AboutActivity_ViewBinding(AboutActivity target) {
@@ -31,7 +31,7 @@ public class AboutActivity_ViewBinding implements Unbinder {
     View view;
     view = Utils.findRequiredView(source, R.id.back, "field 'back' and method 'onViewClicked'");
     target.back = Utils.castView(view, R.id.back, "field 'back'", FitWidthTextView.class);
-    view2131230742 = view;
+    view2131099652 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -41,7 +41,7 @@ public class AboutActivity_ViewBinding implements Unbinder {
     target.aboutVerson = Utils.findRequiredViewAsType(source, R.id.about_verson, "field 'aboutVerson'", FitWidthTextView.class);
     view = Utils.findRequiredView(source, R.id.about_ok, "field 'aboutOk' and method 'onViewClicked'");
     target.aboutOk = Utils.castView(view, R.id.about_ok, "field 'aboutOk'", FitHeightButton.class);
-    view2131230721 = view;
+    view2131099649 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -61,9 +61,9 @@ public class AboutActivity_ViewBinding implements Unbinder {
     target.aboutVerson = null;
     target.aboutOk = null;
 
-    view2131230742.setOnClickListener(null);
-    view2131230742 = null;
-    view2131230721.setOnClickListener(null);
-    view2131230721 = null;
+    view2131099652.setOnClickListener(null);
+    view2131099652 = null;
+    view2131099649.setOnClickListener(null);
+    view2131099649 = null;
   }
 }

@@ -15,9 +15,9 @@ import java.lang.Override;
 public class CustomDialog_ViewBinding implements Unbinder {
   private CustomDialog target;
 
-  private View view2131230816;
+  private View view2131099724;
 
-  private View view2131231215;
+  private View view2131100068;
 
   @UiThread
   public CustomDialog_ViewBinding(CustomDialog target) {
@@ -34,7 +34,7 @@ public class CustomDialog_ViewBinding implements Unbinder {
     target.yourTime = Utils.findRequiredViewAsType(source, R.id.your_time, "field 'yourTime'", FitHeightTextView.class);
     view = Utils.findRequiredView(source, R.id.cancel, "field 'cancel' and method 'onViewClicked'");
     target.cancel = Utils.castView(view, R.id.cancel, "field 'cancel'", FitHeightTextView.class);
-    view2131230816 = view;
+    view2131099724 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -43,7 +43,7 @@ public class CustomDialog_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.submit, "field 'submit' and method 'onViewClicked'");
     target.submit = Utils.castView(view, R.id.submit, "field 'submit'", FitHeightTextView.class);
-    view2131231215 = view;
+    view2131100068 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -65,9 +65,9 @@ public class CustomDialog_ViewBinding implements Unbinder {
     target.cancel = null;
     target.submit = null;
 
-    view2131230816.setOnClickListener(null);
-    view2131230816 = null;
-    view2131231215.setOnClickListener(null);
-    view2131231215 = null;
+    view2131099724.setOnClickListener(null);
+    view2131099724 = null;
+    view2131100068.setOnClickListener(null);
+    view2131100068 = null;
   }
 }

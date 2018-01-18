@@ -16,7 +16,7 @@ import cn.jucheng.www.hulisiwei.interfaca.MessageEventblzg;
 /**
  * Created by zyn on 2018/1/8.
  */
-
+//医嘱列表
 public class Tabyzlb extends BaseFragment {
     @BindView(R.id.tab1_yzlb)
     ListView lst;

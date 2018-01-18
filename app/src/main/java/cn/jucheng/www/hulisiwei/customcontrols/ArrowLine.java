@@ -2,11 +2,12 @@ package cn.jucheng.www.hulisiwei.customcontrols;
 
 import android.content.Context;
 import android.graphics.Canvas;
-import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Path;
 import android.util.AttributeSet;
 import android.view.View;
+
+import cn.jucheng.www.hulisiwei.R;
 
 /**
  * Created by zyn on 2018/1/12.
@@ -52,9 +53,9 @@ public class ArrowLine extends View{
      */
     public void setPaintDefaultStyle(){
         myPaint.setAntiAlias(true);
-        myPaint.setColor(Color.RED);
+        myPaint.setColor(getResources().getColor(R.color.bg_txt_color));
         myPaint.setStyle(Paint.Style.STROKE);
-        myPaint.setStrokeWidth(3);
+        myPaint.setStrokeWidth(1);
     }
 
 
@@ -119,12 +120,34 @@ public class ArrowLine extends View{
         y4 = Y4.intValue();
         // 画线
         myCanvas.drawLine(sx, sy, ex, ey,myPaint);
+        //画箭头
         Path triangle = new Path();
         triangle.moveTo(ex, ey);
         triangle.lineTo(x3, y3);
         triangle.lineTo(x4, y4);
         triangle.close();
+
         myCanvas.drawPath(triangle,myPaint);
+//        Paint left_paint = new Paint();
+//        Paint right_paint = new Paint();
+//        Path left_path = new Path();
+//        Path right_path = new Path();
+//        left_path.reset();
+//        right_path.reset();
+//        left_paint.setAntiAlias(true);
+//        left_paint.setColor(getResources().getColor(R.color.bg_txt_color));
+//        right_paint.setAntiAlias(true);
+//        right_paint.setColor(getResources().getColor(R.color.bg_txt_color));
+//        left_paint.setStrokeWidth(2.0f);
+//        right_paint.setStrokeWidth(2.0f);
+//        left_paint.setStyle(Paint.Style.STROKE);
+//        right_paint.setStyle(Paint.Style.STROKE);
+//        left_path.moveTo(ex, ey);
+//        right_path.moveTo(ex, ey);
+//        left_path.quadTo(ex - 3, ey - 3, ex - 6, ey - 6);
+//        right_path.quadTo(ex + 3, ey - 3, ex + 6, ey - 6);
+//        myCanvas.drawPath(left_path, left_paint);
+//        myCanvas.drawPath(right_path, right_paint);
     }
     // 计算
     public double[] rotateVec(int px, int py, double ang, boolean isChLen, double newLen)

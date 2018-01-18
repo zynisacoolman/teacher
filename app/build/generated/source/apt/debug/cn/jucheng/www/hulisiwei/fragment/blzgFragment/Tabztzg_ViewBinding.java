@@ -4,10 +4,10 @@ package cn.jucheng.www.hulisiwei.fragment.blzgFragment;
 import android.support.annotation.CallSuper;
 import android.support.annotation.UiThread;
 import android.view.View;
+import android.widget.ListView;
 import butterknife.Unbinder;
 import butterknife.internal.Utils;
 import cn.jucheng.www.hulisiwei.R;
-import com.wjk.tableview.TableView;
 import java.lang.IllegalStateException;
 import java.lang.Override;
 
@@ -18,7 +18,7 @@ public class Tabztzg_ViewBinding implements Unbinder {
   public Tabztzg_ViewBinding(Tabztzg target, View source) {
     this.target = target;
 
-    target.tableView = Utils.findRequiredViewAsType(source, R.id.tableview, "field 'tableView'", TableView.class);
+    target.lst = Utils.findRequiredViewAsType(source, R.id.lstzg, "field 'lst'", ListView.class);
   }
 
   @Override
@@ -28,6 +28,6 @@ public class Tabztzg_ViewBinding implements Unbinder {
     if (target == null) throw new IllegalStateException("Bindings already cleared.");
     this.target = null;
 
-    target.tableView = null;
+    target.lst = null;
   }
 }

@@ -39,13 +39,14 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="543">
-                <TextView
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center_vertical"
                     android:paddingLeft="10dp"
                     android:text="状态标题"
                     android:textColor="@color/vfrontc"
+                    android:id="@+id/tv_ztbt"
                     />
 
             </LinearLayout>
@@ -80,18 +81,20 @@
                     </cn.jucheng.www.hulisiwei.customcontrols.HVScrollView>
             </LinearLayout>
 
-            <View
+            <!--<View-->
 
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@color/divid_line"/>
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:background="@color/divid_line"/>-->
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="543"
-                android:orientation="vertical">
-                <TextView
+                android:orientation="vertical"
+                android:background="@drawable/excel_bottom_line">
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:singleLine="false"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="110"
@@ -99,8 +102,10 @@
                     android:paddingLeft="10dp"
                     android:fontFamily="@font/msyh"
                     android:textColor="@color/vfrontc"
-                    android:textSize="@dimen/text_size16"
-                    android:background="@color/bg_white"/>
+                    android:id="@+id/tv_zt"
+                    android:textSize="@dimen/text_size18"
+                    android:background="@drawable/excel_bottom_line"
+                    />
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
@@ -159,12 +164,31 @@
                     <!--android:layout_weight="410"-->
                     <!--android:id="@+id/table_layout">-->
                 <!--</com.wjk.tableview.TableView>-->
-                <android.support.v7.widget.FitWindowsFrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="410"
-                android:id="@+id/fragment_layout">
-                </android.support.v7.widget.FitWindowsFrameLayout>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="360"
+                    android:background="@drawable/excel_bottom_line"
+                    android:id="@+id/fragment_layout">
+                </FrameLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="70"
+                    android:background="@color/bg_white"
+                    android:gravity="center">
+                    <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                        android:layout_width="160dp"
+                        android:layout_height="40dp"
+                        android:background="@color/btn_color_blue"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/跳转"
+                        android:gravity="center"
+                        android:textSize="@dimen/text_size20"
+                        android:textColor="@color/color1"
+                        android:id="@+id/tv_jump" />
+
+                </LinearLayout>
             </LinearLayout>
 
         </LinearLayout>

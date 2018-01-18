@@ -19,11 +19,11 @@ import java.lang.Override;
 public class BlxqActivity_ViewBinding implements Unbinder {
   private BlxqActivity target;
 
-  private View view2131230809;
+  private View view2131099718;
 
-  private View view2131231333;
+  private View view2131100177;
 
-  private View view2131231128;
+  private View view2131100015;
 
   @UiThread
   public BlxqActivity_ViewBinding(BlxqActivity target) {
@@ -40,7 +40,7 @@ public class BlxqActivity_ViewBinding implements Unbinder {
     target.tvTimeState = Utils.findRequiredViewAsType(source, R.id.tv_time_state, "field 'tvTimeState'", FitHeightTextView.class);
     view = Utils.findRequiredView(source, R.id.btn_blnr, "field 'btnBlnr' and method 'onClick'");
     target.btnBlnr = Utils.castView(view, R.id.btn_blnr, "field 'btnBlnr'", FitHeightButton.class);
-    view2131230809 = view;
+    view2131099718 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -51,7 +51,7 @@ public class BlxqActivity_ViewBinding implements Unbinder {
     target.lvBlxq = Utils.findRequiredViewAsType(source, R.id.lv_blxq, "field 'lvBlxq'", ListView.class);
     view = Utils.findRequiredView(source, R.id.tv_blzg, "field 'tvBlzg' and method 'onClick'");
     target.tvBlzg = Utils.castView(view, R.id.tv_blzg, "field 'tvBlzg'", FitHeightTextView.class);
-    view2131231333 = view;
+    view2131100177 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -63,7 +63,7 @@ public class BlxqActivity_ViewBinding implements Unbinder {
     target.evJstx = Utils.findRequiredViewAsType(source, R.id.ev_jstx, "field 'evJstx'", FitHeightEditText.class);
     target.tv = Utils.findRequiredViewAsType(source, R.id.tv, "field 'tv'", FitHeightTextView.class);
     view = Utils.findRequiredView(source, R.id.iv_setting, "method 'onClick'");
-    view2131231128 = view;
+    view2131100015 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -91,11 +91,11 @@ public class BlxqActivity_ViewBinding implements Unbinder {
     target.evJstx = null;
     target.tv = null;
 
-    view2131230809.setOnClickListener(null);
-    view2131230809 = null;
-    view2131231333.setOnClickListener(null);
-    view2131231333 = null;
-    view2131231128.setOnClickListener(null);
-    view2131231128 = null;
+    view2131099718.setOnClickListener(null);
+    view2131099718 = null;
+    view2131100177.setOnClickListener(null);
+    view2131100177 = null;
+    view2131100015.setOnClickListener(null);
+    view2131100015 = null;
   }
 }

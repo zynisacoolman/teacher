@@ -15,9 +15,9 @@ import java.lang.Override;
 public class ConnectIPActivity_ViewBinding implements Unbinder {
   private ConnectIPActivity target;
 
-  private View view2131230745;
+  private View view2131099655;
 
-  private View view2131230813;
+  private View view2131099722;
 
   @UiThread
   public ConnectIPActivity_ViewBinding(ConnectIPActivity target) {
@@ -33,7 +33,7 @@ public class ConnectIPActivity_ViewBinding implements Unbinder {
     target.inputPort = Utils.findRequiredViewAsType(source, R.id.editTextInputPort, "field 'inputPort'", FitHeightEditText.class);
     target.relativeLayout1 = Utils.findRequiredViewAsType(source, R.id.relativeLayout1, "field 'relativeLayout1'", LinearLayout.class);
     view = Utils.findRequiredView(source, R.id.back_network, "method 'onViewClicked'");
-    view2131230745 = view;
+    view2131099655 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -41,7 +41,7 @@ public class ConnectIPActivity_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.buttonConnectIP, "method 'onViewClicked'");
-    view2131230813 = view;
+    view2131099722 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -61,9 +61,9 @@ public class ConnectIPActivity_ViewBinding implements Unbinder {
     target.inputPort = null;
     target.relativeLayout1 = null;
 
-    view2131230745.setOnClickListener(null);
-    view2131230745 = null;
-    view2131230813.setOnClickListener(null);
-    view2131230813 = null;
+    view2131099655.setOnClickListener(null);
+    view2131099655 = null;
+    view2131099722.setOnClickListener(null);
+    view2131099722 = null;
   }
 }

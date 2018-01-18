@@ -4,74 +4,220 @@
     android:layout_height="match_parent"
     android:orientation="horizontal">
     <LinearLayout
-        android:layout_width="400dp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
         android:layout_height="match_parent"
         android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_lightblue"
+            />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:background="@drawable/blzg_bg">
+            android:background="@drawable/tzcs_bg"
+            android:orientation="vertical">
+
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/msyh"
                 android:gravity="center"
-                />
+                android:text="@string/hr"
+                android:textColor="@color/color_lightblue"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/msyh"
+                android:gravity="center"
+                android:text="--"
+                android:textColor="@color/bg_txt_color"
+                android:textSize="48sp"
+                android:id="@+id/tv_1"/>
         </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_lightblue"/>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:background="@drawable/blzg_bg">
+            android:background="@drawable/tzcs_bg"
+            android:orientation="vertical">
+
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                />
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/msyh"
+                android:gravity="center"
+                android:text="@string/PP"
+                android:textColor="@color/color_lightblue"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/msyh"
+                android:gravity="center"
+                android:text="--"
+                android:textColor="@color/bg_txt_color"
+                android:textSize="48sp" />
         </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_lightblue"/>
+
         <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:background="@drawable/blzg_bg">
+            android:background="@drawable/tzcs_bg">
+
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                />
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/msyh"
+                android:gravity="center"
+                android:text="@string/NBP"
+                android:textColor="@color/color_lightblue"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/msyh"
+                android:gravity="center"
+                android:text="--"
+                android:textColor="@color/bg_txt_color"
+                android:textSize="48sp" />
+            <TextView
+                android:layout_marginTop="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/msyh"
+                android:gravity="center"
+                android:text="@string/_150_100_mmhg"
+                android:textColor="@color/color_lightblue"
+                android:textSize="16sp" />
         </LinearLayout>
     </LinearLayout>
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/color_lightblue"/>
     <LinearLayout
-        android:layout_width="400dp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
         android:layout_height="match_parent"
         android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_lightblue"
+            />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:background="@drawable/blzg_bg">
+            android:background="@drawable/tzcs_bg"
+            android:orientation="vertical">
+
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                />
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/msyh"
+                android:gravity="center"
+                android:text="@string/PR"
+                android:textColor="@color/color_lightblue"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/msyh"
+                android:gravity="center"
+                android:text="--"
+                android:textColor="@color/bg_txt_color"
+                android:textSize="48sp" />
         </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_lightblue"
+            />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:background="@drawable/blzg_bg">
+            android:background="@drawable/tzcs_bg"
+            android:orientation="vertical">
+
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                />
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/msyh"
+                android:gravity="center"
+                android:text="@string/SPO"
+                android:textColor="@color/color_lightblue"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/msyh"
+                android:gravity="center"
+                android:text="--"
+                android:textColor="@color/bg_txt_color"
+                android:textSize="48sp" />
         </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_lightblue"
+            />
         <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:background="@drawable/blzg_bg">
+            android:background="@drawable/tzcs_bg">
+
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                />
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/msyh"
+                android:gravity="center"
+                android:text="@string/T"
+                android:textColor="@color/color_lightblue"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/msyh"
+                android:gravity="center"
+                android:text="--"
+                android:textColor="@color/bg_txt_color"
+                android:textSize="48sp" />
         </LinearLayout>
 
 

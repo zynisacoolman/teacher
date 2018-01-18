@@ -1,17 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="200dp"
-    android:orientation="horizontal">
-    <TextView
+    android:layout_height="wrap_content"
+    android:minHeight="40dp"
+    android:orientation="horizontal"
+    android:background="@drawable/excel_bottom_line">
+
+    <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="60"
+        android:gravity="center"
+        android:textColor="@color/vfrontc"
+        android:textSize="@dimen/text_size18"
         android:id="@+id/index"/>
-    <TextView
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/divid_line"/>
+    <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="421"
+        android:textColor="@color/vfrontc"
+        android:fontFamily="@font/msyh"
+        android:textSize="@dimen/text_size18"
+        android:gravity="center"
         android:id="@+id/yznr"/>
-
 </LinearLayout>

@@ -4,10 +4,6 @@ ADDED from /Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/
 INJECTED from /Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/AndroidManifest.xml:2:1-125:12
 INJECTED from /Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/AndroidManifest.xml:2:1-125:12
 INJECTED from /Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/AndroidManifest.xml:2:1-125:12
-MERGED from [:tableview] /Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/libs/tableview/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-17:12
-MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/zyn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/c1d35ea391acb09695534075575802c5/AndroidManifest.xml:17:1-27:12
-MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/zyn/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-23.4.0.aar/f827b592110a3a6a841df65f1b83619f/AndroidManifest.xml:2:1-9:12
-MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/zyn/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-23.4.0.aar/7d929c897df6ccd1ba1c193eb2a2723e/AndroidManifest.xml:2:1-9:12
 MERGED from [com.android.support:support-v4:25.4.0] /Users/zyn/.gradle/caches/transforms-1/files-1.1/support-v4-25.4.0.aar/bea7a77658907f2605984ac763fe56e3/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:multidex:1.0.2] /Users/zyn/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/87aed44ad94df7256ddd2c1a1064f8d8/AndroidManifest.xml:17:1-22:12
 MERGED from [com.jakewharton:butterknife:8.8.1] /Users/zyn/.gradle/caches/transforms-1/files-1.1/butterknife-8.8.1.aar/1b920851a5a6ebbab9bb4abd15c5f82d/AndroidManifest.xml:2:1-7:12
@@ -40,14 +36,6 @@ uses-sdk
 ADDED from /Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/AndroidManifest.xml:8:5-10:41
 INJECTED from /Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/AndroidManifest.xml:8:5-10:41
 INJECTED from /Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/AndroidManifest.xml:8:5-10:41
-MERGED from [:tableview] /Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/libs/tableview/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:tableview] /Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/libs/tableview/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/zyn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/c1d35ea391acb09695534075575802c5/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/zyn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/c1d35ea391acb09695534075575802c5/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/zyn/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-23.4.0.aar/f827b592110a3a6a841df65f1b83619f/AndroidManifest.xml:5:5-44
-MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/zyn/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-23.4.0.aar/f827b592110a3a6a841df65f1b83619f/AndroidManifest.xml:5:5-44
-MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/zyn/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-23.4.0.aar/7d929c897df6ccd1ba1c193eb2a2723e/AndroidManifest.xml:5:5-43
-MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/zyn/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-23.4.0.aar/7d929c897df6ccd1ba1c193eb2a2723e/AndroidManifest.xml:5:5-43
 MERGED from [com.android.support:support-v4:25.4.0] /Users/zyn/.gradle/caches/transforms-1/files-1.1/support-v4-25.4.0.aar/bea7a77658907f2605984ac763fe56e3/AndroidManifest.xml:21:5-23:54
 MERGED from [com.android.support:support-v4:25.4.0] /Users/zyn/.gradle/caches/transforms-1/files-1.1/support-v4-25.4.0.aar/bea7a77658907f2605984ac763fe56e3/AndroidManifest.xml:21:5-23:54
 MERGED from [com.android.support:multidex:1.0.2] /Users/zyn/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/87aed44ad94df7256ddd2c1a1064f8d8/AndroidManifest.xml:20:5-43
@@ -69,7 +57,7 @@ MERGED from [com.android.support:support-compat:25.4.0] /Users/zyn/.gradle/cache
 INJECTED from /Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/AndroidManifest.xml:8:5-10:41
 INJECTED from /Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/AndroidManifest.xml:8:5-10:41
 	tools:overrideLibrary
-		ADDED from [com.android.support:appcompat-v7:23.4.0] /Users/zyn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/c1d35ea391acb09695534075575802c5/AndroidManifest.xml:23:9-75
+		ADDED from [com.android.support:support-v4:25.4.0] /Users/zyn/.gradle/caches/transforms-1/files-1.1/support-v4-25.4.0.aar/bea7a77658907f2605984ac763fe56e3/AndroidManifest.xml:23:9-51
 	android:targetSdkVersion
 		ADDED from /Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/AndroidManifest.xml:10:9-38
 		INJECTED from /Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/AndroidManifest.xml
@@ -122,14 +110,6 @@ ADDED from /Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/
 		ADDED from /Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/AndroidManifest.xml:23:9-49
 application
 ADDED from /Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/AndroidManifest.xml:26:5-123:19
-MERGED from [:tableview] /Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/libs/tableview/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-15:19
-MERGED from [:tableview] /Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/libs/tableview/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-15:19
-MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/zyn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/c1d35ea391acb09695534075575802c5/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/zyn/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/c1d35ea391acb09695534075575802c5/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/zyn/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-23.4.0.aar/f827b592110a3a6a841df65f1b83619f/AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/zyn/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-23.4.0.aar/f827b592110a3a6a841df65f1b83619f/AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/zyn/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-23.4.0.aar/7d929c897df6ccd1ba1c193eb2a2723e/AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/zyn/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-23.4.0.aar/7d929c897df6ccd1ba1c193eb2a2723e/AndroidManifest.xml:7:5-20
 MERGED from [com.android.support:support-v4:25.4.0] /Users/zyn/.gradle/caches/transforms-1/files-1.1/support-v4-25.4.0.aar/bea7a77658907f2605984ac763fe56e3/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-v4:25.4.0] /Users/zyn/.gradle/caches/transforms-1/files-1.1/support-v4-25.4.0.aar/bea7a77658907f2605984ac763fe56e3/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-fragment:25.4.0] /Users/zyn/.gradle/caches/transforms-1/files-1.1/support-fragment-25.4.0.aar/b727ef5017ff9a047e3a40ed29f85c27/AndroidManifest.xml:25:5-29:19
@@ -144,8 +124,6 @@ MERGED from [com.android.support:support-compat:25.4.0] /Users/zyn/.gradle/cache
 MERGED from [com.android.support:support-compat:25.4.0] /Users/zyn/.gradle/caches/transforms-1/files-1.1/support-compat-25.4.0.aar/486370720682c8d1b447ed902c664ff4/AndroidManifest.xml:25:5-29:19
 	android:screenOrientation
 		ADDED from /Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/AndroidManifest.xml:31:9-46
-	android:supportsRtl
-		ADDED from [:tableview] /Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/libs/tableview/build/intermediates/manifests/full/debug/AndroidManifest.xml:14:9-35
 	android:label
 		ADDED from /Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/AndroidManifest.xml:29:9-41
 	android:largeHeap

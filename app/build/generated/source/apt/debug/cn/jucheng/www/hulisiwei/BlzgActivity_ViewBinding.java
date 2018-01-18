@@ -27,6 +27,8 @@ public class BlzgActivity_ViewBinding implements Unbinder {
     target.fitHeightButton1 = Utils.findRequiredViewAsType(source, R.id.fitbutton_1, "field 'fitHeightButton1'", FitHeightButton.class);
     target.fitHeightButton2 = Utils.findRequiredViewAsType(source, R.id.fitbutton_2, "field 'fitHeightButton2'", FitHeightButton.class);
     target.fitHeightButton3 = Utils.findRequiredViewAsType(source, R.id.fitbutton_3, "field 'fitHeightButton3'", FitHeightButton.class);
+    target.tvZT = Utils.findRequiredViewAsType(source, R.id.tv_zt, "field 'tvZT'", FitHeightTextView.class);
+    target.tvZTBT = Utils.findRequiredViewAsType(source, R.id.tv_ztbt, "field 'tvZTBT'", FitHeightTextView.class);
   }
 
   @Override
@@ -40,5 +42,7 @@ public class BlzgActivity_ViewBinding implements Unbinder {
     target.fitHeightButton1 = null;
     target.fitHeightButton2 = null;
     target.fitHeightButton3 = null;
+    target.tvZT = null;
+    target.tvZTBT = null;
   }
 }

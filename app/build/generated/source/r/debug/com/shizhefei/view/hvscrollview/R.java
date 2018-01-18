@@ -8,19 +8,19 @@ package com.shizhefei.view.hvscrollview;
 
 public final class R {
     public static final class attr {
-        public static final int childLayoutCenter = 0x7f02003f;
-        public static final int fillViewportH = 0x7f020065;
-        public static final int fillViewportV = 0x7f020066;
-        public static final int scrollOrientation = 0x7f02009a;
+        public static final int childLayoutCenter = 0x7f010002;
+        public static final int fillViewportH = 0x7f010003;
+        public static final int fillViewportV = 0x7f010004;
+        public static final int scrollOrientation = 0x7f010006;
     }
     public static final class id {
-        public static final int both = 0x7f08003f;
-        public static final int horizontal = 0x7f080134;
-        public static final int none = 0x7f0801b6;
-        public static final int vertical = 0x7f080273;
+        public static final int both = 0x7f06002c;
+        public static final int horizontal = 0x7f06010f;
+        public static final int none = 0x7f060189;
+        public static final int vertical = 0x7f060221;
     }
     public static final class styleable {
-        public static final int[] HVScrollView = { 0x7f02003f, 0x7f020065, 0x7f020066, 0x7f02009a };
+        public static final int[] HVScrollView = { 0x7f010002, 0x7f010003, 0x7f010004, 0x7f010006 };
         public static final int HVScrollView_childLayoutCenter = 0;
         public static final int HVScrollView_fillViewportH = 1;
         public static final int HVScrollView_fillViewportV = 2;

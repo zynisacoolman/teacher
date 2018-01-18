@@ -13,7 +13,7 @@ import java.lang.Override;
 public class ConnectBTPairedActivity_ViewBinding implements Unbinder {
   private ConnectBTPairedActivity target;
 
-  private View view2131230743;
+  private View view2131099653;
 
   @UiThread
   public ConnectBTPairedActivity_ViewBinding(ConnectBTPairedActivity target) {
@@ -26,7 +26,7 @@ public class ConnectBTPairedActivity_ViewBinding implements Unbinder {
 
     View view;
     view = Utils.findRequiredView(source, R.id.back_already_bluetooth, "method 'onViewClicked'");
-    view2131230743 = view;
+    view2131099653 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -42,7 +42,7 @@ public class ConnectBTPairedActivity_ViewBinding implements Unbinder {
     target = null;
 
 
-    view2131230743.setOnClickListener(null);
-    view2131230743 = null;
+    view2131099653.setOnClickListener(null);
+    view2131099653 = null;
   }
 }

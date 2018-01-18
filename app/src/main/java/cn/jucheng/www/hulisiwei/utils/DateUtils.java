@@ -1,5 +1,7 @@
 package cn.jucheng.www.hulisiwei.utils;
 
+import android.util.Log;
+
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -243,5 +245,36 @@ public class DateUtils {
         long sum=h*3600+m*60+s;
         return sum;
     }
+    /**
+     * 求最小公倍数，貌似不对，求得不是最小公倍数
+     *
+     * */
+    public static int getMinDividend(int Num1,int Num2){
+        if(Num1==0 || Num2==0){
+            Log.v("求最小公倍数出错","有数为0");
+            return 0;
+        }else{
+            if (Num1==Num2){
+                return Num1;
+            }else if(Num1*Num2%2!=0) //这是俩数相乘为奇数的情况
+            {
+                return Num1*Num2;
+            } else{//俩数字都不为零切互不相等
+                //俩数互为倍数关系
+                int cs ,bcs;
+                bcs = Num1>Num2?Num1:Num2;
+                cs = Num1>Num2?Num2:Num1;
+                if(bcs%cs==0){
+                    return bcs;
+                }
 
+                //这是俩数相乘为偶数的情况
+                int amass = Num1*Num2;
+                while (amass %2 ==0&&amass/2%Num1==0&&amass/2%Num2==0){
+                    amass = amass/2;
+                }
+                return amass;
+            }
+        }
+    }
 }

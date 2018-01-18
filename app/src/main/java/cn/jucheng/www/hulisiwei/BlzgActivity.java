@@ -1,7 +1,10 @@
 package cn.jucheng.www.hulisiwei;
 
+import android.annotation.SuppressLint;
 import android.app.FragmentTransaction;
 import android.content.Context;
+import android.content.res.AssetManager;
+import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.Message;
@@ -21,6 +24,7 @@ import java.util.List;
 
 import butterknife.BindView;
 import cn.jucheng.jclibs.tools.MyToast;
+import cn.jucheng.www.hulisiwei.base.BaseFragment;
 import cn.jucheng.www.hulisiwei.customcontrols.ArrowLine;
 import cn.jucheng.www.hulisiwei.customcontrols.FitHeightButton;
 import cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView;
@@ -55,6 +59,11 @@ public class BlzgActivity extends MyBaseActivity implements View.OnClickListener
     FitHeightButton fitHeightButton2;
     @BindView(R.id.fitbutton_3)
     FitHeightButton fitHeightButton3;
+    @BindView(R.id.tv_zt)
+    FitHeightTextView tvZT;
+    @BindView(R.id.tv_ztbt)
+    FitHeightTextView tvZTBT;
+
     Context context ;
     //存放文件信息的全局变量
     MedicineRootBean medicineRootBean;
@@ -64,7 +73,7 @@ public class BlzgActivity extends MyBaseActivity implements View.OnClickListener
     int cur_id;
     //存放 医嘱名称
     //存放 病例转归页面的医嘱名称
-
+    Typeface tf;
     RelativeLayout.LayoutParams[] layoutParams ;
     List<ChildList> childListlst=new ArrayList<>();
     TextView[] blzgViews;
@@ -85,6 +94,9 @@ public class BlzgActivity extends MyBaseActivity implements View.OnClickListener
             "局部用药",
             "皮内注射",
     };
+    BaseFragment 医嘱列表 = new Tabyzlb();
+    BaseFragment 体征测试 = new Tabtzcs();
+    BaseFragment 状态转归 = new Tabztzg();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -109,6 +121,8 @@ public class BlzgActivity extends MyBaseActivity implements View.OnClickListener
     }
 
     private void initdata() {
+        AssetManager mgr=context.getAssets();
+        tf=Typeface.createFromAsset(mgr, "fonts/msyh.ttf");
         String medicine = CommUtils.getStringFromAssets("db/medicine.json",context);
         String phyexam_item = CommUtils.getStringFromAssets("db/phyexam_item.json",context);
         String special_disposal = CommUtils.getStringFromAssets("db/special_disposal.json",context);
@@ -124,10 +138,13 @@ public class BlzgActivity extends MyBaseActivity implements View.OnClickListener
     }
 
     private void initFragment() {
+
         FragmentTransaction ft = getFragmentManager().beginTransaction();
-        ft.add(R.id.fragment_layout, new Tabyzlb());
-        ft.add(R.id.fragment_layout,new Tabztzg());
-        ft.add(R.id.fragment_layout,new Tabtzcs());
+
+        ft.add(R.id.fragment_layout,医嘱列表);
+        ft.add(R.id.fragment_layout,体征测试);
+        ft.add(R.id.fragment_layout,状态转归);
+
         ft.commit();
     }
     //设置病例转归的状态图
@@ -137,6 +154,7 @@ public class BlzgActivity extends MyBaseActivity implements View.OnClickListener
     }
 
 
+    @SuppressLint("ResourceAsColor")
     private void 初始化病例转归图() {
         RelativeLayout rlBl=(RelativeLayout) findViewById(R.id.rl_blzg);
         for(int i=0;i<UserMessage.blzgCache.getDatas().size();i++){
@@ -145,8 +163,10 @@ public class BlzgActivity extends MyBaseActivity implements View.OnClickListener
             blzgViews[i].setOnClickListener(new OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    MyToast.showToast(BlzgActivity.this
-                            , "第%d 个转归病例");
+//                    MyToast.showToast(BlzgActivity.this
+//                            , "第%d 个转归病例");
+                    tvZTBT.setText(UserMessage.blzgCache.getDatas().get(finalI).getTitle());
+                    tvZT.setText(UserMessage.blzgCache.getDatas().get(finalI).getContent());
                     获取医嘱列表信息(UserMessage.blzgCache.getDatas().get(finalI).getId());//根据 所选择状态号重新解析数据，并发送给fragment ，fragment对数据进行重新赋值处理
                     获取状态转归信息(cur_id);
                     获取体征参数(cur_id);
@@ -166,6 +186,7 @@ public class BlzgActivity extends MyBaseActivity implements View.OnClickListener
             }
             blzgViews[i].setBackground(bgDrawable);
             blzgViews[i].setText(UserMessage.blzgCache.getDatas().get(i).getTitle());
+            blzgViews[i].setTypeface(tf);
             blzgViews[i].setGravity(Gravity.CENTER);
             layoutParams[i] = new RelativeLayout.LayoutParams(158
                     ,110); // 大小
@@ -213,6 +234,7 @@ public class BlzgActivity extends MyBaseActivity implements View.OnClickListener
                         break;
                 }
                 ArrowLine arrowLine =new ArrowLine(this,sx,sy,tx,ty);
+                arrowLine.setPaintDefaultStyle();
 //                arrowLine.drawAL(sx,sy,tx,ty);
                 arrowLine.setLayoutParams(new RelativeLayout.LayoutParams(800,600));
 //                arrowLine.setPaintDefaultStyle();
@@ -224,37 +246,42 @@ public class BlzgActivity extends MyBaseActivity implements View.OnClickListener
         Log.v("控件布置","病例状态发布完成");
     }
     private void 获取体征参数(int cur_id) {
-        Double db1 = UserMessage.searchExamResult.get(cur_id).get(UserMessage.searchValue.get("心率").getId())==null?
-                UserMessage.searchValue.get("心率").getDefValue().getDefaultvalue():
-                UserMessage.searchExamResult.get(cur_id).get(UserMessage.searchValue.get("心率").getId()).getState_value();
-        Double db2 = UserMessage.searchExamResult.get(cur_id).get(UserMessage.searchValue.get("脉搏").getId())==null?
-                UserMessage.searchValue.get("脉搏").getDefValue().getDefaultvalue():
-                UserMessage.searchExamResult.get(cur_id).get(UserMessage.searchValue.get("脉搏").getId()).getState_value();
-        Double db3 = UserMessage.searchExamResult.get(cur_id).get(UserMessage.searchValue.get("呼吸").getId())==null?
-                UserMessage.searchValue.get("呼吸").getDefValue().getDefaultvalue():
-                UserMessage.searchExamResult.get(cur_id).get(UserMessage.searchValue.get("呼吸").getId()).getState_value();
-        Double db4 = UserMessage.searchExamResult.get(cur_id).get(UserMessage.searchValue.get("血氧饱和度").getId())==null?
-                UserMessage.searchValue.get("血氧饱和度").getDefValue().getDefaultvalue():
-                UserMessage.searchExamResult.get(cur_id).get(UserMessage.searchValue.get("血氧饱和度").getId()).getState_value();
-        Double db51 = UserMessage.searchExamResult.get(cur_id).get(UserMessage.searchValue.get("收缩压").getId())==null?
-                UserMessage.searchValue.get("收缩压").getDefValue().getDefaultvalue():
-                UserMessage.searchExamResult.get(cur_id).get(UserMessage.searchValue.get("收缩压").getId()).getState_value();
-        Double db52 = UserMessage.searchExamResult.get(cur_id).get(UserMessage.searchValue.get("舒张压").getId())==null?
-                UserMessage.searchValue.get("舒张压").getDefValue().getDefaultvalue():
-                UserMessage.searchExamResult.get(cur_id).get(UserMessage.searchValue.get("舒张压").getId()).getState_value();
-        Double db6 = UserMessage.searchExamResult.get(cur_id).get(UserMessage.searchValue.get("体温").getId())==null?
-                UserMessage.searchValue.get("体温").getDefValue().getDefaultvalue():
-                UserMessage.searchExamResult.get(cur_id).get(UserMessage.searchValue.get("体温").getId()).getState_value();
-        ArrayList<Double> arrayList = new ArrayList<>();
-        arrayList.add(db1);
-        arrayList.add(db2);
-        arrayList.add(db3);
-        arrayList.add(db4);
-        arrayList.add(db51);
-        arrayList.add(db52);
-        arrayList.add(db6);
-        MessageEventblzg msg = new MessageEventblzg(3,arrayList);
-        EventBus.getDefault().post(msg);
+        if(UserMessage.searchExamResult.get(cur_id)!=null){
+            Double db1 = UserMessage.searchExamResult.get(cur_id).get(UserMessage.searchValue.get("心率").getId())==null?
+                    UserMessage.searchValue.get("心率").getDefValue().getDefaultvalue():
+                    UserMessage.searchExamResult.get(cur_id).get(UserMessage.searchValue.get("心率").getId()).getState_value();
+            Double db2 = UserMessage.searchExamResult.get(cur_id).get(UserMessage.searchValue.get("脉搏").getId())==null?
+                    UserMessage.searchValue.get("脉搏").getDefValue().getDefaultvalue():
+                    UserMessage.searchExamResult.get(cur_id).get(UserMessage.searchValue.get("脉搏").getId()).getState_value();
+            Double db3 = UserMessage.searchExamResult.get(cur_id).get(UserMessage.searchValue.get("呼吸").getId())==null?
+                    UserMessage.searchValue.get("呼吸").getDefValue().getDefaultvalue():
+                    UserMessage.searchExamResult.get(cur_id).get(UserMessage.searchValue.get("呼吸").getId()).getState_value();
+            Double db4 = UserMessage.searchExamResult.get(cur_id).get(UserMessage.searchValue.get("血氧饱和度").getId())==null?
+                    UserMessage.searchValue.get("血氧饱和度").getDefValue().getDefaultvalue():
+                    UserMessage.searchExamResult.get(cur_id).get(UserMessage.searchValue.get("血氧饱和度").getId()).getState_value();
+            Double db51 = UserMessage.searchExamResult.get(cur_id).get(UserMessage.searchValue.get("收缩压").getId())==null?
+                    UserMessage.searchValue.get("收缩压").getDefValue().getDefaultvalue():
+                    UserMessage.searchExamResult.get(cur_id).get(UserMessage.searchValue.get("收缩压").getId()).getState_value();
+            Double db52 = UserMessage.searchExamResult.get(cur_id).get(UserMessage.searchValue.get("舒张压").getId())==null?
+                    UserMessage.searchValue.get("舒张压").getDefValue().getDefaultvalue():
+                    UserMessage.searchExamResult.get(cur_id).get(UserMessage.searchValue.get("舒张压").getId()).getState_value();
+            Double db6 = UserMessage.searchExamResult.get(cur_id).get(UserMessage.searchValue.get("体温").getId())==null?
+                    UserMessage.searchValue.get("体温").getDefValue().getDefaultvalue():
+                    UserMessage.searchExamResult.get(cur_id).get(UserMessage.searchValue.get("体温").getId()).getState_value();
+            ArrayList<Double> arrayList = new ArrayList<>();
+            arrayList.add(db1);
+            arrayList.add(db2);
+            arrayList.add(db3);
+            arrayList.add(db4);
+            arrayList.add(db51);
+            arrayList.add(db52);
+            arrayList.add(db6);
+            MessageEventblzg msg = new MessageEventblzg(3,arrayList);
+            EventBus.getDefault().post(msg);
+        }else{
+            MyToast.showToast(context,"没有体格检测信息");
+        }
+
 
     }
 
@@ -267,49 +294,55 @@ public class BlzgActivity extends MyBaseActivity implements View.OnClickListener
             //获取病例转归信息
             lst= searchmapStatetransfer.get(id);
         }
-        for (States_transfer st:
-             lst) {
-            ArrayList<String> blzgYznr = new ArrayList<>();
-            for(int i = 0;i<st.getDispose().size();i++){
-                if(st.getDispose().get(i).getDispose_type()==1){
-                    int dis_id = st.getDispose().get(i).getDispose_id();
-                    if (UserMessage.allMedicines.containsKey(dis_id)) {
-                        StringBuilder sb = new StringBuilder();
-                        String 药物名称 = UserMessage.allMedicines.get(dis_id).getMedicine_name();
-                        int 处置方式 =st.getDispose().get(i).getDispose_way().getSelcect_way();
-                        float 药物用量 = st.getDispose().get(i).getDispose_way().getDose();
+        if(lst!=null){
+            for (States_transfer st:
+                    lst) {
+                ArrayList<String> blzgYznr = new ArrayList<>();
+                for(int i = 0;i<st.getDispose().size();i++){
+                    if(st.getDispose().get(i).getDispose_type()==1){
+                        int dis_id = st.getDispose().get(i).getDispose_id();
+                        if (UserMessage.allMedicines.containsKey(dis_id)) {
+                            StringBuilder sb = new StringBuilder();
+                            String 药物名称 = UserMessage.allMedicines.get(dis_id).getMedicine_name();
+                            int 处置方式 =st.getDispose().get(i).getDispose_way().getSelcect_way();
+                            float 药物用量 = st.getDispose().get(i).getDispose_way().getDose();
 //                                    float 药物计量单位=allyizhu.get(s).getContent().get(l).getDrug_dose();
-                        int 药物计量单位 = UserMessage.allMedicines.get(dis_id).getDose_unit();
-                        sb.append(药物处置方式[处置方式]).
-                                append(药物名称).
-                                append(药物用量).append(计量单位[药物计量单位]);
-                        blzgYznr.add(sb.toString());
+                            int 药物计量单位 = UserMessage.allMedicines.get(dis_id).getDose_unit();
+                            sb.append(药物处置方式[处置方式]).
+                                    append(药物名称).
+                                    append(药物用量).append(计量单位[药物计量单位]);
+                            blzgYznr.add(sb.toString());
+                        }
+                    }
+                    if(st.getDispose().get(i).getDispose_type()==2){
+                        int dis_id = st.getDispose().get(i).getDispose_id();
+                        //获取点击状态药物信息
+                        if (UserMessage.allSpecialdispose.containsKey(dis_id)) {
+                            StringBuilder sb = new StringBuilder();
+                            String 特殊处置 = UserMessage.allSpecialdispose.get(dis_id);
+                            sb.append(特殊处置);
+                            blzgYznr.add(sb.toString());
+                        }
                     }
                 }
-                if(st.getDispose().get(i).getDispose_type()==2){
-                    int dis_id = st.getDispose().get(i).getDispose_id();
-                    //获取点击状态药物信息
-                    if (UserMessage.allSpecialdispose.containsKey(dis_id)) {
-                        StringBuilder sb = new StringBuilder();
-                        String 特殊处置 = UserMessage.allSpecialdispose.get(dis_id);
-                        sb.append(特殊处置);
-                        blzgYznr.add(sb.toString());
+                tbib.set遗嘱内容(blzgYznr);
+                for(int s =0;s<st.getExit_state_id().size();s++){
+                    TableItemBlzgBean.Exitdispose te=new TableItemBlzgBean.Exitdispose();
+                    te.set出口概率(st.getExit_state_id().get(s).getPercent());
+                    if(searchmapStatetransfer.containsKey(st.getExit_state_id().get(s).getState_id())){
+                        te.set出口状态(searchmapStatename.get(st.getExit_state_id().get(s).getState_id()));
                     }
-                }
-            }
-            tbib.set遗嘱内容(blzgYznr);
-            for(int s =0;s<st.getExit_state_id().size();s++){
-                TableItemBlzgBean.Exitdispose te=new TableItemBlzgBean.Exitdispose();
-                te.set出口概率(st.getExit_state_id().get(s).getPercent());
-                if(searchmapStatetransfer.containsKey(st.getExit_state_id().get(s).getState_id())){
-                    te.set出口状态(searchmapStatename.get(st.getExit_state_id().get(s).getState_id()));
-                }
 
-                tbib.set出口状态概率(new ArrayList<TableItemBlzgBean.Exitdispose>());
-                tbib.get出口状态概率().add(te);
+                    tbib.set出口状态概率(new ArrayList<TableItemBlzgBean.Exitdispose>());
+                    tbib.get出口状态概率().add(te);
+                }
+                zgTablelst.add(tbib);
             }
-            zgTablelst.add(tbib);
+        }else{
+            //没有状态信息
+            MyToast.showToast(context,"没有状态转归信息");
         }
+
         MessageEventblzg msg = new MessageEventblzg(2,zgTablelst);
         EventBus.getDefault().post(msg);
     }
@@ -387,15 +420,28 @@ public class BlzgActivity extends MyBaseActivity implements View.OnClickListener
                 }else {
                     Log.v(TAG,"没有医嘱信息");
                 }
-
             }
         }
         MessageEventblzg msg = new MessageEventblzg(1,yzneirong);
         EventBus.getDefault().post(msg);
     }
+//    public void switchContent(Fragment from, Fragment to) {
+//        if (mContent != to) {
+//            mContent = to;
+//            FragmentTransaction transaction = mFragmentMan.beginTransaction().setCustomAnimations(
+//                    android.R.anim.fade_in, R.anim.slide_out);
+//            if (!to.isAdded()) {    // 先判断是否被add过
+//                transaction.hide(from).add(R.id.content_frame, to).commit(); // 隐藏当前的fragment，add下一个到Activity中
+//            } else {
+//                transaction.hide(from).show(to).commit(); // 隐藏当前的fragment，显示下一个
+//            }
+//        }
+//    }
 
     @Override
     public void onClick(View v) {
+        FragmentTransaction ft = getFragmentManager().beginTransaction();
+
         switch (v.getId()){
             case R.id.tv_close:
                 BlzgActivity.this.finish();
@@ -404,16 +450,19 @@ public class BlzgActivity extends MyBaseActivity implements View.OnClickListener
                 fitHeightButton1.setChecked(true);
                 fitHeightButton2.setChecked(false);
                 fitHeightButton3.setChecked(false);
+                ft.hide(体征测试).hide(状态转归).show(医嘱列表).commit();
                 break;
             case R.id.fitbutton_2:
                 fitHeightButton1.setChecked(false);
                 fitHeightButton2.setChecked(true);
                 fitHeightButton3.setChecked(false);
+                ft.hide(体征测试).hide(医嘱列表).show(状态转归).commit();
                 break;
             case R.id.fitbutton_3:
                 fitHeightButton1.setChecked(false);
                 fitHeightButton2.setChecked(false);
                 fitHeightButton3.setChecked(true);
+                ft.hide(状态转归).hide(医嘱列表).show(体征测试).commit();
                 break;
         }
     }
