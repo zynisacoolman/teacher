@@ -15,9 +15,9 @@ public final class R {
     }
     public static final class id {
         public static final int both = 0x7f06002c;
-        public static final int horizontal = 0x7f06010f;
-        public static final int none = 0x7f060189;
-        public static final int vertical = 0x7f060221;
+        public static final int horizontal = 0x7f06010e;
+        public static final int none = 0x7f060188;
+        public static final int vertical = 0x7f060220;
     }
     public static final class styleable {
         public static final int[] HVScrollView = { 0x7f010002, 0x7f010003, 0x7f010004, 0x7f010006 };

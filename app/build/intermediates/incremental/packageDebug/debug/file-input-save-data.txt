@@ -1,31 +1,31 @@
 #Internal package file, do not edit.
-#Wed Jan 17 18:44:50 CST 2018
-2.base=/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/assets/debug
-5.set=DEX
-0.path=fonts/msyhbd.ttf
+#Fri Jan 19 17:51:23 CST 2018
+2.base=C\:\\Users\\admin\\StudioProjects\\teacher\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\1
+5.set=ASSET
+0.path=fonts/msyh.ttf
 2.baseType=DIRECTORY
-3.base=/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/transforms/dexMerger/debug/0
-2.set=ASSET
-1.path=db/special_disposal.json
-4.base=/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/assets/debug
+3.base=C\:\\Users\\admin\\StudioProjects\\teacher\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+2.set=DEX
+1.path=db/phyexam_item.json
+4.base=C\:\\Users\\admin\\StudioProjects\\teacher\\app\\build\\intermediates\\assets\\debug
 count=7
 5.baseType=DIRECTORY
-2.path=db/phyexam_item.json
-5.base=/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/transforms/dexMerger/debug/1
+2.path=classes.dex
+5.base=C\:\\Users\\admin\\StudioProjects\\teacher\\app\\build\\intermediates\\assets\\debug
 4.set=ASSET
 3.path=classes.dex
-6.base=/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/assets/debug
+6.base=C\:\\Users\\admin\\StudioProjects\\teacher\\app\\build\\intermediates\\assets\\debug
 3.baseType=DIRECTORY
 1.set=ASSET
-4.path=fonts/msyh.ttf
+4.path=fonts/msyhbd.ttf
 6.set=ASSET
 1.baseType=DIRECTORY
 6.baseType=DIRECTORY
-5.path=classes.dex
-0.base=/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/assets/debug
+5.path=db/medicine.json
+0.base=C\:\\Users\\admin\\StudioProjects\\teacher\\app\\build\\intermediates\\assets\\debug
 0.baseType=DIRECTORY
 3.set=DEX
-6.path=db/medicine.json
-1.base=/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/assets/debug
+6.path=db/special_disposal.json
+1.base=C\:\\Users\\admin\\StudioProjects\\teacher\\app\\build\\intermediates\\assets\\debug
 4.baseType=DIRECTORY
 0.set=ASSET

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr format="reference" name="autoScaleTextViewStyle"/>
+    <color name="baise">#ffffff</color>
+    <color name="banner_bg_color">#bdd8f4</color>
+    <color name="banner_txt_color">#386eb6</color>
+    <color name="bantouming">#50000000</color>
+    <color name="bg_bgcolor1">#e4f0f9</color>
+    <color name="bg_bgcolor2">#f4fbfe</color>
+    <color name="bg_bgcolor3">#d2dfea</color>
+    <color name="bg_txt_color">#377ecf</color>
+    <color name="bg_txtbtn_cut">#377ecf</color>
+    <color name="bg_txtbtn_go">#f2984c</color>
+    <color name="bg_white">#f4fbfe</color>
+    <color name="black_333">#333333</color>
+    <color name="btnLogin_text">#b4d0e6</color>
+    <color name="btnSheZhi">#c3cfdf</color>
+    <color name="btn_color_blue">#468ce7</color>
+    <color name="btn_text">#254278</color>
+    <color name="color1">#FFFFFF</color>
+    <color name="color13">#F9974E</color>
+    <color name="color14">#59B29C</color>
+    <color name="color2">#666666</color>
+    <color name="color25">#ED5564</color>
+    <color name="color26">#D7D8DC</color>
+    <color name="color3">#D0D0D0</color>
+    <color name="color4">#F6F6F6</color>
+    <color name="color_lightblue">#9cbbdc</color>
+    <color name="denglu">#56bbe0</color>
+    <color name="divid_color">#93bee6</color>
+    <color name="divid_line">#91bee6</color>
+    <color name="drug_bton">#468be7</color>
+    <color name="edtext_bg">#c8e4ff</color>
+    <color name="form_bac">#d1deea</color>
+    <color name="fragmentbuton">#f5fcff</color>
+    <color name="gray">#b5c4d2</color>
+    <color name="heise">#000000</color>
+    <color name="margnbackground_bton">#d2dfea</color>
+    <color name="margnline">#93bee4</color>
+    <color name="orange">#f2984c</color>
+    <color name="page_text">#386eb6</color>
+    <color name="red">#ff0000</color>
+    <color name="setbackground_bton">#e4f0f9</color>
+    <color name="sick_bton">#f3974b</color>
+    <color name="textbackground_bton">#e4effa</color>
+    <color name="touming">#00000000</color>
+    <color name="tvJiaoXue_neirong">#3b7e86</color>
+    <color name="tvSheZhi_lan">#abcced</color>
+    <color name="version">#324658</color>
+    <color name="vfrontc">#468be7</color>
+    <color name="welcome_text">#468be7</color>
+    <color name="ywmessage">#f4fbfe</color>
+    <color name="ywtextmessage">#377ecf</color>
+    <declare-styleable name="AutoScaleTextView"><attr format="dimension" name="minTextSize"/></declare-styleable>
+    <declare-styleable name="HVScrollView"><attr format="boolean" name="fillViewportH"/><attr format="boolean" name="fillViewportV"/><attr name="scrollOrientation">
+            <enum name="none" value="0"/>
+            <enum name="horizontal" value="1"/>
+            <enum name="vertical" value="2"/>
+            <enum name="both" value="3"/>
+        </attr><attr format="boolean" name="childLayoutCenter"/></declare-styleable>
+    <declare-styleable name="myViewDefinedAttr"><attr format="integer" name="attr2"/></declare-styleable>
+    <dimen name="divider_height">19dp</dimen>
+    <dimen name="padding10">10dp</dimen>
+    <dimen name="padding12">12dp</dimen>
+    <dimen name="padding15">15dp</dimen>
+    <dimen name="padding20">20dp</dimen>
+    <dimen name="padding5">5dp</dimen>
+    <dimen name="search_bta_item_btn_height">50dp</dimen>
+    <dimen name="text_size12">12sp</dimen>
+    <dimen name="text_size120">120sp</dimen>
+    <dimen name="text_size14">14sp</dimen>
+    <dimen name="text_size16">16sp</dimen>
+    <dimen name="text_size18">18sp</dimen>
+    <dimen name="text_size20">20sp</dimen>
+    <dimen name="text_size22">22sp</dimen>
+    <dimen name="text_size24">24sp</dimen>
+    <dimen name="text_size26">26sp</dimen>
+    <dimen name="text_size35">35sp</dimen>
+    <dimen name="text_size48">48sp</dimen>
+    <dimen name="text_size50">50sp</dimen>
+    <dimen name="text_size72">72sp</dimen>
+    <string name="NBP">NBP(血压)</string>
+    <string name="PP">PP(呼吸率)</string>
+    <string name="PR">PR(脉率)</string>
+    <string name="SPO">SPO2(血氧)</string>
+    <string name="T">T(体温)</string>
+    <string name="_150_100_mmhg">150/100 mmHg</string>
+    <string name="_chkLanYa">蓝牙设备连接</string>
+    <string name="_chkUSB">USB设备连接</string>
+    <string name="_chkWiFi">网络设备连接</string>
+    <string name="_denglu">登  录</string>
+    <string name="_lianjiepeiduilanyashebei">  连接已配对蓝牙设备</string>
+    <string name="_lianjieusbshebei">  连接USB设备</string>
+    <string name="_lianjieusbshebei_cong">  连接USB设备(作为从设备)</string>
+    <string name="_lianjiewangluoshebei">  连接网络设备</string>
+    <string name="_sousuolanyashebei">  搜索并连接蓝牙设备</string>
+    <string name="about">关于</string>
+    <string name="action_settings">设置</string>
+    <string name="age">年龄：</string>
+    <string name="allergies">过敏史：</string>
+    <string name="app_name">护理思维教师机</string>
+    <string name="bedNumber">床号：</string>
+    <string name="blcpy_string1">当前病例</string>
+    <string name="blcpy_string2">营养代谢以及体液失衡</string>
+    <string name="blcpy_string3">正在运行</string>
+    <string name="bloodrecordlist_text">输血观察记录单</string>
+    <string name="blzg_title">病例转归</string>
+    <string name="btnCloseText">关闭</string>
+    <string name="btnConnectDeviceText">连接此设备</string>
+    <string name="btnGaoJiText">高级</string>
+    <string name="btnReturnText">返回</string>
+    <string name="btnSaveText">保存</string>
+    <string name="btnSelectDeviceText">设置连接方式</string>
+    <string name="button_scan">扫描设备</string>
+    <string name="cancel">取消</string>
+    <string name="connect">连接</string>
+    <string name="connectbtmacaddress">连接指定蓝牙打印机</string>
+    <string name="curelist_text">治疗单</string>
+    <string name="diagnose">诊断：</string>
+    <string name="drug_messge">核对药物信息</string>
+    <string name="hospitalNumber">住院号：</string>
+    <string name="hr">HR(心率)</string>
+    <string name="injection_toast">此页已满</string>
+    <string name="injectionlist_text">注射单</string>
+    <string name="inputbtmachint">在此输入蓝牙地址，形如01:23:45:67:89:AB</string>
+    <string name="ip">IP</string>
+    <string name="marriage">婚否：</string>
+    <string name="medicalordersexecutive_text">医嘱执行单</string>
+    <string name="name">姓名：</string>
+    <string name="none_found">找不到设备</string>
+    <string name="none_paired">没有设备进行配对</string>
+    <string name="now_times">当前系统时区：</string>
+    <string name="nurse_name">护士姓名：</string>
+    <string name="office">科室：</string>
+    <string name="ok">确定</string>
+    <string name="port">Port</string>
+    <string name="qianzi">签字</string>
+    <string name="qianzi_faile">签字失败</string>
+    <string name="recblmc">状态改变病例名称</string>
+    <string name="rectime">状态改变时间</string>
+    <string name="rectype">状态改变类型</string>
+    <string name="scanning">扫描设备…</string>
+    <string name="search">搜索</string>
+    <string name="select_device">选择一个设备连接</string>
+    <string name="set_about">设置>关于</string>
+    <string name="set_alredy_bluetooth">设置>设置连接方式>连接已配对蓝牙设备</string>
+    <string name="set_bluetooth">设置>设置连接方式>搜索并连接蓝牙设备</string>
+    <string name="set_connent">设置>设置连接方式</string>
+    <string name="set_network">设置>设置连接方式>连接网络设备</string>
+    <string name="sex">性别：</string>
+    <string name="sick_messge">核对病人信息</string>
+    <string name="str_bllb">病例列表</string>
+    <string name="str_blzg">病例转归</string>
+    <string name="str_xunlian">训练</string>
+    <string name="string_close">关闭</string>
+    <string name="takemedicinelist_text">服药单</string>
+    <string name="text_xm">姓名：</string>
+    <string name="title_other_devices">其他设备</string>
+    <string name="title_paired_devices">配对设备</string>
+    <string name="transfusionlist_text">输液单</string>
+    <string name="transfusionrecord_text">输液记录单</string>
+    <string name="tvDeviceText">设备连接状态:</string>
+    <string name="tvLanYaZhuangTaiText">连接设备：</string>
+    <string name="tvSavedDeviceAddressText">上次连接设备:</string>
+    <string name="tvSavedDeviceAddressText1">无</string>
+    <string name="txtLanYaZhuangTaiText">未连接</string>
+    <string name="v1_1_0">V1.1.0</string>
+    <string name="yesconnect">已连接</string>
+    <string name="your_times">标准中时区：</string>
+    <string name="出口概率">出口概率</string>
+    <string name="出口状态">出口状态</string>
+    <string name="医嘱内容">医嘱内容</string>
+    <string name="序号">序号</string>
+    <string name="跳转">跳转</string>
+    <string name="遗嘱内容">遗嘱内容</string>
+    <style name="AppBaseTheme" parent="android:Theme.Light"/>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <style name="Checkbox" parent="@android:style/Widget.CompoundButton.CheckBox">
+            <item name="android:background">@drawable/s_checkbox</item>
+            <item name="android:layout_weight">18</item>
+            <item name="android:layout_width">0dp</item>
+            <item name="android:layout_height">18dp</item>
+            <item name="android:button">@null</item>
+            <item name="android:clickable">false</item>
+            <!--<item name="android:background">@drawable/s_checkbox</item>-->
+            <!--<item name="android:layout_width">18dp</item>-->
+            <!--<item name="android:layout_height">18dp</item>-->
+            <!--<item name="android:button">@null</item>-->
+            <!--<item name="android:clickable">false</item>-->
+        </style>
+    <style name="Checkboxl" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:background">@drawable/s_checkbox</item>
+        <item name="android:layout_width">18dp</item>
+        <item name="android:layout_height">18dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:clickable">false</item>
+    </style>
+    <style name="Dialog" parent="android:style/Theme.Dialog">
+            <item name="android:background">#00000000</item>
+            <item name="android:windowBackground">@android:color/transparent</item>
+            <item name="android:windowNoTitle">true</item>
+            <item name="android:windowIsFloating">true</item>
+        </style>
+    <style name="new_dialogs">
+        <item name="android:windowFrame">@null</item>
+        <!--边框-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">false</item>
+        <!--半透明-->
+        <item name="android:windowNoTitle">true</item>
+        <!--无标题-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--背景透明-->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!--模糊-->
+    </style>
+    <style name="progress_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="sdw_79351b">
+            <item name="android:shadowColor">#ff79351b</item>
+            <item name="android:shadowDx">0.0</item>
+            <item name="android:shadowDy">1.0</item>
+            <item name="android:shadowRadius">1.0</item>
+        </style>
+    <style name="sdw_white">
+            <item name="android:shadowColor">#7fffffff</item>
+            <item name="android:shadowDx">0.0</item>
+            <item name="android:shadowDy">0.65</item>
+            <item name="android:shadowRadius">1.0</item>
+        </style>
+    <style name="text_15_666666_sdw" parent="@style/sdw_white">
+            <item name="android:textSize">15.0dip</item>
+            <item name="android:textColor">#ff666666</item>
+        </style>
+    <style name="text_15_ffffff_sdw" parent="@style/sdw_79351b">
+            <item name="android:textSize">15.0dip</item>
+            <item name="android:textColor">#ffffffff</item>
+        </style>
+    <style name="text_16_666666">
+            <item name="android:textSize">16.0dip</item>
+            <item name="android:textColor">#ff666666</item>
+        </style>
+    <style name="text_18_ffffff">
+            <item name="android:textSize">18.0dip</item>
+            <item name="android:textColor">#ffffffff</item>
+        </style>
+</resources>

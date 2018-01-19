@@ -23,6 +23,10 @@
         android:name="android.hardware.usb.host"
         android:required="true" />
 
+    <meta-data
+        android:name="android.support.VERSION"
+        android:value="25.3.0" />
+
     <application
         android:allowBackup="true"
         android:debuggable="true"
@@ -120,10 +124,6 @@
         <activity android:name="cn.jucheng.www.hulisiwei.BlxqActivity" />
         <activity android:name="cn.jucheng.www.hulisiwei.fragment.formFragement.DzblFragDir.YzdTemFragment" />
         <activity android:name="cn.jucheng.www.hulisiwei.fragment.formFragement.DzblFragDir.YzdLongFragment" />
-
-        <meta-data
-            android:name="android.support.VERSION"
-            android:value="25.4.0" />
     </application>
 
 </manifest>

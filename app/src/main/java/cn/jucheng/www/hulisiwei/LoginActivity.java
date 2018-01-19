@@ -35,9 +35,7 @@ public class LoginActivity extends MyBaseActivity {
 
 	public void onTest(View v) {
 		switch (v.getId()) {
-			case R.id.horizenscroll:
 
-				break;
 		case R.id.btnFSBingLiMingCheng:
 			String etLeiXing = ((EditText) findViewById(R.id.etBingLiLeiXing))
 					.getText().toString();

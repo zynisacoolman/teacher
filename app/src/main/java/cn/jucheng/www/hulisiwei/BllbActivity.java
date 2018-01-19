@@ -111,10 +111,11 @@ public class BllbActivity extends MyBaseActivity implements View.OnClickListener
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Log.d("start","error after oncreate");
         setContentView(R.layout.activity_bllb_);
         ButterKnife.bind(this);
         //索要学生机状态
-        MyMessage.sendMessage(MyMessage.getMsgSuoyaoxueshengjizhuangtai());
+//        MyMessage.sendMessage(MyMessage.getMsgSuoyaoxueshengjizhuangtai());
 
         if (Environment.getExternalStorageState().
                 equals(Environment.MEDIA_MOUNTED)) {

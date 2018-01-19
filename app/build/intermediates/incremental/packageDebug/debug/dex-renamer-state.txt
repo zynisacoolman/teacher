@@ -1,7 +1,7 @@
-#Thu Jan 18 10:58:56 CST 2018
-base.0=/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/transforms/dexMerger/debug/1
+#Fri Jan 19 17:51:23 CST 2018
+base.0=C\:\\Users\\admin\\StudioProjects\\teacher\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
 path.1=classes.dex
 renamed.1=classes2.dex
 path.0=classes.dex
 renamed.0=classes.dex
-base.1=/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/transforms/dexMerger/debug/0
+base.1=C\:\\Users\\admin\\StudioProjects\\teacher\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\1

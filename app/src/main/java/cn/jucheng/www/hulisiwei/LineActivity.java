@@ -1,9 +1,7 @@
 package cn.jucheng.www.hulisiwei;
 
 import android.app.Activity;
-import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.RequiresApi;
 import android.view.KeyEvent;
 import android.widget.LinearLayout;
 
@@ -17,16 +15,12 @@ public class LineActivity extends Activity {
     private LinearLayout customCurveChart1,customCurveChart2;
     ArrayList[] xy=new ArrayList[2];
 
-    @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.xy_layout);
-
         customCurveChart1 = (LinearLayout) findViewById(R.id.customCurveChart1);
         initCurveChart1();
-
-
     }
 
     @Override
@@ -41,7 +35,6 @@ public class LineActivity extends Activity {
     /**
      * 初始化曲线图数据
      */
-    @RequiresApi(api = Build.VERSION_CODES.M)
     private void initCurveChart1() {
         xy[0]=new ArrayList<Integer>();
         xy[1]=new ArrayList<Integer>();

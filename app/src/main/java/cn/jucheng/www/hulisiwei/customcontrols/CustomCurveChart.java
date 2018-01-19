@@ -6,7 +6,6 @@ import android.graphics.CornerPathEffect;
 import android.graphics.Paint;
 import android.graphics.Path;
 import android.graphics.PathEffect;
-import android.support.v4.content.ContextCompat;
 import android.view.View;
 
 import java.util.ArrayList;
@@ -76,7 +75,7 @@ public class CustomCurveChart extends View {
 
     @Override
     protected void onDraw(Canvas canvas) {
-        canvas.drawColor(ContextCompat.getColor(getContext(), R.color.color1));
+        canvas.drawColor(getResources().getColor(R.color.color1));
         init();
         drawCurve(canvas, paintCurve, dataList, color);
 
@@ -88,7 +87,7 @@ public class CustomCurveChart extends View {
                            Paint paint,
                            ArrayList<Integer>[] xy,
                            int color) {
-        paint.setColor(ContextCompat.getColor(getContext(), color));
+        paint.setColor(getResources().getColor( color));
         Path path = new Path();
         for (int i = 0; i <= (xy[0].size() - 1); i++) {
             if (i == 0) {
@@ -99,8 +98,6 @@ public class CustomCurveChart extends View {
         }
         canvas.drawPath(path, paint);
     }
-
-
     /**
      * 数据按比例转坐标
      */

@@ -2,7 +2,6 @@ package cn.jucheng.www.hulisiwei.base;
 
 import android.app.Activity;
 import android.app.Fragment;
-import android.content.Context;
 import android.os.Bundle;
 import android.os.Environment;
 import android.support.annotation.Nullable;
@@ -38,15 +37,7 @@ public abstract class BaseFragment extends Fragment {
 //    public void onCreate(@Nullable Bundle savedInstanceState) {
 //        super.onCreate(savedInstanceState);
 //    }
-    /**
-     * 获得全局的，防止使用getActivity()为空
-     * @param context
-     */
-    @Override
-    public void onAttach(Context context) {
-        super.onAttach(context);
-        this.mActivity = (Activity)context;
-    }
+
 
 
     @Override
