@@ -8,11 +8,7 @@ import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import cn.jucheng.www.hulisiwei.R;
-import cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView;
 import cn.jucheng.www.hulisiwei.module.UserMessage;
 
 /**
@@ -23,7 +19,7 @@ import cn.jucheng.www.hulisiwei.module.UserMessage;
 public class YZDTempFragmentAdapter extends BaseAdapter {
 
 
-    List<String> list = new ArrayList<>();//某一项的要修改的信息
+//    List<String> list = new ArrayList<>();//某一项的要修改的信息
     private LayoutInflater mInflater;
     private Context mContext = null;
     int index = 1;//数据条数
@@ -65,7 +61,7 @@ public class YZDTempFragmentAdapter extends BaseAdapter {
             holder.h_age = (TextView) convertView.findViewById(R.id.h_age);
             holder.h_division = (TextView) convertView.findViewById(R.id.h_division);
             holder.h_bednumber = (TextView) convertView.findViewById(R.id.h_bednumber);
-            holder.h_illrecordNum=(FitHeightTextView) convertView.findViewById(R.id.h_illrecordNum);
+            holder.h_illrecordNum=(TextView) convertView.findViewById(R.id.h_illrecordNum);
 
             holder.yzdTempLeftListItem = new YZDTempLeftListItem(mContext,position);
             holder.lv_left=(ListView)convertView.findViewById(R.id.lv_left);
@@ -97,7 +93,7 @@ public class YZDTempFragmentAdapter extends BaseAdapter {
         TextView h_age;//年龄
         TextView h_division;//科室
         TextView h_bednumber;//床号
-        FitHeightTextView h_illrecordNum;//病案号
+        TextView h_illrecordNum;//病案号
 
         TextView h_ryrq;//入院日期
         TextView h_zyblh;//住院病历号

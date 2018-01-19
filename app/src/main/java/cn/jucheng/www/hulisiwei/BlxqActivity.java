@@ -243,7 +243,7 @@ public class BlxqActivity extends MyBaseActivity implements View.OnClickListener
                 UserMessage.biaodan_message = str;//缓存转抄数据
                 EventBus.getDefault().post(new MessageEvent(UserMessage.biaodan_message, 5));
                 break;
-            case MyMessage.MLZ_BDT:
+            case MyMessage.MLZ_BDT://表单头数据
                 String head_message = str;
                 EventBus.getDefault().post(new MessageEvent(head_message, 1));
                 break;

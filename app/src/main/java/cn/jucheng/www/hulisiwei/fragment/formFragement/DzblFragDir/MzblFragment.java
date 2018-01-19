@@ -14,7 +14,6 @@ import org.greenrobot.eventbus.ThreadMode;
 import java.util.ArrayList;
 import java.util.List;
 
-import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
 import cn.jucheng.jclibs.tools.MyToast;
@@ -23,7 +22,6 @@ import cn.jucheng.www.hulisiwei.BlxqActivity;
 import cn.jucheng.www.hulisiwei.R;
 import cn.jucheng.www.hulisiwei.adapter.fragmentAdapter.YZDLongFragmentAdapter;
 import cn.jucheng.www.hulisiwei.base.BaseFragment;
-import cn.jucheng.www.hulisiwei.base.MyList;
 import cn.jucheng.www.hulisiwei.interfaca.MessageEvent;
 import cn.jucheng.www.hulisiwei.module.UserMessage;
 import cn.jucheng.www.hulisiwei.utils.CommUtils;
@@ -40,9 +38,6 @@ import static cn.jucheng.www.hulisiwei.module.UserMessage.twdResult;
  */
 
 public class MzblFragment extends BaseFragment implements AbsListView.OnScrollListener {
-
-    @BindView(R.id.fragment_fitlist)
-    MyList twd;
 
     Unbinder unbinder;
     private View view;
@@ -61,12 +56,12 @@ public class MzblFragment extends BaseFragment implements AbsListView.OnScrollLi
     int formType;//体温单细分类 1.脉搏 2.体温 3.其他json类型数据
     @Override
     public int getID() {
-        return R.layout.fragment_fitlist;
+        return 0 ;
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.fragment_fitlist, null);
+        view = inflater.inflate(R.layout.adapter_fragmentmzbl, null);
         unbinder= ButterKnife.bind(this,view);
         initView();
         initAdapter();
@@ -98,8 +93,6 @@ public class MzblFragment extends BaseFragment implements AbsListView.OnScrollLi
      * 初始adapter
      */
     public void initAdapter() {
-        twd.setAdapter(adapter);
-        twd.setOnScrollListener(this);
     }
 
     /**

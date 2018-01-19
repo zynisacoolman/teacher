@@ -13,7 +13,7 @@ import cn.jucheng.www.hulisiwei.R;
 import cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView;
 
 /**
- * Created by w on 2017-12-08.
+ * Created by zyn on 2017-12-08.
  */
 
 public class CustomDialog extends Dialog {

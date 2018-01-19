@@ -1,8 +1,8 @@
 package cn.jucheng.www.hulisiwei.fragment.formFragement.DzblFragDir;
 
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AbsListView;
@@ -48,7 +48,7 @@ public class Hljld1Fragment extends BaseFragment implements AbsListView.OnScroll
 
     private TextView[] tvlabel;
     protected final String TAG = "护理记录单首页";
-    private View view;
+    private View views;
     private LinearLayout linearLayout;
     /**
      * 数据源
@@ -56,19 +56,10 @@ public class Hljld1Fragment extends BaseFragment implements AbsListView.OnScroll
     Unbinder unbinder;
     int pages = 1;
     int valideCounts=0;
-
-
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.adapter_fragmenthljld, null);
+    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         LinearLayout linearlayout = (LinearLayout)view.findViewById(R.id.ll_1sthljld);
-        getPage();
-        //解析jsonobj
-//        UserMessage.medicalrecords.getHulijiludanshouye();
-//        setHead();
-
         this.setWidget(linearlayout);
-        return view;
     }
 
 
@@ -90,13 +81,13 @@ public class Hljld1Fragment extends BaseFragment implements AbsListView.OnScroll
 
                 if(view instanceof FitHeightTextView){
                     FitHeightTextView newDtv = (FitHeightTextView) view;
-                    newDtv.setText(UserMessage.medicalrecords.getTigejiancha().get(valideCounts));
+                    newDtv.setText(UserMessage.medicalrecords.getHulijiludanshouye().get(valideCounts));
                     Log.v("red",newDtv.getText()+"");
                 }else{
                     CheckBox newCkb = (CheckBox) view;
-                    newCkb.setChecked(UserMessage.medicalrecords.getTigejiancha().get(valideCounts).equals("0"));
+                    newCkb.setChecked(UserMessage.medicalrecords.getHulijiludanshouye().get(valideCounts).equals("0"));
                 }
-                if(valideCounts<UserMessage.medicalrecords.getTigejiancha().size()-1){
+                if(valideCounts<UserMessage.medicalrecords.getHulijiludanshouye().size()-1){
                     valideCounts++;
                 }
 
@@ -170,6 +161,6 @@ public class Hljld1Fragment extends BaseFragment implements AbsListView.OnScroll
 
     @Override
     protected int getID() {
-        return 0;
+        return R.layout.adapter_fragmenthljld;
     }
 }

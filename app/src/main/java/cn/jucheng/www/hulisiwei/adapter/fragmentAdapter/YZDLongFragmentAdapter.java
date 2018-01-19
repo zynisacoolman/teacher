@@ -12,9 +12,7 @@ import java.util.List;
 
 import cn.jucheng.www.hulisiwei.R;
 import cn.jucheng.www.hulisiwei.base.MyList;
-import cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView;
 import cn.jucheng.www.hulisiwei.module.UserMessage;
-import cn.jucheng.www.hulisiwei.widget.MyShareUtils;
 
 /**
  * Created by w on 2017-12-02.
@@ -29,7 +27,6 @@ public class YZDLongFragmentAdapter extends BaseAdapter {
     private Context mContext = null;
     int index = 1;//数据条数
     String nurseName = "";//签名
-    public static MyShareUtils datas = null;//缓存数据
 
     int yiZhuHangHao = 0;//医嘱行号
     int yiZhuType = 0;//医嘱种类
@@ -42,8 +39,7 @@ public class YZDLongFragmentAdapter extends BaseAdapter {
         this.mContext = context;
         this.index = index;
         mInflater = LayoutInflater.from(context);
-        if (datas == null)
-            datas = MyShareUtils.getInstances(context);
+
     }
 
 
@@ -76,7 +72,7 @@ public class YZDLongFragmentAdapter extends BaseAdapter {
             holder.h_age = (TextView) convertView.findViewById(R.id.h_age);
             holder.h_division = (TextView) convertView.findViewById(R.id.h_division);
             holder.h_bednumber = (TextView) convertView.findViewById(R.id.h_bednumber);
-            holder.h_illrecordNum=(FitHeightTextView) convertView.findViewById(R.id.h_illrecordNum);
+            holder.h_illrecordNum=(TextView) convertView.findViewById(R.id.h_illrecordNum);
             holder.lv_hssign=(MyList) convertView.findViewById(R.id.gv_hssign);
             holder.lv_start=(MyList) convertView.findViewById(R.id.gv_start);
             holder.transfusion_page_number=(TextView)convertView.findViewById(R.id.inject_page_number);//页面号
@@ -120,7 +116,7 @@ public class YZDLongFragmentAdapter extends BaseAdapter {
         TextView h_age;//年龄
         TextView h_division;//科室
         TextView h_bednumber;//床号
-        FitHeightTextView h_illrecordNum;//病案号
+        TextView h_illrecordNum;//病案号
 
         YZDLongStopAdapter yzdright;
         YZDLongStartAdapter yzdleft;

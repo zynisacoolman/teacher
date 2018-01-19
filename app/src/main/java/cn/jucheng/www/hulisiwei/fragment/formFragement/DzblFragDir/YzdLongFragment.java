@@ -123,7 +123,7 @@ public class YzdLongFragment extends BaseFragment implements AbsListView.OnScrol
             switch (opratype){
                 case 1:
                     if(UserMessage.YZDlongstart.size()==line)
-                        UserMessage.YZDlongstart.set(line,specialList);
+                        UserMessage.YZDlongstart.set(line-1,specialList);
                     else
                         UserMessage.YZDlongstart.add(specialList);
                     break;

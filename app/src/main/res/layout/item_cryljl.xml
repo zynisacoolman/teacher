@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="70dp"
+    android:orientation="horizontal">
+
+    <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+        android:id="@+id/ft_sj"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="120" />
+
+    <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+        android:id="@+id/ft_xm"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="234" />
+
+    <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+        android:id="@+id/ft_sl"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="30" />
+
+    <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+        android:id="@+id/ft_xm2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="234" />
+
+    <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+        android:id="@+id/ft_sl2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="30" />
+
+    <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+        android:id="@+id/ft_qm"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="115" />
+
+</LinearLayout>

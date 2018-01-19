@@ -35,7 +35,7 @@ import static cn.jucheng.www.hulisiwei.module.UserMessage.twdResult;
 
 /**
  * Created by zyn on 2017-11-22.
- *
+ *  知情同意书
  */
 
 public class ZtjldFragment extends BaseFragment implements AbsListView.OnScrollListener {

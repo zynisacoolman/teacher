@@ -18,7 +18,7 @@ public class MzblFragment_ViewBinding implements Unbinder {
   public MzblFragment_ViewBinding(MzblFragment target, View source) {
     this.target = target;
 
-    target.twd = Utils.findRequiredViewAsType(source, R.id.fragment_fitlist, "field 'twd'", MyList.class);
+    target.twd = Utils.findRequiredViewAsType(source, R.id.fragment_fitlist, "field 'list'", MyList.class);
   }
 
   @Override

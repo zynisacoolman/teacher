@@ -17,7 +17,6 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
-import cn.jucheng.jclibs.tools.MyToast;
 import cn.jucheng.jclibs.tools.SubStringUtils;
 import cn.jucheng.www.hulisiwei.BlxqActivity;
 import cn.jucheng.www.hulisiwei.R;
@@ -27,7 +26,6 @@ import cn.jucheng.www.hulisiwei.base.MyList;
 import cn.jucheng.www.hulisiwei.interfaca.MessageEvent;
 import cn.jucheng.www.hulisiwei.module.UserMessage;
 import cn.jucheng.www.hulisiwei.utils.CommUtils;
-import cn.jucheng.www.hulisiwei.utils.DateUtils;
 import cn.jucheng.www.hulisiwei.widget.HexadecimalConver;
 import cn.jucheng.www.hulisiwei.widget.MyGlobal1;
 import cn.jucheng.www.hulisiwei.widget.MyShareUtils;
@@ -158,42 +156,7 @@ public class JcbgFragment extends BaseFragment implements AbsListView.OnScrollLi
             case 2://2是清空所有信息
                 ClearBiaodanHead();
                 break;
-            case 3://3是签字信息
-                biaoDanType = Integer
-                        .parseInt(SubStringUtils.substring(message,
-                                52, 54), 16);
-                int qianzi_yizhuzhonglei = Integer
-                        .parseInt(SubStringUtils.substring(message,
-                                54, 56), 16);
-                int qianzi_hangHao = Integer
-                        .parseInt(SubStringUtils.substring(message,
-                                56, 60), 16);
-                int qianzi_zhuangTai = Integer
-                        .parseInt(SubStringUtils.substring(message,
-                                60, 62), 16);
 
-                int hang = 0;
-                String date = DateUtils.getminDate();
-                String nurseName = datas.getData(MyGlobal1.NURSE_NAME);
-                if(qianzi_hangHao >= 1){
-                    hang = qianzi_hangHao-1;
-                }
-
-                switch (qianzi_zhuangTai){
-                    case 1:
-                        List<String> list ;
-                        list = UserMessage.transfusion_Message.get(hang);
-                        list.set(3,date);
-                        list.set(4,nurseName);
-                        list.set(5, String.valueOf(qianzi_yizhuzhonglei));
-                        break;
-                    case 2:
-                        MyToast.showTestToast(getActivity(),getString(R.string.qianzi_faile));
-                        break;
-                    default:
-                        break;
-                }
-                break;
             case 4://4是表单信息
                 setBiaodan(message);
                 break;
