@@ -13,6 +13,7 @@ import org.greenrobot.eventbus.EventBus;
 
 import java.io.File;
 
+import butterknife.ButterKnife;
 import butterknife.Unbinder;
 
 /**
@@ -51,6 +52,7 @@ public abstract class BaseFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         view = inflater.inflate(getID(), container,false);
+        unbinder= ButterKnife.bind(this,view);
         EventBus.getDefault().register(this);//在当前界面注册一个订阅者
         return view;
     }
@@ -58,7 +60,7 @@ public abstract class BaseFragment extends Fragment {
 
     @Override
     public void onDestroyView(){
-//        unbinder.unbind();
+        unbinder.unbind();
         super.onDestroyView();
         EventBus.getDefault().unregister(this );
 

@@ -20,18 +20,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="150f9048-838b-42cd-b167-f952e4091399" name="Default" comment="比重布局界面，完成一半">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/HLJL2itemAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/HLJL3itemAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/HLJL4itemAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_cryljl.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_ybhljl.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_ychl.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/Hljld2Fragment_ViewBinding.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/MzblFragment_ViewBinding.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/TgjcFragment_ViewBinding.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/Hljld2Fragment_ViewBinding.dex" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/MzblFragment_ViewBinding.dex" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/TgjcFragment_ViewBinding.dex" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/javaCompile/classAnalysis.bin" />
@@ -40,270 +28,13 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/BllbActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/BllbActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/BllbActivity_ViewBinding.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/BllbActivity_ViewBinding.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/BlxqActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/BlxqActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/BlxqActivity_ViewBinding.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/BlxqActivity_ViewBinding.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/BlzgActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/BlzgActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/BlzgActivity_ViewBinding.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/BlzgActivity_ViewBinding.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/ConnectBTPairedActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/ConnectBTPairedActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/ConnectIPActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/ConnectIPActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/ConnectIPActivity_ViewBinding.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/ConnectIPActivity_ViewBinding.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/ConnectionSettingsActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/ConnectionSettingsActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/ConnectionSettingsActivity_ViewBinding.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/ConnectionSettingsActivity_ViewBinding.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/LineActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/LineActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/LoginActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/LoginActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/MainActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/MainActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/R$layout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/R$string.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/R$style.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/R$styleable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/R$styleable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/R$xml.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/R$xml.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/SearchBTActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/SearchBTActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/SearchBTActivity_ViewBinding.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/SearchBTActivity_ViewBinding.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/SettingsActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/SettingsActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/SettingsActivity_ViewBinding.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/SettingsActivity_ViewBinding.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/AdapterblzgTab1$ViewHolder.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/AdapterblzgTab1$ViewHolder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/AdapterblzgTab1$ViewHolder_ViewBinding.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/AdapterblzgTab1$ViewHolder_ViewBinding.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/AdapterblzgTab1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/AdapterblzgTab1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/ExplistBLLBAdapter$ChildViewholder.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/ExplistBLLBAdapter$ChildViewholder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/ExplistBLLBAdapter$ChildViewholder_ViewBinding.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/ExplistBLLBAdapter$ChildViewholder_ViewBinding.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/ExplistBLLBAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/ExplistBLLBAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/ItemZtzgAdapter$ViewHolder.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/ItemZtzgAdapter$ViewHolder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/ItemZtzgAdapter$ViewHolder_ViewBinding.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/ItemZtzgAdapter$ViewHolder_ViewBinding.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/ItemZtzgAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/ItemZtzgAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/SimpleTreeAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/SimpleTreeAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/HLJL1FragmentAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/HLJL1FragmentAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/HLJL2FragmentAdapter$ViewHolder.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/HLJL2FragmentAdapter$ViewHolder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/HLJL2FragmentAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/HLJL2FragmentAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/HLJL3FragmentAdapter$ViewHolder.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/HLJL3FragmentAdapter$ViewHolder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/HLJL3FragmentAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/HLJL3FragmentAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/HLJL4FragmentAdapter$ViewHolder.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/HLJL4FragmentAdapter$ViewHolder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/HLJL4FragmentAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/HLJL4FragmentAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/JCBGFragmentAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/JCBGFragmentAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/MZBLFragmentAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/MZBLFragmentAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/RYJLFragmentAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/RYJLFragmentAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/TGJCFragmentAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/TGJCFragmentAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/TWDFragmentAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/TWDFragmentAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/XTJLDFragmentAdapter$ViewHolder.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/XTJLDFragmentAdapter$ViewHolder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/XTJLDFragmentAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/XTJLDFragmentAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/XTJLDiTemFragmentAdapter$ViewHolder.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/XTJLDiTemFragmentAdapter$ViewHolder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/XTJLDiTemFragmentAdapter$ViewHolder_ViewBinding.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/XTJLDiTemFragmentAdapter$ViewHolder_ViewBinding.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/XTJLDiTemFragmentAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/XTJLDiTemFragmentAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDLongFragmentAdapter$ViewHolder.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDLongFragmentAdapter$ViewHolder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDLongFragmentAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDLongFragmentAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDLongStartAdapter$ViewHolder.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDLongStartAdapter$ViewHolder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDLongStartAdapter$ViewHolder_ViewBinding.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDLongStartAdapter$ViewHolder_ViewBinding.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDLongStartAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDLongStartAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDLongStopAdapter$ViewHolder.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDLongStopAdapter$ViewHolder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDLongStopAdapter$ViewHolder_ViewBinding.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDLongStopAdapter$ViewHolder_ViewBinding.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDLongStopAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDLongStopAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDLonghsAdapter$ViewHolder.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDLonghsAdapter$ViewHolder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDLonghsAdapter$ViewHolder_ViewBinding.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDLonghsAdapter$ViewHolder_ViewBinding.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDLonghsAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDLonghsAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDTempFragmentAdapter$ViewHolder.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDTempFragmentAdapter$ViewHolder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDTempFragmentAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDTempFragmentAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDTempLeftListItem$ViewHolder.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDTempLeftListItem$ViewHolder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDTempLeftListItem$ViewHolder_ViewBinding.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDTempLeftListItem$ViewHolder_ViewBinding.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDTempLeftListItem.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDTempLeftListItem.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDTempRightListItem$ViewHolder.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDTempRightListItem$ViewHolder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDTempRightListItem$ViewHolder_ViewBinding.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDTempRightListItem$ViewHolder_ViewBinding.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDTempRightListItem.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDTempRightListItem.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/ZQTYSFragmentAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/ZQTYSFragmentAdapter.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/base/BaseFragment.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/base/BaseFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/customcontrols/ItemBlzgView.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/customcontrols/ItemBlzgView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/customcontrols/MyDialog.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/customcontrols/MyDialog.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/dialogs/HuShitixingDialog$Builder.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/dialogs/HuShitixingDialog$Builder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/dialogs/ReconnectDialog$Builder.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/dialogs/ReconnectDialog$Builder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/fragment/blzgFragment/Tabtzcs.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/fragment/blzgFragment/Tabtzcs.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/fragment/blzgFragment/Tabtzcs_ViewBinding.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/fragment/blzgFragment/Tabtzcs_ViewBinding.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/fragment/blzgFragment/Tabyzlb.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/fragment/blzgFragment/Tabyzlb.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/fragment/blzgFragment/Tabyzlb_ViewBinding.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/fragment/blzgFragment/Tabyzlb_ViewBinding.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/fragment/blzgFragment/Tabztzg.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/fragment/blzgFragment/Tabztzg.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/fragment/blzgFragment/Tabztzg_ViewBinding.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/fragment/blzgFragment/Tabztzg_ViewBinding.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/Hljld1Fragment.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/Hljld1Fragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/Hljld2Fragment.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/Hljld2Fragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/Hljld3Fragment.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/Hljld3Fragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/Hljld4Fragment.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/Hljld4Fragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/JcbgFragment.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/JcbgFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/MzblFragment.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/MzblFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/RyjlFragment.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/RyjlFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/TgjcFragment.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/TgjcFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/XtjldFragment.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/XtjldFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/XtjldFragment_ViewBinding.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/XtjldFragment_ViewBinding.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/YzdLongFragment.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/YzdLongFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/YzdTemFragment.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/YzdTemFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/ZqtysFragment.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/ZqtysFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/ZqtysFragment_ViewBinding.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/ZqtysFragment_ViewBinding.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/module/UserMessage.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/module/UserMessage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/utils/CustomDialog.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/utils/CustomDialog.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/utils/CustomDialog_ViewBinding.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/cn/jucheng/www/hulisiwei/utils/CustomDialog_ViewBinding.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/shizhefei/view/hvscrollview/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/shizhefei/view/hvscrollview/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/debug/zip-cache/a+F1G3+kkZssLmoSmrMdWIj+8wI=" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/debug/zip-cache/a+F1G3+kkZssLmoSmrMdWIj+8wI=" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/resources-debug.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/resources-debug.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_adapter_fragmentcryljld.xml.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_adapter_fragmentcryljld.xml.flat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_adapter_fragmentmzbl.xml.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_adapter_fragmentmzbl.xml.flat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_adapter_fragmentxtjcb.xml.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_adapter_fragmentxtjcb.xml.flat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_adapter_fragmentybhljl.xml.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_adapter_fragmentybhljl.xml.flat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_adapter_fragmentychl.xml.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_adapter_fragmentychl.xml.flat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_adapter_fragmentzqtys.xml.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_adapter_fragmentzqtys.xml.flat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_fragment_formhead_layout.xml.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_fragment_formhead_layout.xml.flat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/BllbActivity.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/BllbActivity.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/BllbActivity_ViewBinding.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/BllbActivity_ViewBinding.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/BlxqActivity.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/BlxqActivity.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/BlxqActivity_ViewBinding.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/BlxqActivity_ViewBinding.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/BlzgActivity.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/BlzgActivity.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/BlzgActivity_ViewBinding.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/BlzgActivity_ViewBinding.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/ConnectBTPairedActivity.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/ConnectBTPairedActivity.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/ConnectIPActivity.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/ConnectIPActivity.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/ConnectIPActivity_ViewBinding.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/ConnectIPActivity_ViewBinding.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/ConnectionSettingsActivity.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/ConnectionSettingsActivity.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/ConnectionSettingsActivity_ViewBinding.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/ConnectionSettingsActivity_ViewBinding.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/LineActivity.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/LineActivity.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/LoginActivity.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/LoginActivity.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/MainActivity.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/MainActivity.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/R$id.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/R$id.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/R$layout.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/R$layout.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/R$string.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/R$string.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/R$style.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/R$style.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/R$styleable.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/R$styleable.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/R$xml.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/R$xml.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/SearchBTActivity.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/SearchBTActivity.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/SearchBTActivity_ViewBinding.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/SearchBTActivity_ViewBinding.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/SettingsActivity.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/SettingsActivity.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/SettingsActivity_ViewBinding.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/SettingsActivity_ViewBinding.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/AdapterblzgTab1$ViewHolder.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/AdapterblzgTab1$ViewHolder.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/AdapterblzgTab1$ViewHolder_ViewBinding.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/AdapterblzgTab1$ViewHolder_ViewBinding.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/AdapterblzgTab1.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/AdapterblzgTab1.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/ExplistBLLBAdapter$ChildViewholder.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/ExplistBLLBAdapter$ChildViewholder.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/ExplistBLLBAdapter$ChildViewholder_ViewBinding.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/ExplistBLLBAdapter$ChildViewholder_ViewBinding.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/ExplistBLLBAdapter.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/ExplistBLLBAdapter.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/ItemZtzgAdapter$ViewHolder.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/ItemZtzgAdapter$ViewHolder.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/ItemZtzgAdapter$ViewHolder_ViewBinding.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/ItemZtzgAdapter$ViewHolder_ViewBinding.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/ItemZtzgAdapter.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/ItemZtzgAdapter.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/SimpleTreeAdapter.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/SimpleTreeAdapter.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/HLJL1FragmentAdapter.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/HLJL1FragmentAdapter.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/HLJL2FragmentAdapter$ViewHolder.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/HLJL2FragmentAdapter$ViewHolder.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/HLJL2FragmentAdapter.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/HLJL2FragmentAdapter.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/HLJL3FragmentAdapter$ViewHolder.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/HLJL3FragmentAdapter$ViewHolder.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/HLJL3FragmentAdapter.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/HLJL3FragmentAdapter.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/HLJL4FragmentAdapter$ViewHolder.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/HLJL4FragmentAdapter$ViewHolder.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/HLJL4FragmentAdapter.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/HLJL4FragmentAdapter.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/JCBGFragmentAdapter.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/JCBGFragmentAdapter.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/MZBLFragmentAdapter.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/MZBLFragmentAdapter.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/RYJLFragmentAdapter.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/RYJLFragmentAdapter.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/TGJCFragmentAdapter.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/TGJCFragmentAdapter.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/TWDFragmentAdapter.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/TWDFragmentAdapter.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/XTJLDFragmentAdapter$ViewHolder.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/XTJLDFragmentAdapter$ViewHolder.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/XTJLDFragmentAdapter.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/XTJLDFragmentAdapter.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/XTJLDiTemFragmentAdapter$ViewHolder.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/XTJLDiTemFragmentAdapter$ViewHolder.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/XTJLDiTemFragmentAdapter$ViewHolder_ViewBinding.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/XTJLDiTemFragmentAdapter$ViewHolder_ViewBinding.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/XTJLDiTemFragmentAdapter.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/XTJLDiTemFragmentAdapter.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDLongFragmentAdapter$ViewHolder.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDLongFragmentAdapter$ViewHolder.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDLongFragmentAdapter.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDLongFragmentAdapter.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDLongStartAdapter$ViewHolder.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDLongStartAdapter$ViewHolder.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDLongStartAdapter$ViewHolder_ViewBinding.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDLongStartAdapter$ViewHolder_ViewBinding.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDLongStartAdapter.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDLongStartAdapter.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDLongStopAdapter$ViewHolder.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDLongStopAdapter$ViewHolder.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDLongStopAdapter$ViewHolder_ViewBinding.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDLongStopAdapter$ViewHolder_ViewBinding.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDLongStopAdapter.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDLongStopAdapter.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDLonghsAdapter$ViewHolder.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDLonghsAdapter$ViewHolder.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDLonghsAdapter$ViewHolder_ViewBinding.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDLonghsAdapter$ViewHolder_ViewBinding.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDLonghsAdapter.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDLonghsAdapter.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDTempFragmentAdapter$ViewHolder.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDTempFragmentAdapter$ViewHolder.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDTempFragmentAdapter.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDTempFragmentAdapter.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDTempLeftListItem$ViewHolder.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDTempLeftListItem$ViewHolder.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDTempLeftListItem$ViewHolder_ViewBinding.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDTempLeftListItem$ViewHolder_ViewBinding.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDTempLeftListItem.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDTempLeftListItem.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDTempRightListItem$ViewHolder.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDTempRightListItem$ViewHolder.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDTempRightListItem$ViewHolder_ViewBinding.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDTempRightListItem$ViewHolder_ViewBinding.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDTempRightListItem.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDTempRightListItem.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/ZQTYSFragmentAdapter.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/ZQTYSFragmentAdapter.dex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/base/BaseFragment.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/base/BaseFragment.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/customcontrols/ItemBlzgView.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/customcontrols/ItemBlzgView.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/customcontrols/MyDialog.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/customcontrols/MyDialog.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/dialogs/HuShitixingDialog$Builder.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/dialogs/HuShitixingDialog$Builder.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/dialogs/ReconnectDialog$Builder.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/dialogs/ReconnectDialog$Builder.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/fragment/blzgFragment/Tabtzcs.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/fragment/blzgFragment/Tabtzcs.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/fragment/blzgFragment/Tabtzcs_ViewBinding.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/fragment/blzgFragment/Tabtzcs_ViewBinding.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/fragment/blzgFragment/Tabyzlb.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/fragment/blzgFragment/Tabyzlb.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/fragment/blzgFragment/Tabyzlb_ViewBinding.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/fragment/blzgFragment/Tabyzlb_ViewBinding.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/fragment/blzgFragment/Tabztzg.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/fragment/blzgFragment/Tabztzg.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/fragment/blzgFragment/Tabztzg_ViewBinding.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/fragment/blzgFragment/Tabztzg_ViewBinding.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/Hljld1Fragment.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/Hljld1Fragment.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/Hljld2Fragment.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/Hljld2Fragment.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/Hljld3Fragment.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/Hljld3Fragment.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/Hljld4Fragment.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/Hljld4Fragment.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/JcbgFragment.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/JcbgFragment.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/MzblFragment.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/MzblFragment.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/RyjlFragment.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/RyjlFragment.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/TgjcFragment.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/TgjcFragment.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/XtjldFragment.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/XtjldFragment.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/XtjldFragment_ViewBinding.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/XtjldFragment_ViewBinding.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/YzdLongFragment.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/YzdLongFragment.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/YzdTemFragment.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/YzdTemFragment.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/ZqtysFragment.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/ZqtysFragment.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/ZqtysFragment_ViewBinding.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/ZqtysFragment_ViewBinding.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/module/UserMessage.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/module/UserMessage.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/utils/CustomDialog.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/utils/CustomDialog.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/utils/CustomDialog_ViewBinding.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/cn/jucheng/www/hulisiwei/utils/CustomDialog_ViewBinding.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/com/shizhefei/view/hvscrollview/R$id.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/33/com/shizhefei/view/hvscrollview/R$id.dex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/0/classes.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/0/classes.dex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/apt/debug/cn/jucheng/www/hulisiwei/BllbActivity_ViewBinding.java" afterPath="$PROJECT_DIR$/app/build/generated/source/apt/debug/cn/jucheng/www/hulisiwei/BllbActivity_ViewBinding.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/apt/debug/cn/jucheng/www/hulisiwei/BlxqActivity_ViewBinding.java" afterPath="$PROJECT_DIR$/app/build/generated/source/apt/debug/cn/jucheng/www/hulisiwei/BlxqActivity_ViewBinding.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/apt/debug/cn/jucheng/www/hulisiwei/ConnectionSettingsActivity_ViewBinding.java" afterPath="$PROJECT_DIR$/app/build/generated/source/apt/debug/cn/jucheng/www/hulisiwei/ConnectionSettingsActivity_ViewBinding.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/apt/debug/cn/jucheng/www/hulisiwei/SearchBTActivity_ViewBinding.java" afterPath="$PROJECT_DIR$/app/build/generated/source/apt/debug/cn/jucheng/www/hulisiwei/SearchBTActivity_ViewBinding.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/apt/debug/cn/jucheng/www/hulisiwei/SettingsActivity_ViewBinding.java" afterPath="$PROJECT_DIR$/app/build/generated/source/apt/debug/cn/jucheng/www/hulisiwei/SettingsActivity_ViewBinding.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/apt/debug/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/Hljld2Fragment_ViewBinding.java" afterPath="$PROJECT_DIR$/app/build/generated/source/apt/debug/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/Hljld2Fragment_ViewBinding.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/apt/debug/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/MzblFragment_ViewBinding.java" afterPath="$PROJECT_DIR$/app/build/generated/source/apt/debug/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/MzblFragment_ViewBinding.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/apt/debug/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/XtjldFragment_ViewBinding.java" afterPath="$PROJECT_DIR$/app/build/generated/source/apt/debug/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/XtjldFragment_ViewBinding.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/apt/debug/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/ZqtysFragment_ViewBinding.java" afterPath="$PROJECT_DIR$/app/build/generated/source/apt/debug/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/ZqtysFragment_ViewBinding.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/apt/debug/cn/jucheng/www/hulisiwei/utils/CustomDialog_ViewBinding.java" afterPath="$PROJECT_DIR$/app/build/generated/source/apt/debug/cn/jucheng/www/hulisiwei/utils/CustomDialog_ViewBinding.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/cn/jucheng/www/hulisiwei/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/cn/jucheng/www/hulisiwei/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/shizhefei/view/hvscrollview/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/shizhefei/view/hvscrollview/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/debug.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/debug.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/debug/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/debug/dex-renamer-state.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/symbol-table-with-package/debug/package-aware-r.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/res/symbol-table-with-package/debug/package-aware-r.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/symbols/debug/R.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/symbols/debug/R.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/BlxqActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/BlxqActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/BlzgActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/BlzgActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/HLJL2FragmentAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/HLJL2FragmentAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/HLJL3FragmentAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/HLJL3FragmentAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/HLJL4FragmentAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/HLJL4FragmentAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/XTJLDFragmentAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/XTJLDFragmentAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDLongFragmentAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDLongFragmentAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDTempFragmentAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDTempFragmentAdapter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/base/BaseFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/base/BaseFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/fragment/blzgFragment/Tabtzcs.java" afterPath="$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/fragment/blzgFragment/Tabtzcs.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/fragment/blzgFragment/Tabyzlb.java" afterPath="$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/fragment/blzgFragment/Tabyzlb.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/Hljld1Fragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/Hljld1Fragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/Hljld2Fragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/Hljld2Fragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/Hljld3Fragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/Hljld3Fragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/Hljld4Fragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/Hljld4Fragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/JcbgFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/JcbgFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/MzblFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/MzblFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/RyjlFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/RyjlFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/TgjcFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/TgjcFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/XtjldFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/XtjldFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/YzdLongFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/YzdLongFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/YzdTemFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/YzdTemFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/ZqtysFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/ZqtysFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/ZtjldFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/ZtjldFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/module/UserMessage.java" afterPath="$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/module/UserMessage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/utils/CustomDialog.java" afterPath="$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/utils/CustomDialog.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/adapter_fragmentcryljld.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_fragmentcryljld.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/adapter_fragmentmzbl.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_fragmentmzbl.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/adapter_fragmentxtjcb.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_fragmentxtjcb.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/adapter_fragmentybhljl.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_fragmentybhljl.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/adapter_fragmentychl.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_fragmentychl.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/adapter_fragmentzqtys.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_fragmentzqtys.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_formhead_layout.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_formhead_layout.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_yzdlong_start.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_yzdlong_start.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/build/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -350,36 +81,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ZtjldFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/ZtjldFragment.java">
+      <file leaf-file-name="BlzgActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/BlzgActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="76" column="11" lean-forward="false" selection-start-line="76" selection-start-column="11" selection-end-line="76" selection-end-column="11" />
+            <state relative-caret-position="187">
+              <caret line="55" column="31" lean-forward="false" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="XtjldFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/XtjldFragment.java">
+      <file leaf-file-name="FragmentTabAdapter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/base/FragmentTabAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="43" column="7" lean-forward="false" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="7" />
+            <state relative-caret-position="119">
+              <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
               <folding />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="adapter_fragmentxtjcb.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/adapter_fragmentxtjcb.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="38" column="34" lean-forward="false" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer2">
-            <state />
           </provider>
         </entry>
       </file>
@@ -393,11 +111,31 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="ZtjldFragment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/ZtjldFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="219">
+              <caret line="76" column="11" lean-forward="false" selection-start-line="76" selection-start-column="11" selection-end-line="76" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Hljld1Fragment.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/Hljld1Fragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="34" column="22" lean-forward="false" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
+            <state relative-caret-position="113">
+              <caret line="61" column="37" lean-forward="false" selection-start-line="61" selection-start-column="37" selection-end-line="61" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Hljld2Fragment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/Hljld2Fragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="207" column="5" lean-forward="false" selection-start-line="207" selection-start-column="5" selection-end-line="207" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -413,38 +151,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JCBGFragmentAdapter.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="JCBGFragmentAdapter.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/JCBGFragmentAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
               <caret line="24" column="32" lean-forward="false" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JcbgFragment.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/JcbgFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="191" column="5" lean-forward="true" selection-start-line="191" selection-start-column="5" selection-end-line="191" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fragment_xtjcb.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-mdpi/fragment_xtjcb.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="XTJLDFragmentAdapter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/XTJLDFragmentAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -465,7 +176,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>view</find>
       <find>tempyzd</find>
       <find>page_List</find>
       <find>YZDTempFragmentAdapter</find>
@@ -495,6 +205,7 @@
       <find>specialList</find>
       <find>setBiaodanHead</find>
       <find>JCBGFragmentAdapter</find>
+      <find>unbinder</find>
     </findStrings>
     <replaceStrings>
       <replace>currentitem</replace>
@@ -2257,7 +1968,6 @@
         <option value="$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDTempFragmentAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/YzdLongFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/BlzgActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/base/BaseFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/Hljld1Fragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/fragment/blzgFragment/Tabyzlb.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/fragment/blzgFragment/Tabztzg.java" />
@@ -2287,6 +1997,7 @@
         <option value="$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/XTJLDFragmentAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/XtjldFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/ZqtysFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/base/BaseFragment.java" />
       </list>
     </option>
   </component>
@@ -2552,12 +2263,8 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidResFolderTypeNode" />
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidSourceTypeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -2570,8 +2277,112 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
+              <option name="myItemId" value="java" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hulisiwei" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hulisiweiZYNAS" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hulisiwei" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fragment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="formFragement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hulisiweiZYNAS" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hulisiwei" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fragment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="formFragement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DzblFragDir" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hulisiweiZYNAS" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hulisiwei" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fragment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hulisiweiZYNAS" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hulisiwei" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -2720,7 +2531,7 @@
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
       <method>
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1516334274782" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1516342523114" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -2767,7 +2578,7 @@
         <option name="ADVANCED_PROFILING_ENABLED" value="false" />
       </Profilers>
       <method>
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1516334274782" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1516342523115" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -2949,7 +2760,7 @@
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
       <method>
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1516334274783" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1516342523115" />
       </method>
     </configuration>
     <list size="1">
@@ -3038,6 +2849,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="953" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32295272" sideWeight="0.49074075" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23809524" sideWeight="0.5400697" order="2" side_tool="true" content_ui="tabs" />
@@ -3056,10 +2868,10 @@
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2814408" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3252595" sideWeight="0.48395061" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32410613" sideWeight="0.49320987" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32601157" sideWeight="0.529304" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32560834" sideWeight="0.529304" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32683486" sideWeight="0.5445666" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23809524" sideWeight="0.4599303" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23809524" sideWeight="0.4599303" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18728323" sideWeight="0.46581197" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905984" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -3176,6 +2988,14 @@
           </properties>
           <option name="timeStamp" value="342" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/BlzgActivity.java</url>
+          <line>248</line>
+          <properties class="cn.jucheng.www.hulisiwei.BlzgActivity" method="获取体征参数">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="345" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/RyjlFragment.java</url>
           <line>94</line>
@@ -3192,7 +3012,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="345" />
+      <option name="time" value="346" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="app">
@@ -3210,43 +3030,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDLongStopAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDLongFragmentAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="37" column="11" lean-forward="false" selection-start-line="37" selection-start-column="11" selection-end-line="37" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/TWDFragmentAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-295">
-          <caret line="103" column="84" lean-forward="false" selection-start-line="103" selection-start-column="72" selection-end-line="103" selection-end-column="84" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/databean/blnrbean/TwdResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="35" column="16" lean-forward="false" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
-          <folding>
-            <element signature="e#565#566#0" expanded="false" />
-            <element signature="e#597#598#0" expanded="false" />
-            <element signature="e#711#712#0" expanded="false" />
-            <element signature="e#745#746#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/YZDTempLeftListItem.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -3523,14 +3306,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/Hljld2Fragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="96" column="39" lean-forward="false" selection-start-line="96" selection-start-column="39" selection-end-line="96" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/HLJL2FragmentAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -3548,14 +3323,6 @@
       </provider>
       <provider editor-type-id="android-designer2">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/ZtjldFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="76" column="11" lean-forward="false" selection-start-line="76" selection-start-column="11" selection-end-line="76" selection-end-column="11" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-mdpi/fragment_xtjcb.png">
@@ -3628,14 +3395,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/ZyblFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="51" column="49" lean-forward="false" selection-start-line="51" selection-start-column="49" selection-end-line="51" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/module/UserMessage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
@@ -3656,26 +3415,84 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/JCBGFragmentAdapter.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/MyBaseActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="24" column="32" lean-forward="false" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+        <state relative-caret-position="-1623">
+          <caret line="40" column="30" lean-forward="true" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/BlzgActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="55" column="31" lean-forward="false" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/base/FragmentTabAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/Hljld2Fragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="207" column="5" lean-forward="false" selection-start-line="207" selection-start-column="5" selection-end-line="207" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/ZyblFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="51" column="49" lean-forward="false" selection-start-line="51" selection-start-column="49" selection-end-line="51" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/ZtjldFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="76" column="11" lean-forward="false" selection-start-line="76" selection-start-column="11" selection-end-line="76" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/Hljld1Fragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="34" column="22" lean-forward="false" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
+        <state relative-caret-position="113">
+          <caret line="61" column="37" lean-forward="false" selection-start-line="61" selection-start-column="37" selection-end-line="61" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/fragment/formFragement/DzblFragDir/JcbgFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="191" column="5" lean-forward="true" selection-start-line="191" selection-start-column="5" selection-end-line="191" selection-end-column="5" />
+        <state relative-caret-position="149">
+          <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/base/BaseFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="56" column="20" lean-forward="true" selection-start-line="56" selection-start-column="20" selection-end-line="56" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/adapter/fragmentAdapter/JCBGFragmentAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="24" column="32" lean-forward="false" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
           <folding />
         </state>
       </provider>
