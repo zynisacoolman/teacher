@@ -146,13 +146,7 @@
             android:onClick="onTest"
             android:background="@color/red"
             android:text="去病例列表页面" />
-        <Button
-            android:id="@+id/horizenscroll"
-            android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
-            android:onClick="onTest"
-            android:background="@color/red"
-            android:text="横向滚动" />
+
     </LinearLayout>
 
     <LinearLayout

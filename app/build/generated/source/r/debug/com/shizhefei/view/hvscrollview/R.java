@@ -15,7 +15,7 @@ public final class R {
     }
     public static final class id {
         public static final int both = 0x7f06002c;
-        public static final int horizontal = 0x7f060120;
+        public static final int horizontal = 0x7f06011f;
         public static final int none = 0x7f06019c;
         public static final int vertical = 0x7f060234;
     }

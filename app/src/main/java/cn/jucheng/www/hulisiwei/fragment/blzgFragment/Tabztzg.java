@@ -1,7 +1,5 @@
 package cn.jucheng.www.hulisiwei.fragment.blzgFragment;
 
-import android.os.Build;
-import android.support.annotation.RequiresApi;
 import android.util.Log;
 import android.widget.ListView;
 
@@ -26,12 +24,11 @@ public class Tabztzg extends BaseFragment {
         return R.layout.fragment_blzg_tab2;
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.M)
     @Subscribe(threadMode = ThreadMode.MAIN)
     public void onEventMainThread(MessageEventblzg evnt) {
         Log.v("不执行","没有错误信息");
         if(evnt.getType() == 2){
-            lst.setAdapter(new ItemZtzgAdapter(getContext(),evnt.getAl()));
+            lst.setAdapter(new ItemZtzgAdapter(getActivity(),evnt.getAl()));
         }
     }
 }

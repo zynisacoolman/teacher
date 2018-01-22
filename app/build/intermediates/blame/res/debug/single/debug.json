@@ -580,12 +580,12 @@
         "source": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/res/layout/item_tab_ztzg_adapter.xml"
     },
     {
-        "merged": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/res/merged/debug/drawable-mdpi_guanbi_p.png.flat",
-        "source": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/res/drawable-mdpi/guanbi_p.png"
-    },
-    {
         "merged": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/res/merged/debug/layout_item_cryljl.xml.flat",
         "source": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/res/layout/item_cryljl.xml"
+    },
+    {
+        "merged": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/res/merged/debug/drawable-mdpi_guanbi_p.png.flat",
+        "source": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/res/drawable-mdpi/guanbi_p.png"
     },
     {
         "merged": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/res/merged/debug/drawable-mdpi_fragment_lsyzd.png.flat",
@@ -684,12 +684,12 @@
         "source": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/res/layout/fragment_fitlist.xml"
     },
     {
-        "merged": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/res/merged/debug/drawable_s_banner_btnsz.xml.flat",
-        "source": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/res/drawable/s_banner_btnsz.xml"
-    },
-    {
         "merged": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/res/merged/debug/drawable-xhdpi_excel_bottom_line_white.xml.flat",
         "source": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/res/drawable-xhdpi/excel_bottom_line_white.xml"
+    },
+    {
+        "merged": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/res/merged/debug/drawable_s_banner_btnsz.xml.flat",
+        "source": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/res/drawable/s_banner_btnsz.xml"
     },
     {
         "merged": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/res/merged/debug/drawable_s_chk.xml.flat",

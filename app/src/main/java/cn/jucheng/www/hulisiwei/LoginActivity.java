@@ -35,9 +35,6 @@ public class LoginActivity extends MyBaseActivity {
 
 	public void onTest(View v) {
 		switch (v.getId()) {
-			case R.id.horizenscroll:
-
-				break;
 		case R.id.btnFSBingLiMingCheng:
 			String etLeiXing = ((EditText) findViewById(R.id.etBingLiLeiXing))
 					.getText().toString();
@@ -188,8 +185,11 @@ public class LoginActivity extends MyBaseActivity {
 		// etXianShi.setText(MyMessage.getMsgTestShebeizhuangtaiAd(1, 1));
 		// break;
 			case R.id.btngoBllb:
-				startActivity(new Intent().setClass(this,BllbActivity.class));
+				startActivity(new Intent().setClass(this,TestActivity.class));
+
 				break;
+//			case R.id.TestActivity:
+//				break;
 		default:
 			break;
 		}

@@ -47,6 +47,13 @@
             android:label="@string/app_name"
             android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
             android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--测试-->
+        <activity
+            android:name="cn.jucheng.www.hulisiwei.TestActivity"
+            android:configChanges="orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
         <!--病例列表-->
         <activity
             android:name="cn.jucheng.www.hulisiwei.AboutActivity"

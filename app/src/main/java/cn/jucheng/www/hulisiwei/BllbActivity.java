@@ -12,6 +12,7 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.ExpandableListView;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.google.gson.Gson;
@@ -106,6 +107,8 @@ public class BllbActivity extends MyBaseActivity implements View.OnClickListener
     FitHeightTextView tvBlxqXbs;
     @BindView(R.id.tv_btn_xl)
     FitHeightTextView tvbtnxl;
+    @BindView(R.id.iv_exit)
+    ImageView ivexit;
 
 
     @Override
@@ -114,7 +117,7 @@ public class BllbActivity extends MyBaseActivity implements View.OnClickListener
         setContentView(R.layout.activity_bllb_);
         ButterKnife.bind(this);
         //索要学生机状态
-        MyMessage.sendMessage(MyMessage.getMsgSuoyaoxueshengjizhuangtai());
+//        MyMessage.sendMessage(MyMessage.getMsgSuoyaoxueshengjizhuangtai());
 
         if (Environment.getExternalStorageState().
                 equals(Environment.MEDIA_MOUNTED)) {
@@ -162,6 +165,7 @@ public class BllbActivity extends MyBaseActivity implements View.OnClickListener
         expandableListView.setAdapter(new ExplistBLLBAdapter(this, strfa, strson, this));
         //去掉箭头
         expandableListView.setGroupIndicator(null);
+        ivexit.setOnClickListener(this);
         tvbtnxl.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -319,6 +323,9 @@ public class BllbActivity extends MyBaseActivity implements View.OnClickListener
                 startActivity(intents);
                 break;
 
+            case R.id.iv_exit:
+                onExit();
+                break;
         }
     }
     //回调接口实现子列表点击

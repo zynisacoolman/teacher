@@ -1,7 +1,5 @@
 package cn.jucheng.www.hulisiwei.fragment.blzgFragment;
 
-import android.os.Build;
-import android.support.annotation.RequiresApi;
 import android.widget.ListView;
 
 import org.greenrobot.eventbus.Subscribe;
@@ -25,11 +23,10 @@ public class Tabyzlb extends BaseFragment {
         return R.layout.fragment_blzg_tab1;
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.M)
     @Subscribe(threadMode = ThreadMode.MAIN)
     public void onEventMainThread(MessageEventblzg evnt) {
         if(evnt.getType()==1){
-            lst.setAdapter(new AdapterblzgTab1(getContext(),evnt.getAl()));
+            lst.setAdapter(new AdapterblzgTab1(getActivity(),evnt.getAl()));
         }
     }
 }
