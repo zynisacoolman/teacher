@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:minWidth="81dp">
+
+    <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+        android:id="@+id/日期"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30" />
+
+    <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+        android:id="@+id/压疮级别"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30" />
+
+    <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+        android:id="@+id/压疮部位"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30" />
+
+    <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+        android:id="@+id/长"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30" />
+
+    <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+        android:id="@+id/宽"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30" />
+
+    <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+        android:id="@+id/深"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30" />
+
+    <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+        android:id="@+id/水疱"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30" />
+
+    <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+        android:id="@+id/黑色"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30" />
+
+    <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+        android:id="@+id/黄色"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30" />
+
+    <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+        android:id="@+id/红色"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30" />
+
+    <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+        android:id="@+id/粉色"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30" />
+
+    <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+        android:id="@+id/无"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30" />
+
+    <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+        android:id="@+id/少"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30" />
+
+    <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+        android:id="@+id/多"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30" />
+
+    <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+        android:id="@+id/水状"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30" />
+
+    <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+        android:id="@+id/血性"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30" />
+
+    <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+        android:id="@+id/浓性"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30" />
+
+    <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+        android:id="@+id/发臭"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30" />
+
+    <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+        android:id="@+id/红斑"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30" />
+
+    <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+        android:id="@+id/坏死"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30" />
+
+    <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+        android:id="@+id/水肿"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30" />
+
+    <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+        android:id="@+id/浸润"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30" />
+
+    <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+        android:id="@+id/收缩"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30" />
+
+    <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+        android:id="@+id/红疹"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30" />
+
+    <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+        android:id="@+id/处理方式"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="205" />
+
+    <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+        android:id="@+id/签名"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30" />
+</LinearLayout>

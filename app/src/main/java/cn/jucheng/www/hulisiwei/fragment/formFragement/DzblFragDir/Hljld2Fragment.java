@@ -1,10 +1,9 @@
 package cn.jucheng.www.hulisiwei.fragment.formFragement.DzblFragDir;
 
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.text.TextUtils;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.AbsListView;
 
 import org.greenrobot.eventbus.EventBus;
@@ -14,10 +13,7 @@ import org.greenrobot.eventbus.ThreadMode;
 import java.util.ArrayList;
 import java.util.List;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
 import butterknife.Unbinder;
-import cn.jucheng.jclibs.tools.MyToast;
 import cn.jucheng.jclibs.tools.SubStringUtils;
 import cn.jucheng.www.hulisiwei.BlxqActivity;
 import cn.jucheng.www.hulisiwei.R;
@@ -27,12 +23,9 @@ import cn.jucheng.www.hulisiwei.base.MyList;
 import cn.jucheng.www.hulisiwei.interfaca.MessageEvent;
 import cn.jucheng.www.hulisiwei.module.UserMessage;
 import cn.jucheng.www.hulisiwei.utils.CommUtils;
-import cn.jucheng.www.hulisiwei.utils.DateUtils;
 import cn.jucheng.www.hulisiwei.widget.HexadecimalConver;
 import cn.jucheng.www.hulisiwei.widget.MyGlobal1;
 import cn.jucheng.www.hulisiwei.widget.MyShareUtils;
-
-import static cn.jucheng.www.hulisiwei.module.UserMessage.twdResult;
 
 /**
  * Created by zyn on 2017-11-22.
@@ -41,8 +34,7 @@ import static cn.jucheng.www.hulisiwei.module.UserMessage.twdResult;
 
 public class Hljld2Fragment extends BaseFragment implements AbsListView.OnScrollListener {
 
-    @BindView(R.id.fragment_fitlist)
-    MyList twd;
+    MyList list;
 
     Unbinder unbinder;
     private View view;
@@ -64,15 +56,19 @@ public class Hljld2Fragment extends BaseFragment implements AbsListView.OnScroll
         return R.layout.fragment_fitlist;
     }
 
+//    @Override
+//    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+//        view = inflater.inflate(R.layout.fragment_fitlist, null);
+//        unbinder= ButterKnife.bind(this,view);
+//        initView();
+//        initAdapter();
+//        return view;
+//    }
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.fragment_fitlist, null);
-        unbinder= ButterKnife.bind(this,view);
+    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         initView();
-        initAdapter();
-        return view;
+        initAdapter(view);
     }
-
 
     /**
      * 加载数据
@@ -97,10 +93,11 @@ public class Hljld2Fragment extends BaseFragment implements AbsListView.OnScroll
     /**
      * 初始adapter
      */
-    public void initAdapter() {
-        adapter = new HLJL2FragmentAdapter(getActivity(), UserMessage.fragmentHead, pages);
-        twd.setAdapter(adapter);
-        twd.setOnScrollListener(this);
+    public void initAdapter(View views) {
+        adapter = new HLJL2FragmentAdapter(getActivity(),  pages);
+        list =(MyList) views.findViewById(R.id.fragment_fitlist);
+        list.setAdapter(adapter);
+        list.setOnScrollListener(this);
     }
 
     /**
@@ -115,7 +112,7 @@ public class Hljld2Fragment extends BaseFragment implements AbsListView.OnScroll
         int msgType = evnt.getIsMessage();
         String message_str = evnt.getMessage();
         setBiaodanMessage(message_str,msgType);
-        if (biaoDanType ==1) {
+        if (biaoDanType ==9) {
             pages = 1;
             getPage();
             adapter.setLists(UserMessage.fragmentHead, pages);
@@ -126,8 +123,8 @@ public class Hljld2Fragment extends BaseFragment implements AbsListView.OnScroll
      * 计算页数
      */
     public void getPage() {
-        int a = UserMessage.transfusion_Message.size() / 18;
-        if (UserMessage.transfusion_Message.size() > 18) {
+        int a = UserMessage.YBhljlDan.size() / 13;
+        if (UserMessage.YBhljlDan.size() > 13) {
             pages = pages + a;
         }
     }
@@ -158,42 +155,7 @@ public class Hljld2Fragment extends BaseFragment implements AbsListView.OnScroll
             case 2://2是清空所有信息
                 ClearBiaodanHead();
                 break;
-            case 3://3是签字信息
-                biaoDanType = Integer
-                        .parseInt(SubStringUtils.substring(message,
-                                52, 54), 16);
-                int qianzi_yizhuzhonglei = Integer
-                        .parseInt(SubStringUtils.substring(message,
-                                54, 56), 16);
-                int qianzi_hangHao = Integer
-                        .parseInt(SubStringUtils.substring(message,
-                                56, 60), 16);
-                int qianzi_zhuangTai = Integer
-                        .parseInt(SubStringUtils.substring(message,
-                                60, 62), 16);
 
-                int hang = 0;
-                String date = DateUtils.getminDate();
-                String nurseName = datas.getData(MyGlobal1.NURSE_NAME);
-                if(qianzi_hangHao >= 1){
-                    hang = qianzi_hangHao-1;
-                }
-
-                switch (qianzi_zhuangTai){
-                    case 1:
-                        List<String> list ;
-                        list = UserMessage.transfusion_Message.get(hang);
-                        list.set(3,date);
-                        list.set(4,nurseName);
-                        list.set(5, String.valueOf(qianzi_yizhuzhonglei));
-                        break;
-                    case 2:
-                        MyToast.showTestToast(getActivity(),getString(R.string.qianzi_faile));
-                        break;
-                    default:
-                        break;
-                }
-                break;
             case 4://4是表单信息
                 setBiaodan(message);
                 break;
@@ -206,26 +168,19 @@ public class Hljld2Fragment extends BaseFragment implements AbsListView.OnScroll
         biaoDanType = Integer
                 .parseInt(SubStringUtils.substring(message,
                         52, 54), 16);
+
         validLenth=Integer.parseInt(SubStringUtils.substring(message,48,52),16);
-        //获取值类型 1.脉搏 2.体温 3.json对象 tiwendan
-        formType=Integer.parseInt(SubStringUtils.substring(message,54,56),16);
-        switch (formType){
-            case 1:
-                twdResult.setMbsz(
-                        CommUtils.getDatamap(SubStringUtils.substring(message,56,56+validLenth))
-                );
-                break;
-            case 2:
-                twdResult.setTwsz(
-                        CommUtils.getDatamap(SubStringUtils.substring(message,56,56+validLenth))
-                );
-                break;
-            case 3:
-                twdResult.setOther(
-                        CommUtils.getJson(message, "tiwendan")
-                );
-                break;
+        //行号占用两个字节，列号占用两个字节
+        int pagenum =Integer.parseInt(SubStringUtils.substring(message,52,56),16);
+        int linenum =Integer.parseInt(SubStringUtils.substring(message,56,60),16);
+        String json = HexadecimalConver.decode(SubStringUtils.substring(message,60,64+(validLenth-4)*2));
+        List<String> specialList = CommUtils.getJson(json, "yibanhulijiludan");
+        if(UserMessage.YBhljlDan.size()==linenum){
+            UserMessage.YBhljlDan.set(linenum,specialList);
+        }else{
+            UserMessage.YBhljlDan.add(specialList);
         }
+
     }
 
     /**

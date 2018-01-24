@@ -35,7 +35,7 @@ import cn.jucheng.www.hulisiwei.widget.HexadecimalConver;
 
 public class XtjldFragment extends BaseFragment implements AbsListView.OnScrollListener {
     protected final  String  TAG="XtjldFragment";
-    @BindView(R.id.xtjc_list)
+    @BindView(R.id.fragment_fitlist)
     MyList xtjld;
 
     Unbinder unbinder;
@@ -51,12 +51,12 @@ public class XtjldFragment extends BaseFragment implements AbsListView.OnScrollL
 
     @Override
     public int getID() {
-        return R.layout.adapter_fragmentxtjcb;
+        return R.layout.fragment_fitlist;
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
-        view = inflater.inflate(R.layout.adapter_fragmentxtjcb, null);
+        view = inflater.inflate(R.layout.fragment_fitlist, null);
         unbinder = ButterKnife.bind(this, view);
         EventBus.getDefault().register(this);
 

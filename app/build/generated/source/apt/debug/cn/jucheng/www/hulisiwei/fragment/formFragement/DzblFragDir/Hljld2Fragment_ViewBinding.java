@@ -18,7 +18,7 @@ public class Hljld2Fragment_ViewBinding implements Unbinder {
   public Hljld2Fragment_ViewBinding(Hljld2Fragment target, View source) {
     this.target = target;
 
-    target.twd = Utils.findRequiredViewAsType(source, R.id.fragment_fitlist, "field 'twd'", MyList.class);
+    target.list = Utils.findRequiredViewAsType(source, R.id.fragment_fitlist, "field 'list'", MyList.class);
   }
 
   @Override
@@ -28,6 +28,6 @@ public class Hljld2Fragment_ViewBinding implements Unbinder {
     if (target == null) throw new IllegalStateException("Bindings already cleared.");
     this.target = null;
 
-    target.twd = null;
+    target.list = null;
   }
 }

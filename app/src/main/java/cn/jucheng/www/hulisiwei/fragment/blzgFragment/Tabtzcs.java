@@ -43,6 +43,5 @@ public class Tabtzcs extends BaseFragment {
             tv5.setText(evnt.getAl().get(4).toString());
             tv6.setText(evnt.getAl().get(5).toString());
         }
-
     }
 }

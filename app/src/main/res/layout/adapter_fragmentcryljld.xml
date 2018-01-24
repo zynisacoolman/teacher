@@ -33,14 +33,23 @@
                 android:layout_width="match_parent"
                 android:layout_height="900dp"
                 android:orientation="horizontal">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="85"/>
 
                 <cn.jucheng.www.hulisiwei.base.MyList
-                    android:id="@+id/inject_list"
-                    android:layout_width="fill_parent"
+                    android:id="@+id/lst"
+                    android:layout_width="0dp"
+                    android:layout_weight="770"
                     android:layout_height="fill_parent"
                     android:divider="@color/touming"
                     android:listSelector="@color/touming"
                     android:scrollbars="none" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="85"/>
 
             </LinearLayout>
 

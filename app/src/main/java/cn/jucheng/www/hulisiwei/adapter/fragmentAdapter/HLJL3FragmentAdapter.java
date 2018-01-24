@@ -12,8 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import cn.jucheng.www.hulisiwei.R;
-import cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView;
-import cn.jucheng.www.hulisiwei.module.UserMessage;
+import cn.jucheng.www.hulisiwei.base.MyList;
 import cn.jucheng.www.hulisiwei.utils.CommUtils;
 import cn.jucheng.www.hulisiwei.widget.MyShareUtils;
 
@@ -80,7 +79,10 @@ public class HLJL3FragmentAdapter extends BaseAdapter {
             holder.h_age = (TextView) convertView.findViewById(R.id.h_age);
             holder.h_division = (TextView) convertView.findViewById(R.id.h_division);
             holder.h_bednumber = (TextView) convertView.findViewById(R.id.h_bednumber);
-            holder.h_illrecordNum=(FitHeightTextView) convertView.findViewById(R.id.h_illrecordNum);
+            holder.h_illrecordNum=(TextView) convertView.findViewById(R.id.h_illrecordNum);
+            holder.listView = (MyList)convertView.findViewById(R.id.lst);
+            holder.hljl3itemAdapter = new HLJL3itemAdapter(mContext,position);
+            holder.listView.setAdapter(holder.hljl3itemAdapter);
 
             convertView.setTag(holder); //
 
@@ -88,9 +90,7 @@ public class HLJL3FragmentAdapter extends BaseAdapter {
             holder = (ViewHolder) convertView.getTag(); //
         }
 
-        page_List = new ArrayList<>();
-        page_List.addAll(CommUtils.getDataList(UserMessage.transfusion_Message, (position + 1), 18));
-
+        holder.hljl3itemAdapter.notifyDataSetChanged();
         if (specailList.size() >= 0 || specailList != null) {
             holder.h_name.setText(CommUtils.getListString(specailList, 0));
             holder.h_sex.setText(CommUtils.getListString(specailList, 1));
@@ -113,14 +113,10 @@ public class HLJL3FragmentAdapter extends BaseAdapter {
         TextView h_age;//年龄
         TextView h_division;//科室
         TextView h_bednumber;//床号
-        FitHeightTextView h_illrecordNum;//病案号
+        TextView h_illrecordNum;//病案号
+        HLJL3itemAdapter hljl3itemAdapter;
+        ListView listView;//listview
 
-        ListView transfusion_list;//listview
-        TextView transfusion_years;//年
-        TextView transfusion_mouth;//月
-        TextView transfusion_day;//日
-        TextView transfusion_checkuser;//核对者
-        TextView transfusion_carryout;//执行者
         TextView transfusion_page_number;//页数
         TextView h_ryrq;//入院日期
         TextView h_zyblh;//住院病历号

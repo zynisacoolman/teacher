@@ -17,7 +17,7 @@ public class CustomDialog_ViewBinding implements Unbinder {
 
   private View view2131099724;
 
-  private View view2131100067;
+  private View view2131100086;
 
   @UiThread
   public CustomDialog_ViewBinding(CustomDialog target) {
@@ -43,7 +43,7 @@ public class CustomDialog_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.submit, "field 'submit' and method 'onViewClicked'");
     target.submit = Utils.castView(view, R.id.submit, "field 'submit'", FitHeightTextView.class);
-    view2131100067 = view;
+    view2131100086 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -67,7 +67,7 @@ public class CustomDialog_ViewBinding implements Unbinder {
 
     view2131099724.setOnClickListener(null);
     view2131099724 = null;
-    view2131100067.setOnClickListener(null);
-    view2131100067 = null;
+    view2131100086.setOnClickListener(null);
+    view2131100086 = null;
   }
 }

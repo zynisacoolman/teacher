@@ -108,6 +108,12 @@ public class UserMessage {
                     add(fragmentHead2);
         }
     };
+    //一般护理记录单
+    public static List<List<String>> YBhljlDan = new ArrayList<List<String>>();
+    //出入液量记录单
+    public static List<List<String>> CryljlDan = new ArrayList<List<String>>();
+    //压疮护理记录单
+    public static List<List<String>> YchljlDan = new ArrayList<List<String>>();
 
     //长期医嘱单信息 护士签字
     public static List<List<String>> YZDlonghssign =new ArrayList<>();

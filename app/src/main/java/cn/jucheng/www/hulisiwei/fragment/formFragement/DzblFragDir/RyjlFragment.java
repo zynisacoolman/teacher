@@ -44,7 +44,7 @@ import static cn.jucheng.www.hulisiwei.module.UserMessage.twdResult;
 public class RyjlFragment extends BaseFragment implements AbsListView.OnScrollListener {
 
 //    @BindView(R.id.fragment_fitlist)
-//    MyList twd;
+//    MyList list;
 
     Unbinder unbinder;
     private View view;
@@ -65,13 +65,13 @@ public class RyjlFragment extends BaseFragment implements AbsListView.OnScrollLi
     int formType;//体温单细分类 1.脉搏 2.体温 3.其他json类型数据
     @Override
     public int getID() {
-        return R.layout.fragment_fitlist;
+        return 0;
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.adapter_fragmentbljlryjl, null);
-        LinearLayout linearlayout = (LinearLayout)view.findViewById(R.id.ll_1sthljld);
+        LinearLayout linearlayout = (LinearLayout)view.findViewById(R.id.ll_tgjcbsjl);
 
         unbinder= ButterKnife.bind(this,view);
         initView();
@@ -92,13 +92,13 @@ public class RyjlFragment extends BaseFragment implements AbsListView.OnScrollLi
 
                 if(view instanceof FitHeightTextView){
                     FitHeightTextView newDtv = (FitHeightTextView) view;
-                    newDtv.setText(UserMessage.medicalrecords.getHulijiludanshouye().get(valideCounts));
+                    newDtv.setText(UserMessage.medicalrecords.getBinglijilu().get(valideCounts));
                     Log.v("red",newDtv.getText()+"");
                 }else{
                     CheckBox newCkb = (CheckBox) view;
-                    newCkb.setChecked(UserMessage.medicalrecords.getHulijiludanshouye().get(valideCounts).equals("0"));
+                    newCkb.setChecked(UserMessage.medicalrecords.getBinglijilu().get(valideCounts).equals("0"));
                 }
-                if(valideCounts<UserMessage.medicalrecords.getHulijiludanshouye().size()-1){
+                if(valideCounts<UserMessage.medicalrecords.getBinglijilu().size()-1){
                     valideCounts++;
                 }
 
@@ -134,8 +134,8 @@ public class RyjlFragment extends BaseFragment implements AbsListView.OnScrollLi
      */
     public void initAdapter() {
         adapter = new RYJLFragmentAdapter(getActivity(), UserMessage.fragmentHead, pages);
-//        twd.setAdapter(adapter);
-//        twd.setOnScrollListener(this);
+//        list.setAdapter(adapter);
+//        list.setOnScrollListener(this);
     }
 
     /**

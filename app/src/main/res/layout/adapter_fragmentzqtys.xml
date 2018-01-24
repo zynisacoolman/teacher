@@ -12,6 +12,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="1400dp"
+            android:id="@+id/ll_zqtys"
             android:background="@drawable/fragment_zqtys"
             android:orientation="vertical">
 
@@ -19,107 +20,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="156dp" />
             <!--表头-->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="123" />
-                <!--姓名-->
-                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
-                    android:id="@+id/transfusion_name"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="80"
-                    android:gravity="center_vertical"
-                    android:paddingLeft="6dp"
-                    android:textColor="@color/heise"
-                    android:textSize="@dimen/text_size16" />
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="42" />
-                <!--性别-->
-                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
-                    android:id="@+id/transfusion_sex"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="60"
-                    android:gravity="center_vertical"
-                    android:paddingLeft="6dp"
-                    android:textColor="@color/heise"
-                    android:textSize="@dimen/text_size16" />
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="51" />
-                <!--年龄-->
-                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
-                    android:id="@+id/transfusion_age"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="60"
-                    android:gravity="center_vertical"
-                    android:paddingLeft="6dp"
-                    android:textColor="@color/heise"
-                    android:textSize="@dimen/text_size16" />
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="51" />
-                <!--科别-->
-                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
-                    android:id="@+id/transfusion_division"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="100"
-                    android:gravity="center_vertical"
-                    android:paddingLeft="6dp"
-                    android:textColor="@color/heise"
-                    android:textSize="@dimen/text_size16" />
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="57" />
-                <!--床号-->
-                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
-                    android:id="@+id/transfusion_bednumber"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="80"
-                    android:gravity="center_vertical"
-                    android:paddingLeft="6dp"
-                    android:textColor="@color/heise"
-                    android:textSize="@dimen/text_size16" />
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="71" />
-                <!--病案号-->
-                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
-                    android:id="@+id/transfusion_medicalrecord_number"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="80"
-                    android:gravity="center_vertical"
-                    android:paddingLeft="6dp"
-                    android:textColor="@color/heise"
-                    android:textSize="@dimen/text_size16" />
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="85" />
-            </LinearLayout>
-
+            <include layout="@layout/fragment_formhead_layout"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="54dp" />

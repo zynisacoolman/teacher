@@ -445,7 +445,7 @@ public class BlzgActivity extends MyBaseActivity implements View.OnClickListener
         Log.d(TAG, "onClick: "+v.getId());
         switch (v.getId()){
             case R.id.tv_close:
-                finish();
+                BlzgActivity.this.finish();
                 break;
             case R.id.fitbutton_1:
                 fitHeightButton1.setChecked(true);

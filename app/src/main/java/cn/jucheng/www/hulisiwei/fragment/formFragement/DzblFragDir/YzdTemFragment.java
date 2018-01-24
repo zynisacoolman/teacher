@@ -50,7 +50,7 @@ public class YzdTemFragment extends BaseFragment implements
 
     @Override
     public int getID() {
-        return R.id.fragment_fitlist;
+        return R.layout.fragment_fitlist;
     }
 
     @Override
@@ -64,6 +64,8 @@ public class YzdTemFragment extends BaseFragment implements
         tempyzd.setAdapter(adapter);
         return view;
     }
+
+
 
     @Subscribe(threadMode = ThreadMode.MAIN)
     public void onEventMainThread(MessageEvent evnt) {

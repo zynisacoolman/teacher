@@ -5,15 +5,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.ListView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import cn.jucheng.www.hulisiwei.R;
-import cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView;
-import cn.jucheng.www.hulisiwei.module.UserMessage;
+import cn.jucheng.www.hulisiwei.base.MyList;
 import cn.jucheng.www.hulisiwei.utils.CommUtils;
 import cn.jucheng.www.hulisiwei.widget.MyShareUtils;
 
@@ -30,7 +28,7 @@ public class HLJL2FragmentAdapter extends BaseAdapter {
     List<String> list = new ArrayList<>();//某一项的要修改的信息
     private LayoutInflater mInflater;
     private Context mContext = null;
-    int index = 1;//数据条数
+    int index ;//数据条数
     String nurseName = "";//签名
     public static MyShareUtils datas = null;//缓存数据
 
@@ -39,13 +37,10 @@ public class HLJL2FragmentAdapter extends BaseAdapter {
 
 
 
-    public HLJL2FragmentAdapter(Context context, List<String> specailList, int index) {
+    public HLJL2FragmentAdapter(Context context, int index) {
         this.mContext = context;
-        this.specailList = specailList;
         this.index = index;
         mInflater = LayoutInflater.from(context);
-        if (datas == null)
-            datas = MyShareUtils.getInstances(context);
     }
 
     public void setLists(List<String> specailList, int index) {
@@ -57,11 +52,12 @@ public class HLJL2FragmentAdapter extends BaseAdapter {
     @Override
     public int getCount() {
         return index;
+//        return 1+ UserMessage.YBhljlDan.size()/13;
     }
 
     @Override
     public Object getItem(int position) {
-        return page_List.get(position);
+        return null;
     }
 
     @Override
@@ -80,17 +76,15 @@ public class HLJL2FragmentAdapter extends BaseAdapter {
             holder.h_age = (TextView) convertView.findViewById(R.id.h_age);
             holder.h_division = (TextView) convertView.findViewById(R.id.h_division);
             holder.h_bednumber = (TextView) convertView.findViewById(R.id.h_bednumber);
-            holder.h_illrecordNum=(FitHeightTextView) convertView.findViewById(R.id.h_illrecordNum);
-
+            holder.h_illrecordNum=(TextView) convertView.findViewById(R.id.h_illrecordNum);
+            holder.mylist = (MyList) convertView.findViewById(R.id.ybhllist);
+            holder.hljl2itemAdapter = new HLJL2itemAdapter(mContext,position);
+            holder.mylist.setAdapter(holder.hljl2itemAdapter);
             convertView.setTag(holder); //
-
         } else {
             holder = (ViewHolder) convertView.getTag(); //
         }
-
-        page_List = new ArrayList<>();
-        page_List.addAll(CommUtils.getDataList(UserMessage.transfusion_Message, (position + 1), 18));
-
+        holder.hljl2itemAdapter.notifyDataSetChanged();
         if (specailList.size() >= 0 || specailList != null) {
             holder.h_name.setText(CommUtils.getListString(specailList, 0));
             holder.h_sex.setText(CommUtils.getListString(specailList, 1));
@@ -99,7 +93,6 @@ public class HLJL2FragmentAdapter extends BaseAdapter {
             holder.h_bednumber.setText(CommUtils.getListString(specailList, 4));
             holder.h_illrecordNum.setText(CommUtils.getListString(specailList, 5));
         }
-
         return convertView;
     }
 
@@ -113,14 +106,10 @@ public class HLJL2FragmentAdapter extends BaseAdapter {
         TextView h_age;//年龄
         TextView h_division;//科室
         TextView h_bednumber;//床号
-        FitHeightTextView h_illrecordNum;//病案号
+        TextView h_illrecordNum;//病案号
 
-        ListView transfusion_list;//listview
-        TextView transfusion_years;//年
-        TextView transfusion_mouth;//月
-        TextView transfusion_day;//日
-        TextView transfusion_checkuser;//核对者
-        TextView transfusion_carryout;//执行者
+        HLJL2itemAdapter hljl2itemAdapter;
+        MyList mylist ;
         TextView transfusion_page_number;//页数
         TextView h_ryrq;//入院日期
         TextView h_zyblh;//住院病历号

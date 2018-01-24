@@ -13,7 +13,6 @@ import java.util.List;
 
 import cn.jucheng.www.hulisiwei.R;
 import cn.jucheng.www.hulisiwei.base.MyList;
-import cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView;
 import cn.jucheng.www.hulisiwei.module.UserMessage;
 import cn.jucheng.www.hulisiwei.widget.MyShareUtils;
 
@@ -38,6 +37,8 @@ public class XTJLDFragmentAdapter extends BaseAdapter {
     public XTJLDFragmentAdapter(Context context, int index) {
         this.mContext = context;
         this.index = index;
+        mInflater = LayoutInflater.from(context);
+
     }
     @Override
     public int getCount() {
@@ -67,23 +68,22 @@ public class XTJLDFragmentAdapter extends BaseAdapter {
             holder.h_age = (TextView) convertView.findViewById(R.id.h_age);
             holder.h_division = (TextView) convertView.findViewById(R.id.h_division);
             holder.h_bednumber = (TextView) convertView.findViewById(R.id.h_bednumber);
-            holder.h_illrecordNum=(FitHeightTextView) convertView.findViewById(R.id.h_illrecordNum);
-            holder.transfusion_page_number=(FitHeightTextView)convertView.findViewById(R.id.inject_page_number);
-            holder.listView=(MyList)convertView.findViewById(R.id.inject_list);
+            holder.h_illrecordNum=(TextView) convertView.findViewById(R.id.h_illrecordNum);
+
+            holder.listView=(MyList)convertView.findViewById(R.id.xtjc_list);
             holder.xtjlDiTemFragmentAdapter=new XTJLDiTemFragmentAdapter(mContext,position);
             holder.listView.setAdapter(holder.xtjlDiTemFragmentAdapter);
-            holder.xtjlDiTemFragmentAdapter.notifyDataSetChanged();
             convertView.setTag(holder); //
         } else {
             holder = (ViewHolder) convertView.getTag(); //
         }
+            holder.xtjlDiTemFragmentAdapter.notifyDataSetChanged();
             holder.h_name.setText(UserMessage.fragmentHead.get(0));
             holder.h_sex.setText(UserMessage.fragmentHead.get(1));
             holder.h_age.setText(UserMessage.fragmentHead.get(2));
             holder.h_division.setText(UserMessage.fragmentHead.get(3));
             holder.h_bednumber.setText(UserMessage.fragmentHead.get(4));
             holder.h_illrecordNum.setText(UserMessage.fragmentHead.get(5));
-            holder.transfusion_page_number.setText(String.format("第%d页",position+1));
 
 
         return convertView;
@@ -95,7 +95,7 @@ public class XTJLDFragmentAdapter extends BaseAdapter {
         TextView h_age;//年龄
         TextView h_division;//科室
         TextView h_bednumber;//床号
-        FitHeightTextView h_illrecordNum;//病案号
+        TextView h_illrecordNum;//病案号
         XTJLDiTemFragmentAdapter xtjlDiTemFragmentAdapter;
         ListView listView;//listview
         TextView transfusion_page_number;//页数

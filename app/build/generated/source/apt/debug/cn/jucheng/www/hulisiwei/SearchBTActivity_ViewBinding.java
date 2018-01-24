@@ -17,7 +17,7 @@ public class SearchBTActivity_ViewBinding implements Unbinder {
 
   private View view2131099654;
 
-  private View view2131100056;
+  private View view2131100075;
 
   @UiThread
   public SearchBTActivity_ViewBinding(SearchBTActivity target) {
@@ -40,7 +40,7 @@ public class SearchBTActivity_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.serach_buton, "method 'onViewClicked'");
-    view2131100056 = view;
+    view2131100075 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -61,7 +61,7 @@ public class SearchBTActivity_ViewBinding implements Unbinder {
 
     view2131099654.setOnClickListener(null);
     view2131099654 = null;
-    view2131100056.setOnClickListener(null);
-    view2131100056 = null;
+    view2131100075.setOnClickListener(null);
+    view2131100075 = null;
   }
 }
