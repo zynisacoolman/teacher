@@ -2,7 +2,11 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 22
+<<<<<<< HEAD
     buildToolsVersion "27.0.2"
+=======
+    buildToolsVersion "27.0.1"
+>>>>>>> f346c870693d2e79351e828a3d89671b136b8b06
 
     defaultConfig {
         applicationId "cn.jucheng.www.hulisiwei"

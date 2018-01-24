@@ -5,6 +5,7 @@ import android.support.annotation.CallSuper;
 import android.support.annotation.UiThread;
 import android.view.View;
 import android.widget.ExpandableListView;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import butterknife.Unbinder;
 import butterknife.internal.DebouncingOnClickListener;
@@ -50,6 +51,7 @@ public class BllbActivity_ViewBinding implements Unbinder {
         target.onClick(p0);
       }
     });
+    target.ivexit = Utils.findRequiredViewAsType(source, R.id.iv_exit, "field 'ivexit'", ImageView.class);
     view = Utils.findRequiredView(source, R.id.iv_settings, "method 'onClick'");
     view2131100032 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
@@ -79,6 +81,7 @@ public class BllbActivity_ViewBinding implements Unbinder {
     target.tvBlxqZs = null;
     target.tvBlxqXbs = null;
     target.tvbtnxl = null;
+    target.ivexit = null;
 
     view2131100196.setOnClickListener(null);
     view2131100196 = null;

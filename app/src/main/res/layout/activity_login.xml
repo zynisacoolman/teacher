@@ -146,6 +146,7 @@
             android:onClick="onTest"
             android:background="@color/red"
             android:text="去病例列表页面" />
+
     </LinearLayout>
 
     <LinearLayout

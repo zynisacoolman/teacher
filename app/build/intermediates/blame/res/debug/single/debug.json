@@ -580,6 +580,7 @@
         "source": "C:\\Users\\admin\\StudioProjects\\teacher\\app\\src\\main\\res\\layout\\activity_settings.xml"
     },
     {
+<<<<<<< HEAD
         "merged": "C:\\Users\\admin\\StudioProjects\\teacher\\app\\build\\intermediates\\res\\merged\\debug\\layout_adapter_fragmentycwxys.xml.flat",
         "source": "C:\\Users\\admin\\StudioProjects\\teacher\\app\\src\\main\\res\\layout\\adapter_fragmentycwxys.xml"
     },
@@ -590,6 +591,18 @@
     {
         "merged": "C:\\Users\\admin\\StudioProjects\\teacher\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_record_bac.png.flat",
         "source": "C:\\Users\\admin\\StudioProjects\\teacher\\app\\src\\main\\res\\drawable-hdpi\\record_bac.png"
+=======
+        "merged": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/res/merged/debug/layout_item_cryljl.xml.flat",
+        "source": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/res/layout/item_cryljl.xml"
+    },
+    {
+        "merged": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/res/merged/debug/drawable-mdpi_guanbi_p.png.flat",
+        "source": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/res/drawable-mdpi/guanbi_p.png"
+    },
+    {
+        "merged": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/res/merged/debug/drawable-mdpi_fragment_lsyzd.png.flat",
+        "source": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/res/drawable-mdpi/fragment_lsyzd.png"
+>>>>>>> f346c870693d2e79351e828a3d89671b136b8b06
     },
     {
         "merged": "C:\\Users\\admin\\StudioProjects\\teacher\\app\\build\\intermediates\\res\\merged\\debug\\layout_adapter_fragment_takemedicine.xml.flat",
@@ -684,6 +697,7 @@
         "source": "C:\\Users\\admin\\StudioProjects\\teacher\\app\\src\\main\\res\\drawable-mdpi\\dxk_d.png"
     },
     {
+<<<<<<< HEAD
         "merged": "C:\\Users\\admin\\StudioProjects\\teacher\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_bllb_.xml.flat",
         "source": "C:\\Users\\admin\\StudioProjects\\teacher\\app\\src\\main\\res\\layout\\activity_bllb_.xml"
     },
@@ -694,6 +708,18 @@
     {
         "merged": "C:\\Users\\admin\\StudioProjects\\teacher\\app\\build\\intermediates\\res\\merged\\debug\\layout_adapter_fragmentyzdlong.xml.flat",
         "source": "C:\\Users\\admin\\StudioProjects\\teacher\\app\\src\\main\\res\\layout\\adapter_fragmentyzdlong.xml"
+=======
+        "merged": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/res/merged/debug/drawable-xhdpi_excel_bottom_line_white.xml.flat",
+        "source": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/res/drawable-xhdpi/excel_bottom_line_white.xml"
+    },
+    {
+        "merged": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/res/merged/debug/drawable_s_banner_btnsz.xml.flat",
+        "source": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/res/drawable/s_banner_btnsz.xml"
+    },
+    {
+        "merged": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/res/merged/debug/drawable_s_chk.xml.flat",
+        "source": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/res/drawable/s_chk.xml"
+>>>>>>> f346c870693d2e79351e828a3d89671b136b8b06
     },
     {
         "merged": "C:\\Users\\admin\\StudioProjects\\teacher\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_loading_white_09.png.flat",

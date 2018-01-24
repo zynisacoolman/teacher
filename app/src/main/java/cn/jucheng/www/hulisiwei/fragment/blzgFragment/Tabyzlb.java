@@ -22,6 +22,7 @@ public class Tabyzlb extends BaseFragment {
     protected int getID() {
         return R.layout.fragment_blzg_tab1;
     }
+
     @Subscribe(threadMode = ThreadMode.MAIN)
     public void onEventMainThread(MessageEventblzg evnt) {
         if(evnt.getType()==1){
