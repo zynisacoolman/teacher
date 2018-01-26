@@ -1,8 +1,8 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "27.0.1"
+    compileSdkVersion 22
+    buildToolsVersion "27.0.2"
 
     defaultConfig {
         applicationId "cn.jucheng.www.hulisiwei"
@@ -26,7 +26,8 @@ android {
 dependencies {
     //消息传递
     compile 'org.greenrobot:eventbus:3.0.0'
-    compile 'com.android.support:support-v4:25.4.0'
+    //noinspection GradleCompatible
+//    compile 'com.android.support:support-v4:22.2.1'
     compile 'com.android.support:multidex:1.0.2'
     compile files('libs/CH34xUARTDriver.jar')
     compile files('libs/iText-2.0.8.jar')
@@ -36,5 +37,6 @@ dependencies {
     compile 'com.google.code.gson:gson:2.8.0'
     compile 'org.greenrobot:eventbus:3.0.0'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
-    compile project(path: ':tableview')
+    compile 'com.shizhefei:HVScrollView:1.0.1'
+    compile 'com.android.support:support-v4:25.3.0'
 }
