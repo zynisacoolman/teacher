@@ -6,8 +6,7 @@
     android:orientation="vertical">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="70"
+        android:layout_height="70dp"
         android:background="@color/banner_bg_color">
 
         <TextView
@@ -16,41 +15,41 @@
             android:layout_weight="28"
             />
 
-        <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+        <TextView
             android:id="@+id/tv_name_bl"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="388"
             android:gravity="center_vertical"
             android:fontFamily="@font/msyh"
-            android:text="病例名称"
+            android:text="@string/病例名称"
             android:textColor="@color/banner_txt_color"
             android:textSize="@dimen/text_size18" />
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="24" />
-        <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+        <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="284"
             android:id="@+id/tv_time_Bl"
             android:gravity="center_vertical"
             android:fontFamily="@font/msyh"
-            android:text="病例运行时间:00:00:00"
+            android:text="@string/病例运行时间"
             android:textColor="@color/banner_txt_color"
             android:textSize="@dimen/text_size16" />
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="0"/>
-        <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+        <TextView
             android:id="@+id/tv_time_state"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="284"
             android:gravity="center_vertical"
-            android:text="状态运行时间:00:00:00"
+            android:text="@string/状态运行时间"
             android:fontFamily="@font/msyh"
             android:textColor="@color/banner_txt_color"
             android:textSize="@dimen/text_size16" />
@@ -65,7 +64,7 @@
             android:layout_height="match_parent"
             android:layout_weight="40"
             android:src="@drawable/btn_lj_p"
-            android:textSize="@dimen/text_size18" />
+            android:textSize="@dimen/text_size18" android:contentDescription="@string/todo" />
 
         <TextView
             android:layout_width="0dp"
@@ -78,7 +77,7 @@
             android:layout_weight="40"
             android:src="@drawable/btn_sz_n"
             android:id="@+id/iv_setting"
-            android:textSize="@dimen/text_size18" />
+            android:textSize="@dimen/text_size18" android:contentDescription="@string/todo" />
 
         <TextView
             android:layout_width="0dp"
@@ -89,8 +88,9 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="40"
+            android:id="@+id/iv_fh"
             android:src="@drawable/btn_fh_n"
-            android:textSize="@dimen/text_size18" />
+            android:textSize="@dimen/text_size18" android:contentDescription="@string/todo" />
 
         <TextView
             android:layout_width="0dp"
@@ -101,7 +101,8 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="40"
-            android:src="@drawable/btn_gb_n" />
+            android:id="@+id/iv_exit"
+            android:src="@drawable/btn_gb_n" android:contentDescription="@string/todo" />
 
         <TextView
             android:layout_width="0dp"
@@ -116,8 +117,7 @@
         android:background="@color/divid_color"/>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="50"
+        android:layout_height="50dp"
         >
 
         <cn.jucheng.www.hulisiwei.customcontrols.FitHeightButton
@@ -125,10 +125,10 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="130"
-            android:background="@drawable/s_btn_btnbg"
             android:checked="true"
             android:gravity="center"
-            android:text="病历内容"
+            android:text="@string/病例内容"
+            android:background="@drawable/s_btn_btnbg"
             android:textColor="@color/s_btn_btntxt"
             android:fontFamily="@font/msyh"
             android:textSize="@dimen/text_size14" />
@@ -143,7 +143,7 @@
             android:layout_weight="130"
             android:background="@drawable/s_btn_btnbg"
             android:gravity="center"
-            android:text="学生操作记录"
+            android:text="@string/学生操作记录"
             android:fontFamily="@font/msyh"
             android:textColor="@color/s_btn_btntxt"
             android:textSize="@dimen/text_size14" />
@@ -154,9 +154,8 @@
             android:layout_weight="1"/>
 
         <LinearLayout
-            android:layout_width="0dp"
+            android:layout_width="1020dp"
             android:layout_height="match_parent"
-            android:layout_weight="1020"
             android:orientation="vertical"
             android:background="@color/bg_bgcolor1">
             <TextView
@@ -165,8 +164,7 @@
                 android:layout_weight="8"/>
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="24"
+                android:layout_height="24dp"
                 android:orientation="horizontal">
                 <TextView
                     android:layout_width="0dp"
@@ -176,31 +174,28 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="24"
-                    android:src="@drawable/ys"/>
+                    android:src="@drawable/ys" android:contentDescription="@string/todo" />
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="50"
                     android:orientation="vertical">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"/>
                     <TextView
                         android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_weight="3"/>
-                    <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_weight="19"
+                        android:layout_height="19dp"
                         android:gravity="center"
                         android:fontFamily="@font/msyh"
-                        android:text="1/2"
+                        android:text="@string/_1_2"
                         android:textSize="10sp"
                         android:id="@+id/tv_page"
                         android:background="@color/bg_bgcolor1"
                         android:textColor="@color/banner_txt_color"/>
-                    <TextView
+                    <View
                         android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_weight="2"/>
+                        android:layout_height="2dp"/>
 
                 </LinearLayout>
                 <TextView
@@ -230,9 +225,8 @@
         >
 
         <LinearLayout
-            android:layout_width="0dp"
+            android:layout_width="260dp"
             android:layout_height="match_parent"
-            android:layout_weight="260"
             android:orientation="vertical">
 
             <ListView
@@ -245,8 +239,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="60"
+                android:layout_height="60dp"
                 android:orientation="vertical"
                 android:background="@color/banner_txt_color">
                 <TextView
@@ -261,14 +254,13 @@
                     android:background="@color/bg_white"/>
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="22">
-                    <TextView
+                    android:layout_height="25dp">
+                    <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="10"
                         android:background="@color/bg_white"/>
-                    <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    <TextView
                         android:id="@+id/tv_blzg"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -279,7 +271,7 @@
                         android:textColor="@color/baise"
                         android:textSize="@dimen/text_size16"
                         android:background="@color/bg_txt_color"/>
-                    <TextView
+                    <View
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="10"
@@ -295,26 +287,23 @@
             </LinearLayout>
 
         </LinearLayout>
-        <TextView
-            android:layout_width="0dp"
+        <View
+            android:layout_width="1dp"
             android:layout_height="match_parent"
-            android:background="@color/divid_color"
-            android:layout_weight="1"/>
+            android:background="@color/divid_color"/>
         <LinearLayout
             android:id="@+id/fg_1"
             android:orientation="horizontal"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1020">
+            android:layout_width="1020dp"
+            android:layout_height="match_parent">
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:background="@color/bg_bgcolor3"
                 android:layout_weight="40"/>
             <LinearLayout
-                android:layout_width="0dp"
+                android:layout_width="940dp"
                 android:layout_height="match_parent"
-                android:layout_weight="940"
                 android:orientation="vertical">
                 <TextView
                     android:layout_width="match_parent"
@@ -323,8 +312,7 @@
                     android:background="@color/bg_bgcolor3"/>
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="553"
+                    android:layout_height="553dp"
                     android:orientation="horizontal">
                     <TextView
                         android:layout_width="0dp"
@@ -360,8 +348,7 @@
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="60"
+        android:layout_height="60dp"
         android:background="@color/banner_bg_color"
         android:orientation="vertical">
         <TextView
@@ -369,14 +356,11 @@
             android:layout_height="0dp"
             android:background="@color/divid_color"
             android:layout_weight="1"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="10"/>
         <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="11dp"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="38">
+            android:layout_height="38dp">
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -391,11 +375,11 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="879"/>
-            <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+            <TextView
                 android:gravity="center"
                 android:id="@+id/tv"
                 android:background="@color/bg_txt_color"
-                android:text="提醒"
+                android:text="@string/tixing"
                 android:textSize="@dimen/text_size14"
                 android:textColor="@color/baise"
                 android:fontFamily="@font/msyh"
@@ -414,6 +398,7 @@
                 android:textColor="@color/baise"
                 android:fontFamily="@font/msyh"
                 android:layout_width="0dp"
+                android:id="@+id/long_start"
                 android:layout_height="match_parent"
                 android:layout_weight="120"/>
             <TextView
@@ -435,10 +420,6 @@
                 android:layout_height="match_parent"
                 android:layout_weight="12"/>
         </LinearLayout>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="11"/>
     </LinearLayout>
 
 </LinearLayout>

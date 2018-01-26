@@ -12,7 +12,9 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.ExpandableListView;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
@@ -22,7 +24,6 @@ import java.io.File;
 import java.io.IOException;
 import java.text.ParseException;
 import java.util.Date;
-import java.util.HashMap;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -31,7 +32,6 @@ import cn.jucheng.jclibs.tools.MyLog;
 import cn.jucheng.jclibs.tools.MyToast;
 import cn.jucheng.jclibs.tools.SubStringUtils;
 import cn.jucheng.www.hulisiwei.adapter.ExplistBLLBAdapter;
-import cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView;
 import cn.jucheng.www.hulisiwei.databean.bllbbean.Baseinfo;
 import cn.jucheng.www.hulisiwei.databean.bllbbean.Medicalrecordsbaseinfo;
 import cn.jucheng.www.hulisiwei.databean.bllbbean.Patientinfo;
@@ -43,7 +43,7 @@ import cn.jucheng.www.hulisiwei.widget.HexadecimalConver;
 import cn.jucheng.www.hulisiwei.widget.MyMessage;
 
 import static cn.jucheng.jclibs.tools.MyLog.init;
-import static cn.jucheng.www.hulisiwei.utils.CommUtils.getFileFromSD;
+import static cn.jucheng.www.hulisiwei.utils.CommUtils.getStringFromPath;
 
 
 /**
@@ -58,14 +58,18 @@ public class BllbActivity extends MyBaseActivity implements View.OnClickListener
     LinearLayout vBlxq;
     final String jsonName = "case.json";
     String jsonContent;
+    String jsonshare;
     String fa,so;
     String befortime;
     private String endtime;
-    protected static String BLPath = Environment.getExternalStorageDirectory() + File.separator +
+    protected static String BLPath = Environment.getExternalStorageDirectory() +
+            File.separator +
             "jucheng" + File.separator +
             "hulisiwei" + File.separator +
             "case" + File.separator +
             "automode" + File.separator;
+
+
     String[][] strson ;
     String[] strfa ;
     String[] nameCN ={"呼吸系统" , "循环系统" , "消化系统" , "泌尿系统" , "血液系统" , "内分泌系统及营养代谢性",
@@ -83,50 +87,56 @@ public class BllbActivity extends MyBaseActivity implements View.OnClickListener
     String recstates;
     String recblmc;
 
-    HashMap<String ,String > hashmap;
     @BindView(R.id.tv_blxq_xm)
-    FitHeightTextView tvBlxqXm;
+    TextView tvBlxqXm;
     @BindView(R.id.tv_blxq_xb)
-    FitHeightTextView tvBlxqXb;
+    TextView tvBlxqXb;
     @BindView(R.id.tv_blxq_nld)
-    FitHeightTextView tvBlxqNld;
+    TextView tvBlxqNld;
     @BindView(R.id.tv_blxq_hyzk)
-    FitHeightTextView tvBlxqHyzk;
+    TextView tvBlxqHyzk;
     @BindView(R.id.tv_blxq_xs)
-    FitHeightTextView tvBlxqXs;
+    TextView tvBlxqXs;
     @BindView(R.id.tv_blxq_dh)
-    FitHeightTextView tvBlxqDh;
+    TextView tvBlxqDh;
     @BindView(R.id.tv_blxq_zz)
-    FitHeightTextView tvBlxqZz;
+    TextView tvBlxqZz;
     @BindView(R.id.tv_blxq_zs)
-    FitHeightTextView tvBlxqZs;
+    TextView tvBlxqZs;
     @BindView(R.id.tv_blxq_xbs)
-    FitHeightTextView tvBlxqXbs;
+    TextView tvBlxqXbs;
     @BindView(R.id.tv_btn_xl)
-    FitHeightTextView tvbtnxl;
+    TextView tvbtnxl;
+    @BindView(R.id.iv_exit)
+    ImageView ivexit;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Log.d("start","error after oncreate");
         setContentView(R.layout.activity_bllb_);
         ButterKnife.bind(this);
         //索要学生机状态
-        MyMessage.sendMessage(MyMessage.getMsgSuoyaoxueshengjizhuangtai());
+        if(!DEBUG){
+            MyMessage.sendMessage(MyMessage.getMsgSuoyaoxueshengjizhuangtai());
+        }
 
         if (Environment.getExternalStorageState().
                 equals(Environment.MEDIA_MOUNTED)) {
-            getFile();
+            getFile(BLPath);
+            //获得hulisiwei/case.json并且缓存到sharepreference中
+
             viewInit();
         }
     }
     //获取sd卡中文件
-    private void getFile() {
-        File file = new File(BLPath);
+    private void getFile(String str) {
+        File file = new File(str);
         if (file.exists()) {
             //初始化
             init();
-            getDate(BLPath);
+            getDate(str);
             viewInit();
         } else {
             try {
@@ -158,6 +168,7 @@ public class BllbActivity extends MyBaseActivity implements View.OnClickListener
         expandableListView.setAdapter(new ExplistBLLBAdapter(this, strfa, strson, this));
         //去掉箭头
         expandableListView.setGroupIndicator(null);
+        ivexit.setOnClickListener(this);
         tvbtnxl.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -172,10 +183,12 @@ public class BllbActivity extends MyBaseActivity implements View.OnClickListener
                 if(m==0){
                     MyToast.showTestToast(BllbActivity.this,"请先选择一个病例");
                 }else{
-                    MyMessage.sendMessage(MyMessage.getMsgBinglimingcheng(m,
-//                                                                    nameEn[m-1]
-                                                                        so
-                    ));
+                    //调试模式，先不下发病例数据
+                    if(!DEBUG){
+                        MyMessage.sendMessage(MyMessage.getMsgBinglimingcheng(m,
+                                so
+                        ));
+                    }
                     startActivity(new Intent(BllbActivity.this,BlxqActivity.class));
                 }
             }
@@ -246,7 +259,7 @@ public class BllbActivity extends MyBaseActivity implements View.OnClickListener
                 //病例名长度
                 int lenth;
                 lenth=Integer.parseInt(SubStringUtils.substring(string,48,52),16);
-                recblmc= HexadecimalConver.decode(SubStringUtils.substring(string,60,lenth));
+                recblmc= HexadecimalConver.decode(SubStringUtils.substring(string,60,(lenth-4)*2));
                 break;
             //接受重新连接后学生机发送的状态改变命令 //当前病例状态
             case MyMessage.MLZ_ZTGB:
@@ -315,6 +328,9 @@ public class BllbActivity extends MyBaseActivity implements View.OnClickListener
                 startActivity(intents);
                 break;
 
+            case R.id.iv_exit:
+                onExit();
+                break;
         }
     }
     //回调接口实现子列表点击
@@ -322,7 +338,7 @@ public class BllbActivity extends MyBaseActivity implements View.OnClickListener
     public void onbllbSonClickListener(int f, int s) {
         fa=strfa[f];
         so=strson[f][s];
-        jsonContent = getFileFromSD(BLPath + strfa[f] + File.separator + strson[f][s] + File.separator + jsonName);
+        jsonContent = getStringFromPath(BLPath + strfa[f] + File.separator + strson[f][s] + File.separator + jsonName);
         new LoadDataTask().execute();
     }
     //异步解析json串并显示于控件
@@ -355,7 +371,7 @@ public class BllbActivity extends MyBaseActivity implements View.OnClickListener
                 setView(pi,mbi);
             }else{
                 //不存在数据，置空
-                tvBlxqXm.setText("年龄:");
+                tvBlxqXm.setText("姓名:");
                 tvBlxqXb.setText("性别:");
                 tvBlxqNld.setText("年龄段:");
                 tvBlxqHyzk.setText("婚姻状况:");
@@ -367,7 +383,7 @@ public class BllbActivity extends MyBaseActivity implements View.OnClickListener
         }
     }
     private void setView(Patientinfo pi,Medicalrecordsbaseinfo mbi) {
-        tvBlxqXm.setText(String.format("年龄：%s",(pi.getName()==null)?"":pi.getName()));
+        tvBlxqXm.setText(String.format("姓名：%s",(pi.getName()==null)?"":pi.getName()));
         tvBlxqXb.setText(String.format("性别:%s",pi.getSex()==null?"":pi.getSex()));
         tvBlxqNld.setText(String.format("年龄段:%s",pi.getAge()==null?"":pi.getAge()));
         tvBlxqHyzk.setText(String.format("婚姻状况:%s",pi.getHunyin()==null?"":pi.getHunyin()));

@@ -17,7 +17,7 @@ public class ConnectIPActivity_ViewBinding implements Unbinder {
 
   private View view2131230745;
 
-  private View view2131230811;
+  private View view2131230813;
 
   @UiThread
   public ConnectIPActivity_ViewBinding(ConnectIPActivity target) {
@@ -41,7 +41,7 @@ public class ConnectIPActivity_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.buttonConnectIP, "method 'onViewClicked'");
-    view2131230811 = view;
+    view2131230813 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -63,7 +63,7 @@ public class ConnectIPActivity_ViewBinding implements Unbinder {
 
     view2131230745.setOnClickListener(null);
     view2131230745 = null;
-    view2131230811.setOnClickListener(null);
-    view2131230811 = null;
+    view2131230813.setOnClickListener(null);
+    view2131230813 = null;
   }
 }

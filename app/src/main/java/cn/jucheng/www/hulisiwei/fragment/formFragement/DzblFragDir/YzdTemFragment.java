@@ -1,6 +1,7 @@
 package cn.jucheng.www.hulisiwei.fragment.formFragement.DzblFragDir;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -50,7 +51,7 @@ public class YzdTemFragment extends BaseFragment implements
 
     @Override
     public int getID() {
-        return R.id.fragment_fitlist;
+        return R.layout.fragment_fitlist;
     }
 
     @Override
@@ -64,6 +65,8 @@ public class YzdTemFragment extends BaseFragment implements
         tempyzd.setAdapter(adapter);
         return view;
     }
+
+
 
     @Subscribe(threadMode = ThreadMode.MAIN)
     public void onEventMainThread(MessageEvent evnt) {
@@ -97,18 +100,21 @@ public class YzdTemFragment extends BaseFragment implements
     }
 
     public void setBiaodan(String string){
+        Log.d("临时医嘱", "获取数据 ");
         int lenth = Integer.parseInt(SubStringUtils.substring(string,48,52),16);//有效位长度
         int formtype = Integer.parseInt(SubStringUtils.substring(string,52,54),16);
         int opratype = Integer.parseInt(SubStringUtils.substring(string,54,56),16);
         int page = Integer.parseInt(SubStringUtils.substring(string,56,60),16);
         int line = Integer.parseInt(SubStringUtils.substring(string,60,64),16);
         int jsonlenth=Integer.parseInt(SubStringUtils.substring(string,64,68),16);
-        String json = SubStringUtils.substring(string,68,jsonlenth*2+68);
-        List<String> specialList = CommUtils.getJson(json, "linshiyizhu");
+
         //加入医嘱
         if(formtype==3&&opratype==1){
+            String json = SubStringUtils.substring(string,68,jsonlenth*2+68);
+            List<String> specialList = CommUtils.getJson(json, "linshiyizhu");
+            Log.d("临时医嘱", "setBiaodan: ");
             if(UserMessage.YZDtempleft.size()==line)
-                UserMessage.YZDtempleft.set(line,specialList);
+                UserMessage.YZDtempleft.set(line-1,specialList);
             else
                 UserMessage.YZDtempleft.add(specialList);
         }
@@ -147,7 +153,7 @@ public class YzdTemFragment extends BaseFragment implements
 
     public void zhuanchao(String string) {
         //医嘱类型
-        int formtyp=Integer.parseInt(SubStringUtils.substring(string,52,54),16);
+        int formtype=Integer.parseInt(SubStringUtils.substring(string,52,54),16);
         //页号
         int pagenum=Integer.parseInt(SubStringUtils.substring(string,54,58),16);
         //行号
@@ -164,9 +170,11 @@ public class YzdTemFragment extends BaseFragment implements
         List<String> speciallist=new ArrayList<>();
         speciallist.add(0,timezl);
         speciallist.add(1,hsname);
-        if(formtyp==3){
+
+        if(formtype==3){
+            Log.d("yzdtempfragment," ,"病例转抄");
             if(UserMessage.YZDtempright.size()==linenum){
-                UserMessage.YZDtempright.set(linenum,speciallist);
+                UserMessage.YZDtempright.set(linenum-1,speciallist);
             }else{
                 UserMessage.YZDtempright.add(speciallist);
             }

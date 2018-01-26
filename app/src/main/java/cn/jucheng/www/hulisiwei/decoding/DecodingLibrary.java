@@ -46,10 +46,10 @@ public class DecodingLibrary {
 			xunhuan = true;
 		}
 		while (xunhuan) {
-			 MyLog.d(TAG, "tancexinfei 解析开始");
+			 MyLog.d(TAG, "数据 解析开始");
 			if (sbMsg.length() - i >= lenMin) {// 最小长度27字节
 				if (check(sbMsg, i)) {// 是否满足协议头要求
-					 MyLog.d(TAG, "check tongguo");
+					 MyLog.d(TAG, "check 通过");
 					// 解析命令字
 					int mingLingZi = Integer
 							.parseInt(SubStringUtils.substring(sbMsg, i + 44,

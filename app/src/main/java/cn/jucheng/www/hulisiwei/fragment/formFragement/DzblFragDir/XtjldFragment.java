@@ -51,7 +51,7 @@ public class XtjldFragment extends BaseFragment implements AbsListView.OnScrollL
 
     @Override
     public int getID() {
-        return R.id.fragment_fitlist;
+        return R.layout.fragment_fitlist;
     }
 
     @Override
@@ -120,9 +120,9 @@ public class XtjldFragment extends BaseFragment implements AbsListView.OnScrollL
         int line = Integer.parseInt(SubStringUtils.substring(string, 58, 62), 16);//行号
         int colnum = Integer.parseInt(SubStringUtils.substring(string, 62, 66), 16);//列号
         String json = SubStringUtils.substring(string, 66, 52 + lenth * 2);
-        List<String> specialList = CommUtils.getJson(json, "xuetangjiludan");
         //记录血糖
         if (formtype == 7) {
+            List<String> specialList = CommUtils.getJson(json, "xuetangjiludan");
             //如果血糖记录总数多于 传来的数据
             int num =(page-1)*18+line;
             if (UserMessage.XTJLD.size() >= num) {

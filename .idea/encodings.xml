@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/BllbActivity.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/src/main/java/cn/jucheng/www/hulisiwei/widget/HexadecimalConver.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/assets/db/phyexam_item.json" charset="GBK" />
   </component>
 </project>

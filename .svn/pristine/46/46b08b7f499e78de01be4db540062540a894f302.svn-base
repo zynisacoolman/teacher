@@ -1,0 +1,1295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1360dp"
+            android:background="@drawable/fragment_zyblsy"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="121dp" />
+            <!--表头-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="197" />
+                <!--付款方式-->
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/inhospital_typeofpayment"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="99"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="134" />
+                <!--次数-->
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/inhospital_frequency"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="50"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="295" />
+                <!--病案号-->
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/inhospital_medicalrecord_number"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="80"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="85" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="123" />
+                <!-- -->
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/inhospital_name"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="80"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="45" />
+
+                <CheckBox
+                    android:id="@+id/inhospital_boy"
+                    style="@style/Checkbox" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="27" />
+
+                <CheckBox
+                    android:id="@+id/inhospital_girl"
+                    style="@style/Checkbox" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="114" />
+                <!-- -->
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/inhospital_birthday"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="120"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="43" />
+                <!-- -->
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/inhospital_age"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="50"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="44" />
+                <!--未婚-->
+                <CheckBox
+                    android:id="@+id/inhospital_unmarried"
+                    style="@style/Checkbox" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="27" />
+                <!--已婚-->
+                <CheckBox
+                    android:id="@+id/inhospital_married"
+                    style="@style/Checkbox" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="26" />
+                <!--离婚-->
+                <CheckBox
+                    android:id="@+id/inhospital_divorce"
+                    style="@style/Checkbox" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="27" />
+                <!--丧偶-->
+                <CheckBox
+                    android:id="@+id/inhospital_widowed"
+                    style="@style/Checkbox" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="105" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="123" />
+                <!--职业 -->
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/inhospital_profession"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="80"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="60" />
+                <!--出生地-->
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/inhospital_birthplace"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="120"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="48" />
+                <!--民族-->
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/inhospital_nation"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="60"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="44" />
+                <!--国家-->
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/inhospital_contury"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="60"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="77" />
+                <!--身份证号-->
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/inhospital_idcard"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="184"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="84" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="6dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="204" />
+                <!-- 工作单位-->
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/inhospital_workunit"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="266"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="47" />
+                <!--电话-->
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/inhospital_phone"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="130"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="79" />
+                <!--邮政编码-->
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/inhospital_postalcode"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="130"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="84" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="6dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="157" />
+                <!-- 户口地址-->
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/inhospital_Registeredaddress"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="490"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="79" />
+                <!--户口邮政编码-->
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/inhospital_Registeredpostalcode"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="130"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="84" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="6dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="172" />
+                <!--联系人姓名 -->
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/inhospital_persontocontact_name"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="80"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="47" />
+                <!--关系-->
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/inhospital_relation"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="50"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="47" />
+                <!--联系人地址-->
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/inhospital_persontocontact_address"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="252"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="78" />
+                <!--联系人电话-->
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/inhospital_persontocontact_phone"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="130"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="84" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="6dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="157" />
+                <!--入院日期 -->
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/inhospital_inhospitalized_year"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="50"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="26" />
+
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/inhospital_inhospitalized_mounth"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="30"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="26" />
+
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/inhospital_inhospitalized_day"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="30"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="27" />
+
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/inhospital_inhospitalized_hour"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="30"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="101" />
+                <!--入院科别-->
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/inhospital_inHospitaldepartments"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="104"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="44" />
+                <!--病室-->
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/inhospital_inHospitaldeward"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="50"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="77" />
+                <!--专科科别-->
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/inhospital_Turncoco"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="104"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="84" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="6dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="157" />
+                <!--出院日期 -->
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/inhospital_outhospital_year"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="50"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="26" />
+
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/inhospital_outhospital_mounth"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="30"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="26" />
+
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/inhospital_outhospital_day"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="30"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="27" />
+
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/inhospital_outhospital_hour"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="30"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="101" />
+                <!--出院科别-->
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/inhospital_outhospital_Division"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="104"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="44" />
+                <!--出院病室-->
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/inhospital_outhospital_ward"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="50"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="77" />
+                <!--实际住院天数-->
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/inhospital_inhospital_days"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="70"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="118" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="205" />
+                <!-- 门诊诊断-->
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/inhospital_Clinicdiagnosis"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="376"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="98" />
+                <!--危险-->
+                <CheckBox
+                    android:id="@+id/inhospital_risk"
+                    style="@style/Checkbox" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="27" />
+                <!--急-->
+                <CheckBox
+                    android:id="@+id/inhospital_anxious"
+                    style="@style/Checkbox" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="26" />
+                <!--一般-->
+                <CheckBox
+                    android:id="@+id/inhospital_ordinary"
+                    style="@style/Checkbox" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="153" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="6dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="158" />
+                <!-- 入院门诊-->
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/inhospital_in_outpatient"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="376"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="134" />
+                <!--入院后确诊日期-->
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/inhospital_in_quezhenyear"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="50"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="26" />
+
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/inhospital_in_quezhenmouth"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="30"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="26" />
+
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/inhospital_in_quezhenday"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="30"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="110" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="481dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="162" />
+                <!-- 病理诊断-->
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/inhospital_binglizhenduan"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="505"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="69" />
+                <!--病理号-->
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/inhospital_binglihao"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="120"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="84" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="162" />
+                <!--药物过敏 -->
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/inhospital_guomin"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="87"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="140" />
+
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/inhospital_hbsag"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="30"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="80" />
+
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/inhospital_hcvab"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="30"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="80" />
+
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/inhospital_hivab"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="30"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="301" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="17dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="291" />
+                <!--门诊出院 -->
+                <CheckBox
+                    android:id="@+id/inhospital_menzhenchuyaun"
+                    style="@style/Checkbox" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="118" />
+                <!--入院与出院-->
+                <CheckBox
+                    android:id="@+id/inhospital_ruyuanchuyaun"
+                    style="@style/Checkbox" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="115" />
+                <!--术前与术后-->
+                <CheckBox
+                    android:id="@+id/inhospital_shiqianshuhou"
+                    style="@style/Checkbox" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="118" />
+                <!--临床与病理-->
+                <CheckBox
+                    android:id="@+id/inhospital_linchuangbingli"
+                    style="@style/Checkbox" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="225" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="12dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="292" />
+                <!--放射与病理 -->
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/inhospital_fangshebingli"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="30"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="359" />
+                <!--抢救次数-->
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/inhospital_qiangjiunumber"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="30"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="78" />
+
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/inhospital_sussces"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="30"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="121" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="6dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="162" />
+                <!--科主任 -->
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/inhospital_kezhuren"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="87"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="151" />
+                <!--主任医师-->
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/inhospital_fuzhuren"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="87"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="83" />
+                <!--主治医师-->
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/inhospital_zhuzhiyishi"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="87"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="112" />
+                <!--住院医师-->
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/inhospital_zhuyuanyishi"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="87"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="84" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="6dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="162" />
+                <!--进修医师 -->
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/inhospital_jinxiuyishi"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="87"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="151" />
+                <!--研究生实习医师-->
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/inhospital_yanjiushengyishi"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="87"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="83" />
+                <!--实习医师-->
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/inhospital_shixiyishi"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="87"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="112" />
+                <!--编码员-->
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/inhospital_bianmayuan"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="87"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="84" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="6dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="162" />
+                <!-- 病案质量-->
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/inhospital_binganzhiliang"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="30"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="227" />
+                <!--质控医师-->
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/inhospital_zhikongyishi"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="87"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="79" />
+                <!--质控护师-->
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/inhospital_zhikonghushi"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="87"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="64" />
+                <!--日期-->
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/inhospital_date"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="120"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/heise"
+                    android:textSize="@dimen/text_size16" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="82" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="143dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,7 +13,6 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import cn.jucheng.www.hulisiwei.R;
-import cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView;
 import cn.jucheng.www.hulisiwei.module.UserMessage;
 
 /**
@@ -25,10 +25,9 @@ public class YZDLongStopAdapter extends BaseAdapter {
     List<List<String>> list=new ArrayList<>();
     private LayoutInflater mInflater;
     public YZDLongStopAdapter(Context mcontext,int mpage) {
-        mInflater=LayoutInflater.from(mcontext);
         context = mcontext;
         page=mpage;
-
+        mInflater=LayoutInflater.from(mcontext);
     }
 //    public void setAdapter(List<List<String>> string){
 //        list =string;
@@ -73,13 +72,13 @@ public class YZDLongStopAdapter extends BaseAdapter {
 
     static class ViewHolder {
         @BindView(R.id.fv_data)
-        FitHeightTextView fvData;
+        TextView fvData;
         @BindView(R.id.fv_time)
-        FitHeightTextView fvTime;
+        TextView fvTime;
         @BindView(R.id.fv_yssign)
-        FitHeightTextView fvYssign;
+        TextView fvYssign;
         @BindView(R.id.fv_hssign)
-        FitHeightTextView fvHssign;
+        TextView fvHssign;
         ViewHolder(View view) {
             ButterKnife.bind(this, view);
         }

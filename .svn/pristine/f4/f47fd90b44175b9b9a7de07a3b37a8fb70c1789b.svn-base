@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="85"
+            />
+        <!--药品名称-->
+        <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+            android:id="@+id/transfusion_drug_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="255"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:paddingTop="5dp"
+            android:maxLines="2"
+            android:textColor="@color/heise"
+            android:textSize="@dimen/text_size16" />
+        <!--药品总量-->
+        <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+            android:id="@+id/transfusion_drug_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="160"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:paddingTop="5dp"
+            android:maxLines="2"
+            android:textColor="@color/heise"
+            android:textSize="@dimen/text_size16" />
+        <!--药品用法-->
+        <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+            android:id="@+id/transfusion_drug_usage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="80"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:paddingTop="5dp"
+            android:maxLines="2"
+            android:textColor="@color/heise"
+            android:textSize="@dimen/text_size16" />
+        <!--时间-->
+        <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+            android:id="@+id/transfusion_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="130"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:paddingTop="5dp"
+            android:maxLines="2"
+            android:textColor="@color/heise"
+            android:textSize="@dimen/text_size16" />
+        <!--签字-->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="139"
+            >
+            <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                android:id="@+id/transfusion_signature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:paddingTop="5dp"
+                android:maxLines="2"
+                android:textColor="@color/heise"
+                android:textSize="@dimen/text_size16" />
+
+            <cn.jucheng.www.hulisiwei.customcontrols.FitHeightButton
+                android:id="@+id/transfusion_signature_buton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:text="@string/qianzi"
+                android:paddingTop="5dp"
+                android:textColor="@color/heise"
+                android:textSize="@dimen/text_size20" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="85"
+            />
+    </LinearLayout>
+</LinearLayout>

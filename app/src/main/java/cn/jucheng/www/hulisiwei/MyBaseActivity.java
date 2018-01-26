@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
+import android.os.Environment;
 import android.os.Handler;
 import android.os.Handler.Callback;
 import android.os.Message;
@@ -18,6 +19,7 @@ import android.support.v4.app.FragmentActivity;
 import android.view.KeyEvent;
 import android.view.View;
 
+import java.io.File;
 import java.lang.ref.WeakReference;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -46,6 +48,13 @@ public abstract class MyBaseActivity extends FragmentActivity {
 	public static MyBaseActivity currentMyBaseActivity;
 	public static boolean isZiDongChongLian = true;
     public Unbinder unbinder;
+    public boolean DEBUG =true;
+	//casejson地址
+	protected static String BLPath2 = Environment.getExternalStorageDirectory() +
+			File.separator +
+			"jucheng" + File.separator +
+			"hulisiwei" + File.separator+
+			"case.json";
 
 	// 写一个广播的内部类，当收到动作时，结束activity
 	private BroadcastReceiver broadcastReceiver = new BroadcastReceiver() {
@@ -117,6 +126,7 @@ public abstract class MyBaseActivity extends FragmentActivity {
 			case MyMessage.MLZ_BEIAN: // 备案
 				MyMessage.sendMessage(MyMessage.getMsgBeian());
 				break;
+
 			default:
 				currentMyBaseActivity.HandlerMessage(msg);
 				break;

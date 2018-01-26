@@ -6,11 +6,11 @@ import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import cn.jucheng.www.hulisiwei.R;
-import cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView;
 import cn.jucheng.www.hulisiwei.interfaca.OnBllbSonClickListener;
 
 /**
@@ -78,7 +78,7 @@ public class ExplistBLLBAdapter extends BaseExpandableListAdapter {
             mview = View.inflate(context, R.layout.item_bllb_father, null);
             vh = new Groupviewholder();
             vh.iv = (ImageView) mview.findViewById(R.id.iv_bllb_item);
-            vh.tv = (FitHeightTextView) mview.findViewById(R.id.fhtv_bllb_item);
+            vh.tv = (TextView) mview.findViewById(R.id.fhtv_bllb_item);
             vh.ll = (LinearLayout) mview.findViewById(R.id.ll_item_bllb);
             mview.setTag(vh);
         } else {
@@ -131,14 +131,14 @@ public class ExplistBLLBAdapter extends BaseExpandableListAdapter {
 
     //设置 groupViewholder
     static class Groupviewholder {
-        FitHeightTextView tv;
+        TextView tv;
         LinearLayout ll;
         ImageView iv;
     }
 
     class ChildViewholder implements View.OnClickListener {
         @BindView(R.id.fhtv_bllb_item)
-        FitHeightTextView fhtvBllbItem;
+        TextView fhtvBllbItem;
         @BindView(R.id.ll_item_bllb)
         LinearLayout llItemBllb;
         public ChildViewholder(View v) {

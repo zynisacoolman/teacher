@@ -1,8 +1,11 @@
 package cn.jucheng.www.hulisiwei.customcontrols;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.res.AssetManager;
 import android.content.res.TypedArray;
 import android.graphics.Paint;
+import android.graphics.Typeface;
 import android.text.TextPaint;
 import android.util.AttributeSet;
 import android.view.Gravity;
@@ -17,11 +20,14 @@ import cn.jucheng.www.hulisiwei.R;
  * @email 960576866@qq.com
  */
 
+@SuppressLint("AppCompatCustomView")
 public class FitHeightTextView extends TextView {
 	private Paint mTextPaint;
 	private float mMaxTextSize; // 获取当前所设置文字大小作为最大文字大小
 	private float mMinTextSize = 8; // 最小的字体大小
 	private int attr2;
+	AssetManager mgr=getContext().getAssets();
+	Typeface tf=Typeface.createFromAsset(mgr, "fonts/msyh.ttf");
 
 	public FitHeightTextView(Context context) {
 		super(context);
@@ -32,6 +38,7 @@ public class FitHeightTextView extends TextView {
 		getAttrs(context, attrs);
 		setGravity(getGravity() | Gravity.CENTER_VERTICAL); // 默认水平居中
 		setLines(1);
+		setTypeface(tf);
 		initialise();
 	}
 

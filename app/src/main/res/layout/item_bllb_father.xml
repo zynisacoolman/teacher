@@ -20,7 +20,7 @@
             android:layout_height="match_parent"
             android:layout_weight="18"
             />
-        <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+        <TextView
             android:id="@+id/fhtv_bllb_item"
             android:layout_width="0dp"
             android:layout_height="match_parent"

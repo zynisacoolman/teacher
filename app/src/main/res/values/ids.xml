@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="twd_mb" type="id">twd_maibo</item>
+    <item name="twd_tw" type="id">twd_tiwen</item>
+
+</resources>

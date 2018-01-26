@@ -5,10 +5,10 @@ import android.support.annotation.CallSuper;
 import android.support.annotation.UiThread;
 import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import butterknife.Unbinder;
 import butterknife.internal.Utils;
 import cn.jucheng.www.hulisiwei.R;
-import cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView;
 import java.lang.IllegalStateException;
 import java.lang.Override;
 
@@ -20,7 +20,7 @@ public class ExplistBLLBAdapter$ChildViewholder_ViewBinding implements Unbinder 
       View source) {
     this.target = target;
 
-    target.fhtvBllbItem = Utils.findRequiredViewAsType(source, R.id.fhtv_bllb_item, "field 'fhtvBllbItem'", FitHeightTextView.class);
+    target.fhtvBllbItem = Utils.findRequiredViewAsType(source, R.id.fhtv_bllb_item, "field 'fhtvBllbItem'", TextView.class);
     target.llItemBllb = Utils.findRequiredViewAsType(source, R.id.ll_item_bllb, "field 'llItemBllb'", LinearLayout.class);
   }
 

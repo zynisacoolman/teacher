@@ -35,7 +35,6 @@ public class LoginActivity extends MyBaseActivity {
 
 	public void onTest(View v) {
 		switch (v.getId()) {
-
 		case R.id.btnFSBingLiMingCheng:
 			String etLeiXing = ((EditText) findViewById(R.id.etBingLiLeiXing))
 					.getText().toString();
@@ -56,6 +55,7 @@ public class LoginActivity extends MyBaseActivity {
 				MyToast.showToast(this, "请检查输入内容");
 			}
 			break;
+
 		case R.id.btnFSXianShiPingJia:
 			String etPingJia = ((EditText) findViewById(R.id.etPingJia))
 					.getText().toString();
@@ -118,6 +118,7 @@ public class LoginActivity extends MyBaseActivity {
 			MyMessage.sendMessage(MyMessage.getMsgSuoyaoxueshengjizhuangtai());
 			etXianShi.setText(MyMessage.getMsgSuoyaoxueshengjizhuangtai());
 			break;
+
 		case R.id.btnFSXunLianZhuangTai:
 			String etZhuangTai = ((EditText) findViewById(R.id.etZhuangTai))
 					.getText().toString();
@@ -147,9 +148,7 @@ public class LoginActivity extends MyBaseActivity {
 			}
 			break;
 
-		case R.id.twdJS:
 
-				break;
 		 case R.id.btnJSBiaoDan:
 		 	MyMessage.sendMessage(MyMessage.getMsgTestBiaodan("are you ok mifans"));
 		 	break;
@@ -187,7 +186,10 @@ public class LoginActivity extends MyBaseActivity {
 		// break;
 			case R.id.btngoBllb:
 				startActivity(new Intent().setClass(this,BllbActivity.class));
+
 				break;
+//			case R.id.TestActivity:
+//				break;
 		default:
 			break;
 		}

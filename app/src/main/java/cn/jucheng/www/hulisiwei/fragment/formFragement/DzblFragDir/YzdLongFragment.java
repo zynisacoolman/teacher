@@ -24,9 +24,6 @@ import cn.jucheng.www.hulisiwei.adapter.fragmentAdapter.YZDLongFragmentAdapter;
 import cn.jucheng.www.hulisiwei.base.BaseFragment;
 import cn.jucheng.www.hulisiwei.base.MyList;
 import cn.jucheng.www.hulisiwei.interfaca.MessageEvent;
-import cn.jucheng.www.hulisiwei.interfaca.OnZhuanChao;
-import cn.jucheng.www.hulisiwei.interfaca.OnformDateUpdate;
-import cn.jucheng.www.hulisiwei.interfaca.OnformHeadUpdate;
 import cn.jucheng.www.hulisiwei.module.UserMessage;
 import cn.jucheng.www.hulisiwei.utils.CommUtils;
 import cn.jucheng.www.hulisiwei.widget.HexadecimalConver;
@@ -38,7 +35,7 @@ import cn.jucheng.www.hulisiwei.widget.HexadecimalConver;
 
 public class YzdLongFragment extends BaseFragment implements AbsListView.OnScrollListener {
     @BindView(R.id.fragment_fitlist)
-    MyList tempyzd;
+    MyList longyzd;
     protected final String TAG="YzdLongFragment";
     private View view;
     /**
@@ -61,7 +58,7 @@ public class YzdLongFragment extends BaseFragment implements AbsListView.OnScrol
         unbinder = ButterKnife.bind(this, view);
         EventBus.getDefault().register(this);
         adapter=new YZDLongFragmentAdapter(getActivity(),pages);
-        tempyzd.setAdapter(adapter);
+        longyzd.setAdapter(adapter);
         return view;
     }
     @Subscribe(threadMode = ThreadMode.MAIN)
@@ -96,8 +93,8 @@ public class YzdLongFragment extends BaseFragment implements AbsListView.OnScrol
      * 计算页数
      */
     public void getPage() {
-        int a = UserMessage.YZDtempleft.size() / 18;
-        if (UserMessage.YZDtempleft.size() > 18) {
+        int a = UserMessage.YZDlongstart.size() / 18;
+        if (UserMessage.YZDlongstart.size() > 18) {
             pages = pages + a;
         }
     }
@@ -111,7 +108,9 @@ public class YzdLongFragment extends BaseFragment implements AbsListView.OnScrol
         String number = (firstVisibleItem+1)+"/" + pages;
         BlxqActivity.setPageNumber(number);
     }
-
+    public void refresh(){
+        adapter.notifyDataSetChanged();
+    }
     public void OnformDateUpdate(String string) {
         int lenth = Integer.parseInt(SubStringUtils.substring(string,48,52),16);//有效位长度
         int formtype = Integer.parseInt(SubStringUtils.substring(string,52,54),16);
@@ -119,32 +118,38 @@ public class YzdLongFragment extends BaseFragment implements AbsListView.OnScrol
         int page = Integer.parseInt(SubStringUtils.substring(string,56,60),16);
         int line = Integer.parseInt(SubStringUtils.substring(string,60,64),16);
         String json = HexadecimalConver.decode(SubStringUtils.substring(string,64,64+(lenth-6)*2));
-        List<String> specialList = CommUtils.getJson(json, "changqiyizhu");
         Log.d(TAG, "OnformDateUpdate: "+json);
         //长期医嘱
         if(formtype==2){
+            List<String> specialList = CommUtils.getJson(json, "changqiyizhu");
             switch (opratype){
                 case 1:
-                    if(UserMessage.YZDlongstart.size()==line)
-                        UserMessage.YZDlongstart.set(line,specialList);
-                    else
+                    if(line<=UserMessage.YZDlongstart.size()){
+                        UserMessage.YZDlongstart.set(line-1,specialList);
+                    }
+                    else{
                         UserMessage.YZDlongstart.add(specialList);
+                    }
                     break;
                 case 2:
-                    if(UserMessage.YZDlongstop.size()==line)
+                    Log.d("长期医嘱停止医嘱行号", String.format("第 %d 行",line));
+                    if(line>10){
                         UserMessage.YZDlongstop.set(line-1,specialList);
-                    else
+                    }
+                    else{
                         UserMessage.YZDlongstop.add(specialList);
+                    }
                     break;
             }
         }
+        adapter.notifyDataSetChanged();
     }
     public void OnformHeadUpdate(String string) {
         int bdt=Integer.parseInt(SubStringUtils.substring(string,48,52),16);
         String jsont= HexadecimalConver.decode(
                 SubStringUtils.substring(string,52,52+bdt*2));
-
         UserMessage.fragmentHead=CommUtils.getJson(jsont,"baseinfo");
+        adapter.notifyDataSetChanged();
 
     }
     public void OnZhuanchao(String string) {

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="85" />
+        <!--药品名称-->
+        <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+            android:id="@+id/cords_drug_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="234"
+            android:maxLines="2"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:paddingTop="5dp"
+            android:textColor="@color/heise"
+            android:textSize="@dimen/text_size16" />
+        <!--药品数量-->
+        <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+            android:id="@+id/cords_drug_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="107"
+            android:maxLines="2"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:paddingTop="5dp"
+            android:textColor="@color/heise"
+            android:textSize="@dimen/text_size16" />
+        <!--速度-->
+        <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+            android:id="@+id/cords_drug_speed"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="107"
+            android:maxLines="2"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:paddingTop="5dp"
+            android:textColor="@color/heise"
+            android:textSize="@dimen/text_size16" />
+        <!--不良反应-->
+        <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+            android:id="@+id/cords_untowardeffect"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="107"
+            android:maxLines="2"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:paddingTop="5dp"
+            android:textColor="@color/heise"
+            android:textSize="@dimen/text_size16" />
+        <!--时间-->
+        <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+            android:id="@+id/cords_dates"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="107"
+            android:maxLines="2"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:paddingTop="5dp"
+            android:textColor="@color/heise"
+            android:textSize="@dimen/text_size16" />
+        <!--签字-->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="107"
+            >
+            <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                android:id="@+id/cords_signature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:maxLines="2"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:paddingTop="5dp"
+                android:textColor="@color/heise"
+                android:textSize="@dimen/text_size16" />
+
+            <cn.jucheng.www.hulisiwei.customcontrols.FitHeightButton
+                android:id="@+id/cords_signature_buton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:text="@string/qianzi"
+                android:paddingTop="5dp"
+                android:textColor="@color/heise"
+                android:textSize="@dimen/text_size16" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="85" />
+    </LinearLayout>
+</LinearLayout>

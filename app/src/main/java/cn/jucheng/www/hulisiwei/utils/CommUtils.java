@@ -3,12 +3,16 @@ package cn.jucheng.www.hulisiwei.utils;
 import android.content.Context;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
+import android.content.res.AssetManager;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.TypeReference;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
+import java.io.IOException;
 import java.io.InputStreamReader;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
@@ -56,19 +60,20 @@ public class CommUtils {
         List<String> list1 = (List<String>) map1.get(key);
         return list1;
     }
+
     /**
      * 解析坐标数据
      */
-    public static ArrayList[] getDatamap(String str){
+    public static ArrayList[] getDatamap(String str) {
 //        int h0,h1,l0,l1;
-        int x,y;
-        ArrayList[] al=new ArrayList[2];
-        al[0]=new ArrayList<Integer>();//存放x 坐标
-        al[1]=new ArrayList<Integer>();//存放y 坐标
-        int count=str.length()/8;//坐标数量
-        for(int i=0;i<count;i++){
-            x=Integer.parseInt(SubStringUtils.substring(str,0,4),16);
-            y=Integer.parseInt(SubStringUtils.substring(str,4,8),16);
+        int x, y;
+        ArrayList[] al = new ArrayList[2];
+        al[0] = new ArrayList<Integer>();//存放x 坐标
+        al[1] = new ArrayList<Integer>();//存放y 坐标
+        int count = str.length() / 8;//坐标数量
+        for (int i = 0; i < count; i++) {
+            x = Integer.parseInt(SubStringUtils.substring(str, i*8, i*8+4), 16);
+            y = Integer.parseInt(SubStringUtils.substring(str, i*8+4, i*8+8), 16);
             al[0].add(x);
             al[1].add(y);
             //解析高低位
@@ -89,6 +94,7 @@ public class CommUtils {
         return al;
 
     }
+
     /**
      * 获取list数组某一项内容
      *
@@ -114,6 +120,7 @@ public class CommUtils {
      * list转实体类
      * 不要有多余的属性,要不就会出问题了
      * 此list对应是按照下标来对应的 顺序也不能错
+     *
      * @param list
      * @param t
      * @param <T>
@@ -158,6 +165,7 @@ public class CommUtils {
 
     /**
      * 分页加载
+     *
      * @param page
      * @param rows
      * @return
@@ -173,13 +181,13 @@ public class CommUtils {
     }
 
     //从sd卡中读取指定目录文件内容并存储到String中
-    public static String getFileFromSD(String path) {
+    public static String getStringFromPath(String path) {
         String result = "";
 
         try {
             FileInputStream f = new FileInputStream(path);
             //原来一直显示乱码，其实改为gbk 或者utf8即可
-            BufferedReader bis = new BufferedReader(new InputStreamReader(f,"GBK"));
+            BufferedReader bis = new BufferedReader(new InputStreamReader(f, "GBK"));
             String line = "";
             while ((line = bis.readLine()) != null) {
                 result += line;
@@ -189,5 +197,35 @@ public class CommUtils {
         }
         return result;
 
+    }
+
+    //将字符换转化为json格式数据
+    public static JsonObject getcaseJSON(String str) {
+        JsonObject obj;
+        obj = new JsonParser().parse(str).getAsJsonObject().get("jc2100").getAsJsonObject().get("case").getAsJsonObject();
+        return obj;
+    }
+    //将字符换转化为json格式数据
+    public static JsonObject getJSON(String str) {
+        JsonObject obj;
+        obj = new JsonParser().parse(str).getAsJsonObject();
+        return obj;
+    }
+    //
+    public static String getStringFromAssets(String fileName, Context activity) {
+
+        StringBuilder stringBuilder = new StringBuilder();
+        try {
+            AssetManager assetManager = activity.getAssets();
+            BufferedReader bf = new BufferedReader(new InputStreamReader(
+                    assetManager.open(fileName),"GBK"));
+            String line;
+            while ((line = bf.readLine()) != null) {
+                stringBuilder.append(line);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return stringBuilder.toString();
     }
 }

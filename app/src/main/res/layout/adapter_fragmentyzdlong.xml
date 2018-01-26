@@ -38,17 +38,20 @@
                     android:layout_height="match_parent"
                     android:layout_weight="7.5"
                     />
-                <cn.jucheng.www.hulisiwei.base.MyList
+                <ListView
+                    android:divider="@null"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="36"
                     android:id="@+id/gv_start"/>
-                <cn.jucheng.www.hulisiwei.base.MyList
+                <ListView
+                    android:divider="@null"
                     android:layout_width="0dp"
                     android:layout_weight="7"
                     android:id="@+id/gv_hssign"
                     android:layout_height="match_parent"/>
-                <cn.jucheng.www.hulisiwei.base.MyList
+                <ListView
+                    android:divider="@null"
                     android:layout_width="0dp"
                     android:layout_weight="23"
                     android:id="@+id/gv_stop"

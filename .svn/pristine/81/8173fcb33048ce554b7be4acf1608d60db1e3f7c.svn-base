@@ -1,0 +1,102 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppBaseTheme" parent="android:Theme.Light"></style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="progress_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="new_dialogs">
+        <item name="android:windowFrame">@null</item>
+        <!--边框-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">false</item>
+        <!--半透明-->
+        <item name="android:windowNoTitle">true</item>
+        <!--无标题-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--背景透明-->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!--模糊-->
+    </style>
+
+
+
+
+        <style name="text_18_ffffff">
+            <item name="android:textSize">18.0dip</item>
+            <item name="android:textColor">#ffffffff</item>
+        </style>
+
+        <style name="text_16_666666">
+            <item name="android:textSize">16.0dip</item>
+            <item name="android:textColor">#ff666666</item>
+        </style>
+
+        <style name="sdw_white">
+            <item name="android:shadowColor">#7fffffff</item>
+            <item name="android:shadowDx">0.0</item>
+            <item name="android:shadowDy">0.65</item>
+            <item name="android:shadowRadius">1.0</item>
+        </style>
+
+        <style name="sdw_79351b">
+            <item name="android:shadowColor">#ff79351b</item>
+            <item name="android:shadowDx">0.0</item>
+            <item name="android:shadowDy">1.0</item>
+            <item name="android:shadowRadius">1.0</item>
+        </style>
+
+        <style name="text_15_ffffff_sdw" parent="@style/sdw_79351b">
+            <item name="android:textSize">15.0dip</item>
+            <item name="android:textColor">#ffffffff</item>
+        </style>
+
+        <style name="text_15_666666_sdw" parent="@style/sdw_white">
+            <item name="android:textSize">15.0dip</item>
+            <item name="android:textColor">#ff666666</item>
+        </style>
+
+        <style name="Dialog" parent="android:style/Theme.Dialog">
+            <item name="android:background">#00000000</item>
+            <item name="android:windowBackground">@android:color/transparent</item>
+            <item name="android:windowNoTitle">true</item>
+            <item name="android:windowIsFloating">true</item>
+        </style>
+
+
+        <style name="Checkbox" parent="@android:style/Widget.CompoundButton.CheckBox">
+            <item name="android:background">@drawable/s_checkbox</item>
+            <item name="android:layout_weight">18</item>
+            <item name="android:layout_width">0dp</item>
+            <item name="android:layout_height">18dp</item>
+            <item name="android:button">@null</item>
+            <item name="android:clickable">false</item>
+            <!--<item name="android:background">@drawable/s_checkbox</item>-->
+            <!--<item name="android:layout_width">18dp</item>-->
+            <!--<item name="android:layout_height">18dp</item>-->
+            <!--<item name="android:button">@null</item>-->
+            <!--<item name="android:clickable">false</item>-->
+        </style>
+
+    <style name="Checkboxl" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:background">@drawable/s_checkbox</item>
+        <item name="android:layout_width">18dp</item>
+        <item name="android:layout_height">18dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:clickable">false</item>
+    </style>
+
+</resources>

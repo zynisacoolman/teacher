@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myViewXmlns="http://schemas.android.com/apk/res/cn.jucheng.www.hulisiwei"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bantouming"
+    tools:ignore="ResAuto">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="86"></TextView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="580"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="220" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="840"
+            android:background="@color/baise"
+            android:orientation="vertical">
+            <!--设置-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="48"
+                android:background="@color/setbackground_bton"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="15" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/sz" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2" />
+
+                <cn.jucheng.www.hulisiwei.customcontrols.FitWidthTextView
+                    android:id="@+id/set_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="224"
+                    android:text="@string/action_settings"
+                    android:textColor="@color/drug_bton"
+                    android:textSize="@dimen/text_size22" />
+                <CheckBox
+                    android:id="@+id/chkLanYa"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="30"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/s_chk"
+                    android:button="@null"
+                    android:visibility="invisible" />
+
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/chk_tv1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="98"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/_chkLanYa"
+                    android:textSize="@dimen/text_size18"
+                    android:visibility="invisible" />
+
+                <CheckBox
+                    android:id="@+id/chkWiFi"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="30"
+                    android:background="@drawable/s_chk"
+                    android:button="@null"
+                    android:visibility="invisible" />
+
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/chk_tv2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="98"
+                    android:text="@string/_chkWiFi"
+                    android:textSize="@dimen/text_size18"
+                    android:visibility="invisible" />
+
+                <CheckBox
+                    android:id="@+id/chkUSB"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="30"
+                    android:background="@drawable/s_chk"
+                    android:button="@null"
+                    android:visibility="invisible" />
+
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                    android:id="@+id/chk_tv3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="98"
+                    android:text="@string/_chkUSB"
+                    android:textSize="@dimen/text_size18"
+                    android:visibility="invisible" />
+
+                <Switch
+                    android:id="@+id/btnDebug"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="220"
+                    android:textOff="不调试"
+                    android:textOn="调试"
+                    android:textSize="@dimen/text_size16"
+                    android:thumb="@drawable/thumb"
+                    android:track="@drawable/track"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="46" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="46" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="100"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="140" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="560"
+                    android:background="@color/ywmessage"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="21" />
+                    <!--设备连接状态-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="24"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="22" />
+
+                        <cn.jucheng.www.hulisiwei.customcontrols.FitWidthTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="132"
+                            android:gravity="center_vertical"
+                            android:text="@string/tvDeviceText"
+                            android:textColor="@color/drug_bton"
+                            android:textSize="@dimen/text_size20" />
+
+                        <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                            android:id="@+id/connect_type"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="390"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/sick_bton"
+                            android:textSize="@dimen/text_size20" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="16" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="11" />
+                    <!--上次连接设备-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="24"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="22" />
+
+                        <cn.jucheng.www.hulisiwei.customcontrols.FitWidthTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="132"
+                            android:gravity="center_vertical"
+                            android:text="@string/tvSavedDeviceAddressText"
+                            android:textColor="@color/drug_bton"
+                            android:textSize="@dimen/text_size20" />
+
+                        <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                            android:id="@+id/connect_equipment"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="390"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/sick_bton"
+                            android:textSize="@dimen/text_size20" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="16" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="20" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="140" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="35" />
+            <!--设置连接方式-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="50"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="140" />
+
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightButton
+                    android:id="@+id/btnSelectDevice"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="560"
+                    android:background="@color/orange"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:onClick="onSelect"
+                    android:text="@string/btnSelectDeviceText"
+                    android:textColor="@color/baise"
+                    android:textSize="@dimen/text_size20" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="140" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="19" />
+            <!--连接此设备-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="50"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="140" />
+
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightButton
+                    android:id="@+id/btnConnectDevice"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="560"
+                    android:background="@color/gray"
+                    android:gravity="center"
+                    android:onClick="checkDeviceConnection"
+                    android:text="@string/btnConnectDeviceText"
+                    android:textColor="@color/baise"
+                    android:textSize="@dimen/text_size20" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="140" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="19" />
+            <!--关于-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="50"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="140" />
+
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightButton
+                    android:id="@+id/about"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="560"
+                    android:background="@color/drug_bton"
+                    android:text="@string/about"
+                    android:gravity="center"
+                    android:onClick="onAbout"
+                    android:textColor="@color/baise"
+                    android:textSize="@dimen/text_size20" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="140" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="67" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="40"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="285" />
+
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightButton
+                    android:id="@+id/save"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="120"
+                    android:background="@color/drug_bton"
+                    android:gravity="center"
+                    android:onClick="onSave"
+                    android:text="@string/btnSaveText"
+                    android:textColor="@color/baise"
+                    android:textSize="@dimen/text_size18"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="28" />
+
+                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightButton
+                    android:id="@+id/cancel"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="120"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:background="@color/drug_bton"
+                    android:onClick="Cancel"
+                    android:text="@string/cancel"
+                    android:textColor="@color/baise"
+                    android:textSize="@dimen/text_size18"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="287" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="56" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="220" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="86"></TextView>
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="19"
+        android:visibility="gone" />
+
+
+</LinearLayout>

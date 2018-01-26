@@ -12,6 +12,11 @@ import android.widget.ArrayAdapter;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.TextView;
+
+import com.google.gson.Gson;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
 
 import org.greenrobot.eventbus.EventBus;
 
@@ -28,9 +33,12 @@ import cn.jucheng.www.hulisiwei.adapter.SimpleTreeAdapter;
 import cn.jucheng.www.hulisiwei.adapter.TreeListViewAdapter;
 import cn.jucheng.www.hulisiwei.customcontrols.FitHeightButton;
 import cn.jucheng.www.hulisiwei.customcontrols.FitHeightEditText;
-import cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView;
-import cn.jucheng.www.hulisiwei.dialogs.HuShitixingDialog;
+import cn.jucheng.www.hulisiwei.databean.bllbbean.Baseinfo;
+import cn.jucheng.www.hulisiwei.databean.bllbbean.Medicalrecords;
+import cn.jucheng.www.hulisiwei.databean.bllbbean.Statesinfo;
 import cn.jucheng.www.hulisiwei.databean.blxqbean.FileBean;
+import cn.jucheng.www.hulisiwei.databean.blzgbean.BlzgBean;
+import cn.jucheng.www.hulisiwei.dialogs.HuShitixingDialog;
 import cn.jucheng.www.hulisiwei.fragment.formFragement.DzblFragDir.Hljld1Fragment;
 import cn.jucheng.www.hulisiwei.fragment.formFragement.DzblFragDir.Hljld2Fragment;
 import cn.jucheng.www.hulisiwei.fragment.formFragement.DzblFragDir.Hljld3Fragment;
@@ -46,13 +54,10 @@ import cn.jucheng.www.hulisiwei.fragment.formFragement.DzblFragDir.YzdTemFragmen
 import cn.jucheng.www.hulisiwei.fragment.formFragement.DzblFragDir.ZqtysFragment;
 import cn.jucheng.www.hulisiwei.fragment.formFragement.DzblFragDir.ZyblFragment;
 import cn.jucheng.www.hulisiwei.interfaca.MessageEvent;
-import cn.jucheng.www.hulisiwei.interfaca.OnZhuanChao;
-import cn.jucheng.www.hulisiwei.interfaca.OnformDateUpdate;
-import cn.jucheng.www.hulisiwei.interfaca.OnformHeadUpdate;
 import cn.jucheng.www.hulisiwei.module.UserMessage;
+import cn.jucheng.www.hulisiwei.utils.CommUtils;
 import cn.jucheng.www.hulisiwei.utils.DateUtils;
 import cn.jucheng.www.hulisiwei.widget.HexadecimalConver;
-import cn.jucheng.www.hulisiwei.widget.MyGlobal1;
 import cn.jucheng.www.hulisiwei.widget.MyMessage;
 
 /**
@@ -62,21 +67,25 @@ import cn.jucheng.www.hulisiwei.widget.MyMessage;
 public class BlxqActivity extends MyBaseActivity implements View.OnClickListener {
     private static String TAG = "BlxqActivity";
     @BindView(R.id.tv_name_bl)
-    FitHeightTextView tvNameBl;
+    TextView tvNameBl;
     @BindView(R.id.tv_time_Bl)
-    FitHeightTextView tvTimeBl;
+    TextView tvTimeBl;
     @BindView(R.id.tv_time_state)
-    FitHeightTextView tvTimeState;
+    TextView tvTimeState;
     @BindView(R.id.btn_blnr)
     FitHeightButton btnBlnr;
+
     @BindView(R.id.btn_czjl)
     FitHeightButton btnCzjl;
 
-    static FitHeightTextView tvPage;
+    @BindView(R.id.long_start)
+    FitHeightButton btnlongstart;
+
+    static TextView tvPage;
     @BindView(R.id.lv_blxq)
     ListView lvBlxq;
     @BindView(R.id.tv_blzg)
-    FitHeightTextView tvBlzg;
+    TextView tvBlzg;
     @BindView(R.id.main_tab_fragmentlayout)
     FrameLayout mainTabFragmentlayout;
     @BindView(R.id.fg_1)
@@ -84,11 +93,8 @@ public class BlxqActivity extends MyBaseActivity implements View.OnClickListener
     @BindView(R.id.ev_jstx)
     FitHeightEditText evJstx;
     @BindView(R.id.tv)
-    FitHeightTextView tv;
+    TextView tv;
     //定义一个接口来通知fragment进行数据更新
-    OnformHeadUpdate onformHeadUpdate;
-    OnformDateUpdate onformDateUpdate;
-    OnZhuanChao onZhuanChao;
     private String conditionNow=null;
     private List<FileBean> mDatas = new ArrayList<FileBean>();
     private TreeListViewAdapter mAdapter;
@@ -96,11 +102,16 @@ public class BlxqActivity extends MyBaseActivity implements View.OnClickListener
     private ArrayAdapter czjlAdapter;
     //学生操作记录
     private ArrayList CZJLList=new ArrayList();
+    //是否为首次进行状态改变
+    boolean firstChange =true;
+    //当前状态id
+    int current_state_order;
 
     FragmentListAdapter fragmentAdapter;
     private HashMap fragmentList = new HashMap();
     //等待进度条
     private ProgressDialog pd;
+
 
     //计时器 病例运行时间
     private boolean isStopCount = false;
@@ -121,22 +132,22 @@ public class BlxqActivity extends MyBaseActivity implements View.OnClickListener
 
     private long timer2 = 0;
     private String timeStr2 = "";
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_blxq_);
         Intent intent = getIntent();
         Bundle bundle=intent.getExtras();
-//        pd = ProgressDialog.show(BlxqActivity.this, "提示", "等待学生选择病例");
+        if(!DEBUG){
+            pd = ProgressDialog.show(BlxqActivity.this, "提示", "等待学生选择病例");
+        }
         //接受bundle信息 如果是由异常状态恢复的，不出现等待条，如果bundle为空说明是是新开的病例，打开状态条\
         if (bundle!=null){
             pd.dismiss();
             timer=DateUtils.getTimeLong(SubStringUtils.substring(bundle.getString("rectime"),0,6));
             timer2=DateUtils.getTimeLong(SubStringUtils.substring(bundle.getString("rectime"),6,12));
         }
-        tvPage=new FitHeightTextView(this);
+        tvPage=new TextView(this);
         tvPage.findViewById(R.id.tv_page);
 
         initDatas();
@@ -162,6 +173,7 @@ public class BlxqActivity extends MyBaseActivity implements View.OnClickListener
         }
         btnBlnr.setOnClickListener(this);
         btnCzjl.setOnClickListener(this);
+        btnlongstart.setOnClickListener(this);
     }
 
     private void initDatas() {
@@ -209,8 +221,21 @@ public class BlxqActivity extends MyBaseActivity implements View.OnClickListener
         fragmentList.put(17,new MzblFragment());
 //        fragmentList.put(0,new BloodrecordlistFragment());
 //        fragmentList.put(1,new TransfusionrecordFragment());
+        //获取Baseinfo并存储到cache中
+        JsonObject datas = CommUtils.getcaseJSON(CommUtils.getStringFromPath(BLPath2)).getAsJsonObject();
+        Gson gson = new Gson();
+        UserMessage.baseinfo = gson.fromJson(datas.get("baseinfo").getAsJsonObject(), Baseinfo.class);
+        UserMessage.medicalrecords = gson.fromJson(datas.get("medicalrecords").getAsJsonObject(), Medicalrecords.class);
+        UserMessage.statesinfo = gson.fromJson(datas.get("statesinfo").getAsJsonObject(), Statesinfo.class);
+        UserMessage.statesinfo.初始化状态转归Map();
+        UserMessage.statesinfo.初始化状态名称Map();
+        UserMessage.statesinfo.初始化状态参数map();
 
-
+        //从baseinfo中拿到 状态状态数据
+        String stateString = UserMessage.baseinfo.getState_chart();
+        JsonObject jsonObject = new JsonParser().parse(stateString).getAsJsonObject();
+        UserMessage.blzgCache = new Gson().fromJson(jsonObject, BlzgBean.class);
+        UserMessage.blzgCache.initBlztMap();
     }
 
     @Override
@@ -222,9 +247,10 @@ public class BlxqActivity extends MyBaseActivity implements View.OnClickListener
                 EventBus.getDefault().post(new MessageEvent(UserMessage.biaodan_message, 4));
                 break;
             case MyMessage.MLZ_ZCYZ:
-                onZhuanChao.OnZhuanchao(str);
+                UserMessage.biaodan_message = str;//缓存转抄数据
+                EventBus.getDefault().post(new MessageEvent(UserMessage.biaodan_message, 5));
                 break;
-            case MyMessage.MLZ_BDT:
+            case MyMessage.MLZ_BDT://表单头数据
                 String head_message = str;
                 EventBus.getDefault().post(new MessageEvent(head_message, 1));
                 break;
@@ -248,10 +274,29 @@ public class BlxqActivity extends MyBaseActivity implements View.OnClickListener
                 }
                 break;
             case MyMessage.MLZ_ZTGB://状态改变 说明：状态跳转时，接收学生机发送的新的当前正在进行的病例状态
-                if(!SubStringUtils.substring(str,48,52).equals(conditionNow)){
+                if(!SubStringUtils.substring(str,52,56).equals(conditionNow)){
                     //将学生当前状态置为改变后的状态
-                    conditionNow=SubStringUtils.substring(str,48,52);
+                    conditionNow=SubStringUtils.substring(str,52,56);
+                    //开始计时
                     mHandler2.postDelayed(ConditionRunnable,1000);
+                    //改变病例转归的数据信息
+                    int id =Integer.parseInt(conditionNow);
+                        for(int i=0;i<UserMessage.blzgCache.getDatas().size();i++){
+                                /**
+                                 * 将上个进行中状态设为已读,已读状态为3
+                                 * */
+                            if(UserMessage.blzgCache.getDatas().get(i).getId()==UserMessage.blzgLastItemCache.getId()){
+                                    UserMessage.blzgCache.getDatas().get(i).setState(3);
+                            }
+                            if(id==UserMessage.blzgCache.getDatas().get(i).getId()){
+                                //将当前运行中的状态值置为2
+                                UserMessage.blzgCache.getDatas().get(i).setState(2);
+                                current_state_order=i;
+                            }
+                        }
+                    //将当前condition记录下来备用
+                    UserMessage.blzgLastItemCache =UserMessage.blzgCache.getDatas().get(current_state_order);
+//                    firstChange=false ;
                 }
                 break;
             case MyMessage.MLZ_XSTZJS://病人病情状态发生变化，此时教师接收信息，并显示
@@ -318,7 +363,7 @@ public class BlxqActivity extends MyBaseActivity implements View.OnClickListener
         }
     };
 
-    @OnClick({R.id.btn_blnr,R.id.iv_setting})
+    @OnClick({R.id.btn_blnr,R.id.iv_setting,R.id.tv_blzg,R.id.iv_fh,R.id.iv_exit,R.id.long_start})
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
@@ -342,9 +387,18 @@ public class BlxqActivity extends MyBaseActivity implements View.OnClickListener
                     MyMessage.sendMessage(MyMessage.getMsgJiaoshitishi(ts));
                 }
                 break;
+            case R.id.iv_exit:
+                onExit();
+                break;
+            case R.id.iv_fh:
+                finish();
+                break;
             case R.id.iv_setting:
                 Intent intents = new Intent(this, SettingsActivity.class);
                 startActivity(intents);
+                break;
+            case R.id.tv_blzg:
+                startActivity(new Intent(this,BlzgActivity.class));
                 break;
 
         }

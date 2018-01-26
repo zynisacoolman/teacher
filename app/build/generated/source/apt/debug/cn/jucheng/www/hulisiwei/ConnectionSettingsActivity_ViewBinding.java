@@ -15,15 +15,15 @@ public class ConnectionSettingsActivity_ViewBinding implements Unbinder {
 
   private View view2131230742;
 
-  private View view2131230827;
+  private View view2131230920;
 
-  private View view2131231092;
+  private View view2131231225;
 
-  private View view2131230828;
+  private View view2131230921;
 
-  private View view2131230829;
+  private View view2131230922;
 
-  private View view2131230830;
+  private View view2131230923;
 
   @UiThread
   public ConnectionSettingsActivity_ViewBinding(ConnectionSettingsActivity target) {
@@ -45,7 +45,7 @@ public class ConnectionSettingsActivity_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.connent_already_buletooh, "method 'onViewClicked'");
-    view2131230827 = view;
+    view2131230920 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -53,7 +53,7 @@ public class ConnectionSettingsActivity_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.serach_connent_bluetooh, "method 'onViewClicked'");
-    view2131231092 = view;
+    view2131231225 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -61,7 +61,7 @@ public class ConnectionSettingsActivity_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.connent_network, "method 'onViewClicked'");
-    view2131230828 = view;
+    view2131230921 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -69,7 +69,7 @@ public class ConnectionSettingsActivity_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.connent_usb, "method 'onViewClicked'");
-    view2131230829 = view;
+    view2131230922 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -77,7 +77,7 @@ public class ConnectionSettingsActivity_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.connent_usb_cong, "method 'onViewClicked'");
-    view2131230830 = view;
+    view2131230923 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -95,15 +95,15 @@ public class ConnectionSettingsActivity_ViewBinding implements Unbinder {
 
     view2131230742.setOnClickListener(null);
     view2131230742 = null;
-    view2131230827.setOnClickListener(null);
-    view2131230827 = null;
-    view2131231092.setOnClickListener(null);
-    view2131231092 = null;
-    view2131230828.setOnClickListener(null);
-    view2131230828 = null;
-    view2131230829.setOnClickListener(null);
-    view2131230829 = null;
-    view2131230830.setOnClickListener(null);
-    view2131230830 = null;
+    view2131230920.setOnClickListener(null);
+    view2131230920 = null;
+    view2131231225.setOnClickListener(null);
+    view2131231225 = null;
+    view2131230921.setOnClickListener(null);
+    view2131230921 = null;
+    view2131230922.setOnClickListener(null);
+    view2131230922 = null;
+    view2131230923.setOnClickListener(null);
+    view2131230923 = null;
   }
 }

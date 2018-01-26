@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw720dp-land-v13/values-sw720dp-land-v13.xml",
+            "map": [
+                {
+                    "source": "/Users/zyn/jc2100/code/version1.0/AndroidCode/hulisiweiZYNAS/app/src/main/res/values-sw720dp-land/dimens.xml",
+                    "from": {
+                        "startLines": "3,15,4,5,6,7,8,9,10,11,12,13,14",
+                        "startColumns": "5,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "20,548,64,108,152,196,240,284,328,372,416,460,504",
+                        "endColumns": "41,44,42,42,42,42,42,42,42,42,42,42,42",
+                        "endOffsets": "57,588,102,146,190,234,278,322,366,410,454,498,542"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,98,143,186,229,272,315,358,401,444,487,530,573",
+                        "endColumns": "42,44,42,42,42,42,42,42,42,42,42,42,42",
+                        "endOffsets": "93,138,181,224,267,310,353,396,439,482,525,568,611"
+                    }
+                }
+            ]
+        }
+    ]
+}

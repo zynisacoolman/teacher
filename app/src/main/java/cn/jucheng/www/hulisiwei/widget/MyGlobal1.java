@@ -7,7 +7,7 @@ public class MyGlobal1 {
 	public static final String C_SHEBEI_LANYA = "LANYA";
 	public static final String C_SHEBEI_WIFI = "WIFI";
 	public static final String C_SHEBEI_USB = "USB";
-	public static final String C_DEBUG = "debug";
+	public static final String C_DEBUG = "DEBUG";
 	public static final String C_DEVICE_ADDRESS = "deviceAddress";
 	public static final String C_DEVICE_NAME = "deviceName";
 	public static final String NURSE_NAME = "nurseName";

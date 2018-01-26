@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="30dp">
+    android:layout_height="30dp"
+    android:id="@+id/head_frag">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="30dp"
         android:orientation="horizontal">
 
-        <TextView
+        <View
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="123" />
         <!--注射单姓名-->
-        <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+        <TextView
             android:id="@+id/h_name"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -22,12 +23,12 @@
             android:textColor="@color/heise"
             android:textSize="@dimen/text_size16" />
 
-        <TextView
+        <View
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="42" />
         <!--注射单性别-->
-        <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+        <TextView
             android:id="@+id/h_sex"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -37,12 +38,12 @@
             android:textColor="@color/heise"
             android:textSize="@dimen/text_size16" />
 
-        <TextView
+        <View
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="51" />
         <!--注射单年龄-->
-        <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+        <TextView
             android:id="@+id/h_age"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -52,12 +53,12 @@
             android:textColor="@color/heise"
             android:textSize="@dimen/text_size16" />
 
-        <TextView
+        <View
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="51" />
         <!--注射单科别-->
-        <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+        <TextView
             android:id="@+id/h_division"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -67,12 +68,12 @@
             android:textColor="@color/heise"
             android:textSize="@dimen/text_size16" />
 
-        <TextView
+        <View
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="57" />
         <!--注射单床号-->
-        <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+        <TextView
             android:id="@+id/h_bednumber"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -82,12 +83,12 @@
             android:textColor="@color/heise"
             android:textSize="@dimen/text_size16" />
 
-        <TextView
+        <View
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="71" />
         <!--注射单病案号-->
-        <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+        <TextView
             android:id="@+id/h_illrecordNum"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -97,7 +98,7 @@
             android:textColor="@color/heise"
             android:textSize="@dimen/text_size16" />
 
-        <TextView
+        <View
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="85" />

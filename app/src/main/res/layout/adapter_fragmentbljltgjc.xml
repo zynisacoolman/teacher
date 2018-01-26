@@ -7,6 +7,7 @@
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/ll_tgjc"
             android:background="@drawable/fragment_bstgjc"
             android:orientation="vertical">
 
@@ -29,7 +30,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="161"/>
-                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                <TextView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="60"/>
@@ -37,7 +38,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="62"/>
-                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                <TextView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="60"/>
@@ -45,7 +46,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="85"/>
-                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                <TextView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="60"/>
@@ -53,7 +54,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="103"/>
-                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                <TextView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="60"/>
@@ -61,7 +62,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="18"/>
-                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                <TextView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="60"/>
@@ -177,7 +178,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="86"/>
-                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                <TextView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="118"/>
@@ -240,7 +241,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="88"/>
-                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                <TextView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="118"/>
@@ -301,7 +302,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="105"/>
-                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                <TextView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="288"/>
@@ -331,7 +332,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="68"/>
-                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                <TextView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="80"/>
@@ -339,7 +340,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="46"/>
-                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                <TextView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="80"/>
@@ -347,7 +348,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="46"/>
-                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                <TextView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="80"/>
@@ -553,7 +554,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="110"/>
-                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                <TextView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="118"/>
@@ -644,7 +645,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="109"/>
-                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                <TextView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="296"/>
@@ -685,7 +686,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="31"/>
-                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                <TextView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="400"/>
@@ -809,7 +810,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="146"/>
-                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                <TextView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="537"/>
@@ -881,7 +882,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="152"/>
-                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                <TextView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="80"/>
@@ -941,7 +942,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="152"/>
-                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                <TextView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="434"/>
@@ -1070,7 +1071,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="89"/>
-                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                <TextView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="80"/>
@@ -1078,7 +1079,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="46"/>
-                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                <TextView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="80"/>
@@ -1128,7 +1129,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="91"/>
-                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                <TextView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="80"/>
@@ -1136,7 +1137,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="46"/>
-                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                <TextView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="80"/>
@@ -1171,7 +1172,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="707"/>
-                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                <TextView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="118"/>
@@ -1242,7 +1243,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="222"/>
-                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                <TextView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="633"/>
@@ -1276,7 +1277,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="167"/>
-                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                <TextView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="434"/>
@@ -1315,7 +1316,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="176"/>
-                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                <TextView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="340"/>
@@ -1370,7 +1371,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="145"/>
-                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                <TextView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="132"/>
@@ -1400,7 +1401,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="168"/>
-                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                <TextView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="499"/>
@@ -1429,7 +1430,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="168"/>
-                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                <TextView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="499"/>
@@ -1458,7 +1459,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="168"/>
-                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                <TextView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="499"/>
@@ -1487,7 +1488,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="168"/>
-                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                <TextView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="499"/>
@@ -1516,7 +1517,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="168"/>
-                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                <TextView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="499"/>
@@ -1545,7 +1546,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="168"/>
-                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                <TextView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="499"/>
@@ -1574,7 +1575,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="168"/>
-                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                <TextView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="499"/>
@@ -1654,7 +1655,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="85"/>
-                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                <TextView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="770"/>
@@ -1672,7 +1673,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="85"/>
-                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                <TextView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="770"/>
@@ -1689,7 +1690,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="707"/>
-                <cn.jucheng.www.hulisiwei.customcontrols.FitHeightTextView
+                <TextView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="118"/>
