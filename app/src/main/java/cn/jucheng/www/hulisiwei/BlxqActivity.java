@@ -122,6 +122,7 @@ public class BlxqActivity extends MyBaseActivity implements View.OnClickListener
 
     private long timer = 0;
     private String timeStr = "";
+    int lastid =-1 ;
 
     //计时器 状态运行时间
     private boolean isStopCount2 = false;
@@ -281,22 +282,15 @@ public class BlxqActivity extends MyBaseActivity implements View.OnClickListener
                     mHandler2.postDelayed(ConditionRunnable,1000);
                     //改变病例转归的数据信息
                     int id =Integer.parseInt(conditionNow);
-                        for(int i=0;i<UserMessage.blzgCache.getDatas().size();i++){
-                                /**
-                                 * 将上个进行中状态设为已读,已读状态为3
-                                 * */
-                            if(UserMessage.blzgCache.getDatas().get(i).getId()==UserMessage.blzgLastItemCache.getId()){
-                                    UserMessage.blzgCache.getDatas().get(i).setState(3);
-                            }
-                            if(id==UserMessage.blzgCache.getDatas().get(i).getId()){
-                                //将当前运行中的状态值置为2
-                                UserMessage.blzgCache.getDatas().get(i).setState(2);
-                                current_state_order=i;
-                            }
-                        }
-                    //将当前condition记录下来备用
-                    UserMessage.blzgLastItemCache =UserMessage.blzgCache.getDatas().get(current_state_order);
-//                    firstChange=false ;
+                    UserMessage.idStatus.get(id).setState(2);
+                    if(lastid ==-1){
+                        Log.v(TAG,"首次进行状态改变");
+                    }else if(lastid == id){
+                        Log.v(TAG,"状态未进行变化");
+                    }else{
+                        UserMessage.idStatus.get(lastid).setState(3);
+                    }
+                    lastid = id ;
                 }
                 break;
             case MyMessage.MLZ_XSTZJS://病人病情状态发生变化，此时教师接收信息，并显示

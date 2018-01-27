@@ -281,8 +281,6 @@ public class TwdFragment extends BaseFragment implements AbsListView.OnScrollLis
                     gvTwdDabian.setAdapter(new SimpleAdapter(getActivity(),maplist.subList(133,133+7),R.layout.gridview_twd_item,from,to));
                     gvTwdTizhong.setAdapter(new SimpleAdapter(getActivity(),maplist.subList(140,140+7),R.layout.gridview_twd_item,from,to));
                     gvTwdShengao.setAdapter(new SimpleAdapter(getActivity(),maplist.subList(147,147+7),R.layout.gridview_twd_item,from,to));
-
-
                     break;
             }
         }

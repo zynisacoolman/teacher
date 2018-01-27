@@ -392,6 +392,4 @@ public class BllbActivity extends MyBaseActivity implements View.OnClickListener
         tvBlxqZs.setText(mbi.getZhusu()==null?"":mbi.getZhusu());
         tvBlxqXbs.setText(mbi.getXianbingshi()==null?"":mbi.getXianbingshi());
     }
-
-
 }
